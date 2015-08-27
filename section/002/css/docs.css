@@ -1,0 +1,43 @@
+.content-list {
+  background: #000;
+  padding: 3em 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.content-list ul.style {
+  margin: 0;
+  padding: 1em;
+}
+.content-list ul.style span {
+  line-height: 180%;
+  color: #FFF;
+}
+.content-list ul.style h3 {
+  margin: 0 0 0.80em 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2em;
+  color: #FFF;
+}
+.content-list ul.style li {
+  position: relative;
+  padding: 3em 0em 3em 6em;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+.content-list ul.style li:before {
+  position: absolute;
+  left: 0;
+  top: 1em;
+  display: block;
+  background: none;
+  color: #FFF;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font-size: 3em;
+  border-radius: 6px;
+}
+.content-list ul.style > :first-child {
+  border-top: none;
+}

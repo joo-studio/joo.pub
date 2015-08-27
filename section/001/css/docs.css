@@ -1,0 +1,54 @@
+.imgs-list {
+  background: #000000 url(../images/bg.jpg) no-repeat;
+  background-position-y: 211px;
+  padding: 50px 0;
+  font-family: "Microsoft Yahei";
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.imgs-list .image {
+  border: 0;
+  position: relative;
+}
+.imgs-list .image.featured {
+  position: static;
+  display: block;
+  margin: 0;
+}
+.imgs-list .image.featured img {
+  display: block;
+  width: 100%;
+}
+.imgs-list .box {
+  padding: 3em 2em;
+  background: #FFF;
+  text-align: center;
+  border-radius: 0px 0px 6px 6px;
+}
+.imgs-list .pex {
+  line-height: 2em;
+}
+.imgs-list .button {
+  appearance: none;
+  -webkit-transition: background-color 0.35s ease-in-out;
+          transition: background-color 0.35s ease-in-out;
+  background: #d84780;
+  border-radius: 6px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #FFF !important;
+}
+.imgs-list .button:hover {
+  background: #e1719d;
+}
+.imgs-list .ct-row > section {
+  margin-bottom: 2em;
+}
