@@ -1,0 +1,53 @@
+.imgs-list {
+	background:#000 url(../images/bg.jpg) no-repeat;
+	background-position-y: 211px;
+    padding: 50px 0;
+    font-family: "Microsoft Yahei";
+    transition: all 0.3s ease-in-out;
+    .image {
+        border: 0;
+        position: relative;
+    }
+    .image.featured {
+        position: static;
+        display: block;
+        margin: 0;
+    }
+    .image.featured img {
+        display: block;
+        width: 100%;
+    }
+    .box {
+        padding: 3em 2em;
+        background: #FFF;
+        text-align: center;
+        border-radius: 0px 0px 6px 6px;
+    }
+    .pex {
+        line-height: 2em;
+    }
+    .button {
+        appearance: none;
+        transition: background-color 0.35s ease-in-out;
+        background: #d84780;
+        border-radius: 6px;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.75em 1.5em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #FFF !important;
+        &:hover {
+        	background: #e1719d;
+        }
+    }
+    .ct-row > section {
+    	margin-bottom: 2em;
+    }
+}
