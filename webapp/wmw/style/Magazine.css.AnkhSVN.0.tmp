@@ -1,0 +1,146 @@
+.mycss{position:absolute;  z-index:5;}
+.mymedia{top:0px; left:0px;z-index:500;}
+.buttonstyle{ position: absolute;display: block;cursor: pointer;z-index: 15;opacity: .0;filter: alpha(opacity=00);background-color:White;}
+.content1{ margin-left:auto; margin-right:auto;}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	-moz-user-select:   none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+* {margin: 0; padding: 0; outline: none;}
+img {border: none;
+     -moz-user-select:   none;
+	-webkit-user-select:none;
+	-moz-user-select:none;}
+*{
+	-webkit-user-select:none;
+}
+h1 {
+	font-size: 1.2em;
+	padding: 5px 10px;
+	color: #ccc;
+	width: 940px;
+	margin: 0 auto;
+}
+h1 a {	color: #fff; }
+h1 span {font-weight: normal;}
+.headpanel {
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 11111; 
+	border-bottom: none;
+	width: 100%;
+	height:34px;
+	margin: 0;
+}
+.footpanel {
+	position: fixed;
+	bottom: 0; left: 0;
+	z-index: 11111; 
+	border-bottom: none;
+	width: 100%;
+	margin: 0;
+}
+.bottom
+{
+    bottom:0px;
+left: 0;
+z-index: 11111;
+border-bottom: none;
+width: 100%;
+height: 34px;
+margin: 0;
+}
+
+h5 {
+display: block;
+font-size: 1.60em;
+font-weight: bold;
+padding:10px 0px 0px 0px;
+}
+h4 {
+display: block;
+font-size: 1.20em;
+padding:0px 0px 0px 0px;
+}
+
+.AllMenue
+{
+    position: fixed;
+	top: 0; left: 0;
+	z-index: 30000; 
+	border-bottom: none;
+	width: 100%;
+	height:994px;
+	margin: 0;
+    display:none;
+}
+.AllMenue ul
+{
+   list-style: none;
+}
+.AllMenue ul li
+{
+   /*--height:310px;--*/
+}
+.AllMenue .mid
+{ 
+
+    width:50000px;background-color:#333;
+    padding-top:13px;
+    padding-bottom:3px;
+}
+.AllMenue .m
+{ 
+   position:relative;
+   top:-10px;
+   left:0px;
+   width:100%;
+   background-color:#333;
+}
+.AllMenue .m1
+{ 
+    width:262px;
+    float:left;
+}
+.AllMenue .m1 .m11
+{ 
+    position:relative;
+   top:0px;
+   left:0px;
+   z-index:1;
+}
+
+.AllMenue .m1 .hd
+{ 
+   position:absolute; top:-86;text-align:center; width:262;
+   color:#666;
+}
+.AllMenue .mid .uu
+{
+    position:relative;
+   top:-13px;
+   left:0px;
+   width:100%;    
+}
+.AllMenue .mid .uu span {
+display: block;
+width: 0;
+height: 0;
+color: #ccc;
+overflow: hidden;
+border-top: 10px solid #ccc;
+border-left: 10px dotted transparent;
+border-right: 10px dotted transparent;
+filter:Alpha(Opacity=60);opacity: 0.6;
+}
+
+.m1 img 
+{
+     width:100%;
+     height:100%;
+}

@@ -1,0 +1,5 @@
+/**
+* h5player v0.0.1 by yangyin 
+* Copyright 2014 yangyin@mcitech.cn http://weibo.com/nodersolar
+*/
+!function(a){"function"==typeof define&&define.amd?define("mci.mask",["jquery"],a):a(jQuery)}(function(a){"use strict";var b=function(a){return this instanceof b?this.init(a):new b(a)};return b.prototype.init=function(b){var c=this;c.options=c.options||{hiddenChanged:function(){}},c.options=a.extend(c.options,b);var d=document.createElement("div");d.className="mci-mask",d.setAttribute("id","mci-mask"),c.options.width&&(d.style.width=c.options.width+"px"),c.options.height&&(d.style.height=c.options.height+"px"),a("body").append(d),c.dom=a("#mci-mask"),c.dom[0].addEventListener("click",c,!1)},b.prototype.handleEvent=function(a){var b=this;switch(a.type){case"click":b._click(a)}},b.prototype.show=function(){var a=this;a.dom.show()},b.prototype.hide=function(){var b=this;b.dom.remove(),a.isFunction(b.options.hiddenChanged)&&b.options.hiddenChanged()},b.prototype._click=function(a){var b=this;a.stopPropagation(),a.preventDefault(),b.hide()},window.Mask=b,b});

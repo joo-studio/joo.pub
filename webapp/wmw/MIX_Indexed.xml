@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mix>
+  <publication id="B790B224-3495-4897-AC2B-569480C4F596" version="MAC 1.5.13((null))" orientation="portrait" width="480" height="800" title="我买网5" textSeparated="yes" lastModifiedTime="0001-01-01T00:00:00Z" />
+  <contents>
+    <content id="CCC527A6" lastModifiedTime="2014-08-15T17:07:27Z">
+      <metadata indexPicture="p0/c/B6B44B22_stl.jpg">
+        <pRectangle x="0" y="0" width="480" height="800" />
+      </metadata>
+      <layouts>
+        <layout id="B6B44B22_l" source="1.xml" width="480" height="800" orientation="Portrait" catalog="" />
+      </layouts>
+    </content>
+  </contents>
+</mix>
