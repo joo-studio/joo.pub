@@ -129,12 +129,6 @@ body {
 *:after {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: freight-sans-pro;
-  font-weight: 200;
-  font-style: normal;
-  src: url(../fonts/FreightSans-Bold.woff) format('woff');
-}
 a {
   transition: all .5s;
   text-decoration: none;
@@ -145,14 +139,16 @@ a:focus {
   text-decoration: none;
 }
 body {
-  font: 18px/25px freight-sans-pro, 'Verdana', 'Microsoft Yahei', Verdana, Geneva, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font: 18px/25px "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
 }
 .liner-bg {
   background-image: linear-gradient(160deg, #65d165 10%, #57d39c 80%);
 }
 .border-right {
   box-shadow: 1px 0 0px 0px #eee;
+}
+.nopadding {
+  padding: 0 !important;
 }
 .g3-btn {
   display: inline-block;
@@ -199,7 +195,6 @@ body {
   font-weight: 100;
 }
 .tabs {
-  font-family: 'Verdana', 'Microsoft Yahei';
   border-top: 1px solid #eeeff2;
   border-bottom: 1px solid #eeeff2;
   height: 50px;
@@ -228,7 +223,6 @@ body {
   display: block;
   float: right;
   font-size: 14px;
-  font-family: "Arial";
   color: #999999;
 }
 .tabs .select-all:hover {
@@ -243,9 +237,6 @@ body {
   display: block;
   line-height: 1.5px;
   border-bottom: solid 1px #dedede;
-}
-.header {
-  font-family: 'Arial', 'Microsoft Yahei';
 }
 .header .navigation {
   position: relative;
@@ -340,7 +331,6 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
   text-align: center;
-  font-family: 'Arial', 'Microsoft Yahei';
   color: #ffffff;
 }
 .carrousel .solgan {
@@ -367,7 +357,6 @@ body {
   padding: 70px 0 410px;
   background: #eaeced url('../images/desk.jpg') no-repeat bottom center;
   background-size: 1800px auto;
-  font-family: 'Arial', 'Microsoft Yahei';
 }
 .desk h2 {
   font-weight: 400;
@@ -379,7 +368,6 @@ body {
 }
 .desk p {
   font-size: 24px;
-  font-family: 'Verdana', 'Microsoft Yahei';
   color: #3e3e3e;
   line-height: 1.5;
   font-weight: 300;
@@ -416,20 +404,17 @@ body {
   margin-bottom: 15px;
   line-height: 36px;
   font-size: 36px;
-  font-family: 'Arial', 'Microsoft Yahei';
   color: #3e3e3d;
 }
 .whats p {
   width: 70%;
   font-size: 18px;
-  font-family: 'Verdana', 'Microsoft Yahei';
   color: #666666;
   margin: 0 auto 15px;
 }
 .whats .button {
   display: inline-block;
   font-size: 18px;
-  font-family: 'Verdana', 'Microsoft Yahei';
   color: #52c27d;
   margin-top: 20px;
 }
@@ -438,7 +423,6 @@ body {
 }
 .case {
   padding-bottom: 66px;
-  font-family: 'Verdana', 'Microsoft Yahei';
 }
 .case .cases {
   margin-top: 30px;
@@ -500,14 +484,12 @@ body {
 }
 .start .title {
   font-size: 36px;
-  font-family: 'Arial', 'Microsoft Yahei';
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 .start .subtitle {
   font-size: 18px;
-  font-family: 'Arial', 'Microsoft Yahei';
   color: #ffffff;
   line-height: 1.2;
 }
@@ -518,7 +500,6 @@ body {
   color: #666;
   padding: 50px 0 100px;
   overflow: hidden;
-  font-family: 'Arial', 'Microsoft Yahei';
 }
 .footer .footer-logo img {
   height: 40px;
@@ -552,7 +533,6 @@ body {
   padding: 50px 0;
   background-color: #fbfaf7;
   font-size: 24px;
-  font-family: 'Arial', 'Microsoft Yahei';
   color: #666;
   text-transform: capitalize;
 }
@@ -570,9 +550,6 @@ body {
 .projects {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.projects .author {
-  font-family: 'Arial', 'Microsoft Yahei';
 }
 .projects .names {
   margin-top: 5px;
@@ -681,13 +658,11 @@ body {
 .projects .project .bottom .title {
   padding-top: 60px;
   font-size: 24px;
-  font-family: "Arial";
   color: #3e3e3e;
   transition: all 300ms ease-in-out;
 }
 .projects .project .bottom .subtitle {
   font-size: 14px;
-  font-family: "Arial";
   color: #999999;
   line-height: 2.2;
   transition: all 300ms ease-in-out;
@@ -732,7 +707,6 @@ body {
   font-size: 22px;
 }
 .picker-search .picker-search-input {
-  font-family: 'Arial', 'Microsoft Yahei';
   font-weight: 100;
   background: none;
   border: 0;
@@ -743,7 +717,6 @@ body {
   outline: 0;
 }
 .sidebar-nav {
-  font-family: 'Arial', 'Microsoft Yahei';
   padding-bottom: 30px;
 }
 .sidebar-nav h4 {
@@ -755,6 +728,18 @@ body {
   color: #666;
 }
 .sidebar-nav h4:first-child {
+  margin-top: 0em;
+}
+.sidebar-nav h3 {
+  margin-top: 2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+.sidebar-nav h3:first-child {
   margin-top: 0em;
 }
 .sidebar-nav ul {
@@ -773,8 +758,10 @@ body {
 .sidebar-nav ul li a:hover {
   color: #50b350;
 }
+.sidebar-nav ul.search-category li {
+  line-height: 2.1;
+}
 .docs {
-  font-family: 'Arial', 'Microsoft Yahei';
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -856,7 +843,6 @@ hr {
 }
 .location ul.actions > li {
   display: inline-block;
-  font-family: 'Arial', 'Microsoft Yahei';
   float: left;
   margin: 0 0 0 10px;
   font-size: 11px;
@@ -903,7 +889,6 @@ hr {
   padding-top: 20px;
 }
 .apps .app-content {
-  font-family: "Arial";
   color: #666666;
   line-height: 1.5;
   padding: 20px;

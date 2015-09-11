@@ -142,14 +142,6 @@ body {
 
 // Var color
 @green: #50B350;
-// Font 
-@font-face {
-    font-family: freight-sans-pro;
-    font-weight: 200;
-    font-style: normal;
-    src: url(../fonts/FreightSans-Bold.woff) format('woff');
-}
-
 // Global Styles
 a {
     transition: all .5s;
@@ -163,8 +155,7 @@ a:focus {
 }
 
 body {
-    font: 18px/25px freight-sans-pro, 'Verdana', 'Microsoft Yahei', Verdana, Geneva, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font: 18px/25px "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
 }
 
 // Liner background
@@ -175,6 +166,11 @@ body {
 // Border
 .border-right {
     box-shadow: 1px 0 0px 0px #eee;
+}
+
+// no Padding
+.nopadding {
+    padding: 0 !important;
 }
 
 // Btn
@@ -231,7 +227,6 @@ body {
 
 // Tabs Styles
 .tabs {
-    font-family: 'Verdana', 'Microsoft Yahei';
     border-top: 1px solid #eeeff2;
     border-bottom: 1px solid #eeeff2;
     height: 50px;
@@ -259,7 +254,6 @@ body {
         display: block;
         float: right;
         font-size: 14px;
-        font-family: "Arial";
         color: rgb(153, 153, 153);
         &:hover {
             color: @green;
@@ -279,7 +273,6 @@ body {
 
 // Header Styles
 .header {
-    font-family: 'Arial', 'Microsoft Yahei';
     .navigation {
         position: relative;
         line-height: 80px;
@@ -376,7 +369,6 @@ body {
     padding-top: 90px;
     padding-bottom: 90px;
     text-align: center;
-    font-family: 'Arial', 'Microsoft Yahei';
     color: rgb(255, 255, 255);
     .solgan {
         font-size: 52px;
@@ -405,7 +397,6 @@ body {
     padding: 70px 0 410px;
     background: #EAECED url('../images/desk.jpg') no-repeat bottom center;
     background-size: 1800px auto;
-    font-family: 'Arial', 'Microsoft Yahei';
     h2 {
         font-weight: 400;
         font-size: 52px;
@@ -416,7 +407,6 @@ body {
     }
     p {
         font-size: 24px;
-        font-family: 'Verdana', 'Microsoft Yahei';
         color: rgb(62, 62, 62);
         line-height: 1.5;
         font-weight: 300;
@@ -455,20 +445,17 @@ body {
         margin-bottom: 15px;
         line-height: 36px;
         font-size: 36px;
-        font-family: 'Arial', 'Microsoft Yahei';
         color: rgb(62, 62, 61);
     }
     p {
         width: 70%;
         font-size: 18px;
-        font-family: 'Verdana', 'Microsoft Yahei';
         color: rgb(102, 102, 102);
         margin: 0 auto 15px;
     }
     .button {
         display: inline-block;
         font-size: 18px;
-        font-family: 'Verdana', 'Microsoft Yahei';
         color: rgb(82, 194, 125);
         margin-top: 20px;
         &:hover {
@@ -480,7 +467,6 @@ body {
 // Case Styles
 .case {
     padding-bottom: 66px;
-    font-family: 'Verdana', 'Microsoft Yahei';
     .cases {
         margin-top: 30px;
         .case-list {
@@ -545,14 +531,12 @@ body {
 .start {
     .title {
         font-size: 36px;
-        font-family: 'Arial', 'Microsoft Yahei';
         color: rgb(255, 255, 255);
         line-height: 1.2;
         margin-bottom: 20px;
     }
     .subtitle {
         font-size: 18px;
-        font-family: 'Arial', 'Microsoft Yahei';
         color: rgb(255, 255, 255);
         line-height: 1.2;
     }
@@ -566,7 +550,6 @@ body {
     color: #666;
     padding: 50px 0 100px;
     overflow: hidden;
-    font-family: 'Arial', 'Microsoft Yahei';
     .footer-logo {
         img {
             height: 40px;
@@ -606,7 +589,6 @@ body {
     padding: 50px 0;
     background-color: #fbfaf7;
     font-size: 24px;
-    font-family: 'Arial', 'Microsoft Yahei';
     color: #666;
     text-transform: capitalize;
     .register-btn {
@@ -632,9 +614,7 @@ body {
 .projects {
     padding-top: 30px;
     padding-bottom: 30px;
-    .author {
-        font-family: 'Arial', 'Microsoft Yahei';
-    }
+    .author {}
     .names {
         margin-top: 5px;
         line-height: 1;
@@ -742,13 +722,11 @@ body {
             .title {
                 padding-top: 60px;
                 font-size: 24px;
-                font-family: "Arial";
                 color: rgb(62, 62, 62);
                 transition: all 300ms ease-in-out;
             }
             .subtitle {
                 font-size: 14px;
-                font-family: "Arial";
                 color: rgb(153, 153, 153);
                 line-height: 2.2;
                 transition: all 300ms ease-in-out;
@@ -801,7 +779,6 @@ body {
         font-size: 22px;
     }
     .picker-search-input {
-        font-family: 'Arial', 'Microsoft Yahei';
         font-weight: 100;
         background: none;
         border: 0;
@@ -815,7 +792,6 @@ body {
 
 // Sidebar-nav Styles serach.html
 .sidebar-nav {
-    font-family: 'Arial', 'Microsoft Yahei';
     padding-bottom: 30px;
     h4 {
         margin-top: 2em;
@@ -824,6 +800,18 @@ body {
         font-size: 12px;
         margin-bottom: 10px;
         color: #666;
+        &:first-child {
+            margin-top: 0em;
+        }
+    }
+    h3 {
+        margin-top: 2em;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: 700;
         &:first-child {
             margin-top: 0em;
         }
@@ -843,12 +831,16 @@ body {
                 }
             }
         }
+        &.search-category {
+            li {
+                line-height: 2.1;
+            }
+        }
     }
 }
 
 // Docs.html Styles
 .docs {
-    font-family: 'Arial', 'Microsoft Yahei';
     padding-top: 40px;
     padding-bottom: 40px;
     .docs-content {
@@ -930,7 +922,6 @@ hr {
         margin: 0;
         & > li {
             display: inline-block;
-            font-family: 'Arial', 'Microsoft Yahei';
             float: left;
             margin: 0 0 0 10px;
             font-size: 11px;
@@ -980,7 +971,6 @@ hr {
         padding-top: 20px;
     }
     .app-content {
-        font-family: "Arial";
         color: rgb(102, 102, 102);
         line-height: 1.5;
         padding: 20px;
