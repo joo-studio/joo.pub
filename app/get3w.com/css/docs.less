@@ -280,12 +280,12 @@ body {
         &:after,
         &:before {
             display: table;
-            content: " ";
+            content: ' ';
         }
     }
     .nav {
-        float: left;
         font-size: 15px;
+        float: left;
         a {
             font-weight: 200;
             display: inline-block;
@@ -303,21 +303,21 @@ body {
         &:after,
         &:before {
             display: table;
-            content: " ";
+            content: ' ';
         }
     }
     .navbar-toggle {
-        color: #fff;
-        display: block;
         font-size: 30px;
+        display: block;
         display: none;
+        color: #fff;
     }
     .navbar-collapse {
         display: none;
         &:after,
         &:before {
             display: table;
-            content: " ";
+            content: ' ';
         }
         &.collapse {
             display: block !important;
@@ -403,15 +403,15 @@ body {
         }
         .nav {
             float: none;
-            border-top: solid 2px #fff;
             clear: both;
+            border-top: solid 2px #fff;
             a {
+                line-height: 2.5;
                 display: block;
                 padding: 0;
-                line-height: 2.5;
                 border-bottom: solid 2px #fff;
                 &:hover {
-                    border-bottom-color: rgba(255, 255, 255, 0.5)
+                    border-bottom-color: rgba(255, 255, 255, .5);
                 }
             }
         }
@@ -432,8 +432,8 @@ body {
         }
         .login {
             float: right;
-            width: 20%;
             overflow: hidden;
+            width: 20%;
             margin-top: 22.5px;
         }
     }
@@ -577,8 +577,10 @@ body {
             color: #52c27d;
             background: rgba(44, 63, 82, .95);
             backface-visibility: hidden;
-            span:before {
-                content: 'by ';
+            span {
+                &:before {
+                    content: 'by ';
+                }
             }
             a {
                 display: inline-block;
@@ -658,7 +660,8 @@ body {
 
 // Go Styles
 .go {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 200;
     padding: 50px 0;
     text-transform: capitalize;
     color: #666;
@@ -837,13 +840,15 @@ body {
 @media (max-width: 767px) {
     .projects {
         .author {
-            img {width: 100%;}
+            img {
+                width: 100%;
+            }
         }
         .project {
             .top-img {
                 img {
-                    height: auto;
                     width: 100%;
+                    height: auto;
                 }
             }
         }

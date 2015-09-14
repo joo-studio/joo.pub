@@ -246,11 +246,11 @@ body {
 .header .navigation:after,
 .header .navigation:before {
   display: table;
-  content: " ";
+  content: ' ';
 }
 .header .nav {
-  float: left;
   font-size: 15px;
+  float: left;
 }
 .header .nav a {
   font-weight: 200;
@@ -269,13 +269,13 @@ body {
 .header .navbar-header:after,
 .header .navbar-header:before {
   display: table;
-  content: " ";
+  content: ' ';
 }
 .header .navbar-toggle {
-  color: #fff;
-  display: block;
   font-size: 30px;
+  display: block;
   display: none;
+  color: #fff;
 }
 .header .navbar-collapse {
   display: none;
@@ -283,7 +283,7 @@ body {
 .header .navbar-collapse:after,
 .header .navbar-collapse:before {
   display: table;
-  content: " ";
+  content: ' ';
 }
 .header .navbar-collapse.collapse {
   display: block !important;
@@ -365,13 +365,13 @@ body {
   }
   .header .nav {
     float: none;
-    border-top: solid 2px #fff;
     clear: both;
+    border-top: solid 2px #fff;
   }
   .header .nav a {
+    line-height: 2.5;
     display: block;
     padding: 0;
-    line-height: 2.5;
     border-bottom: solid 2px #fff;
   }
   .header .nav a:hover {
@@ -394,8 +394,8 @@ body {
   }
   .header .login {
     float: right;
-    width: 20%;
     overflow: hidden;
+    width: 20%;
     margin-top: 22.5px;
   }
 }
@@ -599,7 +599,8 @@ body {
   margin-right: 10px;
 }
 .go {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 200;
   padding: 50px 0;
   text-transform: capitalize;
   color: #666;
@@ -764,8 +765,8 @@ body {
     width: 100%;
   }
   .projects .project .top-img img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
 }
 .picker-search {
