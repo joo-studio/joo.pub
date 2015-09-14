@@ -567,6 +567,7 @@ body {
 }
 .footer {
   font-size: 14px;
+  font-weight: 300;
   line-height: 21px;
   overflow: hidden;
   padding: 50px 0;
@@ -582,7 +583,7 @@ body {
   color: #50b350;
 }
 .footer .footer-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 25px;
   margin: 6px 0 15px;
