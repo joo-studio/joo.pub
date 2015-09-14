@@ -293,6 +293,7 @@ body {
   height: 50px;
   margin-top: 15px;
   margin-bottom: 10px;
+  padding-right: 100px;
 }
 .header .logo img {
   height: 100%;
@@ -416,7 +417,7 @@ body {
   line-height: 1.25;
 }
 .carrousel .start-button {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .carrousel .start-button > a {
   margin-right: 12px;
@@ -565,10 +566,10 @@ body {
   color: #ffffff;
 }
 .footer {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   overflow: hidden;
-  padding: 50px 0 100px;
+  padding: 50px 0;
   color: #666;
   background: rgba(255, 255, 255, 0.8);
 }
@@ -581,8 +582,8 @@ body {
   color: #50b350;
 }
 .footer .footer-title {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 200;
   line-height: 25px;
   margin: 6px 0 15px;
   text-transform: uppercase;
@@ -982,7 +983,7 @@ hr {
   margin-bottom: 20px;
 }
 .apps .app-content .summary {
-  font-size: 14px;
+  font-size: 16px;
 }
 .apps .app-content .summary a {
   display: inline-block;
