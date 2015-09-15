@@ -61,8 +61,7 @@
   height: 90px;
   line-height: 96px;
   width: 90px;
-  -webkit-transition: all 0.2s ease 0s;
-          transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 .social-button li a:hover {
   color: #008ECC;

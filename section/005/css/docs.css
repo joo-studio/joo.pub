@@ -48,21 +48,16 @@
 }
 .warp-box .text-mask {
   background-color: rgba(54, 55, 50, 0.79);
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   color: #fff;
   padding: 20px;
   width: 100%;
   text-align: left;
-  -webkit-transition: all 0.4s ease 0s;
-          transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
   box-sizing: border-box;
 }
 .warp-box .portfolio-item:hover .text-mask {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .warp-box .text-mask h3 {
   margin: 0;
@@ -74,16 +69,14 @@
   position: absolute;
   left: 0;
   top: -47px;
-  -webkit-transition: all 0.4s ease 0s;
-          transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .warp-box .external a {
   background-color: rgba(255, 255, 255, 0.9);
   color: #818181;
   display: block;
   padding: 10px 18px 13px;
-  -webkit-transition: all 0.5s ease 0s;
-          transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .warp-box .external a:hover {
   background-color: #009EE3;

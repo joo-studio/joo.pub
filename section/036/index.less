@@ -1,0 +1,168 @@
+.warp {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2em 0.75rem;
+    .sec-title {
+        margin-top: 2em;
+        margin-bottom: 50px;
+    }
+    .sec-title.white {
+        color: #fff;
+    }
+    .sec-title h2 {
+        font-size: 36px;
+        margin: 0 0 30px;
+        padding-bottom: 30px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .sec-title.white h2 {
+        color: #fff;
+    }
+    .sec-title h2:after {
+        border-bottom: 1px solid #009ee3;
+        content: " ";
+        display: block;
+        left: 45%;
+        bottom: 0;
+        position: absolute;
+        width: 115px;
+    }
+    .sec-title.white h2:after {
+        border-bottom: 1px solid #fff;
+    }
+}
+.nopadding {
+    padding: 0 !important;
+}
+
+//Common Styles
+figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    max-height: 360px;
+    
+    img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        width: 100%;
+        opacity: 0.8;
+    }
+    figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        backface-visibility: hidden;
+        &::before,
+        &::after {
+            pointer-events: none;
+        }
+        &,
+        & > a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        & > a {
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+    }
+    h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+        margin: 0;
+        span {
+            font-weight: 800;
+            margin: 0;
+        }
+    }
+    p {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 68.5%;
+    }
+}
+
+//Olny
+figure.effect-jazz {
+    background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+    background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+}
+
+figure.effect-jazz img {
+    opacity: 0.9;
+}
+
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-jazz figcaption::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+figure.effect-jazz h2,
+figure.effect-jazz p {
+    opacity: 1;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+}
+
+figure.effect-jazz h2 {
+    padding-top: 26%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-jazz p {
+    padding: 0.5em 2em;
+    text-transform: none;
+    font-size: 0.85em;
+    opacity: 0;
+}
+
+figure.effect-jazz:hover img {
+    opacity: 0.7;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-jazz:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+figure.effect-jazz:hover h2,
+figure.effect-jazz:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}

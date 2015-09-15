@@ -1,0 +1,38 @@
+.facts {
+  position: relative;
+  background: url(../../libs/background/01.jpg) no-repeat center center / cover;
+  padding: 5em 0;
+}
+.facts .ct-sm-3 {
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all ease-in-out 0.3s;
+}
+.facts .ct-sm-3:hover i,
+.facts .ct-sm-3:hover h3 {
+  color: yellow;
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: all ease-in-out 0.3s;
+}
+.facts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.facts i {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  transition: all ease-in-out 0.3s;
+}
+.facts h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  transition: all ease-in-out 0.3s;
+}

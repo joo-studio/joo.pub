@@ -23,6 +23,8 @@ footer.footer .subscribe.form-control {
   background-color: transparent;
 }
 footer.footer .subscribe.form-control:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
 }
 footer.footer .submit-icon {
@@ -39,18 +41,13 @@ footer.footer .submit-icon {
 footer.footer .submit-icon .fa-paper-plane {
   position: relative;
   top: 0;
-  -webkit-transition: all .3s ease .2s;
-          transition: all .3s ease .2s;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  transition: all .3s ease .2s;
+  transform: translateX(0);
 }
 footer.footer .submit-icon:hover .fa-paper-plane {
   position: relative;
   top: -37px;
-  -webkit-transform: translateX(30px);
-      -ms-transform: translateX(30px);
-          transform: translateX(30px);
+  transform: translateX(30px);
 }
 footer.footer .footer-content .footer-social {
   margin: 40px 0 35px;
@@ -67,8 +64,7 @@ footer.footer .footer-social ul li {
 }
 footer.footer .footer-social ul li a {
   display: block;
-  -webkit-transition: all .2s ease 0s;
-          transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
   color: #7f7f7f;
 }
 footer.footer .footer-social ul li a:hover {
@@ -85,8 +81,7 @@ footer.footer .form-control {
   width: 100%;
   height: 50px;
   padding: 6px 12px;
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   color: #555;
   color: #818181;
   border: 1px solid #7f7f7f;
@@ -100,9 +95,6 @@ footer.footer .form-control:focus {
 footer.footer .submit-icon .fa-paper-plane {
   position: relative;
   top: 0;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.3s ease 0.2s;
-          transition: all 0.3s ease 0.2s;
+  transform: translateX(0);
+  transition: all 0.3s ease 0.2s;
 }

@@ -37,11 +37,8 @@
   height: 85px;
   width: 85px;
   line-height: 101px;
-  -webkit-transform: rotate(47deg);
-      -ms-transform: rotate(47deg);
-          transform: rotate(47deg);
-  -webkit-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s;
+  transform: rotate(47deg);
+  transition: all 0.3s ease 0s;
 }
 .warp-box .service-item:hover .service-icon {
   border: 3px solid #009ee3;
@@ -49,9 +46,7 @@
   color: #009ee3;
 }
 .warp-box .service-icon i {
-  -webkit-transform: rotate(-48deg);
-      -ms-transform: rotate(-48deg);
-          transform: rotate(-48deg);
+  transform: rotate(-48deg);
 }
 .warp-box .service-item h3 {
   font-size: 20px;

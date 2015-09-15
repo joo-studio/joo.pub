@@ -29,12 +29,9 @@
   display: inline-block;
   padding: 15px 55px;
   text-decoration: none;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-property: color;
-          transition-property: color;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property: color;
+  transform: translateZ(0);
   vertical-align: middle;
   text-transform: uppercase;
   color: #fff;
@@ -42,8 +39,7 @@
   border-radius: 0;
   background-color: rgba(0, 158, 227, 0.78);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
 .slide-caption .btn-effect:before {
@@ -55,18 +51,11 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  -webkit-transition-property: -webkit-transform;
-          transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 .slide-caption .btn-effect:hover,
 .slide-caption .btn-effect:focus,
@@ -77,6 +66,7 @@
 .slide-caption .btn-effect:focus:before,
 .slide-caption .btn-effect:active:before {
   -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
