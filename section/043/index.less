@@ -1,0 +1,141 @@
+.section-about {
+    padding: 90px 0;
+    h1 {
+        font-size: 28px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: "Raleway";
+        font-weight: 600;
+    }
+    .id-color {
+        color: #ffa200;
+    }
+    .small-border {
+        height: 1px;
+        width: 120px;
+        background: #ccc;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: #ffa200;
+    }
+    .lead {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.4;
+    }
+    .spacer-single {
+        width: 100%;
+        height: 30px;
+        display: block;
+        clear: both;
+    }
+}
+
+@media (min-width: 768px) {
+    .lead {
+        font-size: 21px;
+    }
+}
+
+
+/* feature box style 1 */
+
+.feature-box i {
+    border: solid 1px;
+}
+
+.center {
+    text-align: center;
+}
+
+.dark .inner:hover > i {
+    color: #fff;
+}
+
+.text {
+    padding-left: 70px;
+}
+
+.center .text {
+    padding-left: 0;
+    display: block;
+}
+
+i {
+    text-shadow: none;
+    color: #333;
+    font-size: 32px;
+    width: 68px;
+    height: 68px;
+    text-align: center;
+    position: absolute;
+    border-radius: 60px;
+}
+
+i:hover {
+    color: #333 !important;
+}
+
+.dark i.hover {
+    color: #fff !important;
+}
+
+.border {
+    height: 2px;
+    width: 30px;
+    background: #ccc;
+    display: block;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.center i {
+    position: inherit;
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 60px;
+    background: none;
+    padding: 0px;
+}
+
+.box-fx .inner {
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #e5e5e5;
+    border-bottom: solid 2px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #ffa200;
+        border-bottom-color: #ffa200;
+        transition: all 0.3s ease-in-out;
+        i {
+            color: #ffa200;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.box-fx .front {
+    padding: 60px 0 60px 0;
+}
+
+.box-fx .front span {
+    font-size: 14px;
+}
+
+.box-fx i {
+    font-size: 72px !important;
+    margin-bottom: 20px;
+}

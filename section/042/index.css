@@ -1,0 +1,58 @@
+.contents {
+  padding: 100px 0;
+}
+.title {
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 1.8;
+  color: #fff;
+}
+.summary {
+  line-height: 1.5;
+  color: #fff;
+}
+.no-shadow {
+  box-shadow: none;
+}
+.id-color {
+  color: #ffa200;
+}
+.small-border {
+  height: 1px;
+  width: 120px;
+  background: #ccc;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #ffa200;
+}
+video,
+object {
+  display: inline-block;
+  vertical-align: baseline;
+  min-width: 100%;
+  min-height: 100%;
+}
+.de-video-container {
+  top: 0%;
+  left: 0%;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+.de-video-content {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+.de-video-container .btn-border:hover:after,
+.de-video-container a.btn-border:hover:after,
+.de-video-container a.btn-border.hover:after {
+  color: #eceff3;
+}
