@@ -7,11 +7,6 @@
         height: 1px;
         margin: 40px 0;
         background-color: 1px solid #ccc;
-        &:after,
-        &:before {
-            display: table;
-            content: ' ';
-        }
         &.line {
             width: 65%;
             margin: 30px 0;
@@ -36,6 +31,7 @@
         font-weight: 200;
         line-height: 1.5;
         color: #999;
+        margin-bottom: 2em;
     }
     .label-title {
         font-size: 13px;
@@ -96,13 +92,10 @@
         padding: 0 5px;
         color: #666;
         border: none;
-        border-bottom: solid 1px #ccc;
+        border-bottom: solid 1px @green;
         outline: none;
         background: transparent;
-        &.green {
-            border-bottom: solid 1px @green;
-        }
-        &.active {
+        &:focus {
             border-bottom: solid 2px @green;
         }
     }
@@ -120,8 +113,9 @@
             vertical-align: middle;
         }
         .fa {
-            font: normal normal normal 16px/1 octicons;
+            color: #ccc;
             font-size: 32px;
+            width: 30px;
             display: inline-block;
             float: left;
             margin-right: 5px;
@@ -131,6 +125,11 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             olor: #bbb;
+
+            &.fa-lock {
+                color: #e9dba5;
+                font-size: 42px;
+            }
         }
         .note {
             font-size: 12px;
