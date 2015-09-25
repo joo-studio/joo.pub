@@ -16,8 +16,6 @@
 .item .img {
   display: block;
   opacity: 0.8;
-  -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s;
   width: 100%;
   min-height: 100%;
   -webkit-transition: all 0.2s;

@@ -1,0 +1,107 @@
+.wrapper {
+    padding: 4.5em 0 2.5em 0;
+    background-color: #ffffff;
+    border-bottom: solid 2px #eeeeee;
+    .spotlight {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        margin: 0 0 2em 0;
+        &:nth-child(2n) {
+            -moz-flex-direction: row-reverse;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(2n) .image {
+            margin: 0 0 0 3em;
+        }
+        &:nth-child(2n) .content {
+            text-align: right;
+        }
+        .image {
+            width: 30%;
+            border-radius: 100%;
+            margin: 0 3em 0 0;
+            display: block;
+            box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+            border: 0;
+            position: relative;
+            overflow: hidden;
+            img {
+                display: block;
+                border-radius: 100%;
+                width: 100%;
+            }
+        }
+        .content {
+            width: 70%;
+            & >:last-child {
+                margin-bottom: 0;
+            }
+        }
+        p {
+            margin: 0 0 2em 0;
+            color: #999;
+        }
+        h3 {
+            font-size: 1.5em;
+            line-height: 1.5em;
+            margin: 0 0 1em 0;
+        }
+    }
+    & > .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50em;
+    }
+    & > .inner.alt > * {
+        border-top: solid 2px #eeeeee;
+        margin-bottom: 0;
+        margin-top: 3em;
+        padding-top: 3em;
+        &:first-child {
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+    ul.icons {
+        cursor: default;
+        list-style: none;
+        margin: 0 0 2em 0;
+        padding-left: 0;
+    }
+    ul.icons.labeled li {
+        display: inline-block;
+        margin: 1em 0;
+        padding: 0 2em 0 0;
+    }
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+        color: #e0e0e0;
+        .label {
+            display: inline-block;
+            vertical-align: middle;
+            color: #999999;
+        }
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+        vertical-align: middle;
+        font-size: 2.25rem;
+        margin-right: 0.5em;
+    }
+}

@@ -48,9 +48,23 @@
 .main p {
   margin: 0 0 2em 0;
 }
-.main ul.actions {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 2em 0;
+.main .button {
+  display: inline-block;
+  min-width: 30%;
+  margin: 20px auto;
+  border-radius: 4px;
+  background-color: transparent;
+  border: solid 2px #ccc;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+}
+.main .button:hover {
+  background-color: #ccc;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }
