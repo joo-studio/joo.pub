@@ -1,0 +1,30 @@
+.userlist {
+  padding: 20px;
+}
+.userlist .item {
+  padding: 10px 0;
+  border-bottom: solid 1px #dfdfdf;
+}
+.userlist .item:hover {
+  border-bottom-color: #50b350;
+}
+.userlist .item:hover .name {
+  color: #50b350;
+}
+.userlist .np {
+  padding: 0;
+}
+.userlist .npl {
+  padding-left: 0;
+}
+.userlist .name {
+  font-size: 16px;
+  color: #353535;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.userlist .summary {
+  font-size: 14px;
+  color: #6e6e6e;
+  line-height: 1.3;
+}

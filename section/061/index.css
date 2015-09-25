@@ -1,0 +1,33 @@
+.imonial-area {
+  background: url(../../libs/background/01.jpg);
+  color: #fff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.imonial-area .inner {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.imonial-area .block_title {
+  font-size: 4em;
+  font-weight: 300;
+  text-align: center;
+  overflow: hidden;
+}
+.imonial-area .block_title:before,
+.imonial-area .block_title:after {
+  content: "";
+  background: #ccc;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  width: 42%;
+  vertical-align: middle;
+}
+.imonial-area .block_title:before {
+  right: 0.5em;
+  margin-left: -42%;
+}
+.imonial-area .block_title:after {
+  left: 0.5em;
+  margin-right: -42%;
+}

@@ -1,0 +1,80 @@
+.header {
+    position: relative;
+    background: url(../../assets/img/001-header.jpg) no-repeat bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 10em 0;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav-wrapper {
+        background: rgba(0, 0, 0, .1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        & > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            & > li {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+                display: inline-block;
+                border-right: 1px solid;
+                border-color: rgba(255, 255, 255, .1);
+                & > a {
+                    display: inline-block;
+                    padding: 1.5em 1.5em;
+                    letter-spacing: 0.06em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1.1em;
+                    outline: 0;
+                    color: #fff;
+                    &:hover {
+                        color: pink;
+                    }
+                }
+                &.active a {
+                    color: pink;
+                }
+            }
+        }
+    }
+    .logo {
+        position: relative;
+        z-index: 1;
+        h1 {
+            font-weight: 300;
+            font-size: 5em;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            a:hover {
+                color: pink;
+            }
+        }
+        span {
+            font-size: 1.4em;
+            color: #FFF;
+            font-weight: 100;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.footer {
+  background-color: rgba(36, 42, 48, 0.9);
+  color: #fff;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .inner {
+  padding: 3em 0 1em 0;
+  width: calc(100% - 6em);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+.footer .inner h3 {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+}
+.footer .inner p {
+  margin: 0 0 2em 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.footer .inner > .about {
+  width: 50%;
+  padding: 0;
+}
+.footer ul.actions {
+  argin: 0 0 2em 0;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.footer ul.actions li {
+  display: inline-block;
+  padding: 0 1.5em 0 0;
+  vertical-align: middle;
+}
+.footer ul.actions li:last-child {
+  padding-right: 0 !important;
+}
+.footer ul.contact {
+  margin: 0 0 2em 0;
+  list-style: none;
+  padding: 0;
+}
+.footer ul.contact li {
+  text-decoration: none;
+  padding: 0.65em 0 0 0;
+}
+.footer ul.contact li:first-child {
+  padding-top: 0;
+}
+.footer ul.contact li:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  display: inline-block;
+  width: 2.1em;
+}
+.footer ul.contact li a {
+  color: #fff;
+}
+.footer ul.contact li a:hover {
+  color: pink;
+}
+.footer .button {
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 700;
+  height: 4.25em;
+  letter-spacing: 0.25em;
+  line-height: 4.35em;
+  padding: 0 2.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.footer .button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+}
+.footer .copyright {
+  padding: 2em 0;
+  border-top: solid 1px #434b55;
+  text-align: center;
+}

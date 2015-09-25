@@ -1,0 +1,79 @@
+.page_section header {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 47px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.section-title {
+  margin-bottom: 70px;
+  float: left;
+}
+.section-icon {
+  max-height: 60px;
+  max-width: 60px;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+  background: #4CA6FF;
+}
+.section-icon i {
+  font-size: 35px;
+  line-height: 42px;
+  color: #fff;
+}
+.section-name {
+  float: left;
+}
+.section-name h3 {
+  font-size: 40px;
+  line-height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.section-name h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-style: italic;
+  text-align: left;
+  color: #4CA6FF;
+}
+.service {
+  position: relative;
+  padding: 11px 0 46px 100px;
+}
+.service a {
+  display: block;
+  color: #515151;
+  text-decoration: none !important;
+}
+.service p {
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+.service_icon i {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  line-height: 70px;
+  left: 0;
+  padding: 0 0 0 21px;
+  font-size: 50px;
+  color: #4CA6FF;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.service_title {
+  line-height: 24px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #262626;
+  font-weight: 700;
+  display: block;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+}

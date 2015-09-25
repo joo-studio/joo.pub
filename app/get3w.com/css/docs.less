@@ -226,9 +226,9 @@ body {
 }
 
 // Tabs Styles
+// Tabs Styles
 .tabs {
     line-height: 50px;
-    overflow: hidden;
     height: 50px;
     border-top: 1px solid #eeeff2;
     border-bottom: 1px solid #eeeff2;
@@ -249,28 +249,90 @@ body {
             box-shadow: 0 -3px 0 #52c27d inset;
         }
     }
+    .more {
+        position: relative;
+        float: right;
+    }
     .select-all {
         font-size: 14px;
         font-weight: 200;
         position: relative;
         display: block;
-        float: right;
         color: rgb(153, 153, 153);
         &:hover {
             color: @green;
         }
     }
-    .select-items {
+    .category {
         position: absolute;
-        top: 0;
         right: 0;
-    }
-    .select-item {
-        line-height: 1.5px;
-        display: block;
-        border-bottom: solid 1px #dedede;
+        display: none;
+        width: 300px;
+        text-align: left;
+        white-space: normal;
+        .contain {
+            border-radius: 3px;
+            background: #f7f8fa;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
+        }
+        .inside {
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            color: #525558;
+            border: 2px solid #c7ced2;
+            border-radius: 3px;
+            background-color: white;
+        }
+        .header {
+            line-height: 44px;
+            position: relative;
+            z-index: 2110;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(34, 34, 34, .1);
+            border-radius: 1px 1px 0 0;
+            background-color: white;
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                float: left;
+                margin: 0;
+                text-transform: uppercase;
+                color: #71767a;
+            }
+        }
+        .filter {
+            padding: 20px;
+            background-color: #f7f8fa;
+            a {
+                font-size: 13px;
+                line-height: 22px;
+                position: relative;
+                display: inline-block;
+                float: left;
+                box-sizing: border-box;
+                width: 125px;
+                height: 22px;
+                margin: 0 0 3px 0;
+                padding: 0 0 0 5px;
+                cursor: pointer;
+                color: #71767a;
+                border-radius: 3px;
+                background-color: transparent;
+                &:hover {
+                    background-color: #dedede;
+                }
+            }
+        }
     }
 }
+
+
 
 // Header Styles
 .header {
@@ -354,10 +416,10 @@ body {
             border-radius: 17px;
             outline: none;
             background-color: rgba(255, 255, 255, .4);
-            tranistion: all 300ms ease-in-out;
-            &.langer {
-                width: 240px;
-                tranistion: all 300ms ease-in-out;
+            transition: all 0.5s;
+            &:focus {
+                width: 200px;
+                transition: all 0.5s;
             }
         }
         .fa {

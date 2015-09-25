@@ -1,0 +1,65 @@
+.warp {
+    padding: 2em 0.75rem;
+}
+
+// new 
+.item {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    &:before,
+    &:after {
+        pointer-events: none;
+    }
+    .img {
+        display: block;
+        opacity: 0.8;
+        transition: opacity 0.2s;
+        width: 100%;
+        min-height: 100%;
+        transition: all 0.2s;
+    }
+    .info {
+        backface-visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        pointer-events: none;
+        min-height: 50px;
+        transform: translate3d(0, 50px, 0);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        transition: all 0.7s;
+    }
+    .credits {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 50px;
+        text-align: left;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    }
+    .right {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: red;
+    }
+    &:hover {
+        .info {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            transition: all 0.2s;
+        }
+        .img {
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    }
+}

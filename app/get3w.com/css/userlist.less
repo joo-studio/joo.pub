@@ -1,0 +1,31 @@
+@green: #50b350;
+.userlist {
+    padding: 20px;
+    .item {
+        padding: 10px 0;
+        border-bottom: solid 1px #dfdfdf;
+        &:hover {
+            .name {
+                color: @green;
+            }
+            border-bottom-color: @green;
+        }
+    }
+    .np {
+        padding: 0;
+    }
+    .npl {
+        padding-left: 0;
+    }
+    .name {
+        font-size: 16px;
+        color: #353535;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+    .summary {
+        font-size: 14px;
+        color: #6e6e6e;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,56 @@
+.promo {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.promo .inner {
+  padding: 35px 0 29px 0;
+  margin: 0;
+  line-height: 24px;
+  color: #262626;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 46px;
+}
+.promo .inner h2 {
+  line-height: 29px;
+  color: #262626;
+  font-weight: 700;
+  font-size: 30px;
+  color: #222;
+  border-color: #F44339;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid #4CA6FF;
+  padding: 15px;
+}
+.promo .inner p {
+  padding: 0;
+  margin: 20px 0;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #A7A7A7;
+}
+.promo .inner .button {
+  margin: 23px 0 21px 0;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  text-decoration: none;
+  border: 2px #4CA6FF solid;
+  background-color: #4CA6FF;
+  color: #fff;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  line-height: 24px;
+  font-size: 18px;
+  padding: 14px 27px 15px 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none !important;
+}
+.promo .inner .button:hover {
+  color: #4CA6FF;
+  background-color: #fff;
+}

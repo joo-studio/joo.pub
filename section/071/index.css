@@ -1,0 +1,86 @@
+.main {
+  padding: 6em 0 4em 0;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed;
+  background-image: url("../../assets/img/overlay1.png"), url("../../assets/img/header.jpg");
+  background-size: auto, cover;
+}
+.main ul.major-icons {
+  margin: 0 0 2em 0;
+  list-style: none;
+  padding-left: 0;
+}
+.main ul.major-icons li {
+  display: inline-block;
+  padding: 2.5em;
+  text-align: center;
+}
+.main ul.major-icons li .icon {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 4px;
+  border: solid 1px #fff;
+  display: inline-block;
+  height: 8em;
+  line-height: 8em;
+  margin: 0;
+  text-align: center;
+  width: 8em;
+}
+.main ul.major-icons li .icon:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  font-size: 4em;
+  line-height: 1em;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: inline-block;
+  line-height: inherit;
+}
+.main ul.major-icons li .icon.style1:before {
+  color: #c3e895;
+}
+.main ul.major-icons li .icon.style2:before {
+  color: #8addaa;
+}
+.main ul.major-icons li .icon.style3:before {
+  color: #6bd4c8;
+}
+.main ul.major-icons li .icon.style4:before {
+  color: #57aed3;
+}
+.main ul.major-icons li .icon.style5:before {
+  color: #4a87d3;
+}
+.main ul.major-icons li .icon.style6:before {
+  color: #6b88e6;
+}
+.main .icon.major {
+  color: #ffffff;
+}
+.main header.major {
+  display: block;
+  margin: 0 0 1em 0;
+}
+.main header.major h2 {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.35em;
+}
+.main header.major:after {
+  background: rgba(144, 144, 144, 0.5);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin-top: 1.5em;
+  width: 6em;
+}
+.main p {
+  margin: 0 0 2em 0;
+  line-height: 1.7em;
+}

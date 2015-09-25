@@ -1,3 +1,33 @@
-.warp-box {
-    
+.imonial-area {
+    background: url(../../libs/background/01.jpg);
+    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+    .inner {
+    	background-color: rgba(0, 0, 0, 0.6);
+    }
+    .block_title {
+        font-size: 4em;
+        font-weight: 300;
+        text-align: center;
+        overflow: hidden;
+    }
+    .block_title:before,
+    .block_title:after {
+        content: "";
+        background: #ccc;
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        width: 42%;
+        vertical-align: middle;
+    }
+    .block_title:before {
+        right: 0.5em;
+        margin-left: -42%;
+    }
+    .block_title:after {
+        left: 0.5em;
+        margin-right: -42%;
+    }
 }

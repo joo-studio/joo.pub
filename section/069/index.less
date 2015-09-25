@@ -1,0 +1,187 @@
+.header {
+    background-color: #4696e5;
+    color: #d0e4f8;
+    padding: 4.5em 0 2.5em 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-position: top left, center center;
+    background-attachment: fixed, fixed;
+    background-size: auto, cover;
+    min-height: 30em;
+    background-image: url("../../assets/img/overlay.png"), url("../../assets/img/pattern-size2.svg");
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .content {
+        transition: opacity 0.5s ease, transform 1s ease;
+        transform: translateX(0);
+        opacity: 1;
+        text-align: right;
+        margin: -3.5em 4em 0 0;
+        h1 {
+            font-size: 3.25em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #ffffff;
+            line-height: 1em;
+            margin: 0 0 1em 0;
+            letter-spacing: -0.0125em;
+        }
+        p {
+            position: relative;
+            margin: 0 0 1.5em 0;
+            font-size: 1.5em;
+            line-height: 1.35em;
+        }
+    }
+    .content >:last-child {
+        margin-bottom: 0;
+    }
+    ul.actions {
+        margin: 0 0 2em 0;
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+        li {
+            display: inline-block;
+            padding: 0 1em 0 0;
+            vertical-align: middle;
+        }
+    }
+    .inner {
+        border: solid 2px rgba(255, 255, 255, 0.25);
+    }
+    .button {
+        appearance: none;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        border-radius: 6px;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        height: 2.85em;
+        line-height: 2.95em;
+        padding: 0 1.75em;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        border: solid 3px #fff;
+    }
+    .button.special {
+        box-shadow: none;
+        background-color: #ffffff;
+        color: #4696e5 !important;
+    }
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+    .image.phone {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0 0 3em 0;
+        width: 13em;
+    }
+    .image {
+        transition: opacity 1s ease, transform 1s ease;
+        transform: translateY(0);
+        opacity: 1;
+        img {
+            width: 100%;
+        }
+    }
+    .image.phone .inner,
+    .image.phone:before,
+    .image.phone:after {
+        border-color: #e6e6e6;
+    }
+    .image.phone:before {
+        height: 2.5em;
+        border-radius: 1em 1em 0 0;
+        border-bottom: 0;
+    }
+    .image.phone:before,
+    .image.phone:after {
+        content: '';
+    }
+    .image.phone .inner,
+    .image.phone:before,
+    .image.phone:after {
+        display: block;
+        border: solid 2px rgba(255, 255, 255, 0.25);
+    }
+    .image.phone .inner {
+        position: relative;
+    }
+    .image.phone .inner,
+    .image.phone:before,
+    .image.phone:after {
+        display: block;
+        border: solid 2px rgba(255, 255, 255, 0.25);
+    }
+    .image.phone .inner:before,
+    .image.phone .inner:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+    }
+    .image.phone .inner:before {
+        top: -1.375em;
+        margin-left: -1em;
+        width: 2em;
+        height: 0.25em;
+        border-radius: 0.5em;
+        background: rgba(255, 255, 255, 0.25);
+    }
+    .image.phone .inner:before {
+        background: #e6e6e6;
+    }
+    .image.phone .inner:before {
+        background: rgba(255, 255, 255, 0.25);
+    }
+    .image img {
+        -moz-transition: opacity 0.75s ease;
+        -webkit-transition: opacity 0.75s ease;
+        -ms-transition: opacity 0.75s ease;
+        transition: opacity 0.75s ease;
+        -moz-transition-delay: 0.75s;
+        -webkit-transition-delay: 0.75s;
+        -ms-transition-delay: 0.75s;
+        transition-delay: 0.75s;
+        opacity: 1;
+    }
+    .image.phone img {
+        border-radius: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .image.phone .inner:before,
+    .image.phone .inner:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+    }
+    .image.phone .inner:after {
+        bottom: -2.75em;
+        margin-left: -1em;
+        width: 2em;
+        height: 2em;
+        border-radius: 100%;
+        border: solid 2px rgba(255, 255, 255, 0.25);
+    }
+    .image.phone .inner:after {
+        border-color: #e6e6e6;
+    }
+    .image.phone .inner:after {
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+    .image.phone:after {
+        height: 3.5em;
+        border-radius: 0 0 1em 1em;
+        border-top: 0;
+    }
+}

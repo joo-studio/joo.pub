@@ -1,0 +1,56 @@
+.main {
+  background: #fff;
+  padding: 6em 0 4em 0;
+  text-align: center;
+}
+.main header.major {
+  display: block;
+  margin: 0 0 1em 0;
+}
+.main header.major h2 {
+  font-size: 2em;
+  line-height: 1.35em;
+  margin: 0;
+}
+.main header.major:after {
+  background: rgba(144, 144, 144, 0.5);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin-top: 1.5em;
+  width: 6em;
+}
+.main p {
+  margin: 0 0 2em 0;
+}
+.main .image {
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.main .image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+.main .image img {
+  border-radius: 4px;
+  display: block;
+}
+.main .image.fit img {
+  width: 100%;
+}
+.main h3 {
+  font-size: 1.35em;
+  line-height: 1.5em;
+}
+.main p {
+  margin: 0 0 2em 0;
+}
+.main ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 2em 0;
+}

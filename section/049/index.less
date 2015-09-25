@@ -1,3 +1,132 @@
-.warp-box {
-    
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fontstatic.useso.com/s/poiretone/v4/cKr_e199f0xMkxMkRbEJXwsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fontstatic.useso.com/s/poiretone/v4/3Annd_XP-99FcGbOpm6fVAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fontstatic.useso.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.activity {
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 500px;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    h2 {
+        font-size: 60px;
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        font-weight: 100;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    hr {
+        display: block;
+        border: 2px solid #B30000;
+        max-width: 600px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.activity .section_overlay {
+    background: #e75e43;
+    opacity: 0.85;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+}
+
+.activity .container {
+    position: relative;
+    z-index: 200;
+}
+
+.activity h2 {
+    color: #333;
+}
+
+.activity .post {
+    height: 312px;
+    background: #fff;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Poiret One', cursive;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.activity .post img {
+    width: 100%;
+    height: 150px;
+    border-radius: 3px;
+}
+
+.activity .post h3 {
+    border-bottom: 1px solid #ddd;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333;
+    text-transform: capitalize;
+    padding: 5px 0px 8px 0px;
+}
+
+.activity .post aside.text {
+    font-family: 'Poiret One', cursive;
+    color: #888;
+    margin-top: 5px;
+}
+
+.activity .post h3 a {
+    color: #444;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.activity .post h3 a:hover {
+    color: #f36b51;
+}
+
+.activity a.viewAll {
+    border: 2px solid #B30000;
+    border-radius: 3px;
+    margin: 30px auto 60px auto;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    color: #B30000;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #b30000;
+        color: #fff;
+    }
 }

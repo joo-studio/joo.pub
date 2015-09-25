@@ -1,0 +1,91 @@
+.warpper {
+    background-color: #6a707c;
+    background-image: url('../../assets/img/overlay.png'), url('../../assets/img/001-bg.jpg');
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    background-size: 100px 100px, 100% auto;
+    .inner {
+        width: ~"calc(100% - 6em)";
+        margin: 0 auto;
+        padding: 3em 0;
+    }
+    .features {
+        background-color: #32383f;
+        .content {
+            padding: 0;
+        }
+        .feature {
+            padding: 0;
+            color: #fff;
+            padding: 2em;
+            border-right: solid 1px #434b55;
+
+            &:nth-child(3) {
+                border-right: none;
+            }
+        }
+        p {
+            font-size: .9em;
+            line-height: 1.5;
+            margin-top: 0;
+            color: #fff;
+            font-weight: 200;
+        }
+    }
+    .icon.major {
+        position: relative;
+        display: block;
+        margin: 0 0 1.5em 0;
+        text-decoration: none;
+        border-bottom: none;
+        &:before {
+            font-family: FontAwesome;
+            font-size: 2rem;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 2rem;
+            text-transform: none !important;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    h3 {
+        font-size: .9em;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 0 1.5em 0;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    header.major {
+        display: block;
+        padding: 5em 3em 3em 3em;
+        text-align: center;
+        background-color: #c4918a;
+        background-image: url('../../assets/img/overlay.png'), url('../../assets/img/header-bg.svg'), linear-gradient(45deg, #c4918a 20%, #6093c4 80%);
+        background-position: center, center, center;
+        background-size: 100px 100px, cover, cover;
+        h2 {
+            font-size: 1.25em;
+            font-weight: 700;
+            line-height: 1.5;
+            margin: 0 0 1.5em 0;
+            margin-bottom: 1.5em;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            color: #fff;
+            &:after {
+                position: relative;
+                top: .75em;
+                display: block;
+                width: 3em;
+                height: 1px;
+                margin-right: auto;
+                margin-left: auto;
+                content: '';
+                background: #fff;
+            }
+        }
+    }
+}

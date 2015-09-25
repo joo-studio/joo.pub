@@ -1,0 +1,38 @@
+.imonial {
+  background: -webkit-linear-gradient(left, #ce4762, #3a2434);
+  background: linear-gradient(to right, #ce4762, #3a2434);
+}
+.imonial .wrapper {
+  padding: 50px 0;
+}
+.imonial .imonial-content {
+  padding: 50px 30px;
+  border: 1px solid rgba(213, 213, 213, 0.15);
+  color: #fff;
+}
+.imonial .test-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+.imonial .name-title {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin: 0 0 10px;
+}
+.imonial .img-logo {
+  background: #fff;
+  display: inline-block;
+  margin: 4px 3px;
+  opacity: .7;
+}
+.imonial .img-logo:hover {
+  opacity: 1;
+}
+.imonial p {
+  font-weight: 200;
+}

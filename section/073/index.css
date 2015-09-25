@@ -1,0 +1,80 @@
+.header {
+  position: relative;
+  background: url(../../assets/img/001-header.jpg) no-repeat bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 10em 0;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header .nav-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.header .nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.header .nav > ul > li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+  border-right: 1px solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.header .nav > ul > li > a {
+  display: inline-block;
+  padding: 1.5em 1.5em;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  outline: 0;
+  color: #fff;
+}
+.header .nav > ul > li > a:hover {
+  color: pink;
+}
+.header .nav > ul > li.active a {
+  color: pink;
+}
+.header .logo {
+  position: relative;
+  z-index: 1;
+}
+.header .logo h1 {
+  font-weight: 300;
+  font-size: 5em;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.header .logo h1 a:hover {
+  color: pink;
+}
+.header .logo span {
+  font-size: 1.4em;
+  color: #FFF;
+  font-weight: 100;
+}

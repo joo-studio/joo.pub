@@ -1,0 +1,47 @@
+.warpper {
+  background-color: #6a707c;
+  background-image: url('../../assets/img/overlay.png'), url('../../assets/img/001-bg.jpg');
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  background-size: 100px 100px, 100% auto;
+}
+.warpper .inner {
+  width: calc(100% - 6em);
+  margin: 0 auto;
+  padding: 3em 0;
+}
+.warpper .spotlight {
+  background-color: #32383f;
+}
+.warpper .np {
+  padding-right: 0;
+  padding-left: 0;
+}
+.warpper .content {
+  padding: 3em 3em 1em 3em;
+}
+.warpper .content h2 {
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+}
+.warpper .content h2:after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 0.75em;
+  width: 3em;
+  height: 1px;
+  background: #ffffff;
+}
+.warpper .content p {
+  color: #fff;
+  margin: 0 0 2em 0;
+  font-weight: 200;
+  line-height: 1.5;
+}

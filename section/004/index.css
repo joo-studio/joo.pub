@@ -1,0 +1,60 @@
+.warp-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2em 0;
+}
+.warp-box .sec-title {
+  margin-bottom: 50px;
+}
+.warp-box .sec-title.white {
+  color: #fff;
+}
+.warp-box .sec-title h2 {
+  font-size: 36px;
+  margin: 0 0 30px;
+  padding-bottom: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+.warp-box .sec-title.white h2 {
+  color: #fff;
+}
+.warp-box .sec-title h2:after {
+  border-bottom: 1px solid #009ee3;
+  content: "";
+  display: block;
+  left: 45%;
+  bottom: 0;
+  position: absolute;
+  width: 115px;
+}
+.warp-box .sec-title.white h2:after {
+  border-bottom: 1px solid #fff;
+}
+.warp-box .service-icon {
+  border: 3px solid transparent;
+  display: inline-block;
+  height: 85px;
+  width: 85px;
+  line-height: 101px;
+  transform: rotate(47deg);
+  transition: all 0.3s ease 0s;
+}
+.warp-box .service-item .service-icon {
+  border: 3px solid #009ee3;
+  margin-bottom: 20px;
+  color: #009ee3;
+}
+.warp-box .service-icon i {
+  transform: rotate(-48deg);
+}
+.warp-box .service-item h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.ct-md-3 {
+  box-shadow: 1px 0 0 #dedede inset;
+}
+.ct-md-3.none{
+  box-shadow: 0 0 0;
+}

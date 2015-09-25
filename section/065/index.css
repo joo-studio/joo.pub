@@ -1,0 +1,156 @@
+.warpper {
+  background-color: #6a707c;
+  background-image: url("../../assets/img/overlay.png"), url("../../assets/img/001-bg.jpg");
+  background-size: 100px 100px, 100% auto;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, scroll;
+}
+.warpper .inner {
+  width: calc(100% - 6em);
+  padding: 3em 0;
+  margin: 0 auto;
+}
+.warpper .banner {
+  display: block;
+  position: relative;
+  background-image: url("../../assets/img/001-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.warpper .banner:before {
+  -webkit-transition: opacity 2s ease-in-out;
+          transition: opacity 2s ease-in-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #323a47;
+  opacity: 0.65;
+}
+.warpper .banner header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.5em 3em 1em 3em;
+  height: 20em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 1s ease, -webkit-filter 1s ease, -webkit-transform 0.5s ease, opacity 1s ease, filter 1s ease, -webkit-transform 0.5s ease;
+          transition: opacity 1s ease, filter 1s ease, transform 0.5s ease;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+.warpper .banner header h2 {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+  font-size: 1.65em;
+  margin-bottom: 1.5em;
+}
+.warpper .banner header h2:after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 0.75em;
+  width: 3em;
+  height: 1px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+.warpper .banner header p {
+  margin-top: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 0.9em;
+  letter-spacing: 0.25em;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.warpper .banner footer {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transition: opacity 1s ease, -webkit-filter 1s ease, -webkit-transform 0.5s ease, opacity 1s ease, filter 1s ease, -webkit-transform 0.5s ease;
+          transition: opacity 1s ease, filter 1s ease, transform 0.5s ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  padding: 2em 3em;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  opacity: 1;
+  z-index: 1;
+}
+.warpper .banner footer > :last-child {
+  margin: 0;
+}
+.warpper .banner footer > :last-child li {
+  display: inline-block;
+  padding: 0 1.5em 0 0;
+  vertical-align: middle;
+}
+.warpper .banner footer > :last-child li:last-child {
+  padding-right: 0 !important;
+}
+.warpper .banner ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.warpper .banner .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 700;
+  height: 4.25em;
+  letter-spacing: 0.25em;
+  line-height: 4.35em;
+  padding: 0 2.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+.warpper .banner .button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
