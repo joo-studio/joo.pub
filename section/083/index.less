@@ -1,0 +1,108 @@
+.warp {
+    background-color: #3c3244;
+    color: #ba9fc7;
+    background-image: linear-gradient(top, rgba(149, 205, 233, 0.25), rgba(133, 86, 159, 0.35)), linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/img/004-banner.jpg");
+    background-attachment: fixed, fixed, fixed;
+    background-position: center 100%, center 100%, center 100%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: cover, cover, cover;
+    height: 100vh;
+    min-height: 40em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    .inner {
+        transition: opacity 0.85s ease, filter 0.85s ease, transform 0.85s ease;
+        transition-delay: 0.75s;
+        bottom: 0;
+        cursor: default;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        background-color: transparent;
+        color: #ba9fc7;
+        z-index: 2;
+        .logo {
+            transition: color 0.2s ease-in-out;
+            color: #ffffff;
+            display: inline-block;
+            font-weight: 600;
+            height: inherit;
+            left: 0;
+            line-height: inherit;
+            margin: 0 0 0 1.5em;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            font-weight: 700;
+            span {
+                font-weight: 100;
+            }
+        }
+        a {
+            transition: color 0.2s ease-in-out;
+            color: inherit;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+        }
+        .nav {
+            position: absolute;
+            right: 0;
+
+            a {
+            	display: inline-block;
+            	margin: 0 0.5em;
+
+            	&:hover {
+            		color: rgba(255, 255, 255, 0.9)
+            	}
+            }
+        }
+    }
+    h2 {
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        color: #ba9fc7;
+    }
+    .button {
+        display: inline-block;
+        margin: 2em auto;
+        appearance: none;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        border-radius: 0;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+        height: 3.7em;
+        letter-spacing: 0.1em;
+        line-height: 3.85em;
+        padding: 0 3.5em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px #ba9fc7;
+        color: #ba9fc7 !important;
+    }
+}

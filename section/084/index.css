@@ -1,0 +1,103 @@
+.wrapper {
+  position: relative;
+  display: block;
+  padding: 6em 0 4em 0;
+  text-align: center;
+}
+.wrapper .inner {
+  max-width: 50em;
+}
+.wrapper ul {
+  margin: 0 0 2em 0;
+  padding-left: 0;
+  list-style: none;
+  cursor: default;
+}
+.wrapper ul.major {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4em;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper ul.major > li {
+  display: inline-block;
+  padding: 0;
+}
+.wrapper ul.major > li:first-child:before {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 3.75em;
+  content: '';
+  background-color: rgba(144, 144, 144, 0.25);
+}
+.wrapper ul.major > li.special {
+  border-width: 0;
+}
+.wrapper ul.major > li.special .icon {
+  background-color: #c5a5ce;
+}
+.wrapper ul.major > li.special .icon:before {
+  color: #c5a5ce;
+  text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+}
+.wrapper ul.major > li .icon {
+  font-size: 1.75em;
+  line-height: 4em;
+  position: relative;
+  display: block;
+  width: 4.25em;
+  height: 100%;
+  height: 4.25em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  color: rgba(144, 144, 144, 0.5);
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-color: rgba(144, 144, 144, 0.25);
+  border-bottom: none;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.wrapper .icon:before {
+  font-family: FontAwesome;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none !important;
+  color: #fff;
+  text-shadow: 1px 0 0 #555555, -1px 0 0 #555555, 0 1px 0 #555555, 0 -1px 0 #555555;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper .icon > .label {
+  display: none;
+}
+.wrapper h2 {
+  margin: 0 0 1em 0;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  color: #555;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+.wrapper h2 + p {
+  position: relative;
+  margin: 0 0 1.5em 0;
+  font-size: 1.25em;
+  margin-top: -0.8em;
+  font-weight: 100;
+}

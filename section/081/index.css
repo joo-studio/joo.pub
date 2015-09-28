@@ -1,0 +1,96 @@
+.wrapper {
+  display: block;
+  padding: 6em 0 4em 0;
+  text-align: center;
+  color: #d3d4e4;
+  background-color: #505393;
+}
+.wrapper header.major {
+  display: block;
+  margin: 0 0 3.5em 0;
+}
+.wrapper header.major h2 {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-bottom: solid 2px #fff;
+}
+.wrapper header.major p {
+  line-height: 1.5em;
+  position: relative;
+  top: 0;
+  margin: 0 0 2em 0;
+  color: #d3d4e4;
+}
+.wrapper .features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style: none;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .features li:nth-child(1) {
+  border-top-left-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.035);
+}
+.wrapper .features li:nth-child(2) {
+  border-top-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.wrapper .features i:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.105);
+}
+.wrapper .features li:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.14);
+}
+.wrapper .features li:nth-child(5) {
+  background-color: rgba(0, 0, 0, 0.175);
+}
+.wrapper .features li:nth-child(6) {
+  background-color: rgba(0, 0, 0, 0.21);
+}
+.wrapper .features li:before {
+  font-size: 1.5em;
+  position: absolute;
+  top: 2.75em;
+  left: 1.75em;
+  display: block;
+  color: #0fc;
+}
+.wrapper .features li {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding: 4em 4em 2em 6em;
+  text-align: left;
+}
+.wrapper .icon {
+  text-decoration: none;
+  border-bottom: none;
+}
+.wrapper .icon:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper h3 {
+  margin: 0;
+}

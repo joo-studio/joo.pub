@@ -1,0 +1,74 @@
+.wrapper {
+  display: block;
+  padding: 0;
+  text-align: left;
+  color: #d3d4e4;
+  background-color: #2e3842;
+}
+.wrapper .no {
+  padding-right: 0;
+  padding-left: 0;
+}
+.wrapper .spotlight {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .spotlight:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.wrapper .spotlight:nth-child(2n) {
+  -moz-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.wrapper .spotlight:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.225);
+}
+.wrapper .image {
+  display: block;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.wrapper .image img {
+  border-radius: 0;
+  width: 100%;
+}
+.wrapper .content {
+  padding: 2em 4em 0.1em 4em;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  max-width: 48em;
+}
+.wrapper .content h2 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.225em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
+.wrapper .content p {
+  margin: 0 0 2em 0;
+}
