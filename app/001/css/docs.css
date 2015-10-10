@@ -626,9 +626,6 @@ ul.legals li:last-child::after {
     text-align: right;
 }
 
-
-
-
 .delay-05s {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;

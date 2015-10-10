@@ -1,0 +1,168 @@
+.this {
+    position: relative;
+    height: 35em;
+    min-height: 70vh;
+    background-image: url('../../assets/img/overlay.png'), linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url('../../assets/img/005-banner.jpg');
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center;
+    background-size: auto, cover, cover;
+    .nav {
+        position: absolute;
+        color: #ffffff;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        h1.logo {
+            text-decoration: none;
+            color: #ffffff;
+            display: inline-block;
+            height: inherit;
+            line-height: inherit;
+            margin-left: 2.5em;
+            a {
+                display: inline-block;
+                font-size: 0.9em;
+                height: inherit;
+                line-height: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        nav {
+            display: block;
+            height: inherit;
+            line-height: inherit;
+            margin-right: 2.5em;
+            position: absolute;
+            right: 2em;
+            top: 0;
+            height: 5em;
+            line-height: 5em;
+            text-transform: uppercase;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    display: inline-block;
+                    padding-left: 0.5em;
+                    white-space: nowrap;
+                    -webkit-user-select: none;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 4em 3em;
+        color: #fff;
+        background-color: rgba(21, 27, 33, .6);
+        h2 {
+            font-weight: 700;
+            line-height: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 0;
+        }
+        p {
+            position: relative;
+            color: #fff;
+            margin: 0;
+            margin-top: 15px;
+            font-weight: 200;
+        }
+        h2 + p {
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+    }
+    .but {
+        text-align: right;
+    }
+    .button {
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 4.1em;
+        display: inline-block;
+        height: 4em;
+        padding: 0 3.5em;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: #fff !important;
+        border: 0;
+        border-radius: 5px;
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px #fff;
+        -webkit-appearance: none;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.075);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {}
+
+@media only screen and (max-width: 767px) {
+    .this {
+        .nav {
+            position: static;
+            display: block;
+            margin: 0;
+            padding: 0;
+            h1.logo {
+                display: block;
+                width: 40%;
+                padding-top: 1em;
+                text-align: center;
+                margin: 0 auto;
+            }
+            nav {
+                position: static;
+                display: block;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                margin-top: 1em;
+            }
+        }
+        .content {
+            padding: 2em 1.5em;
+            display: block;
+            text-align: center;
+            h2 {
+                font-weight: 400;
+                font-size: 1em;
+            }
+            p {
+                margin-top: 10px;
+                font-weight: 100;
+                margin-bottom: 1em;
+            }
+        }
+        .but {
+            text-align: center;
+            padding-top: 2em;
+        }
+    }
+}

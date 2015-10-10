@@ -1,0 +1,54 @@
+.this {
+    position: relative;
+    width: 100%;
+    height: 3.25em;
+    background: #ffffff;
+    line-height: 3.25em;
+    .logo {
+        font-size: 18px;
+        font-weight: 700;
+        height: inherit;
+        line-height: inherit;
+        float: left;
+        margin-left: 1.5em;
+        a {
+            display: block;
+            height: inherit;
+            line-height: inherit;
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+            span {
+                color: lighten(#000, 50%);
+                font-weight: 100;
+            }
+        }
+    }
+    .menu {
+        float: right;
+        margin-right: 1.5em;
+        font-weight: 200;
+        a {
+            display: inline-block;
+            padding: 0 0.5em;
+            text-decoration: none;
+            color: lighten(#000, 50%);
+            &:hover {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .this {
+    	height: auto;
+    	text-align: center;
+        .logo,
+        .menu {
+            float: none;
+            margin: 0;
+        }
+    }
+}

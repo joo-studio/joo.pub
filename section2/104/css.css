@@ -1,0 +1,54 @@
+.this {
+  background-color: #4486c5;
+  color: #ffffff;
+  padding: 5em 0 3em 0;
+}
+.this h2 {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  font-weight: 600;
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+}
+.this p {
+  margin: 0 0 1em 0;
+  line-height: 2em;
+  font-weight: 200;
+}
+.this ul.check {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 2em 0;
+}
+.this ul.check li {
+  text-decoration: none;
+  padding: 0 0 2em 3em;
+  position: relative;
+}
+.this ul.check li:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  color: #00b47b;
+  content: '\f00c';
+  display: block;
+  font-size: 2em;
+  left: 0;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .this .ct-container {
+    max-width: 75%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .this .ct-container {
+    max-width: auto;
+  }
+  .this .up {
+    margin-top: 2em;
+  }
+}

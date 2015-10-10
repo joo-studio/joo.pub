@@ -1,38 +1,32 @@
-.wrapper {
+.this .warpper {
   padding: 4.5em 0 2.5em 0;
   background-color: #ffffff;
-  border-bottom: solid 2px #eeeeee;
 }
-.wrapper .spotlight {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
+.this .warpper .spotlight {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 2em 0;
 }
-.wrapper .spotlight:nth-child(2n) {
-  -moz-flex-direction: row-reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
+.this .warpper .spotlight:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-.wrapper .spotlight:nth-child(2n) .image {
+.this .warpper .spotlight:nth-child(2n) .image {
   margin: 0 0 0 3em;
 }
-.wrapper .spotlight:nth-child(2n) .content {
+.this .warpper .spotlight:nth-child(2n) .content {
   text-align: right;
 }
-.wrapper .spotlight .image {
+.this .warpper .spotlight .image {
   width: 30%;
   border-radius: 100%;
   margin: 0 3em 0 0;
@@ -42,65 +36,65 @@
   position: relative;
   overflow: hidden;
 }
-.wrapper .spotlight .image img {
+.this .warpper .spotlight .image img {
   display: block;
   border-radius: 100%;
   width: 100%;
 }
-.wrapper .spotlight .content {
+.this .warpper .spotlight .content {
   width: 70%;
 }
-.wrapper .spotlight .content > :last-child {
+.this .warpper .spotlight .content > :last-child {
   margin-bottom: 0;
 }
-.wrapper .spotlight p {
+.this .warpper .spotlight p {
   margin: 0 0 2em 0;
   color: #999;
 }
-.wrapper .spotlight h3 {
+.this .warpper .spotlight h3 {
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 0 0 1em 0;
 }
-.wrapper > .inner {
+.this .warpper .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 50em;
+  max-width: 50em;
 }
-.wrapper > .inner.alt > * {
+.this .warpper .inner.alt > * {
   border-top: solid 2px #eeeeee;
   margin-bottom: 0;
   margin-top: 3em;
   padding-top: 3em;
 }
-.wrapper > .inner.alt > *:first-child {
+.this .warpper .inner.alt > *:first-child {
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
 }
-.wrapper ul.icons {
+.this .warpper ul.icons {
   cursor: default;
   list-style: none;
   margin: 0 0 2em 0;
   padding-left: 0;
 }
-.wrapper ul.icons.labeled li {
+.this .warpper ul.icons.labeled li {
   display: inline-block;
   margin: 1em 0;
   padding: 0 2em 0 0;
 }
-.wrapper .icon {
+.this .warpper .icon {
   text-decoration: none;
   border-bottom: none;
   position: relative;
   color: #e0e0e0;
 }
-.wrapper .icon .label {
+.this .warpper .icon .label {
   display: inline-block;
   vertical-align: middle;
   color: #999999;
 }
-.wrapper .icon:before {
+.this .warpper .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -110,4 +104,22 @@
   vertical-align: middle;
   font-size: 2.25rem;
   margin-right: 0.5em;
+}
+@media screen and (max-width: 736px) and (orientation: portrait) {
+  .this .spotlight {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .this .spotlight .image {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 0 2em 0 !important;
+  }
+  .this .spotlight .content {
+    width: 100%;
+    text-align: center !important;
+  }
 }

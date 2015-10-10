@@ -1,10 +1,7 @@
-.header {
+.this {
     background-color: #4696e5;
     color: #d0e4f8;
-    padding: 4.5em 0 2.5em 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    padding-top: 7em;
     background-position: top left, center center;
     background-attachment: fixed, fixed;
     background-size: auto, cover;
@@ -15,11 +12,7 @@
         text-decoration: none;
     }
     .content {
-        transition: opacity 0.5s ease, transform 1s ease;
-        transform: translateX(0);
-        opacity: 1;
         text-align: right;
-        margin: -3.5em 4em 0 0;
         h1 {
             font-size: 3.25em;
             font-weight: bold;
@@ -40,7 +33,6 @@
         margin-bottom: 0;
     }
     ul.actions {
-        margin: 0 0 2em 0;
         cursor: default;
         list-style: none;
         padding-left: 0;
@@ -60,19 +52,25 @@
         border: 0;
         cursor: pointer;
         display: inline-block;
-        font-weight: bold;
         height: 2.85em;
-        line-height: 2.95em;
+        line-height: 2.85em;
         padding: 0 1.75em;
         text-align: center;
         text-decoration: none;
         white-space: nowrap;
         border: solid 3px #fff;
+        margin-bottom: 10px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     }
     .button.special {
         box-shadow: none;
         background-color: #ffffff;
         color: #4696e5 !important;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     }
     .icon {
         text-decoration: none;
@@ -82,13 +80,11 @@
     .image.phone {
         box-shadow: none;
         border-radius: 0;
-        margin: 0 0 3em 0;
-        width: 13em;
+        max-width: 13em;
+        margin-top: -2em;
+        margin-bottom: 3em;
     }
     .image {
-        transition: opacity 1s ease, transform 1s ease;
-        transform: translateY(0);
-        opacity: 1;
         img {
             width: 100%;
         }
@@ -183,5 +179,18 @@
         height: 3.5em;
         border-radius: 0 0 1em 1em;
         border-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .this {
+        .content {
+            text-align: center;
+        }
+        .image.phone {
+            margin-top: 2em;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 }

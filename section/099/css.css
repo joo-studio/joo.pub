@@ -1,0 +1,74 @@
+.this {
+  background-color: #fbfbfb;
+  color: #999999;
+  text-align: center;
+  padding: 4.5em 0 2.5em 0;
+  border-bottom: solid 2px #eeeeee;
+}
+.this header.major {
+  margin: 0 0 2.5em 0;
+  text-align: center;
+}
+.this h2 {
+  color: #828282;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+.this header p {
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+.this header h2 + p {
+  font-size: 1.25em;
+  margin-top: -0.5em;
+  line-height: 1.5em;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.85em;
+  line-height: 2.85em;
+  padding: 0 1.75em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  border: solid 2px #dedede;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #4696e5;
+}
+.this .button:hover {
+  background-color: #f8f8f8;
+}
+.this .button.special {
+  box-shadow: none;
+  background-color: #4696e5;
+  color: #fff;
+  border: solid 2px #4696e5;
+}
+.this .button.special:hover {
+  background-color: #73afeb;
+}
+.this .dirver {
+  font-size: 12px;
+  height: 2px;
+  border: none;
+  background-color: #e6e6e6;
+  margin: 1em auto;
+  max-width: 5em;
+}

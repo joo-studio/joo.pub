@@ -1,0 +1,67 @@
+.this {
+    background-color: #00b47b;
+    color: #ffffff;
+    padding: 5em 0 3em 0;
+    h3 {
+        font-size: 1.35em;
+        line-height: 1.5em;
+        color: #ffffff;
+        font-weight: 600;
+        margin: 0 0 1em 0;
+    }
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+        padding-left: 2.5em;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+        font-size: 1.5em;
+        left: 0;
+        position: absolute;
+    }
+    p {
+        line-height: 1.5em;
+        font-weight: 200;
+    }
+    h3.icon + p {
+        padding-left: 3.45em;
+        margin: 0 0 2em 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .this {
+        .ct-container {
+            max-width: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .this {
+        .ct-container {
+            max-width: auto;
+        }
+        .icon {
+            padding-left: 0;
+            position: static;
+            text-align: center;
+        }
+        .icon:before {
+            display: block;
+            margin-bottom: 0.5em;
+            position: static;
+        }
+        h3.icon + p {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+}

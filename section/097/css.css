@@ -1,0 +1,45 @@
+.this {
+  background-color: #fbfbfb;
+  color: #999999;
+  text-align: center;
+  padding: 4.5em 0 2.5em 0;
+  border-bottom: solid 2px #eeeeee;
+}
+.this header.major {
+  display: block;
+  margin: 0 0 1.5em 0;
+  text-align: center;
+}
+.this h2 {
+  color: #828282;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+.this .icons {
+  margin: 1.5em 0 2em 0;
+  padding-left: 0;
+}
+.this .icons .fa {
+  display: inline-block;
+  padding: 0 .2em;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 2.75rem;
+}
+.this .icons .fa:hover {
+  color: #c7c7c7;
+}
+.this .dirver {
+  font-size: 12px;
+  height: 2px;
+  border: none;
+  background-color: #e6e6e6;
+  margin: 1em auto;
+  max-width: 5em;
+}
+@media only screen and (max-width: 767px) {
+  .this h2 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+}

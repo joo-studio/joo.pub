@@ -992,6 +992,14 @@ th {
 .ct-ml-xs {
   margin-left: 5px; }
 
+.ct-mlr-xs {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.ct-mtb-xs {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 .ct-m-sm {
   margin: 10px; }
 
@@ -1006,6 +1014,14 @@ th {
 
 .ct-ml-sm {
   margin-left: 10px; }
+
+.ct-mtb-sm {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.ct-mlr-sm {
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .ct-m {
   margin: 15px; }
@@ -1022,6 +1038,14 @@ th {
 .ct-ml {
   margin-left: 15px; }
 
+.ct-mtb {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.ct-mlr {
+  margin-left: 15px;
+  margin-right: 15px; }
+
 .ct-m-lg {
   margin: 20px; }
 
@@ -1036,6 +1060,14 @@ th {
 
 .ct-ml-lg {
   margin-left: 20px; }
+
+.ct-mtb-lg {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.ct-mlr-lg {
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .ct-p-xs {
   padding: 5px; }
@@ -1052,6 +1084,14 @@ th {
 .ct-pl-xs {
   padding-left: 5px; }
 
+.ct-ptb-xs {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.ct-plr-xs {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 .ct-p-sm {
   padding: 10px; }
 
@@ -1066,6 +1106,14 @@ th {
 
 .ct-pl-sm {
   padding-left: 10px; }
+
+.ct-ptb-sm {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.ct-plr-sm {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .ct-p {
   padding: 15px; }
@@ -1082,6 +1130,14 @@ th {
 .ct-pl {
   padding-left: 15px; }
 
+.ct-ptb {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.ct-plr {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .ct-p-lg {
   padding: 20px; }
 
@@ -1096,6 +1152,14 @@ th {
 
 .ct-pl-lg {
   padding-left: 20px; }
+
+.ct-ptb-lg {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.ct-plr-lg {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .ct-border {
   border: 0px solid #d2d2d2; }
@@ -1181,6 +1245,20 @@ th {
   src: url("./font/roboto/Roboto-Bold.woff2") format("woff2"), url("./font/roboto/Roboto-Bold.woff") format("woff"), url("./font/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'codropsicons';
+  src: url("./font/codropsicons/codropsicons.eot");
+  src: url("./font/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("./font/codropsicons/codropsicons.woff") format("woff"), url("./font/codropsicons/codropsicons.ttf") format("truetype"), url("./font/codropsicons/codropsicons.svg#codropsicons") format("svg"); }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'feathericons';
+  src: url("../fonts/feathericons/feathericons.eot?-8is7zf");
+  src: url("../fonts/feathericons/feathericons.eot?#iefix-8is7zf") format("embedded-opentype"), url("../fonts/feathericons/feathericons.woff?-8is7zf") format("woff"), url("../fonts/feathericons/feathericons.ttf?-8is7zf") format("truetype"), url("../fonts/feathericons/feathericons.svg?-8is7zf#feathericons") format("svg"); }
+
 .ct-font-roboto {
   font-family: "Roboto", sans-serif; }
 
@@ -1189,6 +1267,12 @@ th {
 
 .ct-font-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.ct-codropsicons {
+  font-family: "codropsicons", sans-serif; }
+
+.ct-feathericons {
+  font-family: "feathericons", sans-serif; }
 
 .ct-capitalize {
   text-transform: capitalize; }
@@ -2247,14 +2331,14 @@ th {
           box-shadow: 0 3px 4px #bdbdbd;
   border: 0 none;
   cursor: pointer;
-  height: 40px;
-  line-height: 40px;
-  -webkit-transition: all 0.5s;
-       -o-transition: all 0.5s;
-          transition: all 0.5s;
+  height: 36px;
+  line-height: 36px;
+  -webkit-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
   text-decoration: none;
   text-align: center;
-  border-radius: 3px; }
+  border-radius: 2px; }
   .ct-btn i {
     font-size: 14px;
     margin-right: 5px; }
@@ -2314,12 +2398,15 @@ th {
     padding: 0; }
   .ct-btn.\--radius {
     border-radius: 30px; }
+  .ct-btn.\--no-shadow {
+    -webkit-box-shadow: 0 0 0 transparent;
+            box-shadow: 0 0 0 transparent; }
 
 .ct-btn + .ct-btn {
   margin-left: 5px; }
 
-.ct-btn.block + .ct-btn.block {
-  margin-top: 5px;
+.ct-btn.\--block + .ct-btn.\--block {
+  margin-top: 10px;
   margin-left: 0; }
 
 .ct-calendar {
