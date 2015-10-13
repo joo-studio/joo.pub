@@ -1,0 +1,63 @@
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.this h2 {
+  font-size: 15px;
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.this h2::after {
+  content: " ";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 25px auto;
+}
+.this .section-padding {
+  padding: 90px 0 100px;
+}
+.this .features-wrapper,
+.this .team-wrapper {
+  margin: 70px 0 0;
+}
+.this .shadow {
+  text-shadow: #37b5a1 1px 1px, #37b5a1 2px 2px, #37b5a1 3px 3px, #37b5a1 4px 4px, #37b5a1 5px 5px, #37b5a1 6px 6px, #37b5a1 7px 7px, #37b5a1 8px 8px, #37b5a1 9px 9px, #37b5a1 10px 10px, #37b5a1 11px 11px, #37b5a1 12px 12px, #37b6a2 13px 13px, #37b7a3 14px 14px, #38b8a4 15px 15px, #38b9a5 16px 16px, #38baa6 17px 17px, #39bba7 18px 18px, #39bca8 19px 19px, #39bda9 20px 20px, #3abfaa 21px 21px, #3ac0ab 22px 22px, #3ac1ac 23px 23px, #3bc2ad 24px 24px, #3bc3ae 25px 25px, #3bc4af 26px 26px, #3cc5b0 27px 27px, #3cc6b1 28px 28px, #3cc7b2 29px 29px, #3dc9b3 30px 30px;
+}
+.this .icon {
+  height: 175px;
+  width: 175px;
+  line-height: 175px;
+  max-width: 100%;
+  background: #3dc9b3;
+  border-radius: 50%;
+  display: block;
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto 50px;
+}
+.this .delay-05s {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.this .delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}

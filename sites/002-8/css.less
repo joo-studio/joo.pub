@@ -1,0 +1,62 @@
+.this {
+    background: url('../../assets/img/0017-keyboard-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 120px 0 140px;
+    a {
+        color: #353535;
+        transition: all 0.5s;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: #3dc9b3;
+        text-decoration: none;
+    }
+    h1 {
+        color: #fff;
+        margin-bottom: 40px;
+        span {
+            display: block;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+    }
+    input[type=text] {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 1px #fff;
+        padding: 20px;
+        width: 30%;
+        color: #fff;
+    }
+    input[type=submit] {
+        background: rgba(61, 201, 179, 0.5);
+        border: solid 1px rgba(61, 201, 179, 0.5);
+        padding: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+    }
+    input[type=submit]:hover {
+        background: rgba(61, 201, 179, 1);
+        border: solid 1px rgba(61, 201, 179, 1);
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .this {
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type=text] {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.this {
+  background: url('../../assets/img/0017-plants-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.this h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.this h1 span {
+  display: block;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.this .down-arrow-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: rgba(61, 201, 179, 0.8);
+  display: inline-block;
+  margin: 10px auto 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.this .down-arrow-btn:hover,
+.this .down-arrow-btn:focus {
+  color: #fff;
+  background: #3dc9b3;
+}

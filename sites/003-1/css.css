@@ -1,0 +1,99 @@
+.this {
+  padding: 6em 0 4em 0;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed;
+  background-image: url("../../assets/img/overlay1.png"), url("../../assets/img/header.jpg");
+  background-size: auto, cover;
+}
+.this ul.major-icons {
+  margin: 0 0 2em 0;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.major-icons li {
+  display: inline-block;
+  padding: 2.5em;
+  text-align: center;
+}
+.this ul.major-icons li .icon {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 4px;
+  border: solid 1px #fff;
+  display: inline-block;
+  height: 8em;
+  line-height: 8em;
+  margin: 0;
+  text-align: center;
+  width: 8em;
+}
+.this ul.major-icons li .icon:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  font-size: 4em;
+  line-height: 1em;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: inline-block;
+  line-height: inherit;
+}
+.this ul.major-icons li .icon.style1:before {
+  color: #c3e895;
+}
+.this ul.major-icons li .icon.style2:before {
+  color: #8addaa;
+}
+.this ul.major-icons li .icon.style3:before {
+  color: #6bd4c8;
+}
+.this ul.major-icons li .icon.style4:before {
+  color: #57aed3;
+}
+.this ul.major-icons li .icon.style5:before {
+  color: #4a87d3;
+}
+.this ul.major-icons li .icon.style6:before {
+  color: #6b88e6;
+}
+.this .icon.major {
+  color: #ffffff;
+}
+.this header.major {
+  display: block;
+  margin: 0 0 1em 0;
+}
+.this header.major h2 {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.35em;
+}
+.this header.major:after {
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin-top: 1.5em;
+  width: 6em;
+}
+.this p {
+  margin: 0 0 2em 0;
+  line-height: 1.7em;
+  font-weight: 200;
+}
+@media screen and (max-width: 736px) {
+  .this {
+    text-align: center;
+    padding: 4em 0 3em 0;
+  }
+  .this ul.major-icons li {
+    padding: 1.5em;
+  }
+  .this ul.major-icons li .icon {
+    font-size: 10px;
+  }
+}

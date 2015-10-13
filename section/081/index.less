@@ -1,4 +1,4 @@
-.wrapper {
+.this {
     display: block;
     padding: 6em 0 4em 0;
     text-align: center;
@@ -83,6 +83,31 @@
         -webkit-font-smoothing: antialiased;
     }
     h3 {
-    	margin: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .this {
+        .features {
+            display: block;
+            width: auto;
+        }
+        .features li {
+            padding: 3em 0 1em 0;
+            background-color: transparent !important;
+            border-top: solid 2px rgba(0, 0, 0, 0.125);
+            width: 100%;
+            text-align: center;
+        }
+        .features li:first-child {
+            border-top: 0;
+        }
+        .features li:before {
+            left: 0;
+            margin: 0 0 1em 0;
+            position: relative;
+            top: 0;
+        }
     }
 }

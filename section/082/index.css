@@ -1,44 +1,39 @@
-.wrapper {
+.this {
   display: block;
   padding: 0;
   text-align: left;
   color: #d3d4e4;
   background-color: #2e3842;
 }
-.wrapper .no {
+.this .no {
   padding-right: 0;
   padding-left: 0;
 }
-.wrapper .spotlight {
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
+.this .spotlight {
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-.wrapper .spotlight:nth-child(1) {
+.this .spotlight:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.075);
 }
-.wrapper .spotlight:nth-child(2n) {
-  -moz-flex-direction: row-reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
+.this .spotlight:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   background-color: rgba(0, 0, 0, 0.15);
 }
-.wrapper .spotlight:nth-child(3) {
+.this .spotlight:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.225);
 }
-.wrapper .image {
+.this .image {
   display: block;
   border: 0;
   display: inline-block;
@@ -48,11 +43,11 @@
       -ms-flex-order: 1;
           order: 1;
 }
-.wrapper .image img {
+.this .image img {
   border-radius: 0;
   width: 100%;
 }
-.wrapper .content {
+.this .content {
   padding: 2em 4em 0.1em 4em;
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
@@ -60,7 +55,7 @@
           order: 2;
   max-width: 48em;
 }
-.wrapper .content h2 {
+.this .content h2 {
   color: #fff;
   font-weight: 800;
   letter-spacing: 0.225em;
@@ -69,6 +64,22 @@
   font-size: 1.35em;
   line-height: 1.75em;
 }
-.wrapper .content p {
+.this .content p {
   margin: 0 0 2em 0;
+}
+@media screen and (max-width: 767px) {
+  .this .spotlight {
+    display: block;
+    text-align: center;
+  }
+  .this .spotlight .image {
+    width: 100%;
+  }
+  .this .spotlight:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }

@@ -1,20 +1,20 @@
-.wrapper {
+.this {
   display: block;
   background-color: #c5a5ce;
   color: #ffffff;
   padding: 6em 0 4em 0;
   position: relative;
 }
-.wrapper header.major {
+.this header.major {
   margin-bottom: 6em;
   text-align: center;
 }
-.wrapper header.narrow {
+.this header.narrow {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-.wrapper small {
+.this small {
   display: block;
   font-size: 0.85em;
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
@@ -23,31 +23,32 @@
   text-transform: uppercase;
   font-weight: 100;
 }
-.wrapper h2 {
+.this h2 {
   font-size: 1.75em;
   line-height: 1.5em;
   color: #ffffff;
   margin: 0 0 1em 0;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.wrapper p {
+.this p {
   position: relative;
   margin: 0 0 1.5em 0;
 }
-.wrapper h2 + p {
+.this h2 + p {
   font-size: 1.25em;
   margin-top: -0.8em;
   font-weight: 100;
 }
-.wrapper .icon {
+.this .icon {
   text-decoration: none;
   border-bottom: none;
   position: relative;
 }
-.wrapper .icon > .label {
+.this .icon > .label {
   display: none;
 }
-.wrapper .icon:before {
+.this .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -108,12 +109,12 @@
   -ms-flex: 1 1 auto;
 }
 @media screen and (max-width: 980px) {
-  .features {
+  .this .features {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  .features object {
+  .this .features object {
     display: block;
     max-height: 30em;
     -webkit-box-ordinal-group: 0;
@@ -126,25 +127,29 @@
     max-width: 75%;
     margin: 0 auto 3em auto;
   }
-  .features ul {
+  .this .features ul {
     margin-top: 2em;
     text-align: center !important;
     width: 45%;
     padding: 0 7.5%;
   }
-  .features li {
+  .this .features li {
     margin-bottom: 4em;
   }
-  .features ul .icon:before,
-  .features ul.right .icon:before {
+  .this .features ul .icon:before,
+  .this .features ul.right .icon:before {
     display: block;
     float: none;
     margin: 0 auto 0.5em;
   }
 }
 @media screen and (max-width: 736px) {
-  .features ul {
+  .this .features ul {
     width: 100%;
-    padding: 0 15%;
+    padding: 0 10%;
+    margin: 0;
+  }
+  .this .features li {
+    margin-bottom: 3em;
   }
 }

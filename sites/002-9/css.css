@@ -1,0 +1,131 @@
+.this {
+  position: relative;
+  background: #f3f5f8;
+}
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.this h2 {
+  font-size: 15px;
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.this h2::after {
+  content: " ";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 25px auto;
+}
+.this .section-padding {
+  padding: 90px 0 100px;
+}
+.this .up-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(61, 201, 179, 0.5);
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: center;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.this .up-btn:hover,
+.this .up-btn:focus {
+  color: #fff;
+  background: #3dc9b3;
+}
+.this .contact-details {
+  margin: 70px 0;
+}
+.this .contact-details h2 {
+  font-size: 20px;
+}
+.this .contact-details h2 span {
+  display: block;
+  color: #3dc9b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.this .light-box {
+  background-color: #fff;
+  box-shadow: 0px 3px 0px 0px #f0f2f4;
+  padding: 20px 0;
+}
+.this .light-box:hover,
+.this .light-box:focus {
+  box-shadow: 0px 3px 0px 0px #3dc9b3;
+}
+.this .box-hover {
+  -webkit-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+}
+.this .box-hover:hover,
+.this .box-hover:focus {
+  -webkit-transform: translate(0, -15px);
+      -ms-transform: translate(0, -15px);
+          transform: translate(0, -15px);
+}
+.this .delay-05s {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.this .delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.this ul.social-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.this li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.this .social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #242830;
+  display: inline-block;
+  color: #fff;
+  font-size: 17px;
+  line-height: 40px;
+  text-align: center;
+}
+.this .social-btn:hover,
+.this .social-btn:focus {
+  background: #3dc9b3;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .this .iem {
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,431 @@
+
+.margin-t87 {
+    margin-top: 87px;
+}
+.container {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+.activity-warp .item {
+    background: #fff;
+    border-bottom: solid 1px #eae6e2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.activity-warp .item .time-sm{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #f9f9f9;
+    font-size: 18px;
+    color: #4a4745;
+    text-align: center;
+    display: none;
+}
+.activity-warp .item .col-md-9,
+.activity-warp .item .col-md-3 {
+    padding: 0;
+}
+
+.activity-warp .item .col-md-9 {
+    width: 74%;
+}
+
+.activity-warp .item .col-md-3 {
+    width: 26%;
+    text-align: center;
+}
+
+.activity-warp .item .subtitle {
+    font-size: 22px;
+    color: #4a4745;
+}
+
+.activity-warp .item .times {
+    width: 20%;
+    float: left;
+}
+
+.times .table {
+    width: 126px;
+    color: #4a4745;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.table-bordered > tbody > tr > td {
+    border-color: #eaeaea;
+}
+
+.times .table .day {
+    font-size: 66px;
+    display: block;
+    font-family: "Microsoft Yahei";
+}
+
+.person-list {
+    background: #f9f9f9;
+    height: 86px;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.person-list .left {
+    display: inline-block;
+    vertical-align: -32px;
+}
+
+.person-list .left img:first-child {
+    margin-left: 20px;
+}
+
+.person-list .left img {
+    vertical-align: middle;
+    margin: 0 7px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.person-list .left .more {
+    font-size: 30px;
+    color: #717171;
+}
+
+.person-list .right {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    float: right;
+}
+
+.person-list .right .now {
+    color: #61b4ff;
+    font-size: 40px;
+    font-family: "Microsoft Yahei";
+}
+
+.person-list .right .nums,
+.person-list .right .total {
+    font-size: 18px;
+    color: #4a4745;
+}
+
+.person-list .right .texts {
+    font-size: 12px;
+    color: #4a4745;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.activity-warp .item:last-child {
+    margin-bottom: 0;
+}
+
+.activity-warp .item .contents {
+    padding-right: 20px;
+    width: 80%;
+    float: left;
+}
+
+.activity-warp .item .desc {
+    font-size: 14px;
+    color: #909090;
+    line-height: 23px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.activity-warp .item .img-wrap {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.activity-warp .item .img-wrap img {
+    width: 245px;
+    height: 153px;
+    display: inline-block;
+}
+
+.blue-btn {
+    border-radius: 4px;
+    background-color: rgb(97, 180, 255);
+    width: 240px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.blue-btn:hover {
+    color: #fff;
+    background-color: rgb(46, 139, 224);
+    box-shadow: inset 0px -2px 0px 0px rgba(42, 136, 222, 0.75);
+}
+
+.toward-warp .toward-sites .col-xs-6 {
+    padding-right: 10px;
+}
+
+.toward-warp .toward-sites .col-sm-3{
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+.toward-warp .toward-sites a{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.toward-warp .toward-sites a img{
+    width: 100%;
+}
+.toward-warp .toward-sites a:hover .text {
+    opacity: 1;
+}
+.img-warps{
+    display: none;
+}
+.list-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.toward-warp .toward-sites .text {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    min-height: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.toward-warp .toward-sites .text .time {
+    font-size: 12px;
+    display: block;
+}
+
+.soon-warp .titlename,
+.toward-warp .titlename {
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    color: #4a4745;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+}
+.soon-warp .titlename .more, .toward-warp .titlename .more{
+     color: #4a4745;
+}
+.toward-warp .article {
+    margin-top: 20px;
+}
+
+.toward-warp .article .col-md-6 {
+    padding-left: 0;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.toward-warp .article .pic {
+    float: left;
+    margin-right: 15px;
+    width: 130px;
+    height: 82px;
+}
+
+.toward-warp .article .title {
+    color: #4a4745;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.toward-warp .article .title:hover {
+    color: #61b4ff;
+}
+
+.toward-warp .article .time {
+    color: #909090;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.slideBox {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.slideBox .hd {
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.slideBox .hd ul li {
+    float: left;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    line-height: 14px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slideBox .hd ul li.on {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.slideBox .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    zoom: 1;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+}
+
+.slideBox .bd img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+@media(min-width:1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+@media(max-width:992px) {
+    body{
+        padding-bottom: 60px;
+    }
+    .container{
+        padding:0 20px;
+    }
+    .margin-t87{
+        margin-top: 0;
+    }
+    .activity-banner{
+        margin:0 20px;
+    }
+    .activity-warp .item .contents{
+        padding-left: 20px;
+    }
+    .activity-warp .item .col-md-3 .blue-btn{
+        width: 100%;
+    }
+}
+@media(max-width:768px) {
+    body{
+        padding-bottom: 60px;
+    }
+    .container{
+        padding:0 20px;
+    }
+    .margin-t87{
+        margin-top: 0;
+    }
+    .activity-banner{
+        margin:0 20px;
+    }
+    .activity-warp .item .times{
+        display: none;
+    }
+    .activity-warp .item .col-md-9{
+        width: 64%;
+    }
+    .activity-warp .item .col-md-3{
+        width: 36%;
+        padding-right: 20px;
+    }
+    .activity-warp .item .col-md-3 .blue-btn{
+        width: 100%;
+    }
+    .activity-warp .item .contents{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .activity-warp .item{
+        border:solid 1px #eae6e2;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .activity-warp .item .time-sm{
+        display: block;
+    }
+}
+@media(max-width:400px) {
+    .toward-warp .toward-sites .col-xs-6{
+        width: 100%;
+    }
+    .toward-warp .toward-sites a img{
+        height: 300px;
+        width: 100%;
+    }
+    .activity-warp .item .time-sm{
+        font-size: 14px;
+    }
+    .activity-warp .item .col-md-9{
+        width: 100%;
+    }
+    .activity-warp .item .col-md-3{
+        width:100%;
+        padding:0;
+    }
+    .activity-warp .item .desc{
+        margin-top: 15px;
+    }
+    .person-list{
+        margin-top: 15px;
+    }
+    .activity-warp .item .img-wrap{
+        display: none;
+    }
+    .blue-btn{
+        width: 90%;
+    }
+    .img-warps{
+        display: block;
+    }
+}

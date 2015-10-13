@@ -1,0 +1,75 @@
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.this .section-padding {
+  padding: 90px 0 100px;
+}
+.this .iphone {
+  width: 50%;
+  background: #f3f5f8;
+  float: left;
+  height: 100%;
+  box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.this .fluid-white {
+  width: 50%;
+  background: #fff;
+  float: right;
+  height: 100%;
+  z-index: 2;
+}
+.this .responsive-services {
+  position: relative;
+}
+.this .wrapper {
+  height: 650px;
+}
+.this .designs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+.this h1.arrow {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  background: url('../../assets/img/0017-h1-bg.png') no-repeat center bottom;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .this .fluid-white {
+    display: none;
+  }
+  .this .iphone,
+  .this .wrapper,
+  .this .designs {
+    width: 100%;
+  }
+  .this .designs {
+    padding: 2em 0;
+    position: static;
+  }
+  .this .iphone {
+    overflow: hidden;
+  }
+}

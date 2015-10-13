@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>活动列表页面</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/activity-column.css">
+</head>
+
+<body>
+    <div class="header-container-wrap">
+        <div class="header-top-wrap">
+            <div class="container header-top">
+                <ul class="navbar-nav sec-left">
+                    <li><a href="" class="active">黑马网</a></li>
+                    <!-- 当前页面，加上active类 -->
+                    <li><a href="">杂志</a></li>
+                    <li><a href="">黑马会</a></li>
+                    <li><a href="">黑马学院</a></li>
+                    <li><a href="">黑马大赛</a></li>
+                    <li><a href="">牛投</a></li>
+                    <li><a href="">代言</a></li>
+                    <li><a href="">云孵化</a></li>
+                    <li><a href="">社群</a></li>
+                </ul>
+                <ul class="navbar-nav navbar-right sec-right">
+                    <!-- <li class="write"><a href="">写稿</a></li> -->
+                    <!-- 未登录 -->
+                    <!--  此处不能删 未登录嵌套此 li   -->
+                    <!-- <li><a href="" class="login">登陆</a> / <a class="register" href="">注册</a></li> -->
+                    <!-- 登陆状态 登陆后嵌套此 li   -->
+                    <li class="dropdown two-status">
+                        <a href="" class="username" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span href="">lemon</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul id="userinfo-drop" class="dropdown-menu">
+                            <li><a href="">账号安全</a></li>
+                            <li><a href="">个人信息</a></li>
+                            <li><a href="">退出登录</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown common-num">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                公众号
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu qcode-wrap">
+                            <li class="qcode"><img src="images/qcode.jpg" alt=""><span>官方微信</span></li>
+                            <li><img src="images/qcode2.jpg" alt=""><span>官方微信</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ihm-warp">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="" class="fl logo"><img src="images/logo.png" alt=""></a>
+                    <div class="header-heima fl">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- 移动端logo -->
+                            <div class="smalllogo"></div>
+                            <!-- 搜索 -->
+                            <button class="search-btn" data-toggle="modal" data-target="#myModal">
+                            </button>
+                        </div>
+                        <!-- pc端头部 -->
+                        <ul class="navbar-nav" id="#navbar">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">咨询</a></li>
+                            <li><a href="">观点</a></li>
+                            <li><a href="">项目</a></li>
+                            <li><a href="">方法论</a></li>
+                            <li><a href="">活动</a></li>
+                        </ul>
+                    </div>
+                    <div class="write fl"><a href="" class="write-text">投稿</a></div>
+                    <form class="search fr">
+                        <input type="text" placeholder="输入搜索关键字......" />
+                        <button class="" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container margin-t107">
+            <div class="filterbox">
+                <div class="filteritems">
+                    <ul class="">
+                        <li>
+                            <div class="leftlabel">地区:</div>
+                            <a class="leftlabel active">不限</a>
+                            <div class="rightcontent">
+                                <a href="#">北京</a>
+                                <a href="#">上海</a>
+                                <a href="#">香港</a>
+                                <a href="#">广州</a>
+                                <a href="#">成都</a>
+                                <a href="#">深圳</a>
+                                <a href="#">杭州</a>
+                                <a href="#">武汉</a>
+                                <a href="#">南京</a>
+                                <a href="#">天津</a>
+                                <a href="#">西安</a>
+                                <a href="#">长沙</a>
+                                <a href="#">昆明</a>
+                                <a href="#">沈阳</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="leftlabel">行业:</div>
+                            <a class="leftlabel active">不限</a>
+                            <div class="rightcontent">
+                                <a href="#" class="active">TMT</a>
+                                <a href="#">医疗</a>
+                                <a href="#">软件信息服务</a>
+                                <a href="#">文化创意</a>
+                                <a href="#">智能硬件</a>
+                                <a href="#">教育</a>
+                                <a href="#">电商</a>
+                                <a href="#">旅游</a>
+                                <a href="#">新农业</a>
+                                <a href="#">互联网金融</a>
+                                <a href="#">游戏</a>
+                                <a href="#">汽车</a>
+                                <a href="#">企业服务</a>
+                                <a href="#">数据服务</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="leftlabel">状态:</div>
+                            <a class="leftlabel active">不限</a>
+                            <div class="rightcontent">
+                                <a href="#">报名中</a>
+                                <a href="#">已结束</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="dropdown">
+                    <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      地区
+                      <span class="caret"></span>
+                    </a>
+                    <ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">北京</a></li>
+                        <li><a href="#">天津</a></li>
+                        <li><a href="#">上海</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      行业
+                      <span class="caret"></span>
+                    </a>
+                    <ul id="menu2" class="dropdown-menu" aria-labelledby="drop2">
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">教育</a></li>
+                        <li><a href="#">文化创意</a></li>
+                        <li><a href="#">智能硬件</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      状态
+                      <span class="caret"></span>
+                    </a>
+                    <ul id="menu3" class="dropdown-menu" aria-labelledby="drop3">
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">报名中</a></li>
+                        <li><a href="#">已结束</a></li>
+                      
+                    </ul>
+                </li>
+            </ul>
+            <div class="register-list">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="effect-register clearfix">
+                            <a href="#"><img src="images/bm.jpg" alt="img1"></a>
+                            <div class="register-warp clearfix">
+                                <div class="fl warp">
+                                    <div class="time">2015.08.08 <span> 23:59PM</span></div>
+                                    <div class="adress">
+                                        北京 海淀区 文慧园路3号 中国电影资料馆艺术影院
+                                    </div>
+                                </div>
+                                <div class="nums fr">
+                                    <div class="person"><span class="already">1000</span>/9999</div>
+                                    <div class="end">已报名</div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p> 购买进口商品已经成为新的消费趋势，跨境进口电商也成为了新的投资热点。但消费者对购买海外产品的需求程度与痛点，跨境进口电商发展变迁以及未来发展方向，一直未曾仔细梳理。</p>
+                                <button class="blue-btn btn">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container foot-content">
+            <div class="row">
+                <ul class="item-wrap col-md-8 col-xs-7">
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+                <div class="right-tip col-md-4 col-xs-5">Copyright ©《i黑马网》 京ICP备12006413号</div>
+            </div>
+        </div>
+    </div>
+    <div class="top-nav">
+        <div class="login">
+            <!-- 两种状态，按需嵌套 -->
+            <!-- 登陆状态 -->
+            <div class="portrait-wrap">
+                <img src="images/portrait.png" alt="" />
+                <a href="" class="user-name">lemon</a>
+            </div>
+            <ul class="user-info">
+                <li><a href="">账号安全</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">退出登录</a></li>
+            </ul>
+            <!-- 登陆状态  end-->
+            <!-- 未登录 此处注释不能删！！！！！！-->
+            <!--  <div class="nologin">
+          <a href="" class="loginbtn btn">登陆</a>
+          <a href="" class="registerbtn btn">注册</a>
+        </div> -->
+            <!-- 未登录 end -->
+        </div>
+        <ul class="bottom-nav">
+            <li class="index"><a href="">首页</a></li>
+            <li class="ask"><a href="">咨询</a></li>
+            <li class="view"><a href="">观点</a></li>
+            <li class="project"><a href="">项目</a></li>
+            <li class="method"><a href="">方法论</a></li>
+            <li class="activity"><a href="">活动</a></li>
+        </ul>
+        <div class="small-foot">
+            Copyright ©《i黑马网》京ICP备12006413号
+        </div>
+    </div>
+    <!-- 搜索弹层 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="输入关键字" />
+                </form>
+                <div class="close" data-dismiss="modal" aria-label="Close">×</div>
+            </div>
+        </div>
+    </div>
+     <div id="share-warp" class="share-warp">
+        <div class="share-exp">
+            <a id="w-gotop" class="w-gotop" href="javascript:void(0)"><span class="w-txt"></span></a>
+            <a id="w-sub" class="w-sub" href="javascript:void(0)"><span class="w-txt">投稿</span></a>
+            <a id="w-rss" class="w-rss" href="javascript:void(0)"><span class="w-txt">RSS</span></a>
+            <a id="w-client" class="w-client" href="javascript:void(0)"><span class="w-txt">客户端</span></a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/floatmenu.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.dropdown-toggle').dropdown();
+})
+</script>
+
+</html>

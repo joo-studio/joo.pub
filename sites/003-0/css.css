@@ -1,0 +1,109 @@
+.this {
+  padding: 6em 0;
+  background-color: #4686a0;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed, fixed;
+  background-image: url("../../assets/img/overlay2.png"), url("../../assets/img/overlay3.svg"), -webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-image: url("../../assets/img/overlay2.png"), url("../../assets/img/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.this .inner {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+.this .icon.major {
+  text-decoration: none;
+  color: #555;
+  cursor: default;
+  display: inline-block;
+  margin: 0 0 1.5em 0;
+}
+.this .icon.major:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  font-size: 4em;
+  line-height: 1em;
+}
+.this .icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+.this .icon.major {
+  color: #ffffff;
+}
+.this h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.35em;
+}
+.this p {
+  margin: 1em 0 0 0;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+.this .button {
+  position: relative;
+  display: block;
+  margin: 2em auto;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 400;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0.125em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff !important;
+}
+.this .button:hover {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+.this .button:after {
+  background: #ffffff;
+  content: '';
+  height: 100vh;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  width: 1px;
+}
+.this:after {
+  -webkit-transition: opacity 1s ease;
+          transition: opacity 1s ease;
+  background-image: -webkit-linear-gradient(45deg, #4fa49a, #4361c2);
+  background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .this {
+    text-align: center;
+    padding: 4em 0 3em 0;
+  }
+}

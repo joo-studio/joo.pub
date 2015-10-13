@@ -1,4 +1,4 @@
-.warp {
+.this {
   background-color: #3c3244;
   color: #ba9fc7;
   background-image: -webkit-linear-gradient(top, rgba(149, 205, 233, 0.25), rgba(133, 86, 159, 0.35)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/img/004-banner.jpg");
@@ -14,11 +14,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-.warp .inner {
-  -webkit-transition: opacity 0.85s ease, -webkit-filter 0.85s ease, -webkit-transform 0.85s ease, opacity 0.85s ease, filter 0.85s ease, -webkit-transform 0.85s ease;
-          transition: opacity 0.85s ease, filter 0.85s ease, transform 0.85s ease;
-  -webkit-transition-delay: 0.75s;
-          transition-delay: 0.75s;
+.this .inner {
   bottom: 0;
   cursor: default;
   left: 0;
@@ -26,37 +22,29 @@
   width: 100%;
   z-index: 1;
 }
-.warp .header {
-  position: absolute;
-  top: 0;
-  left: 0;
+.this .header {
   width: 100%;
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   background-color: transparent;
   color: #ba9fc7;
-  z-index: 2;
 }
-.warp .header .logo {
-  -webkit-transition: color 0.2s ease-in-out;
-          transition: color 0.2s ease-in-out;
+.this .header .logo {
+  float: left;
   color: #ffffff;
   display: inline-block;
   font-weight: 600;
   height: inherit;
-  left: 0;
   line-height: inherit;
   margin: 0 0 0 1.5em;
   padding: 0;
-  position: absolute;
-  top: 0;
   font-weight: 700;
 }
-.warp .header .logo span {
+.this .header .logo span {
   font-weight: 100;
 }
-.warp .header a {
+.this .header a {
   -webkit-transition: color 0.2s ease-in-out;
           transition: color 0.2s ease-in-out;
   color: inherit;
@@ -65,18 +53,17 @@
   font-weight: 400;
   letter-spacing: 0.1em;
 }
-.warp .header .nav {
-  position: absolute;
-  right: 0;
+.this .header .nav {
+  float: right;
 }
-.warp .header .nav a {
+.this .header .nav a {
   display: inline-block;
   margin: 0 0.5em;
 }
-.warp .header .nav a:hover {
+.this .header .nav a:hover {
   color: rgba(255, 255, 255, 0.9);
 }
-.warp h2 {
+.this h2 {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
   line-height: 1em;
@@ -86,7 +73,8 @@
   line-height: 1.5em;
   color: #ba9fc7;
 }
-.warp .button {
+.this .button {
+  display: inline-block;
   margin: 2em auto;
   appearance: none;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -94,7 +82,6 @@
   border-radius: 0;
   border: 0;
   cursor: pointer;
-  display: inline-block;
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   height: 3.7em;
@@ -108,4 +95,23 @@
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #ba9fc7;
   color: #ba9fc7 !important;
+}
+.this .button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media only screen and (max-width: 767px) {
+  .this .header .logo,
+  .this .header .nav {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+  .this .button {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3em;
+    line-height: 3.2em;
+  }
 }

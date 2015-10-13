@@ -1,4 +1,4 @@
-.header {
+.this {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/003-banner.jpg");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/003-banner.jpg");
   background-attachment: fixed;
@@ -27,24 +27,33 @@
   text-align: center;
   color: #fff;
 }
-.header a {
+.this a {
   text-decoration: none;
 }
-.header h2 {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-          transition: transform 0.5s ease, opacity 0.5s ease;
+.this .nav {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+.this .nav .button {
+  box-shadow: none;
+  padding: 0 2em;
+}
+.this h2 {
   display: inline-block;
   font-size: 2.75em;
   opacity: 1;
   padding: 0.35em 1em;
   position: relative;
   z-index: 1;
+  text-transform: uppercase;
+  margin-bottom: .5em;
 }
-.header h2:before,
-.header h2:after {
+.this h2:before,
+.this h2:after {
   -webkit-transition: width 0.85s ease;
           transition: width 0.85s ease;
   -webkit-transition-delay: 0.25s;
@@ -56,22 +65,22 @@
   position: absolute;
   width: 100%;
 }
-.header h2:before {
+.this h2:before {
   top: 0;
   left: 0;
 }
-.header h2:after {
+.this h2:after {
   bottom: 0;
   right: 0;
 }
-.header p {
-  margin: 0 0 2em 0;
+.this p {
+  margin: 0 0 1em 0;
   letter-spacing: 0.225em;
   line-height: 1.5em;
   font-weight: 100;
   text-transform: uppercase;
 }
-.header .button {
+.this .button {
   appearance: none;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
           transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -95,22 +104,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.header .button:hover {
+.this .button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.header .button.special {
+.this .button.special {
   background-color: #ed4933;
   box-shadow: none !important;
   color: #ffffff !important;
 }
-.header .more {
-  -webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
-          transition: transform 0.75s ease, opacity 0.75s ease;
-  -webkit-transition-delay: 3.5s;
-          transition-delay: 3.5s;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+.this .button.special:hover {
+  background-color: #f17362;
+}
+.this .more {
   border: none;
   bottom: 0;
   color: inherit;
@@ -128,7 +133,7 @@
   width: 16em;
   z-index: 1;
 }
-.header .more:after {
+.this .more:after {
   background-image: url("../../assets/img/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -141,4 +146,16 @@
   margin: 0 0 0 -0.75em;
   position: absolute;
   width: 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .this .more {
+    display: none;
+  }
+  .this h2 {
+    font-size: 1.75em;
+  }
+  .this .button {
+    display: block;
+    margin: 0 2em;
+  }
 }

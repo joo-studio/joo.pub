@@ -1,0 +1,510 @@
+/*banner*/
+
+.row {
+    margin: 0;
+}
+
+.margin-t87 {
+    margin-top: 87px;
+}
+
+.banner {
+    margin: 106px 0 20px 0;
+    overflow: hidden;
+}
+
+.article-list {
+    margin-top: 20px;
+}
+
+.article-list .item {
+    background: #fff;
+    padding: 20px;
+    border-bottom: solid 1px #eae6e2;
+}
+
+.article-list .col-md-9,
+.article-list .col-md-3 {
+    padding: 0;
+}
+
+.article-list .col-md-9 {
+    width: 71.6%;
+}
+
+.article-list .col-md-3 {
+    width: 28.4%;
+}
+
+.article-list .subtitle {
+    display: block;
+    font-size: 22px;
+    padding-top: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #232323;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.article-list .subtitle:hover {
+    color: #58a4e9;
+    text-decoration: none;
+}
+
+.article-list .all {
+    color: #bbbbbb;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.all .name {
+    padding-left: 15px;
+    color: #61b4ff;
+}
+
+.all .avatar {
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.all .name:hover {
+    color: #61b4ff;
+}
+
+.all .author .name,
+.all .date,
+.all .article-tag {
+    vertical-align: middle;
+}
+
+.all .time {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.all .tagimg {
+    vertical-align: -2px;
+}
+
+.all .date {
+    margin-right: 35px;
+}
+
+.all .article-tag .tag a {
+    color: #bbb;
+    padding: 0 4px;
+}
+
+.all .article-tag .tag a:hover {
+    color: #61b4ff;
+}
+
+.all .share-warp {
+    float: right;
+    margin-right: 70px;
+}
+
+.all .icon {
+    cursor: pointer;
+    width: 23px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/share_icon.png) no-repeat;
+}
+
+.all .article-add {
+    margin-right: 20px;
+    background-position: 0 5px;
+}
+
+.all .article-add:hover,
+.all .article-add.active {
+    background-position: 1px -83px;
+}
+
+.all .article-tip {
+    background-position: 0 -42px;
+    position: relative;
+}
+
+.all .article-tip:hover {
+    background-position: 2px -130px;
+}
+
+.all .article-tip:hover .tips-warp {
+    display: block;
+}
+
+.article-list .desc {
+    overflow: hidden;
+    color: #909090;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 24px;
+    text-align: justify;
+    height: 65px;
+}
+
+.article-list .img-wrap {
+    display: block;
+    text-align: right;
+    padding-left: 25px;
+}
+
+.article-list .img-wrap img {
+    width: 100%;
+    height: auto;
+}
+
+.tips-warp {
+    display: none;
+    position: absolute;
+    top: -38px;
+    width: 120px;
+    left: -50px;
+    height: 42px;
+    background: url(../images/tip.png) no-repeat 0 0;
+}
+
+.tips-warp .icon {
+    display: inline-block;
+    width: 37px;
+    height: 35px;
+    background: url(../images/share_icon.png) no-repeat;
+}
+
+.tips-warp .sina {
+    background-position: 50% -175px;
+}
+
+.tips-warp .txweibo {
+    background-position: 50% -216px;
+}
+
+.tips-warp .qzone {
+    background-position: 50% -262px;
+}
+
+.pos-tag {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #df3d66;
+    color: #fff;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.share-warp .share-exp a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+    text-decoration: none;
+    outline: 0;
+    font-size: 14px;
+    color: #fff;
+    background: #c9c9c9;
+}
+
+.share-warp .share-exp a:hover .w-txt {
+    background: #e82354;
+    display: block;
+}
+
+.ad-banner {
+    margin: 20px 0;
+}
+
+.banner-left {
+    float: left;
+    width: 650px;
+    height: 400px;
+}
+
+.banner-right {
+    float: right;
+    width: 330px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.banner-right img {
+    width: 335px;
+    height: 192px;
+    border: 0;
+}
+
+.banner-right .one {
+    margin-bottom: 20px;
+}
+
+.focus {
+    width: 650px;
+    height: 400px;
+    position: relative;
+}
+
+.focus #pic {
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.focus #pic li img {
+    float: left;
+    width: 650px;
+    height: 400px;
+}
+
+.focus .btns {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 88;
+    border-radius: 0;
+}
+
+.focus .btns li {
+    width: 25px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.focus .btns li.prev {
+    background: rgba(50, 50, 50, .6) url(../images/next.png) no-repeat 7px 50%;
+}
+
+.focus .btns li.next {
+    background: rgba(50, 50, 50, .6) url(../images/next.png) no-repeat -16px 50%;
+}
+
+.tip-bg {
+    width: 475px;
+    height: 66px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    z-index: 12;
+}
+
+#pic ul li {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic ul li .text {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 475px;
+    height: 66px;
+    z-index: 17;
+    padding: 0 20px;
+}
+
+#pic ul li .text .title {
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#pic ul li .text .autor {
+    color: #61b4ff;
+    font-size: 12px;
+}
+
+#pic ul li .text .num {
+    float: right;
+    font-size: 14px;
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+        padding: 0;
+    }
+}
+
+/*ipad*/
+
+@media (min-width: 630px) and (max-width: 959px) {
+    body{
+        padding-bottom: 60px;
+    }
+    .margin-t87{
+        margin-top: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner {
+        margin: 0;
+    }
+    .banner-left {
+        float: none;
+        width: 100%;
+    }
+    .banner-right {
+        float: none;
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .banner-right a {
+        float: left;
+    }
+    .banner-right a img {
+        width: 348px;
+        height: 200px;
+        margin: 20px 0 0 0;
+    }
+    .banner-right .one {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    .focus #pic {
+        width: 100%;
+    }
+    .focus #pic li img {
+        width: 100%;
+    }
+    .all .article-tag {
+        display: none;
+    }
+    .article-list .col-md-9 {
+        width: 61%;
+    }
+    .article-list .col-md-3 {
+        width: 39%;
+    }
+    .all .share-warp {
+        margin-right: 0;
+    }
+    .tips-warp {
+        z-index: 2;
+    }
+}
+
+
+/*mobile*/
+
+@media only screen and (max-width: 767px) {
+    .margin-t87{
+        margin-top: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner {
+        margin: 0;
+    }
+    .banner-left {
+        float: none;
+        width: 100%;
+    }
+    .banner-right {
+        float: none;
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .banner-right a {
+        float: left;
+        width: 100%;
+    }
+    .banner-right a img {
+        width: 100%;
+        height: 200px;
+        margin: 20px 0 0 0;
+    }
+    .banner-right .one {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .focus #pic {
+        width: 100%;
+    }
+    .focus #pic li img {
+        width: 100%;
+    }
+    .all .article-tag {
+        display: none;
+    }
+    .article-list .col-md-9 {
+        width: 61%;
+    }
+    .article-list .col-md-3 {
+        width: 39%;
+    }
+    .all .share-warp {
+        margin-right: 78%;
+    }
+    .tips-warp {
+        z-index: 2;
+    }
+    .article-list .desc {
+        display: none;
+    }
+    .all .avatar {
+        display: none;
+    }
+    .all .name {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    body{
+        padding-bottom: 60px;
+    }
+    .margin-t87{
+        margin-top: 0;
+    }
+    .banner {
+        margin: 0;
+    }
+    .all .date {
+        margin-right: 0;
+    }
+    .all .share-warp {
+        margin-right: 60%;
+    }
+    .article-list .img-wrap {
+        padding-left: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0;
+    }
+    .banner-left {
+        width: 70%;
+    }
+    .banner-right {
+        width: 30%;
+        margin-left: 0;
+    }
+}

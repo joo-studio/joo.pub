@@ -1,0 +1,69 @@
+.this {
+    background: url('../../assets/img/0017-hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 35em;
+    
+    a {
+        color: #353535;
+        transition: all 0.5s;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: #3dc9b3;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 12px;
+        margin: 10px;
+    }
+    h1 span {
+        color: #a1a9b0;
+        display: inline-block;
+    }
+    p {
+        letter-spacing: 1px;
+    }
+    .learn-more-btn {
+        background: rgba(61, 201, 179, 1);
+        padding: 20px 40px;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        box-shadow: 0px 3px 0px 0px #309383;
+        margin: 60px 0 0 0;
+        font-weight: bold;
+    }
+    .learn-more-btn:hover,
+    .learn-more-btn:focus {
+        background: rgba(61, 201, 179, 0.6);
+        color: #fff;
+    }
+    .navgation {margin-top: 2em;}
+    .navgation a {
+        display: inline-block;
+        padding: 10px;
+    }
+    .navgation a.active {
+        color: #3dc9b3;
+    }
+    .banner {
+        margin-top: 10em;
+        padding-bottom: 5em;
+    }
+    .delay-05s {
+        animation-delay: 0.5s;
+    }
+    .delay-1s {
+        animation-delay: 1s;
+    }
+}
+@media screen and (max-width: 767px) {
+    .this {
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>栏目页面</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="header-container-wrap">
+        <div class="header-top-wrap">
+            <div class="container header-top">
+                <ul class="navbar-nav sec-left">
+                    <li><a href="" class="active">黑马网</a></li>
+                    <!-- 当前页面，加上active类 -->
+                    <li><a href="">杂志</a></li>
+                    <li><a href="">黑马会</a></li>
+                    <li><a href="">黑马学院</a></li>
+                    <li><a href="">黑马大赛</a></li>
+                    <li><a href="">牛投</a></li>
+                    <li><a href="">代言</a></li>
+                    <li><a href="">云孵化</a></li>
+                    <li><a href="">社群</a></li>
+                </ul>
+                <ul class="navbar-nav navbar-right sec-right">
+                    <!-- <li class="write"><a href="">写稿</a></li> -->
+                    <!-- 未登录 -->
+                    <!--  此处不能删 未登录嵌套此 li   -->
+                    <li><a href="" class="login">登陆</a> / <a class="register" href="">注册</a></li>
+                    <!-- 登陆状态 登陆后嵌套此 li   -->
+                    <!-- <li class="dropdown two-status">
+                <a href="" class="username" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span href="">lemon</span>
+                  <span class="caret"></span>
+                </a>
+                <ul id="userinfo-drop" class="dropdown-menu">
+                  <li><a href="">账号安全</a></li>
+                  <li><a href="">个人信息</a></li>
+                  <li><a href="">退出登录</a></li>
+                </ul>
+              </li>  -->
+                    <li class="dropdown common-num">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                公众号
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu qcode-wrap">
+                            <li class="qcode"><img src="images/qcode.jpg" alt=""><span>官方微信</span></li>
+                            <li><img src="images/qcode2.jpg" alt=""><span>官方微信</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ihm-warp">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="" class="fl logo"><img src="images/logo.png" alt=""></a>
+                    <div class="header-heima fl">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- 移动端logo -->
+                            <div class="smalllogo"></div>
+                            <!-- 搜索 -->
+                            <button class="search-btn" data-toggle="modal" data-target="#myModal">
+                            </button>
+                        </div>
+                        <!-- pc端头部 -->
+                        <ul class="navbar-nav" id="#navbar">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">咨询</a></li>
+                            <li><a href="">观点</a></li>
+                            <li><a href="">项目</a></li>
+                            <li><a href="">方法论</a></li>
+                            <li><a href="">活动</a></li>
+                        </ul>
+                    </div>
+                    <div class="write fl"><a href="" class="write-text">投稿</a></div>
+                    <form class="search fr">
+                        <input type="text" placeholder="输入搜索关键字......" />
+                        <button class="" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container margin-t87">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#"><img src="images/home.png" /></a><img src="images/arrow.png" class="arrow"></li>
+                <li><a href="#">栏目名</a></li>
+            </ol>
+            <div class="article-list">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-9">
+                            <a class="subtitle">一句话的好文案！经典短文案赏析</a>
+                            <div class="desc">
+                                你听过的一句话的好文案有哪些？其实，真正能被记住的不一定是好文案，有可能是被洗脑了太多次，比如“脑 白金”。真正的好文案应该是第一眼就能打动你，深藏心里的。你听过的一句话的好文案有哪些？......
+                            </div>
+                            <div class="all">
+                                <a class="author">
+                                    <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                <img src="images/time.png" class="time" /><span class="date">2015-06-08 13:10</span>
+                                <span class="article-tag">
+                                <img src="images/tag.png" class="tagimg"/>
+                                    <span class="tag"><a href="#">广告</a></span>
+                                <span class="tag"><a href="#">文案</a></span>
+                                <span class="tag"><a href="#">创业家</a></span>
+                                <span class="tag"><a href="#">杂志社</a></span>
+                                </span>
+                                <span class="share-warp">
+                                    <span class="article-add icon"></span>
+                                <span class="article-tip icon">
+                                        <span class="tips-warp">
+                                            <a href="#" class="sina icon"></a>
+                                            <a href="#" class="txweibo icon"></a>
+                                            <a href="#" class="qzone icon"></a>
+                                        </span>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <a href="article-detail.html" class="img-wrap">
+                                <img src="images/content.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-9">
+                            <a class="subtitle">一句话的好文案！经典短文案赏析</a>
+                            <div class="desc">
+                                你听过的一句话的好文案有哪些？其实，真正能被记住的不一定是好文案，有可能是被洗脑了太多次，比如“脑 白金”。真正的好文案应该是第一眼就能你听过的一句话的好文案有哪些？其实，真正能被记住的不一定是好文案，有可能是被洗脑了太多次，比如“脑你听过的一句话的好文案有哪些？其实，真正能被记住的不一定是好文案，有可能是被洗脑了太多次，比如“脑打动你，深藏心里的。你听过的一句话的好文案有哪些？......
+                            </div>
+                            <div class="all">
+                                <a class="author">
+                                    <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                <img src="images/time.png" class="time" /><span class="date">2015-06-08 13:10</span>
+                                <span class="article-tag">
+                                <img src="images/tag.png" class="tagimg"/>
+                                    <span class="tag"><a href="#">广告</a></span>
+                                <span class="tag"><a href="#">文案</a></span>
+                                <span class="tag"><a href="#">创业家</a></span>
+                                <span class="tag"><a href="#">杂志社</a></span>
+                                </span>
+                                <span class="share-warp">
+                                    <span class="article-add icon"></span>
+                                <span class="article-tip icon">
+                                        <span class="tips-warp">
+                                            <a href="#" class="sina icon"></a>
+                                            <a href="#" class="txweibo icon"></a>
+                                            <a href="#" class="qzone icon"></a>
+                                        </span>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <a href="article-detail.html" class="img-wrap">
+                                <img src="images/content.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-9">
+                            <a class="subtitle">一句话的好文案！经典短文案赏析</a>
+                            <div class="desc">
+                                你听过的一句话的好文案有哪些？其实，真正能被记住的不一定是好文案，有可能是被洗脑了太多次，比如“脑
+                            </div>
+                            <div class="all">
+                                <a class="author">
+                                    <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                <img src="images/time.png" class="time" /><span class="date">2015-06-08 13:10</span>
+                                <span class="article-tag">
+                                <img src="images/tag.png" class="tagimg"/>
+                                    <span class="tag"><a href="#">广告</a></span>
+                                <span class="tag"><a href="#">文案</a></span>
+                                <span class="tag"><a href="#">创业家</a></span>
+                                <span class="tag"><a href="#">杂志社</a></span>
+                                </span>
+                                <span class="share-warp">
+                                    <span class="article-add icon"></span>
+                                <span class="article-tip icon">
+                                        <span class="tips-warp">
+                                            <a href="#" class="sina icon"></a>
+                                            <a href="#" class="txweibo icon"></a>
+                                            <a href="#" class="qzone icon"></a>
+                                        </span>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <a href="article-detail.html" class="img-wrap">
+                                <img src="images/content.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="index_more margin-t20">
+                    <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                </div> -->
+
+                <div class="pro-search-num cf">
+                    <ul class="cf">
+                        <li><a href="#" ><span></span></a></li>
+                        <li><a href="#" class="current">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li>...</li>
+                        <li><a href="#">99</a></li>
+                        <li><a href="#">100</a></li>
+                        <li><a href="#"><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+     <div class="footer">
+            <div class="container foot-content">
+                <div class="row">
+                    <ul class="item-wrap col-md-8 col-xs-7">
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                    <div class="right-tip col-md-4 col-xs-5">Copyright ©《i黑马网》 京ICP备12006413号</div>
+                </div>
+            </div>
+        </div>
+    <div class="top-nav">
+        <div class="login">
+            <!-- 两种状态，按需嵌套 -->
+            <!-- 登陆状态 -->
+            <div class="portrait-wrap">
+                <img src="images/portrait.png" alt="" />
+                <a href="" class="user-name">lemon</a>
+            </div>
+            <ul class="user-info">
+                <li><a href="">账号安全</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">退出登录</a></li>
+            </ul>
+            <!-- 登陆状态  end-->
+            <!-- 未登录 此处注释不能删！！！！！！-->
+            <!--  <div class="nologin">
+          <a href="" class="loginbtn btn">登陆</a>
+          <a href="" class="registerbtn btn">注册</a>
+        </div> -->
+            <!-- 未登录 end -->
+        </div>
+        <ul class="bottom-nav">
+            <li class="index"><a href="">首页</a></li>
+            <li class="ask"><a href="">咨询</a></li>
+            <li class="view"><a href="">观点</a></li>
+            <li class="project"><a href="">项目</a></li>
+            <li class="method"><a href="">方法论</a></li>
+            <li class="activity"><a href="">活动</a></li>
+        </ul>
+        <div class="small-foot">
+            Copyright ©《i黑马网》京ICP备12006413号
+        </div>
+    </div>
+    <!-- 搜索弹层 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="输入关键字" />
+                </form>
+                <div class="close" data-dismiss="modal" aria-label="Close">×</div>
+            </div>
+        </div>
+    </div>
+    <div id="share-warp" class="share-warp" style="position: fixed; display: block; bottom: 50px; right: 18%;">
+        <div class="share-exp">
+            <a id="w-gotop" class="w-gotop" href="javascript:void(0)"><span class="w-txt"></span></a>
+            <a id="w-sub" class="w-sub" href="javascript:void(0)"><span class="w-txt">投稿</span></a>
+            <a id="w-rss" class="w-rss" href="javascript:void(0)"><span class="w-txt">RSS</span></a>
+            <a id="w-client" class="w-client" href="javascript:void(0)"><span class="w-txt">客户端</span></a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/floatmenu.js"></script>
+
+</html>

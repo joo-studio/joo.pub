@@ -1,0 +1,73 @@
+.this {
+  background: url('../../assets/img/0017-hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 35em;
+}
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this h1 {
+  font-size: 40px;
+  letter-spacing: 12px;
+  margin: 10px;
+}
+.this h1 span {
+  color: #a1a9b0;
+  display: inline-block;
+}
+.this p {
+  letter-spacing: 1px;
+}
+.this .learn-more-btn {
+  background: #3dc9b3;
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  box-shadow: 0px 3px 0px 0px #309383;
+  margin: 60px 0 0 0;
+  font-weight: bold;
+}
+.this .learn-more-btn:hover,
+.this .learn-more-btn:focus {
+  background: rgba(61, 201, 179, 0.6);
+  color: #fff;
+}
+.this .navgation {
+  margin-top: 2em;
+}
+.this .navgation a {
+  display: inline-block;
+  padding: 10px;
+}
+.this .navgation a.active {
+  color: #3dc9b3;
+}
+.this .banner {
+  margin-top: 10em;
+  padding-bottom: 5em;
+}
+.this .delay-05s {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.this .delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@media screen and (max-width: 767px) {
+  .this {
+    background-size: 100% 100%;
+  }
+}

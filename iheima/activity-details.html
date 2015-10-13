@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>活动-详情页面</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/details.css">
+</head>
+
+<body>
+    <div class="header-container-wrap">
+        <div class="header-top-wrap">
+            <div class="container header-top">
+                <ul class="navbar-nav sec-left">
+                    <li><a href="" class="active">黑马网</a></li>
+                    <!-- 当前页面，加上active类 -->
+                    <li><a href="">杂志</a></li>
+                    <li><a href="">黑马会</a></li>
+                    <li><a href="">黑马学院</a></li>
+                    <li><a href="">黑马大赛</a></li>
+                    <li><a href="">牛投</a></li>
+                    <li><a href="">代言</a></li>
+                    <li><a href="">云孵化</a></li>
+                    <li><a href="">社群</a></li>
+                </ul>
+                <ul class="navbar-nav navbar-right sec-right">
+                    <!-- <li class="write"><a href="">写稿</a></li> -->
+                    <!-- 未登录 -->
+                    <!--  此处不能删 未登录嵌套此 li   -->
+                    <li><a href="" class="login">登陆</a> / <a class="register" href="">注册</a></li>
+                    <!-- 登陆状态 登陆后嵌套此 li   -->
+                    <!-- <li class="dropdown two-status">
+                <a href="" class="username" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span href="">lemon</span>
+                  <span class="caret"></span>
+                </a>
+                <ul id="userinfo-drop" class="dropdown-menu">
+                  <li><a href="">账号安全</a></li>
+                  <li><a href="">个人信息</a></li>
+                  <li><a href="">退出登录</a></li>
+                </ul>
+              </li>  -->
+                    <li class="dropdown common-num">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                公众号
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu qcode-wrap">
+                            <li class="qcode"><img src="images/qcode.jpg" alt=""><span>官方微信</span></li>
+                            <li><img src="images/qcode2.jpg" alt=""><span>官方微信</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ihm-warp">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="" class="fl logo"><img src="images/logo.png" alt=""></a>
+                    <div class="header-heima fl">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- 移动端logo -->
+                            <div class="smalllogo"></div>
+                            <!-- 搜索 -->
+                            <button class="search-btn" data-toggle="modal" data-target="#myModal">
+                            </button>
+                        </div>
+                        <!-- pc端头部 -->
+                        <ul class="navbar-nav" id="#navbar">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">咨询</a></li>
+                            <li><a href="">观点</a></li>
+                            <li><a href="">项目</a></li>
+                            <li><a href="">方法论</a></li>
+                            <li><a href="">活动</a></li>
+                        </ul>
+                    </div>
+                    <div class="write fl"><a href="" class="write-text">投稿</a></div>
+                    <form class="search fr">
+                        <input type="text" placeholder="输入搜索关键字......" />
+                        <button class="" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="post-img margin-t87" style="background: url(images/banner.jpg) no-repeat center center;">
+            <div class="overlay"></div>
+            <div class="single-inner">
+                <div class="left">
+                    <div class="post-head">
+                        <h3 class="title"><a href="#">微信“原创”功能，大家对你趋之若鹜，你为何偏要伤我入骨</a></h3>
+                    </div>
+                    <div class="post-meta">
+                        <div class="autor-meta">
+                            <a class="autor" href="#">
+                                <img src="images/advator.png" width="30" height="26" alt="作者" class="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo">
+                                <span class="name">作者：LEMON</span>
+                            </a>
+                            <span class="post-time">2015-8-28 11:11:11</span>
+                            <span class="post-category">
+                              <a href="#"><i class="icon-layout"></i>来源：i黑马 </a>
+                            </span>
+                            <a href="#" class="sm-comment"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="register">
+                        <div class="person item"><span>已报名／限额</span><span class="nums"><span class="active">100</span>/100</span>
+                        </div>
+                        <div class="type item">行业分类：软件与企业服务和医药 健康
+                        </div>
+                        <div class="time item">
+                            <div>报名时间：2012-10-10 17:08 </div>
+                            <div>截止时间：2012-10-17 17:08</div>
+                        </div>
+                        <div class="address item">活动地址：北京 海淀区 文慧园路 3号 中国电影资料科馆艺术影院</div>
+                        <button class="blue-btn btn">立即报名</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="main-content col-md-12 col-sm-12 col-xs-12">
+                    <div class="outline">
+                        <p>导读 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大难题，标题党应运而生。为 了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。
+                        </p>
+                    </div>
+                    <p> 导读导读导 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大难题，标题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。导读 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。</p>
+                    <p> 导读导读导 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大难题，标题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。导读 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。</p>
+                    <p class="img-content">
+                        <img src="images/content.jpg" alt="信息爆炸时代" />
+                    </p>
+                    <p> 导读导读导 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大难题，标题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。导读 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。</p>
+                    <p> 导读导读导 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大难题，标题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。导读 : 如何在信息爆炸时代迅速抓住人们的眼球，获取关注成为传播的一大题党应运而生。为了在第一时间抓住消费者的眼球，标题党是必走之路。而标题党也可以分为两类：危言耸听和文艺范。</p>
+                    <div class="copyright-statement">
+                        <p><span class="text-blue">版权声明：</span>本文作者罗超，文章仅代表作者观点，非i黑马观点及立场。如需转载请联系微信号zzyyanan获得授权，未经授权，转载必究。</p>
+                        <p>本文由公众号【杨君君杂潭】授权梅花网转载，原作者为杨君君，版权归原作者所有。如需转载请注明作者、出处，并保留文章在梅花网（www.meihua.info）的完整链接，谢谢！</p>
+                        <p>本问版权属于i黑马网（iheima.com），转载请注明出处。商业使用请 联系i黑马网站</p>
+                    </div>
+                    <div class="approe">
+                        <span class="num">
+            23
+          </span>
+                    </div>
+                    <div class="row tags-warp">
+                        <div class="col-md-6">
+                            <div class="tags">
+                                <span class="label label-default">创业</span>
+                                <span class="label label-default">未来</span>
+                                <span class="label label-default">报纸</span>
+                                <span class="label label-default">滴滴</span>
+                                <span class="label label-default">创业</span>
+                                <span class="label label-default">未来</span>
+                                <span class="label label-default">报纸</span>
+                                <span class="label label-default">滴滴</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sm-share">
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-2 col-xs-5 clearfix">
+                                    <div class="add">收藏<span class="person-num">4</span></div>
+                                </div>
+                                <div class="col-md-6 col-xs-7 clearfix">
+                                    <div class="share">
+                                        <span class="text">分享</span>
+                                        <a href="#"><span class="sina"></span></a>
+                                        <a href="#"><span class="qq"></span></a>
+                                        <a href="#"><span class="wechat"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="code">
+                    <div class="cyj-code">
+                        <img src="images/cyj.jpg" alt="创业家二维码">
+                    </div>
+                    <div class="ihm-code">
+                        <img src="images/ihm.jpg" alt="i黑马二维码">
+                    </div>
+                    <div class="content">
+                        <span class="code-content">
+              第一时间获取创业行业信息资讯和深度分析，请在微信公众帐号中搜索 [i黑马] 或 [创业家]，或用手机扫描左侧二维码，即可获得i黑马网每日精华内容推送和最优搜索体验，并参与官方活动。
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="map-warp">
+                <h3 class="title">活动地址</h3>
+                <div class="map">
+                    <iframe src="http://www.google.cn/maps/embed?pb=!1m14!1m12!1m3!1d13244349.499184776!2d104.195397!3d35.86166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-CN!2scn!4v1443150539096" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="user-warp">
+                <h3 class="title">参与人员</h3>
+                <div class="user-advator">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/advator.png" /></a>
+                        </li>
+                        <li><a href="#" class="more">...</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-ad">
+                <img src="images/ad.jpg" alt="广告" class="img-responsive" />
+            </div>
+        </div>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#"><img src="images/home.png" /></a><img src="images/arrow.png" class="arrow"></li>
+                <li><a href="#">栏目名</a><img src="images/arrow.png" class="arrow"></li>
+                <li class="active">资讯标题</li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container foot-content">
+            <div class="row">
+                <ul class="item-wrap col-md-8 col-xs-7">
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+                <div class="right-tip col-md-4 col-xs-5">Copyright ©《i黑马网》 京ICP备12006413号</div>
+            </div>
+        </div>
+    </div>
+    <div class="top-nav">
+        <div class="login">
+            <!-- 两种状态，按需嵌套 -->
+            <!-- 登陆状态 -->
+            <div class="portrait-wrap">
+                <img src="images/portrait.png" alt="" />
+                <a href="" class="user-name">lemon</a>
+            </div>
+            <ul class="user-info">
+                <li><a href="">账号安全</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">退出登录</a></li>
+            </ul>
+            <!-- 登陆状态  end-->
+            <!-- 未登录 此处注释不能删！！！！！！-->
+            <!--  <div class="nologin">
+          <a href="" class="loginbtn btn">登陆</a>
+          <a href="" class="registerbtn btn">注册</a>
+        </div> -->
+            <!-- 未登录 end -->
+        </div>
+        <ul class="bottom-nav">
+            <li class="index"><a href="">首页</a></li>
+            <li class="ask"><a href="">咨询</a></li>
+            <li class="view"><a href="">观点</a></li>
+            <li class="project"><a href="">项目</a></li>
+            <li class="method"><a href="">方法论</a></li>
+            <li class="activity"><a href="">活动</a></li>
+        </ul>
+        <div class="small-foot">
+            Copyright ©《i黑马网》京ICP备12006413号
+        </div>
+    </div>
+    <!-- 搜索弹层 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="输入关键字" />
+                </form>
+                <div class="close" data-dismiss="modal" aria-label="Close">×</div>
+            </div>
+        </div>
+    </div>
+    <div id="share-warp" class="share-warp">
+        <div class="share-exp">
+            <a id="w-gotop" class="w-gotop" href="javascript:void(0)"><span class="w-txt"></span></a>
+            <a id="w-sub" class="w-sub" href="javascript:void(0)"><span class="w-txt">投稿</span></a>
+            <a id="w-rss" class="w-rss" href="javascript:void(0)"><span class="w-txt">RSS</span></a>
+            <a id="w-client" class="w-client" href="javascript:void(0)"><span class="w-txt">客户端</span></a>
+        </div>
+    </div>
+    <div class="instant">
+        <button type="button" class="instant-btn blue-btn btn">
+            立即报名
+        </button>
+    </div>
+    <div class="alert-comment">
+    <div class="close">×</div>
+        <div class="comment">
+        </div>
+        <div class="register">
+            <div class="person item"><span>已报名／限额</span><span class="nums"><span class="active">100</span>/100</span>
+            </div>
+            <div class="type item">行业分类：软件与企业服务和医药 健康
+            </div>
+            <div class="time item">
+                <div>报名时间：2012-10-10 17:08 </div>
+                <div>截止时间：2012-10-17 17:08</div>
+            </div>
+            <div class="address item">活动地址：北京 海淀区 文慧园路 3号 中国电影资料科馆艺术影院</div>
+            <div class="btn-warp">
+                <a href="#" class="blue-btn btn">立即报名</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/floatmenu.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".instant-btn").click(function() {
+        $(".alert-comment .comment").show();
+        $(".alert-comment .register").show();
+        $(".alert-comment .close").show();
+    });
+    $(".alert-comment").click(function() {
+        $(".alert-comment .comment").hide();
+        $(".alert-comment .register").hide();
+        $(".alert-comment .close").hide();
+    });
+    $(".btn-warp .blue-btn").click(function() {
+        return false;
+    });
+})
+</script>
+
+</html>

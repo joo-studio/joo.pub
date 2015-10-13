@@ -1,0 +1,48 @@
+.this {
+  background-color: #242830;
+  padding: 70px 0;
+}
+.this a {
+  color: #353535;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.this a:hover,
+.this a:focus {
+  color: #3dc9b3;
+  text-decoration: none;
+}
+.this p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.this h2 {
+  font-size: 15px;
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.this h2::after {
+  content: " ";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 25px auto;
+}
+.this .ignite-btn {
+  display: inline-block;
+  padding: 25px 40px;
+  color: #fff;
+  border: solid 1px #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.this .ignite-btn:hover,
+.this .ignite-btn:focus {
+  color: #3dc9b3;
+  border: solid 1px #3dc9b3;
+}

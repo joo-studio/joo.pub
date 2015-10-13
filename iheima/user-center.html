@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/user-center.css">
+</head>
+
+<body>
+    <div class="header-container-wrap">
+        <div class="header-top-wrap">
+            <div class="container header-top">
+                <ul class="navbar-nav sec-left">
+                    <li><a href="" class="active">黑马网</a></li>
+                    <!-- 当前页面，加上active类 -->
+                    <li><a href="">杂志</a></li>
+                    <li><a href="">黑马会</a></li>
+                    <li><a href="">黑马学院</a></li>
+                    <li><a href="">黑马大赛</a></li>
+                    <li><a href="">牛投</a></li>
+                    <li><a href="">代言</a></li>
+                    <li><a href="">云孵化</a></li>
+                    <li><a href="">社群</a></li>
+                </ul>
+                <ul class="navbar-nav navbar-right sec-right">
+                    <!-- <li class="write"><a href="">写稿</a></li> -->
+                    <!-- 未登录 -->
+                    <!--  此处不能删 未登录嵌套此 li   -->
+                    <li><a href="" class="login">登陆</a> / <a class="register" href="">注册</a></li>
+                    <!-- 登陆状态 登陆后嵌套此 li   -->
+                    <!-- <li class="dropdown two-status">
+                <a href="" class="username" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span href="">lemon</span>
+                  <span class="caret"></span>
+                </a>
+                <ul id="userinfo-drop" class="dropdown-menu">
+                  <li><a href="">账号安全</a></li>
+                  <li><a href="">个人信息</a></li>
+                  <li><a href="">退出登录</a></li>
+                </ul>
+              </li>  -->
+                    <li class="dropdown common-num">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                公众号
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu qcode-wrap">
+                            <li class="qcode"><img src="images/qcode.jpg" alt=""><span>官方微信</span></li>
+                            <li><img src="images/qcode2.jpg" alt=""><span>官方微信</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ihm-warp">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="" class="fl logo"><img src="images/logo.png" alt=""></a>
+                    <div class="header-heima fl">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- 移动端logo -->
+                            <div class="smalllogo"></div>
+                            <!-- 搜索 -->
+                            <button class="search-btn" data-toggle="modal" data-target="#myModal">
+                            </button>
+                        </div>
+                        <!-- pc端头部 -->
+                        <ul class="navbar-nav" id="#navbar">
+                            <li><a href="">首页</a></li>
+                            <li><a href="">咨询</a></li>
+                            <li><a href="">观点</a></li>
+                            <li><a href="">项目</a></li>
+                            <li><a href="">方法论</a></li>
+                            <li><a href="">活动</a></li>
+                        </ul>
+                    </div>
+                    <div class="write fl"><a href="" class="write-text">投稿</a></div>
+                    <form class="search fr">
+                        <input type="text" placeholder="输入搜索关键字......" />
+                        <button class="" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container margin-t87">
+            <div class="row tablist-warp">
+                <!-- Nav tabs -->
+                <ul class="nav col-md-2" role="tablist">
+                    <li role="presentation" class="" id="user_one">
+                        <a href="javascript:;">个人中心</a>
+                    </li>
+                    <li role="presentation" class="" id="collection_one">
+                        <a href="#collection" aria-controls="collection" role="tab" data-toggle="tab">我的收藏</a></li>
+                    <li role="presentation" class="" id="attention_one">
+                        <a href="#attention" aria-controls="attention" role="tab" data-toggle="tab">我的关注</a></li>
+                    <li role="presentation" class="active" id="contribution_one">
+                        <a href="#contribution" aria-controls="contribution" role="tab" data-toggle="tab">我的投稿</a>
+                    </li>
+                    <li role="presentation" class="" id="activity_one">
+                        <a href="#activity" aria-controls="activity" role="tab" data-toggle="tab">我的活动</a></li>
+                    <li role="presentation" class="" id="set_one">
+                        <a href="#set" aria-controls="set" role="tab" data-toggle="tab">账号设置</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content col-md-10">
+                    <div role="tabpanel" class="tab-pane" id="collection">
+                        <h3 class="titles">我的收藏</h3>
+                        <div class="article-list">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <a href="article-detail.html" class="img-wrap">
+                                            <img src="images/content.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-9">
+                                        <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                        <div class="desc">
+                                            今年1月，创新
+                                        </div>
+                                        <div class="all">
+                                            <a class="author">
+                                                <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                            <span class="date">创建时间：2015.05.11   11:12</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancels">取消收藏</div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <a href="article-detail.html" class="img-wrap">
+                                            <img src="images/content.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-9">
+                                        <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                        <div class="desc">
+                                            今年1月，创新产品首发平今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                        </div>
+                                        <div class="all">
+                                            <a class="author">
+                                                <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                            <span class="date">创建时间：2015.05.11   11:12</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancels">取消收藏</div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <a href="article-detail.html" class="img-wrap">
+                                            <img src="images/content.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-9">
+                                        <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                        <div class="desc">
+                                            今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                        </div>
+                                        <div class="all">
+                                            <a class="author">
+                                                <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                            <span class="date">创建时间：2015.05.11   11:12</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cancels">取消收藏</div>
+                            </div>
+                            <div class="index_more margin-t20">
+                                <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="attention">
+                        <ul class="subnav" role="tablist">
+                            <li role="presentation" class="active" id="type_1">
+                                <a href="#autor" aria-controls="autor" role="tab" data-toggle="tab">作者(12)</a>
+                            </li>
+                            <li role="presentation" class="" id="type_2">
+                                <a href="#hd" aria-controls="hd" role="tab" data-toggle="tab">活动(12)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="autor">
+                                <div class="autor-list">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <div class="autor_item">
+                                                <a href="#"><img src="images/tx.jpg" alt="tupianmiaoshu" class="img-responsive"></a>
+                                                <a href="#" class="autor_name">残酷的乐章</a>
+                                                <button type="button" class="default-btn">取消关注</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="hd">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新
+                                                </div>
+                                                <div class="all">
+                                                    <a class="author">
+                                                        <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                                    <span class="date">创建时间：2015.05.11   11:12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cancels">取消收藏</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <a class="author">
+                                                        <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                                    <span class="date">创建时间：2015.05.11   11:12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cancels">取消收藏</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <a class="author">
+                                                        <img src="images/advator.png" class="avatar" /><span class="name">LEMON</span></a>
+                                                    <span class="date">创建时间：2015.05.11   11:12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cancels">取消收藏</div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="contribution">
+                        <ul class="subnav" role="tablist">
+                            <li role="presentation" class="active" id="item1">
+                                <a href="#haspublish" aria-controls="haspublish" role="tab" data-toggle="tab">已发表(12)</a>
+                            </li>
+                            <li role="presentation" class="" id="item2">
+                                <a href="#verification" aria-controls="verification" role="tab" data-toggle="tab">审核中(12)</a></li>
+                            <li role="presentation" class="" id="item3">
+                                <a href="#hasback" aria-controls="hasback" role="tab" data-toggle="tab">已退稿(12)</a></li>
+                            <li role="presentation" id="item4">
+                                <a href="#draft" aria-controls="draft" role="tab" data-toggle="tab">草稿箱(12)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="haspublish">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add active">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove active">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="verification">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add active">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove active">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add ">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove ">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add ">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="hasback">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add active">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove active">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="draft">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add active">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove active">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add ">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove ">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add ">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                        <span class="remove">
+                                                <span class="delete">删除</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="activity">
+                        <ul class="subnav" role="tablist">
+                            <li role="presentation" class="active" id="item_1">
+                                <a href="#pverification" aria-controls="pverification" role="tab" data-toggle="tab">我参与的(12)</a>
+                            </li>
+                            <li role="presentation" class="" id="item_2">
+                                <a href="#release" aria-controls="release" role="tab" data-toggle="tab">我发布的(12)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="pverification">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="article-add icon active"></span>
+                                                        <span class="article-tip icon active">
+                                                            <span class="tips-warp">
+                                                                <a href="#" class="sina icon"></a>
+                                                                <a href="#" class="txweibo icon"></a>
+                                                                <a href="#" class="qzone icon"></a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="article-add icon"></span>
+                                                        <span class="article-tip icon">
+                                                            <span class="tips-warp">
+                                                                <a href="#" class="sina icon"></a>
+                                                                <a href="#" class="txweibo icon"></a>
+                                                                <a href="#" class="qzone icon"></a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="release">
+                                <div class="article-list">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="article-detail.html" class="img-wrap">
+                                                    <img src="images/content.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                <div class="title"><a href="#" class="subtitle">一句话的好文案！经典短文案赏析
+                                        </a><span class="tag">榜单</span></div>
+                                                <div class="desc">
+                                                    今年1月，创新产品首发平台i代言曾报道了黑马会会员黄灼以及他所创立的互联网开发平台一极智云。他曾在稳重放出豪言壮语：正......
+                                                </div>
+                                                <div class="all">
+                                                    <span class="date fl">创建时间：2015.05.11   11:12</span>
+                                                    <div class="fr">
+                                                        <span class="add">
+                                                <span class="modify">编辑</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index_more margin-t20">
+                                        <a href="#" id="moreinfo"><span class="index_more_icon"></span>向下滑动加载更多内容</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="set">
+                        <div class="user_advator clearfix">
+                            <img src="images/tx.jpg" class="advator fl">
+                            <div class="fl">
+                                <div class="name">lemon昕<span class="id">(创业家ID: 210502188)</span></div>
+                                <a href="#" class="modify">修改资料</a>
+                            </div>
+                        </div>
+                        <ul class="modify">
+                            <li>
+                                <span class="labelname">昵称：</span>
+                                <div class="messages">asdl</div>
+                            </li>
+                            <li>
+                                <span class="labelname">手机号：</span>
+                                <div class="messages">暂无</div>
+                            </li>
+                            <li>
+                                <span class="labelname">生日：</span>
+                                <div class="messages">1985-05-05</div>
+                            </li>
+                            <li>
+                                <span class="labelname">所在城市：</span>
+                                <div class="messages">暂无</div>
+                            </li>
+                            <li>
+                                <span class="labelname">所属行业：</span>
+                                <div class="messages">暂无</div>
+                            </li>
+                            <li>
+                                <span class="labelname">公司：</span>
+                                <div class="messages">暂无</div>
+                            </li>
+                            <li>
+                                <span class="labelname">职位：</span>
+                                <div class="messages">暂无</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+            <div class="container foot-content">
+                <div class="row">
+                    <ul class="item-wrap col-md-8 col-xs-7">
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                    <div class="right-tip col-md-4 col-xs-5">Copyright ©《i黑马网》 京ICP备12006413号</div>
+                </div>
+            </div>
+        </div>
+    <div class="top-nav">
+        <div class="login">
+            <!-- 两种状态，按需嵌套 -->
+            <!-- 登陆状态 -->
+            <div class="portrait-wrap">
+                <img src="images/portrait.png" alt="" />
+                <a href="" class="user-name">lemon</a>
+            </div>
+            <ul class="user-info">
+                <li><a href="">账号安全</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">退出登录</a></li>
+            </ul>
+            <!-- 登陆状态  end-->
+            <!-- 未登录 此处注释不能删！！！！！！-->
+            <!--  <div class="nologin">
+          <a href="" class="loginbtn btn">登陆</a>
+          <a href="" class="registerbtn btn">注册</a>
+        </div> -->
+            <!-- 未登录 end -->
+        </div>
+        <ul class="bottom-nav">
+            <li class="index"><a href="">首页</a></li>
+            <li class="ask"><a href="">咨询</a></li>
+            <li class="view"><a href="">观点</a></li>
+            <li class="project"><a href="">项目</a></li>
+            <li class="method"><a href="">方法论</a></li>
+            <li class="activity"><a href="">活动</a></li>
+        </ul>
+        <div class="small-foot">
+            Copyright ©《i黑马网》京ICP备12006413号
+        </div>
+    </div>
+    <!-- 搜索弹层 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="" id="search-form">
+                    <input type="search" placeholder="输入关键字" />
+                </form>
+                <div class="close" data-dismiss="modal" aria-label="Close">×</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/floatmenu.js"></script>
+</html>
