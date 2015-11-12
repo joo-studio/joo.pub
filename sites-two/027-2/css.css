@@ -1,0 +1,165 @@
+body {
+  background: #f5f5f5;
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.65em;
+  letter-spacing: -0.015em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #e89980;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2 {
+  color: #646464;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+}
+.this h1 a,
+.this h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this #header {
+  background: #444;
+  color: #bbb;
+  cursor: default;
+  height: 3.25em;
+  left: 0;
+  line-height: 3.25em;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.this #header h1 {
+  color: inherit;
+  height: inherit;
+  left: 1.25em;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  font-size: 1.5em;
+}
+.this #header h1 a {
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+}
+.this #header nav {
+  height: inherit;
+  line-height: inherit;
+  position: absolute;
+  right: 0.75em;
+  top: 0;
+  vertical-align: middle;
+}
+.this #header nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.this #header nav > ul > li {
+  display: inline-block;
+  padding-left: 0;
+}
+.this #header nav > ul > li > ul {
+  display: none;
+}
+.this #header nav > ul > li a {
+  display: inline-block;
+  height: 2em;
+  line-height: 1.95em;
+  padding: 0 1em;
+  border-radius: 6px;
+  color: #fff;
+}
+.this #header nav > ul > li:first-child {
+  margin-left: 0;
+}
+.this #header .ct-container {
+  position: relative;
+}
+.this #header .ct-container h1 {
+  left: 0;
+}
+.this #header .ct-container nav {
+  right: 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .this #main.main {
+    margin-top: 0;
+  }
+  .this #header {
+    text-align: center;
+    height: auto;
+    position: relative;
+  }
+  .this #header h1,
+  .this #header nav {
+    position: static;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 11pt;
+  }
+}

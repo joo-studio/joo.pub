@@ -1,0 +1,397 @@
+body {
+  color: #a2a2a2;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: inherit;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+  color: #669161 !important;
+  text-decoration: none;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h2 {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.this h2 a {
+  color: inherit;
+  border-bottom: 0;
+}
+.this h2 {
+  font-size: 1.75em;
+  line-height: 2em;
+}
+.this header p {
+  color: #757575;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+.this header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.5em;
+}
+.this header.major {
+  text-align: center;
+  padding: 3em 0;
+}
+.this header.major p {
+  border-top: solid 1px #313032;
+  color: #757575;
+  display: inline-block;
+  font-size: 1.35em;
+  letter-spacing: 0.25em;
+  line-height: 2em;
+  margin: 0 0 4em 0;
+  min-width: 50%;
+  padding: 1.5em 0 0 0;
+  text-transform: uppercase;
+}
+.this footer.major {
+  border-top: solid 1px #313032;
+  padding: 4em 0 0 0;
+  text-align: center;
+}
+.this footer.major p {
+  color: #757575;
+  font-size: 1.35em;
+  letter-spacing: 0.25em;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.this .image {
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.this .image img {
+  display: block;
+}
+.this .image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+.this .image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+.this .image.left,
+.this .image.right {
+  max-width: 40%;
+}
+.this .image.left img,
+.this .image.right img {
+  width: 100%;
+}
+.this .image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  padding: 0 1em;
+  width: 100%;
+}
+.this .image.fit img {
+  width: 100%;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.icons li {
+  display: inline-block;
+  padding: 0 1.25em 0 0;
+}
+.this ul.icons li:last-child {
+  padding-right: 0 !important;
+}
+.this ul.icons li .icon {
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 100%;
+  border: solid 1px #4c4b4d;
+  color: inherit;
+  display: inline-block;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  width: 3em;
+}
+.this ul.icons li .icon:before {
+  font-size: 1em;
+}
+.this ul.icons li .icon:hover {
+  background: rgba(207, 201, 214, 0.035);
+  color: inherit !important;
+}
+.this ul.icons li .icon:active {
+  background: rgba(207, 201, 214, 0.1);
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  border: solid 1px #4c4b4d !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 300;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.35em;
+  padding: 0 3em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.this .button:hover {
+  background: rgba(207, 201, 214, 0.035);
+  color: #ffffff !important;
+}
+.this input[type="submit"]:active,
+.this input[type="reset"]:active,
+.this input[type="button"]:active,
+.this .button:active {
+  background: rgba(207, 201, 214, 0.1);
+}
+.this .button.icon:before {
+  margin: 0 0.5em 0 -0.25em;
+}
+.this .button.disabled,
+.this .button:disabled {
+  cursor: default;
+  opacity: 0.25;
+  background-color: rgba(207, 201, 214, 0.1) !important;
+  border-color: #4c4b4d !important;
+}
+.this .button.disabled:hover,
+.this .button.disabled:active,
+.this .button:disabled:hover,
+.this .button:disabled:active {
+  background-color: rgba(207, 201, 214, 0.1) !important;
+  border-color: #4c4b4d !important;
+}
+.this .main.style2 {
+  background: #1f1e21;
+  border-top: solid 1px #313032 !important;
+}
+.this .main.style2 > section {
+  border-top: solid 1px #313032;
+  height: 17em;
+  margin: 0 0 4em 0;
+  padding: 4em 4em 0 4em;
+  position: relative;
+  width: 100%;
+}
+.this .main.style2 > section:first-of-type {
+  border-top: 0;
+  height: 13em;
+  padding-top: 0;
+}
+.this .main.style2 > section:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.this .main.style2 > section .image {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 45%;
+}
+.this .main.style2 > section .image img {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  width: 100%;
+}
+.this .main.style2 > section:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.this .main.style2 > section .content {
+  display: inline-block;
+  padding: 1.5em 3em;
+  vertical-align: middle;
+  width: 53%;
+}
+.this .main.style2 > section .content:last-child {
+  margin: 0;
+}
+.this .main.style2 > section.left .image {
+  float: left;
+}
+.this .main.style2 > section.left .image img {
+  right: 0;
+  top: 0;
+}
+.this .main.style2 > section.left .content {
+  padding-right: 0;
+}
+.this .main.style2 > section.right .image {
+  float: right;
+}
+.this .main.style2 > section.right .image img {
+  left: 0;
+  top: 0;
+}
+.this .main.style2 > section.right .content {
+  padding-left: 0;
+}
+.this .main.style2 > section.long .content {
+  padding-top: 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 12pt;
+  }
+  .this .header > header {
+    padding: 8em 0 6em 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .this h2 br,
+  .this h3 br {
+    display: none;
+  }
+  .this h2 {
+    font-size: 1.5em;
+  }
+  .this header br,
+  .this footer br {
+    display: none;
+  }
+  .this header.major p {
+    font-size: 1.1em;
+  }
+  .this footer.major p {
+    font-size: 1.1em;
+  }
+  .this .main.style2 > section {
+    height: auto !important;
+  }
+  .this .main.style2 > section .image {
+    display: block;
+    height: auto;
+    margin: 0 0 2em 0;
+    width: 100%;
+  }
+  .this .main.style2 > section .image img {
+    min-height: 0;
+    position: relative;
+  }
+  .this .main.style2 > section:before,
+  .this .main.style2 > section:after {
+    display: none;
+  }
+  .this .main.style2 > section .content {
+    display: block;
+    padding: 0 !important;
+    width: 100%;
+  }
+  .this .main {
+    padding: 5em 3em 3em 3em;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this h2 {
+    font-size: 1.25em;
+  }
+  .this h3 {
+    font-size: 1.1em;
+  }
+  .this header.major p {
+    font-size: 1em;
+    margin: 0 0 3em 0;
+    padding: 1em 0 0 0;
+  }
+  .this footer.major {
+    padding: 3em 0 0 0;
+  }
+  .this footer.major p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  .this .button {
+    padding: 0;
+  }
+  .this .main.style2 > section {
+    padding: 4em 0 0 0;
+  }
+}

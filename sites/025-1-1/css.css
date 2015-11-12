@@ -1,0 +1,223 @@
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+body {
+  background: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.65em;
+  color: #444;
+}
+.this *,
+.this *:after,
+.this *:before {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: border-bottom-color 0.2s ease-in-out;
+          transition: border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this h1 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1.5em 0;
+  padding-bottom: 1.25em;
+  position: relative;
+  text-transform: uppercase;
+}
+.this h1:after {
+  border-bottom: solid 1px;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  width: 3rem;
+}
+.this h1 a {
+  border-bottom: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.this h1.alt {
+  margin: 0 0 1em 0;
+  padding-bottom: 0;
+}
+.this h1.alt:after {
+  display: none;
+}
+.this a {
+  color: #444;
+}
+.this h1 {
+  color: #444;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+body {
+  padding-top: 3.5em;
+}
+.this #header {
+  background-color: #fff;
+  box-shadow: 0 0 0.125em 0 rgba(0, 0, 0, 0.35);
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 500;
+  height: 3.5em;
+  left: 0;
+  line-height: 3.5em;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.this #header h1 {
+  height: inherit;
+  left: 1.5em;
+  line-height: inherit;
+  margin: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+.this #header h1:after {
+  display: none;
+}
+.this #header h1 a {
+  color: inherit;
+}
+.this #header h1 a span {
+  font-weight: 500;
+}
+.this #header nav {
+  height: inherit;
+  line-height: inherit;
+  position: absolute;
+  right: 1.5em;
+  top: 0;
+}
+.this #header nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.this #header nav > ul > li {
+  display: inline-block;
+  margin-left: 2em;
+  padding: 0;
+}
+.this #header nav > ul > li > ul {
+  display: none;
+}
+.this #header nav > ul > li a {
+  text-decoration: none;
+  border-bottom: 0;
+}
+.this #header nav > ul > li a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this #header nav > ul > li a:before {
+  margin-right: 0.75em;
+}
+.this #header nav > ul > li:first-child {
+  margin-left: 0;
+}
+.this #header + #banner {
+  margin-top: -3.5em;
+}
+.this #header.reveal {
+  -webkit-animation: reveal-header 0.5s ease;
+  -ms-animation: reveal-header 0.5s ease;
+  animation: reveal-header 0.5s ease;
+}
+.this #header.alt {
+  background-color: #444;
+  color: #fff;
+  -webkit-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background-color: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  position: absolute;
+  top: 1.5em;
+}
+.this #header.alt a {
+  color: #fff;
+}
+.this #header.alt h1 {
+  color: #fff;
+}
+.this #header.alt hr {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+.this #header.alt h1 {
+  left: 2.5em;
+}
+.this #header.alt nav {
+  right: 2.5em;
+}
+@media screen and (max-width: 1280px) {
+  .this #header.alt {
+    top: 0.75em;
+  }
+  .this #header.alt h1 {
+    left: 1.5em;
+  }
+  .this #header.alt nav {
+    right: 1.5em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .this #header.alt {
+    top: 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this #header {
+    height: 3em;
+    line-height: 3em;
+  }
+  .this #header h1 {
+    left: 1em !important;
+  }
+  .this #header h1 a {
+    font-size: 0.9em;
+  }
+  .this #header {
+    text-align: center;
+    height: auto;
+  }
+  .this #header h1 {
+    padding-top: 0.5em;
+  }
+  .this #header h1,
+  .this #header nav {
+    position: static;
+  }
+}

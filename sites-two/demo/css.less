@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.file-tree {
+    font-size: 10px;
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        &:before {
+        	display: inline-block;
+        	width: 1em;
+        	height: 1em;
+        	line-height: 1em;
+            margin-right: 0.5em;
+            color: grey;
+            text-align: center;
+        }
+    }
+    ul.one-level {
+        font-size: 1em;
+        & > li {
+            background-color: rgba(0, 0, 0, 0.2);
+            line-height: 1.5em;
+            & >	span {
+            	margin-right: 0.5em;
+				color: grey;
+            }
+            &:hover {
+            	background-color: rgba(0, 0, 0, 0.3)
+            }
+        }
+    }
+    ul.two-level {
+        padding-left: 1.5em;
+        background-color: rgba(255, 255, 255, 0.5);
+        & > li {
+            line-height: 1.5em;
+
+        }
+    }
+    ul.three-level {
+    	padding-left: 1em;
+        & > li {
+            line-height: 1.5em;
+        }
+    }
+}

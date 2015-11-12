@@ -1,0 +1,100 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Phased by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	.image img, .button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	ul {
+		&.style1 {
+			li {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+
+		&.style3 {
+			.date {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+
+		&.contact {
+			li {
+				a {
+					&:before {
+						position: relative;
+						-ms-behavior: url('assets/js/ie/PIE.htc');
+					}
+				}
+			}
+		}
+	}
+
+	.pennant {
+		span {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Wrappers */
+
+	.wrapper-style1 {
+		padding: 5em 0em 1em 0em;
+	}
+
+/* Logo */
+
+	#logo {
+		h1 {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Nav */
+
+	.dropotron {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.level-0 {
+			margin-top: 0.5em;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+/* Content */
+
+	#content {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Footer */
+
+	#footer {
+		margin-bottom: 1em;
+	}
+
+/* Copyright */
+
+	#copyright {
+		padding-top: 1em;
+	}

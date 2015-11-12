@@ -1,0 +1,16 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Expanse by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Wrappers */
+
+	#header-wrapper {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}

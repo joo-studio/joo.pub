@@ -1,0 +1,188 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+// icon 
+.icon-file-directory::before {
+    font-family: 'octicons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    content: "\f016";
+}
+
+.icon-file-text::before {
+    font-family: 'octicons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    content: "\f011";
+}
+
+.icon::before {
+    margin-right: 5px;
+}
+
+// tree
+.tree-view-scroller {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    order: 0;
+}
+
+.tree-view {
+    min-width: -webkit-min-content;
+    min-height: 100%;
+    padding-left: 5px;
+    padding-right: 10px;
+    position: relative;
+    font-size: 11px;
+    background: #eeeeee;
+    &:focus::before {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: opacity 0.16s, transform 0.32s cubic-bezier(0, 0.6, 0.2, 1);
+    }
+    &::before {
+        content: "";
+        position: fixed;
+        pointer-events: none;
+        z-index: 1;
+        top: 0.5em;
+        left: 0;
+        height: 3em;
+        bottom: 0;
+        width: 2px;
+        background: #4777d7;
+        opacity: 0;
+        transform: scaleY(0);
+        transition: opacity 0.16s, transform 0.16s cubic-bezier(0.8, 0, 0.9, 0.53);
+    }
+    .project-root {
+        padding-top: 0;
+        &:before {
+            height: 3em;
+            background-clip: padding-box;
+        }
+        & > .header .name {
+            line-height: 3em;
+        }
+    }
+    .entry:before {
+        content: '';
+        position: absolute;
+    }
+    .list-tree {
+        position: static;
+    }
+    .header {
+        position: relative;
+    }
+    .selected:before {
+        background: rgba(128, 128, 128, 0.08);
+    }
+}
+
+.focusable-panel {
+    opacity: 1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8ecf1), to(#ebebeb));
+    background-image: -webkit-linear-gradient(top, #e8ecf1, #ebebeb);
+}
+
+.status-added {
+    color: #2db448;
+}
+
+.list-tree {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    .icon {
+        display: inline-block;
+        height: inherit;
+        &::before {
+            line-height: inherit;
+            height: inherit;
+            vertical-align: top;
+            margin-right: 5px;
+            position: relative;
+        }
+    }
+    li.list-nested-item > .list-item {
+        line-height: 2em;
+    }
+    li.list-nested-item.status-added > .list-item {
+        line-height: 2em;
+        font-weight: normal;
+        white-space: nowrap;
+    }
+    .selected::before {
+        content: '';
+        background-color: rgba(128, 128, 128, 0.16);
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 25px;
+    }
+    &.has-collapsable-children {
+        li.list-item {
+            margin-left: 17px;
+            line-height: 2em;
+        }
+        .list-nested-item > .list-tree > li {
+            padding-left: 17px;
+        }
+        .list-nested-item.collapsed > .list-item::before {
+            left: 1px;
+            font-family: 'octicons';
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            text-decoration: none;
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+            content: "\f078";
+            margin-right: 2px;
+        }
+        .list-nested-item > .list-item::before {
+            text-align: center;
+            position: relative;
+            top: -1px;
+            margin-right: 5px;
+            font-family: 'octicons';
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            text-decoration: none;
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+            content: "\f0a3";
+        }
+    }
+}

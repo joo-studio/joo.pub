@@ -1,0 +1,213 @@
+.this {
+    background: #E8EEF4;
+    color: #7c8081;
+    padding: 5em 5em 10em 5em;
+    text-align: center;
+    .copyright {
+        margin: 2em;
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+    .copyright a {
+        color: inherit;
+    }
+    .copyright li {
+        display: inline-block;
+        margin-left: 1em;
+        padding-left: 1em;
+        border-left: dotted 1px;
+    }
+    .copyright li:first-child {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    a {
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        color: #dd3c1a;
+        text-decoration: none;
+        border-bottom: dotted 1px;
+    }
+    a:hover {
+        border-bottom-color: transparent;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    footer >:last-child {
+        margin-bottom: 0;
+    }
+    // Icon
+    .icon {
+        text-decoration: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon.circle {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border: 0;
+        border-radius: 100%;
+        display: inline-block;
+        font-size: 1.25em;
+        height: 2.25em;
+        left: 0;
+        line-height: 2.25em;
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        width: 2.25em;
+    }
+    .icon.circle:hover {
+        top: -0.2em;
+    }
+    .icon.circle.fa-twitter {
+        background: #70aecd;
+        color: #fff;
+    }
+    .icon.circle.fa-twitter:hover {
+        background: #7fb7d2;
+    }
+    .icon.circle.fa-facebook {
+        background: #7490c3;
+        color: #fff;
+    }
+    .icon.circle.fa-facebook:hover {
+        background: #829bc9;
+    }
+    .icon.circle.fa-google-plus {
+        background: #db6b67;
+        color: #fff;
+    }
+    .icon.circle.fa-google-plus:hover {
+        background: #df7b77;
+    }
+    .icon.circle.fa-github {
+        background: #dcad8b;
+        color: #fff;
+    }
+    .icon.circle.fa-github:hover {
+        background: #e1b89b;
+    }
+    .icon.circle.fa-dribbble {
+        background: #da83ae;
+        color: #fff;
+    }
+    .icon.circle.fa-dribbble:hover {
+        background: #df93b8;
+    }
+    .icon.featured {
+        cursor: default;
+        display: block;
+        margin: 0 0 1.5em 0;
+        opacity: 0.35;
+        text-align: center;
+    }
+    .icon.featured:before {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    .icon > .label {
+        display: none;
+    }
+    // List
+    ul.icons {
+        cursor: default;
+    }
+    ul.icons li {
+        display: inline-block;
+        line-height: 1em;
+        padding-left: 0.5em;
+    }
+    ul.icons li:first-child {
+        padding-left: 0;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 14pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 13pt;
+        letter-spacing: 0.025em;
+        line-height: 1.65em;
+    }
+    .this {
+        padding: 4em;
+    }
+}
+
+// Narrow
+@media screen and (max-width: 980px) {
+    // Basic
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 13pt;
+        letter-spacing: 0.025em;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .this {
+        padding: 4em 1.5em;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        min-width: 320px;
+    }
+    .this {
+        padding: 3em 1.5em;
+        // Icon
+        .icon.circle {
+            font-size: 1em;
+        }
+        // List
+        ul.icons li {
+            padding-left: 0.25em;
+        }
+        .copyright li {
+            display: block;
+            margin: 1em 0 0 0;
+            padding: 0;
+            border: 0;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+// Basic
+body {
+    background: #fff;
+    color: #4a4a4a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+.this {
+    // Box Model
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    a {
+        color: #5ecb96;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    // Icon
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon > .label {
+        display: none;
+    }
+    // List
+    ul {
+        list-style: disc;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+    }
+    ul.icons {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+    }
+    ul.icons li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+    }
+    ul.icons li:last-child {
+        padding-right: 0;
+    }
+    ul.icons li .icon:before {
+        font-size: 1.5em;
+    }
+    // Footer
+    #footer {
+        background: #1d2726;
+        color: #888;
+        padding: 4em 0;
+        text-align: center;
+        .icons {
+            padding-left: 0;
+            li {
+                padding: 0 2em 0 0;
+                a {
+                    transition: color 0.2s ease-in-out;
+                    color: #666;
+                }
+                a:hover {
+                    color: #fff;
+                }
+            }
+            li:last-child {
+                padding-right: 0;
+            }
+        }
+        .copyright {
+            font-size: 0.9em;
+            margin: 2em 0 0 0;
+        }
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 12pt;
+    }
+}
+
+// Mobile (Portrait)
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+}

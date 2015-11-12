@@ -1,0 +1,174 @@
+body {
+  color: #a2a2a2;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: inherit;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+  color: #669161 !important;
+  text-decoration: none;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1 {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.this h1 a {
+  color: inherit;
+  border-bottom: 0;
+}
+.this header p {
+  color: #757575;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+.this .header {
+  background-color: #19181a;
+  border-radius: 8px 8px 0 0;
+  border-top: 0 !important;
+  position: relative;
+  text-align: center;
+  background: #1f1e21;
+  margin-top: 6em;
+}
+.this .header:before {
+  background: #669161;
+  content: '';
+  display: block;
+  height: 8em;
+  left: 50%;
+  margin-left: -2em;
+  position: absolute;
+  top: -6em;
+  width: 4em;
+}
+.this .header:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #669161;
+  content: '';
+  display: block;
+  height: 2.8em;
+  left: 50%;
+  margin-left: -1.4em;
+  position: absolute;
+  top: 0.615em;
+  width: 2.8em;
+}
+.this .header > header {
+  padding: 8em 3em 6em 3em;
+}
+.this .header > header h1 {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  margin: 0;
+}
+.this .header > header p {
+  border-top: solid 1px #313032;
+  color: #757575;
+  display: inline-block;
+  font-size: 1.35em;
+  letter-spacing: 0.25em;
+  line-height: 2em;
+  margin: 1.5em 0 0 0;
+  min-width: 50%;
+  padding: 1em 0 0 0;
+  position: relative;
+  text-transform: uppercase;
+  top: -0.5em;
+}
+.this .header > nav {
+  border-top: solid 1px #313032;
+}
+.this .header > nav > ul {
+  margin: 0;
+  padding: 0;
+}
+.this .header > nav > ul li {
+  border-left: solid 1px #313032;
+  display: inline-block;
+  line-height: 3.5em;
+  min-width: 20%;
+  padding: 0;
+}
+.this .header > nav > ul li a {
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border: 0;
+  color: #757575;
+  color: inherit;
+  display: block;
+  font-size: 0.8em;
+  letter-spacing: 0.25em;
+  padding: 0 2em;
+  text-decoration: none;
+  text-indent: 0.125em;
+  text-transform: uppercase;
+}
+.this .header > nav > ul li a:hover {
+  background: rgba(207, 201, 214, 0.035);
+  color: #ffffff !important;
+}
+.this .header > nav > ul li:first-child {
+  border-left: 0;
+}
+.this .header.alt > header {
+  padding: 5.5em 3em 1.5em 3em;
+}
+.this .header.alt > header h1 {
+  display: inline;
+  font-size: 1.35em;
+}
+.this .header.alt > header p {
+  display: inline;
+  border-top: 0;
+  margin: 0 0 0 0.35em;
+  padding: 0;
+  top: 0;
+  min-width: 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 12pt;
+  }
+  .this .header > header {
+    padding: 8em 0 6em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .this .header {
+    border-radius: 0;
+  }
+  .this .header > header {
+    padding: 4.5em 1.5em 2em 1.5em;
+  }
+  .this .header.alt > header {
+    padding: 3em 1.5em 1.25em 1.5em;
+  }
+}

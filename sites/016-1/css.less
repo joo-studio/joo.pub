@@ -1,0 +1,226 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@media screen and (max-width: 640px) {
+    html,
+    body {
+        min-width: 320px;
+    }
+}
+
+body {
+    background-color: #2e3141;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    -ms-overflow-style: scrollbar;
+}
+
+
+/* Type */
+
+body,
+input,
+select,
+textarea {
+    color: #ffffff;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 16.5pt;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 1680px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+.this {
+    a {
+        transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+        border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+        text-decoration: none;
+    }
+    a:hover {
+        border-bottom-color: transparent;
+        color: #ffffff !important;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h2,
+    {
+        color: #ffffff;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    /* Icon */
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon > .label {
+        display: none;
+    }
+    /* Banner */
+    #banner {
+        padding: 10em 0 4.75em 0;
+    }
+    #banner .inner {
+        margin: 0 auto;
+        width: 55em;
+    }
+    #banner .logo {
+        transition: opacity 2s ease, transform 1s ease;
+        transform: translateY(0);
+        opacity: 1;
+        margin: 0 0 1.3em 0;
+    }
+    #banner .logo .icon {
+        border-radius: 100%;
+        border: solid 2px rgba(255, 255, 255, 0.125);
+        cursor: default;
+        display: inline-block;
+        font-size: 2em;
+        height: 2.25em;
+        line-height: 2.25em;
+        text-align: center;
+        width: 2.25em;
+    }
+    #banner h2 {
+        transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+        transform: translateX(0);
+        transition-delay: 0.65s;
+        filter: blur(0);
+        opacity: 1;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+        font-size: 2.25em;
+        margin-bottom: 0.8em;
+        padding-bottom: 0.4em;
+    }
+    #banner p {
+        transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+        transform: translateX(0);
+        transition-delay: 0.8s;
+        filter: blur(0);
+        opacity: 1;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        line-height: 2;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .this {
+        h2 {
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .this {
+        #banner {
+            padding: 7em 0 8.25em 0;
+            background-color: #2e3141;
+            background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../assets/img/016bg.jpg");
+            background-size: auto, cover;
+            background-position: center, center;
+            margin-bottom: -6.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .this {
+        #banner {
+            padding: 12em 3em 12.375em 3em;
+            margin-bottom: -4.75em;
+        }
+        #banner .inner {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .this {
+        #banner {
+            padding: 5em 2em 4.25em 2em;
+            margin-bottom: -2.5em;
+        }
+        #banner .logo {
+            margin: 0 0 1em 0;
+        }
+        #banner .logo .icon {
+            font-size: 1.5em;
+        }
+        #banner h2 {
+            font-size: 1.5em;
+        }
+        #banner p {
+            font-size: 0.8em;
+        }
+    }
+}

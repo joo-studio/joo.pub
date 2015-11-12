@@ -1,0 +1,39 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Forward by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Wrappers */
+
+	#header-wrapper, #banner-wrapper, #main-wrapper, #footer-wrapper, .wrapper-featured {
+		width: 100%;
+		overflow: hidden;
+	}
+
+/* Logo */
+
+	#logo {
+		h1 {
+			a {
+				height: 8em;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner-box {
+		#box1, #box3 {
+			display: none;
+		}
+	}

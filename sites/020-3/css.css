@@ -1,0 +1,202 @@
+body {
+  color: #a2a2a2;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: inherit;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+  color: #669161 !important;
+  text-decoration: none;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h3 {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.this h3 a {
+  color: inherit;
+  border-bottom: 0;
+}
+.this h3 {
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  border: solid 1px #4c4b4d !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 300;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.35em;
+  padding: 0 3em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.this .button:hover {
+  background: rgba(207, 201, 214, 0.035);
+  color: #ffffff !important;
+}
+.this .button:active {
+  background: rgba(207, 201, 214, 0.1);
+}
+.this .button.icon:before {
+  margin: 0 0.5em 0 -0.25em;
+}
+.this .button.disabled,
+.this .button:disabled {
+  cursor: default;
+  opacity: 0.25;
+  background-color: rgba(207, 201, 214, 0.1) !important;
+  border-color: #4c4b4d !important;
+}
+.this .button.disabled:hover,
+.this .button.disabled:active,
+.this .button:disabled:hover,
+.this .button:disabled:active {
+  background-color: rgba(207, 201, 214, 0.1) !important;
+  border-color: #4c4b4d !important;
+}
+.this .main.style1 {
+  overflow: hidden;
+  padding: 0 !important;
+  text-align: center;
+  background: #1f1e21;
+  border-top: solid 1px #313032 !important;
+}
+.this .main.style1 > section {
+  border-left: solid 1px #313032;
+  border-top: solid 1px #313032;
+  float: left;
+  padding: 5em 3em 3em 3em;
+  width: 50%;
+}
+.this .main.style1 > section:nth-child(-n + 2) {
+  border-top: 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  .this h3 br {
+    display: none;
+  }
+  .this .main.style1 > section {
+    border-left: 0 !important;
+    border-top: solid 1px #313032 !important;
+    float: none;
+    padding: 5em 3em 3em 3em !important;
+    width: 100%;
+  }
+  .this .main.style1 > section:first-child {
+    border-top: 0 !important;
+  }
+  .this .main {
+    padding: 5em 3em 3em 3em;
+  }
+  .this .header > header {
+    padding: 6em 3em 4.5em 3em;
+  }
+  .this .header > header h1 {
+    font-size: 2em;
+  }
+  .this .header > header p {
+    font-size: 1.35em;
+  }
+  .this .header.alt > header {
+    padding: 3em 3em 2.5em 3em;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this h3 {
+    font-size: 1.1em;
+  }
+  .this .main.style1 > section {
+    padding: 3em 3em 1em 3em !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  .this .button {
+    padding: 0;
+  }
+  .this .main.style1 > section {
+    padding: 3em 1.5em 1em 1.5em !important;
+  }
+}

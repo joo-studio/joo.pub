@@ -1,0 +1,28 @@
+/*
+	Forward by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Wrappers */
+
+	#header-wrapper, #banner-wrapper, #main-wrapper, #footer-wrapper, .wrapper-featured {
+		width: 100%;
+		overflow: hidden;
+	}
+
+/* Logo */
+
+	#logo h1 a {
+		height: 8em;
+	}
+
+	#logo h1:after {
+		display: none;
+	}
+
+/* Banner */
+
+	#banner-box #box1, #banner-box #box3 {
+		display: none;
+	}

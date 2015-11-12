@@ -1,63 +1,63 @@
-.footer {
+.this {
   background: #f7f9fa;
   border-top: solid 1px #e2eaec;
   color: #93999a;
   padding: 5.5em 0;
 }
-.footer a {
+.this a {
   text-decoration: none;
   cursor: pointer;
 }
-.footer h2 {
+.this h2 {
   font-size: 1.75em;
   line-height: 1.5em;
   margin: 0 0 1em 0;
   font-weight: bold;
   letter-spacing: -0.05em;
 }
-.footer h3 {
+.this h3 {
   color: #626c6e;
   margin: 0 0 1em 0;
   font-size: 1.35em;
   line-height: 1.5em;
 }
-.footer h4 {
+.this h4 {
   margin: 0 0 1em 0;
   line-height: 1.5em;
   font-size: 1.1em;
 }
-.footer p {
+.this p {
   margin: 0 0 2em 0;
 }
-.footer ul.updates {
+.this ul.updates {
   list-style: none;
   padding: 0;
   margin: 0 0 2em 0;
 }
-.footer ul.updates li {
+.this ul.updates li {
   margin: 0 0 1.3em 0;
   padding-left: 0;
 }
-.footer ul.updates li p {
+.this ul.updates li p {
   margin: 0;
 }
-.footer .timestamp {
+.this .timestamp {
   color: #bbbebf;
   display: block;
   font-size: 0.8em;
   margin: 0.25em 0 0 0;
 }
-.footer ul.labeled-icons {
+.this ul.labeled-icons {
   list-style: none;
   padding: 0;
   margin: 0 0 2em 0;
 }
-.footer ul.labeled-icons li {
+.this ul.labeled-icons li {
   margin: 0 0 2em 0;
   padding: 0 0 0 3.25em;
   position: relative;
 }
-.footer .icon {
+.this .icon {
   text-decoration: none;
   border-radius: 100%;
   border: solid 1px #e2eaec;
@@ -70,11 +70,10 @@
   text-align: center;
   top: -0.25em;
   width: 2em;
-  border-bottom: none;
   border-color: #d2dadc;
   color: #626c6e;
 }
-.footer .icon:before {
+.this .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -84,10 +83,10 @@
   color: #f7f9fa !important;
   text-shadow: 1px 0 0 #6ec7f5, -1px 0 0 #6ec7f5, 0 1px 0 #6ec7f5, 0 -1px 0 #6ec7f5;
 }
-.footer .icon > .label {
+.this .icon > .label {
   display: none;
 }
-.button {
+.this .button {
   margin: 2em auto;
   appearance: none;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -109,11 +108,11 @@
   box-shadow: inset 0 0 0 1px #d2dadc;
   color: #626c6e !important;
 }
-.button:hover {
+.this .button:hover {
   box-shadow: inset 0 0 0 1px #6ec7f5;
   color: #6ec7f5 !important;
 }
-.copyright {
+.this .copyright {
   border-top: solid 1px #d2dadc;
   color: #bbbebf;
   overflow: hidden;
@@ -122,19 +121,19 @@
   padding-top: 4.125em;
   font-weight: 200;
 }
-.copyright p {
+.this .copyright p {
   display: inline-block;
   font-size: 0.8em;
   margin: 0;
 }
-.copyright .menu {
+.this .copyright .menu {
   display: inline-block;
   font-size: 0.8em;
   margin: 0 0 0 0.25em;
   list-style: none;
   padding: 0;
 }
-.copyright .menu li {
+.this .copyright .menu li {
   border-left: solid 1px #e2eaec;
   display: inline-block;
   line-height: 1em;
@@ -142,8 +141,18 @@
   padding: 0 0 0 0.5em;
   border-color: #d2dadc;
 }
-.copyright .menu li:first-child {
+.this .copyright .menu li:first-child {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .this .button {
+    display: block;
+    margin: 0 2em 2em;
+    padding: 0;
+  }
+  .this .contents h2 {
+    text-align: center;
+  }
 }

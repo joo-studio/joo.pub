@@ -1,0 +1,210 @@
+body {
+  background: #fff;
+  color: #646464;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  color: #47cdd9;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+.this a:hover {
+  text-decoration: none;
+  color: #47cdd9 !important;
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2,
+.this h3 {
+  color: #545454;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  letter-spacing: -0.01em;
+}
+.this h1 a,
+.this h2 a,
+.this h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+.this header p {
+  color: #949494;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+.this header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.75em;
+}
+.this header.major {
+  text-align: center;
+}
+.this header.major h2 {
+  font-size: 2.35em;
+}
+.this header.major p {
+  margin: -1em 0 3.5em 0;
+}
+.this .icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+.this .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this .icon > .label {
+  display: none;
+}
+.this .slider {
+  position: relative;
+}
+.this .slider .viewer {
+  position: relative;
+  border-radius: 0.5em;
+  border: solid 1.5em #fff;
+  height: 20em;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80%;
+}
+.this .slider .slide img {
+  border-radius: 0.375em;
+  display: block;
+  width: 100%;
+}
+.this .wrapper {
+  padding: 5em 0 3em 0;
+}
+.this .wrapper.style1 {
+  background: #f2f2f2;
+}
+.this .wrapper.style1 .box {
+  background: #ffffff;
+  border: 0;
+}
+.this #one {
+  padding-bottom: 0;
+}
+.this #one .slider .viewer {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+.this #one .slider .slide img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 12pt;
+  }
+  .this h2 br,
+  .this h3 br {
+    display: none;
+  }
+  .this header br {
+    display: none;
+  }
+  .this .slider .viewer {
+    border-width: 1em;
+    width: 100%;
+  }
+  .this .slider .slide img {
+    border-radius: 0.375em;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 12pt;
+  }
+  .this h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+  .this h3 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .this header h2 + p {
+    font-size: 1em;
+    margin-top: -0.85em;
+    line-height: 1.5em;
+  }
+  .this header.major h2 {
+    font-size: 1.5em;
+  }
+  .this header.major p {
+    margin: -1em 0 2.5em 0;
+  }
+  .this .box.post {
+    max-width: 23em;
+  }
+  .this .slider .viewer {
+    border-width: 0.5em;
+  }
+  .this .wrapper {
+    padding: 3em 0 1em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 12pt;
+  }
+  .this .slider {
+    position: relative;
+  }
+  .this .slider .viewer {
+    border-radius: 0 !important;
+    border-width: 0em;
+    margin-left: -5vw;
+    width: 100vw;
+  }
+  .this .slider .slide img {
+    border-radius: 0 !important;
+  }
+}

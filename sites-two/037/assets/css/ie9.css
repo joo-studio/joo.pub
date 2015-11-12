@@ -1,0 +1,11 @@
+/*
+	Zenith by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Wrappers */
+
+	#header-wrapper:after {
+		background: url("../images/header-wrapper-shadow.svg"), rgba(29, 32, 38, 0.75);
+	}

@@ -1,0 +1,200 @@
+.this {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("../../assets/img/003light-tl.svg"), url("../../assets/img/003light-tr.svg"), url("../../assets/img/003overlay.png"), url("../../assets/img/003banner.jpg");
+  background-position: top left, top right, top left, bottom center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: #fff;
+  padding: 5em;
+  text-align: center;
+}
+.this header {
+  margin-bottom: 2em;
+}
+.this * {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #dd3c1a;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.this p {
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+.this ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.this input[type="button"],
+.this input[type="submit"],
+.this input[type="reset"],
+.this .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background: none;
+  border: solid 1px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0 0.75em;
+  line-height: 3.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.this input[type="button"]:hover,
+.this input[type="submit"]:hover,
+.this input[type="reset"]:hover,
+.this .button:hover {
+  background: rgba(188, 202, 206, 0.15);
+  border-color: inherit;
+}
+.this input[type="button"].special,
+.this input[type="submit"].special,
+.this input[type="reset"].special,
+.this .button.special {
+  background: #ee856f;
+  border-color: #ee856f;
+  color: #fff !important;
+}
+.this input[type="button"].special:hover,
+.this input[type="submit"].special:hover,
+.this input[type="reset"].special:hover,
+.this .button.special:hover {
+  background: #f19886 !important;
+  border-color: #f19886 !important;
+}
+.this footer > :last-child {
+  margin-bottom: 0;
+}
+.this ul.buttons {
+  cursor: default;
+}
+.this ul.buttons:last-child {
+  margin-bottom: 0;
+}
+.this ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+.this ul.buttons li:first-child {
+  padding: 0;
+}
+@media screen and (max-width: 1680px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.65em;
+  }
+  .this {
+    padding: 4em;
+    background-attachment: scroll;
+  }
+  .this h2 {
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 980px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+  }
+  .this {
+    background-size: 15em, 15em, auto, cover;
+    padding: 3em;
+  }
+  .this header br {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .this {
+    margin: 0;
+  }
+  .this input[type="button"].small,
+  .this input[type="submit"].small,
+  .this input[type="reset"].small,
+  .this .button.small {
+    font-size: 0.8em;
+    min-width: 18em;
+    padding: 0.75em 0;
+  }
+  .this ul.buttons li {
+    display: block;
+    padding: 1em 0 0 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    min-width: 320px;
+  }
+  .this {
+    background-size: 10em, 10em, auto, cover;
+    padding: 3em 1.5em;
+  }
+  h2 {
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+  }
+  p {
+    text-align: justify;
+  }
+  header {
+    text-align: center;
+  }
+  header p {
+    text-align: center;
+  }
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  .button {
+    max-width: 20em;
+    width: 100%;
+  }
+  ul.buttons {
+    text-align: center;
+  }
+}

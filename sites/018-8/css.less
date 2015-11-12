@@ -1,0 +1,229 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    color: #868686;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65em;
+}
+
+a {
+    color: #f06862;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+// Icon
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon.major {
+    display: block;
+    height: 4.5em;
+    line-height: 4.5em;
+    margin: 1em auto 3em auto;
+    position: relative;
+    text-align: center;
+    width: 4.5em;
+}
+
+.icon.major:before {
+    color: #ffffff;
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.icon.major:after {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #f06862;
+    content: '';
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
+
+.icon.major.fa-paper-plane:before {
+    left: -0.125em;
+}
+
+// List
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+ul li {
+    padding-left: 0.5em;
+}
+
+ul.major-icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.major-icons li {
+    display: inline-block;
+    padding: 0 2.5em 0 0;
+}
+
+ul.major-icons li:last-child {
+    padding-right: 0 !important;
+}
+
+ul.major-icons li .icon {
+    display: block;
+    font-size: 0.675em;
+    height: 4.5em;
+    line-height: 4.5em;
+    position: relative;
+    text-align: center;
+    width: 4.5em;
+}
+
+ul.major-icons li .icon:before {
+    color: #ffffff;
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+ul.major-icons li .icon:after {
+    transform: rotate(45deg);
+    background: #f06862;
+    content: '';
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
+
+// Footer
+#footer {
+    padding: 6em 0 4em 0;
+    text-align: center;
+}
+
+#footer .icon:before {
+    transition: color 0.2s ease-in-out;
+    color: #A5A5a5;
+}
+
+#footer .icon:after {
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(144, 144, 144, 0.2);
+}
+
+#footer .icon:hover:before {
+    color: #ffffff;
+}
+
+#footer .icon:hover:after {
+    background-color: #f06862;
+}
+
+// XLarge
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Large
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+    // Footer
+    #footer {
+        padding: 4em 0 2em 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+}
+
+// Small
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 12pt;
+    }
+    // Icon
+    .icon.major {
+        height: 3.75em;
+        line-height: 3.75em;
+        width: 3.75em;
+    }
+    .icon.major:before {
+        font-size: 1.75em;
+    }
+    // List
+    ul.major-icons li {
+        padding-right: 1.5em;
+    }
+    ul.major-icons li .icon {
+        font-size: 0.5em;
+    }
+}
+
+// XSmall
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+}

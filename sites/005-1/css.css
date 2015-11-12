@@ -1,0 +1,115 @@
+.public-one {
+  font-size: 16pt
+  /* Button */
+}
+.public-one input[type="button"],
+.public-one input[type="submit"],
+.public-one input[type="reset"],
+.public-one button,
+.public-one .button {
+  -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+          transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  background: #35b88f;
+  color: #fff;
+  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+  padding: 1em 3em 1em 3em;
+  text-align: center;
+  border-radius: 3em;
+  font-weight: 400;
+}
+.public-one input[type="button"].style2,
+.public-one input[type="submit"].style2,
+.public-one input[type="reset"].style2,
+.public-one button.style2,
+.public-one .button.style2 {
+  color: #3a3939;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+.public-one input[type="button"].style2:hover,
+.public-one input[type="submit"].style2:hover,
+.public-one input[type="reset"].style2:hover,
+.public-one button.style2:hover,
+.public-one .button.style2:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
+}
+@media screen and (max-width: 1680px) {
+  .public-one {
+    font-size: 16pt;
+  }
+}
+@media screen and (max-width: 840px) {
+  .public-one {
+    font-size: 14pt;
+  }
+  .public-one h2 {
+    line-height: 1.5em;
+  }
+  .public-one header p {
+    margin: 0.25em 0 0 0;
+    padding: 0 0 0.5em 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  .public-one {
+    line-height: 1.5em;
+    font-size: 12pt;
+    letter-spacing: 0;
+  }
+  .public-one * {
+    text-shadow: none !important;
+  }
+  .public-one h2 {
+    font-size: 1.25em;
+    letter-spacing: 4px;
+  }
+}
+.this {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  background: #35b88f url("../../assets/img/000banner.svg") bottom center no-repeat;
+  padding: 5em 0 5em 0;
+  margin: 0;
+  background-size: 125% auto;
+}
+.this .button {
+  color: #35b882 !important;
+  text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25) !important;
+}
+.this .button:hover {
+  color: #fff;
+}
+.this header {
+  margin: 0 0 2em 0;
+}
+.this header h2 {
+  font-weight: 400;
+  font-size: 1.75em;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.this p {
+  margin: 0;
+  line-height: 1.5em;
+}
+.this footer {
+  margin: 2em 0 0 0;
+}
+.this a {
+  color: inherit;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+.this a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0);
+}

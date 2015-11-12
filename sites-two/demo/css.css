@@ -1,0 +1,51 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.file-tree {
+  font-size: 10px;
+}
+.file-tree ul,
+.file-tree li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.file-tree ul:before,
+.file-tree li:before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  margin-right: 0.5em;
+  color: grey;
+  text-align: center;
+}
+.file-tree ul.one-level {
+  font-size: 1em;
+}
+.file-tree ul.one-level > li {
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 1.5em;
+}
+.file-tree ul.one-level > li > span {
+  margin-right: 0.5em;
+  color: grey;
+}
+.file-tree ul.one-level > li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.file-tree ul.two-level {
+  padding-left: 1.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.file-tree ul.two-level > li {
+  line-height: 1.5em;
+}
+.file-tree ul.three-level {
+  padding-left: 1em;
+}
+.file-tree ul.three-level > li {
+  line-height: 1.5em;
+}

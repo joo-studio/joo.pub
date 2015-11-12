@@ -1,0 +1,136 @@
+body {
+    line-height: 1;
+    background: #ffffff;
+    color: #808080;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65em;
+}
+
+.this {
+    ol,
+    ul {
+        list-style: none;
+    }
+    // Box Model
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    a {
+        transition: color 0.2s ease-in-out;
+        color: #e96c77;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #e96c77 !important;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+        display: inline-block;
+    }
+    // Footer
+    #footer {
+        background: #ececec;
+        color: #aaa;
+        padding: 4em 0 8em 0;
+        text-align: center;
+    }
+    #footer .copyright {
+        font-size: 0.9em;
+        margin: 2em 0 0 0;
+        padding: 0;
+    }
+    #footer .menu li {
+        border-color: #ccc;
+    }
+    #footer .menu a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Narrow
+@media screen and (max-width: 980px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+    .this {
+        // Footer
+        #footer {
+            padding: 2em 0;
+        }
+        #footer .copyright li {
+            border-left: 0;
+            display: block;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+// Mobile (Portrait)
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 11pt;
+    }
+    .this {
+        ul.menu li {
+            border: 0;
+            display: block;
+            margin: 1em 0 0 0;
+            padding: 0;
+        }
+    }
+}

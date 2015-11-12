@@ -1,0 +1,349 @@
+body {
+  background: #fff;
+  color: #646464;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  color: #47cdd9;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+.this a:hover {
+  text-decoration: none;
+  color: #47cdd9 !important;
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2 {
+  color: #545454;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  letter-spacing: -0.01em;
+}
+.this h1 a,
+.this h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: solid 1px rgba(144, 144, 144, 0.25) !important;
+  color: #545454 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 700;
+  height: 3.5em;
+  letter-spacing: 0.1em;
+  line-height: 3.5em;
+  overflow: hidden;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.this .button:hover {
+  background-color: rgba(144, 144, 144, 0.075);
+  color: #545454 !important;
+}
+.this .button:active {
+  background-color: rgba(144, 144, 144, 0.2);
+}
+.this .button.big {
+  font-size: 1em;
+  height: 3.5em;
+  line-height: 3.5em;
+  padding: 0 2.25em;
+}
+.this .button.special {
+  background-color: #47cdd9;
+  color: #ffffff !important;
+}
+.this .button.special:hover {
+  background-color: #5cd3dd;
+}
+.this .button.special:active {
+  background-color: #32c7d5;
+}
+.this #header {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: inherit;
+  cursor: default;
+  height: 3em;
+  left: 0;
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.this #header.alt {
+  -webkit-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+.this #header h1 {
+  color: inherit;
+  font-size: 1em;
+  height: inherit;
+  left: 1.25em;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+.this #header h1 span {
+  font-weight: 300;
+}
+.this #header h1 a {
+  border: 0;
+}
+.this #header nav {
+  height: inherit;
+  line-height: inherit;
+  position: absolute;
+  right: 1.5em;
+  top: 0;
+  vertical-align: middle;
+}
+.this #header nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.this #header nav > ul > li {
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-left: 2em;
+  padding-left: 0;
+}
+.this #header nav > ul > li a {
+  border: 0;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+.this #header nav > ul > li:first-child {
+  margin-left: 0;
+}
+.this #header .ct-container {
+  position: relative;
+}
+.this #header .ct-container h1 {
+  left: 0;
+}
+.this #header .ct-container nav {
+  right: 0;
+}
+.this #banner {
+  background-attachment: scroll, fixed;
+  background-color: #494d53;
+  background-image: url("../../assets/img/028overlay.png"), url("../../assets/img/028banner.jpg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #d1d2d4;
+  padding: 16em 0;
+  position: relative;
+  text-align: center;
+}
+.this #banner:after {
+  -webkit-transition: opacity 2s ease-in-out;
+          transition: opacity 2s ease-in-out;
+  background: #3d4045;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.this #banner:last-child {
+  margin-bottom: 0;
+}
+.this #banner h1,
+.this #banner h2,
+.this #banner h3 {
+  color: #ffffff;
+}
+.this #banner .inner {
+  position: relative;
+  z-index: 2;
+}
+.this #banner .button {
+  border-color: white !important;
+  color: #ffffff !important;
+}
+.this #banner .button:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.this #banner .button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.this #banner h2 {
+  font-size: 3.25em;
+  line-height: 1.25em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+.this #banner p {
+  font-size: 1.5em;
+  margin-bottom: 1.75em;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 12pt;
+  }
+  .this #banner {
+    padding: 12em 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11pt;
+  }
+  .this #banner {
+    background-attachment: scroll;
+    padding: 10em 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 12pt;
+  }
+  .this h2 br,
+  .this h3 br {
+    display: none;
+  }
+  .this header br {
+    display: none;
+  }
+  .this #banner {
+    padding: 12em 2em;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 12pt;
+  }
+  .this h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+  .this .button {
+    font-size: 0.8em !important;
+  }
+  .this #header {
+    text-align: center;
+    height: auto;
+  }
+  .this #header nav,
+  .this #header h1 {
+    position: static;
+  }
+  .this #banner {
+    padding: 7em 2em 4em 2em;
+  }
+  .this #banner h2 {
+    font-size: 2em;
+  }
+  .this #banner p {
+    font-size: 1.1em;
+  }
+  .this #main > header {
+    padding: 0 2em;
+  }
+  .this #main > .container {
+    padding: 2em 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 12pt;
+  }
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  .this .button {
+    padding: 0;
+  }
+  .this #banner {
+    padding: 8em 2em 4em 2em;
+  }
+}

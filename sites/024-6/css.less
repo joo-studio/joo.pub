@@ -1,0 +1,226 @@
+body {
+    background: #fff;
+    color: #888;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.this {
+    a {
+        color: #37b37f;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h1,
+    h2 {
+        color: #616161;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    h1 a,
+    h2 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    h1 .icon,
+    h2 .icon {
+        margin-right: 0.65em;
+    }
+    h2 {
+        font-size: 1.75em;
+        line-height: 1.5em;
+    }
+    header p {
+        color: #a7a7a7;
+        letter-spacing: 0.11em;
+        position: relative;
+        margin: 0 0 1.5em 0;
+    }
+    header h2 + p {
+        font-size: 1.25em;
+        margin-top: -1em;
+        line-height: 1.75em;
+    }
+    header.major {
+        margin: 0 0 1.5em 0;
+        text-transform: uppercase;
+    }
+    header.major h2 {
+        margin: 0;
+    }
+    header.major p {
+        color: #616161;
+        margin: 0.5em 0 0 0;
+    }
+    header.major:after {
+        background-color: #888;
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin: 2em 0 0 0;
+        position: relative;
+        width: 5em;
+    }
+    ul {
+        list-style: disc;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+    }
+    ul.actions {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+    }
+    ul.actions li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+        vertical-align: middle;
+    }
+    ul.actions li:last-child {
+        padding-right: 0;
+    }
+    .button {
+        appearance: none;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        background-color: #292929;
+        border-radius: 4px;
+        border: 0;
+        color: #ffffff !important;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        height: 3.5em;
+        letter-spacing: 0.11em;
+        line-height: 3.65em;
+        overflow: hidden;
+        padding: 0 2em;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .button:hover {
+        background-color: #363636;
+    }
+    .button:active {
+        background-color: #1c1c1c;
+    }
+    .button.alt {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+        color: #616161 !important;
+    }
+    .button.alt:hover {
+        background-color: rgba(144, 144, 144, 0.075);
+    }
+    .button.alt:active {
+        background-color: rgba(144, 144, 144, 0.2);
+    }
+    .button.alt.icon:before {
+        color: #a7a7a7;
+    }
+    .button.special {
+        background-color: #37b37f;
+        color: #ffffff !important;
+    }
+    .button.special:hover {
+        background-color: #3fc48c;
+    }
+    .button.special:active {
+        background-color: #319f71;
+    }
+    // Wrapper
+    .wrapper {
+        padding: 8em 0 6em 0;
+    }
+}
+
+// XLarge
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Large
+@media screen and (max-width: 1280px) {
+    .this {
+        // Basic
+        h2 {
+            font-size: 1.5em;
+        }
+        header h2 + p {
+            font-size: 1em;
+        }
+        // Wrapper
+        .wrapper {
+            padding: 6em 0 4em 0;
+        }
+    }
+}
+
+@media screen and (max-width: 736px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .this {
+        h2 {
+            font-size: 1.25em;
+        }
+        // Wrapper
+        .wrapper {
+            padding: 3em 0 1em 0;
+        }
+    }
+}
+
+// XSmall
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        // List
+        ul.actions {
+            margin: 0 0 2em 0;
+        }
+        ul.actions li {
+            display: block;
+            padding: 1em 0 0 0;
+            text-align: center;
+            width: 100%;
+        }
+        ul.actions li:first-child {
+            padding-top: 0;
+        }
+        ul.actions li > * {
+            margin: 0 !important;
+            width: 100%;
+        }
+        .button {
+            padding: 0;
+        }
+    }
+}

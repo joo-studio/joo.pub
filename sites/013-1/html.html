@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Section</title>
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../libs/css/ct.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <div class="this">
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+            <!-- Wrapper -->
+            <section id="wrapper">
+                <div class="inner">
+                    <h1><b>Split</b>screen</h1>
+                    <h2>Ipsum feugiat lorem tempus<br />
+                            adipiscing sed nullam</h2>
+                    <p>Phasellus amet dignissim malesuada lorem vitae. Fusce amet lectus tempor amet vulputate et proin ultrices etiam odio elementum lorem malesuada sem mollis elementum feugiat lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button special icon fa-arrow-down">Download</a></li>
+                    </ul>
+                </div>
+                <footer>
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </footer>
+            </section>
+            <!-- Banner -->
+            <section id="banner">
+                <div class="inner">
+                    <div class="content">
+                        <ul>
+                            <li><img src="../../assets/img/013pic01.jpg" alt="" /></li>
+                            <li><img src="../../assets/img/013pic02.jpg" alt="" /></li>
+                            <li><img src="../../assets/img/013pic03.jpg" alt="" /></li>
+                            <li><img src="../../assets/img/013pic04.jpg" alt="" /></li>
+                            <li><img src="../../assets/img/013pic05.jpg" alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+ <script>
+    (function() {
+
+        "use strict";
+
+        // Methods/polyfills.
+
+        // canUse
+        window.canUse = function(p) {
+            if (!window._canUse) window._canUse = document.createElement("div");
+            var e = window._canUse.style,
+                up = p.charAt(0).toUpperCase() + p.slice(1);
+            return p in e || "Moz" + up in e || "Webkit" + up in e || "O" + up in e || "ms" + up in e
+        };
+
+        // classList | (c) @remy | github.com/remy/polyfills | rem.mit-license.org
+        ! function() {
+            function t(t) {
+                this.el = t;
+                for (var n = t.className.replace(/^\s+|\s+$/g, "").split(/\s+/), i = 0; i < n.length; i++) e.call(this, n[i])
+            }
+
+            function n(t, n, i) {
+                Object.defineProperty ? Object.defineProperty(t, n, {
+                    get: i
+                }) : t.__defineGetter__(n, i)
+            }
+            if (!("undefined" == typeof window.Element || "classList" in document.documentElement)) {
+                var i = Array.prototype,
+                    e = i.push,
+                    s = i.splice,
+                    o = i.join;
+                t.prototype = {
+                    add: function(t) {
+                        this.contains(t) || (e.call(this, t), this.el.className = this.toString())
+                    },
+                    contains: function(t) {
+                        return -1 != this.el.className.indexOf(t)
+                    },
+                    item: function(t) {
+                        return this[t] || null
+                    },
+                    remove: function(t) {
+                        if (this.contains(t)) {
+                            for (var n = 0; n < this.length && this[n] != t; n++);
+                            s.call(this, n, 1), this.el.className = this.toString()
+                        }
+                    },
+                    toString: function() {
+                        return o.call(this, " ")
+                    },
+                    toggle: function(t) {
+                        return this.contains(t) ? this.remove(t) : this.add(t), this.contains(t)
+                    }
+                }, window.DOMTokenList = t, n(Element.prototype, "classList", function() {
+                    return new t(this)
+                })
+            }
+        }();
+
+        // Vars.
+        var $body = document.querySelector('body');
+
+        // Disable animations/transitions until everything's loaded.
+        if ('addEventListener' in window) {
+
+            $body.classList.add('is-loading');
+
+            window.addEventListener('load', function() {
+                $body.classList.remove('is-loading');
+            });
+
+        }
+
+        // IE?
+        if (navigator.userAgent.match(/(MSIE|rv:11\.0)/))
+            $body.classList.add('is-ie');
+
+        // Banner.
+        (function() {
+
+            // Settings.
+            var settings = {
+
+                // Delay.
+                delay: 4000
+
+            };
+
+            // Vars.
+            var $banner = document.querySelector('#banner'),
+                $images = document.querySelectorAll('#banner li'),
+                pos = 0,
+                lastPos = 0;
+
+            // Main loop.
+            $images[pos].classList.add('visible');
+            $images[pos].classList.add('top');
+
+            // Bail if we only have a single BG.
+            if ($images.length == 1)
+                return;
+
+            window.setInterval(function() {
+
+                lastPos = pos;
+                pos++;
+
+                // Wrap to beginning if necessary.
+                if (pos >= $images.length)
+                    pos = 0;
+
+                // Swap top images.
+                $images[lastPos].classList.remove('top');
+                $images[pos].classList.add('visible');
+                $images[pos].classList.add('top');
+
+                // Hide last image after a short delay.
+                window.setTimeout(function() {
+                    $images[lastPos].classList.remove('visible');
+                }, settings.delay / 2);
+
+            }, settings.delay);
+
+        })();
+
+    })();
+    </script>
+</html>

@@ -1,0 +1,220 @@
+// Basic
+body {
+    background: #fff;
+    color: #4a4a4a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+.this {
+    // Box Model
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    a {
+        color: #5ecb96;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h1 {
+        color: #2a2a2a;
+        font-weight: 600;
+        letter-spacing: 0.125em;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    h1 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    // Icon
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon > .label {
+        display: none;
+    }
+    // List
+    ul {
+        list-style: disc;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+    }
+    // Header
+    #header {
+        background: #1d2726;
+        color: #fff;
+        cursor: default;
+        height: 3.25em;
+        line-height: 3.25em;
+        width: 100%;
+        z-index: 10000;
+    }
+    #header h1 {
+        color: #fff;
+        height: inherit;
+        left: 1.25em;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+    }
+    #header h1 a {
+        font-size: 1em;
+    }
+    #header h1 a:before {
+        color: #5ecb96;
+        margin-right: 0.35em;
+    }
+    #header nav {
+        font-weight: 600;
+        height: inherit;
+        letter-spacing: 0.125em;
+        line-height: inherit;
+        position: absolute;
+        right: 1.5em;
+        text-transform: uppercase;
+        top: 0;
+        vertical-align: middle;
+    }
+    #header nav > ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    #header nav > ul > li {
+        display: inline-block;
+        margin-left: 2em;
+        padding-left: 0;
+    }
+    #header nav > ul > li a {
+        -moz-transition: color 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+        color: #ccc;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    #header nav > ul > li a:before {
+        margin-right: 0.5em;
+        opacity: 0.5;
+    }
+    #header nav > ul > li a:hover {
+        color: #fff;
+    }
+    #header nav > ul > li.active > a {
+        color: #fff;
+    }
+    #header nav > ul > li:first-child {
+        margin-left: 0;
+    }
+    #header nav > ul > li .button {
+        font-size: 1em;
+        height: 2.25em;
+        line-height: 2.25em;
+        margin-bottom: 0;
+        padding: 0 1em;
+        position: relative;
+        top: -0.125em;
+        vertical-align: middle;
+    }
+    #header .container {
+        position: relative;
+    }
+    #header .container h1 {
+        left: 0;
+    }
+    #header .container nav {
+        right: 0;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        input,
+        select,
+        textarea {
+            font-size: 12pt;
+        }
+        #header {
+            text-align: center;
+            height: auto;
+        }
+        #header h1 {
+            padding-top: 0.5em;
+        }
+        #header nav,#header h1 {
+            position: static;
+
+        }
+    }
+}
+
+// Mobile (Portrait)
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+}

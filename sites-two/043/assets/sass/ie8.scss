@@ -1,0 +1,56 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Beyond by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	ul.style2 {
+		margin-bottom: 0;
+	}
+
+	.button {
+		border: solid 1px #666;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	.bigbutton {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	.box {
+		section, article {
+			border: 0;
+			padding: 0;
+			margin: 0 0 2.5em 0;
+		}
+
+		&.features .button {
+			margin-top: 0;
+		}
+
+		&.cta {
+			padding-bottom: 0;
+
+			section {
+				padding-bottom: 2em;
+				margin-bottom: 2em;
+			}
+		}
+	}
+
+/* Wrappers */
+
+	#header-wrapper {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}
+
+	#main-wrapper {
+		padding: 0 0 0.5em 0;
+	}

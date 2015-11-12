@@ -1,0 +1,155 @@
+body {
+  background: #fff;
+  color: #888;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 2em;
+}
+.this a {
+  color: #37b37f;
+  text-decoration: underline;
+}
+.this a:hover {
+  text-decoration: none;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2,
+.this h3,
+.this h4 {
+  color: #616161;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.this h1 a,
+.this h2 a,
+.this h3 a,
+.this h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+.this h3 {
+  font-size: 1.35em;
+  line-height: 1.5em;
+}
+.this header p {
+  color: #a7a7a7;
+  letter-spacing: 0.11em;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+.this header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.75em;
+}
+.this header.major {
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+}
+.this header.major h2 {
+  margin: 0;
+}
+.this header.major p {
+  color: #616161;
+  margin: 0.5em 0 0 0;
+}
+.this header.major:after {
+  background-color: #888;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin: 2em 0 0 0;
+  position: relative;
+  width: 5em;
+}
+.this .icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+.this .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this .icon > .label {
+  display: none;
+}
+.this .icon-grid {
+  margin: 0 0 2em 0;
+  text-align: center;
+}
+.this .icon-grid .icon {
+  color: #616161;
+  display: block;
+  font-size: 1.25em;
+  margin: 0 0 1em 0;
+}
+.this .wrapper {
+  padding: 8em 0 6em 0;
+}
+.this .wrapper.style1 {
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .this h2 {
+    font-size: 1.5em;
+  }
+  .this h3 {
+    font-size: 1.25em;
+  }
+  .this header h2 + p {
+    font-size: 1em;
+  }
+  .this .wrapper {
+    padding: 6em 0 4em 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  #main {
+    padding: 4em 0 4em 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .this h2 {
+    font-size: 1.25em;
+  }
+  .this h3 {
+    font-size: 1em;
+  }
+  .this .wrapper {
+    padding: 3em 0 1em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 12pt;
+  }
+}

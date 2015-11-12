@@ -1,0 +1,131 @@
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        min-width: 320px;
+    }
+}
+
+body {
+    background: #fff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65em;
+    color: #444;
+}
+
+.this {
+    *,
+    *:after,
+    *:before {
+        box-sizing: border-box;
+    }
+    a {
+        transition: border-bottom-color 0.2s ease-in-out;
+        border-bottom: dotted 1px;
+        text-decoration: none;
+    }
+    a:hover {
+        border-bottom-color: transparent;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    a {
+        color: #444;
+    }
+}
+
+.this {
+    ul {
+        list-style: disc;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+    }
+}
+
+.this {
+    ul.menu {
+        padding: 0;
+        list-style: none;
+    }
+    ul.menu li {
+        padding: 0;
+        display: inline-block;
+        margin-left: 0.75em;
+        padding-left: 0.75em;
+        border-left: solid 1px;
+        line-height: 1em;
+    }
+    ul.menu li:first-child {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+    }
+    ul.menu li {
+        border-left-color: #e6e6e6;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .this {
+        header.major h2 {
+            font-size: 1.25em;
+        }
+    }
+}
+
+.this {
+    // Footer
+    #footer {
+        padding: 4em 0 2em 0;
+        border-top: solid 1px #e6e6e6;
+        position: relative;
+    }
+    #footer > .inner {
+        margin: 0 auto;
+        max-width: 90em;
+        position: relative;
+        width: 90%;
+    }
+    #footer .copyright {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+    #footer .menu {
+        color: #bbb;
+        font-size: 0.9em;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #footer .menu a {
+        color: inherit;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .this {
+        #footer {
+            padding: 3em 0 1em 0;
+            text-align: center;
+        }
+        #footer .copyright {
+            margin: 0 0 1em 0;
+        }
+        #footer .menu {
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .this {
+        #footer .menu li a span {
+            display: none;
+        }
+    }
+}

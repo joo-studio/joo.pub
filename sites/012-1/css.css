@@ -1,0 +1,284 @@
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("../../assets/img/012overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35)), url("../../assets/img/012bg.jpg");
+  background-image: url("../../assets/img/012overlay.png"), -webkit-linear-gradient(30deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35)), url("../../assets/img/012bg.jpg");
+  background-image: url("../../assets/img/012overlay.png"), linear-gradient(60deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35)), url("../../assets/img/012bg.jpg");
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: 100px 100px, cover, cover;
+  background-position: top left, center center, bottom center;
+  background-attachment: fixed, fixed, fixed;
+}
+body:after {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  opacity: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  background-image: url("../../assets/img/012overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35));
+  background-image: url("../../assets/img/012overlay.png"), -webkit-linear-gradient(30deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35));
+  background-image: url("../../assets/img/012overlay.png"), linear-gradient(60deg, rgba(255, 246, 151, 0.5) 5%, rgba(255, 148, 140, 0.35));
+  background-repeat: repeat, no-repeat;
+  background-size: 100px 100px, cover;
+  background-position: top left, center center;
+  -webkit-transition: opacity 1.75s ease-out;
+  transition: opacity 1.75s ease-out;
+}
+.this {
+  color: #414f57;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  height: 100%;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease, border-color 0.2s ease;
+          transition: color 0.2s ease, border-color 0.2s ease;
+  color: inherit;
+  text-decoration: none;
+}
+.this a:before {
+  -webkit-transition: color 0.2s ease, text-shadow 0.2s ease;
+          transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.this a:hover {
+  color: #f8b5b0;
+}
+.this p {
+  margin: 0 0 1.5em 0;
+}
+.this h1 {
+  color: #313f47;
+  line-height: 1.5;
+  margin: 0 0 0.75em 0;
+}
+.this h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h1 {
+  font-size: 1.85em;
+  letter-spacing: 0.22em;
+  margin: 0 0 0.525em 0;
+}
+.this .icon {
+  text-decoration: none;
+  position: relative;
+  border-bottom: none;
+}
+.this .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this .icon > .label {
+  display: none;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 1.5em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin-top: -0.675em;
+}
+.this ul.icons li {
+  display: inline-block;
+  padding: 0.675em 0.5em;
+}
+.this ul.icons li a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 3.75em;
+  height: 3.75em;
+  border-radius: 100%;
+  border: solid 1px #c8cccf;
+  line-height: 3.75em;
+  overflow: hidden;
+  text-align: center;
+  text-indent: 3.75em;
+  white-space: nowrap;
+}
+.this ul.icons li a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this ul.icons li a:before {
+  color: #ffffff;
+  text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+}
+.this ul.icons li a:hover:before {
+  text-shadow: 1.25px 0px 0px #f8b5b0, -1.25px 0px 0px #f8b5b0, 0px 1.25px 0px #f8b5b0, 0px -1.25px 0px #f8b5b0;
+}
+.this ul.icons li a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  font-size: 1.85rem;
+  line-height: inherit;
+  text-align: center;
+  text-indent: 0;
+}
+.this ul.icons li a:hover {
+  border-color: #f8b5b0;
+}
+.this .main {
+  position: relative;
+  max-width: 100%;
+  min-width: 27em;
+  padding: 4.5em 3em 3em 3em;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: default;
+  text-align: center;
+}
+.this .main .avatar {
+  position: relative;
+  display: block;
+  margin-bottom: 1.5em;
+}
+.this .main .avatar img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1.5em #ffffff;
+}
+.this .main .avatar:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -3em;
+  width: calc(100% + 6em);
+  height: 1px;
+  z-index: -1;
+  background: #c8cccf;
+}
+.this .footer {
+  -webkit-align-self: -webkit-flex-end;
+  -ms-align-self: -ms-flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  padding: 1.5em 0 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: default;
+  text-align: center;
+}
+.this .footer .copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  list-style: none;
+}
+.this .footer .copyright li {
+  display: inline-block;
+  margin: 0 0 0 0.45em;
+  padding: 0 0 0 0.85em;
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  line-height: 1;
+}
+.this .footer .copyright li:first-child {
+  border-left: 0;
+}
+.this .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  position: relative;
+  min-height: 100%;
+  padding: 2.5em;
+  z-index: 2;
+}
+.this .wrapper > * {
+  z-index: 1;
+}
+.this .wrapper:before {
+  content: '';
+  display: block;
+}
+@media screen and (max-width: 1680px) {
+  .this {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 360px) {
+  .this .wrapper {
+    padding: 0.75em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .this {
+    font-size: 10pt;
+    line-height: 1.75;
+  }
+  .this h1 {
+    font-size: 1.65em;
+  }
+  .this ul.icons li a:before {
+    font-size: 1.5rem;
+  }
+  .this .main {
+    min-width: 0;
+    width: 100%;
+    padding: 4em 2em 2.5em 2em;
+  }
+  .this .main .avatar:before {
+    left: -2em;
+    width: calc(100% + 4em);
+  }
+}

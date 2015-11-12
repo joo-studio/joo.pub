@@ -1,0 +1,181 @@
+.this {
+  /* Banner */
+  /* Highlight */
+}
+.this .banner-wrapper {
+  position: relative;
+  width: 100%;
+  background: #212121 url("../../assets/img/overlay.png") repeat;
+}
+.this .banner-wrapper:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../../assets/img/bg03.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.this .banner {
+  position: relative;
+  z-index: 1;
+}
+.this .banner .image-full {
+  line-height: 0;
+  margin: 0;
+}
+.this .highlight {
+  position: relative;
+}
+.this .highlight a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.this .highlight .image {
+  margin: 0;
+}
+.this .ct-responsive {
+  width: 100% !important;
+}
+.this .highlight header {
+  -webkit-transition: background-color 0.25s ease-in-out;
+          transition: background-color 0.25s ease-in-out;
+  background: #2a9648 url("../../assets/img/001bg01.png") no-repeat right top;
+  background-size: 100% 100%;
+  padding: 2.25em 100px 2.25em 2em;
+  position: relative;
+}
+.this .highlight header:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0a9';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  margin-top: -32px;
+  font-size: 64px;
+}
+.this .highlight header h2 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0;
+  color: inherit;
+}
+.this .highlight header p {
+  font-weight: 300;
+  letter-spacing: 0;
+  opacity: 0.65;
+  color: inherit;
+  margin: 0.25em 0 0 0;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+.this .highlight a:hover header {
+  background-color: #1AA658;
+}
+.this .highlight a:active header {
+  background-color: #1A8638;
+}
+.this .highlight.alt a header {
+  background-color: #D63333;
+}
+.this .highlight.alt a:hover header {
+  background-color: #E64343;
+}
+.this .highlight.alt a:active header {
+  background-color: #C62323;
+}
+.this .highlight.alt2 a header {
+  background-color: #414141;
+}
+.this .highlight.alt2 a:hover header {
+  background-color: #575757;
+}
+.this .highlight.alt2 a:active header {
+  background-color: #363636;
+}
+@media screen and (min-width: 737px) {
+  body {
+    font-size: 9.5pt;
+    line-height: 1.75em;
+  }
+  body input,
+  body select,
+  body textarea {
+    font-size: 9.5pt;
+    line-height: 1.75em;
+  }
+  body h2 {
+    font-size: 1.85em;
+  }
+  body h3 {
+    font-size: 1.5em;
+  }
+  .this .highlight header {
+    padding: 1.5em 80px 1.5em 1.5em;
+  }
+  .this .highlight header:before {
+    right: 24px;
+    margin-top: -24px;
+    font-size: 48px;
+  }
+  .this .banner-wrapper {
+    padding: 1.75em 0 1.75em 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    overflow-x: hidden;
+    font-size: 8pt;
+  }
+  body input,
+  body select,
+  body textarea {
+    font-size: 9.5pt;
+    letter-spacing: 0;
+    line-height: 1.75em;
+  }
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    line-height: 1.25em !important;
+    font-size: 1.5em !important;
+    letter-spacing: 0px !important;
+    margin: 0 0 1.25em 0;
+  }
+  .this .bg-img {
+    display: none;
+  }
+  .this .banner-wrapper {
+    padding-top: 20px;
+  }
+  .this .highlight header {
+    padding: 1.25em 80px 1em 1.25em;
+  }
+  .this .highlight header:before {
+    right: 24px;
+    margin-top: -24px;
+    font-size: 48px;
+  }
+  .this .banner-wrapper {
+    overflow: hidden;
+  }
+  .this .banner section {
+    margin: 0 0 20px 0 !important;
+  }
+  .this .banner .button {
+    margin: 0;
+  }
+}

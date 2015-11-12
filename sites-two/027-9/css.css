@@ -1,0 +1,453 @@
+body {
+  background: #f5f5f5;
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.65em;
+  letter-spacing: -0.015em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this input,
+.this select,
+.this textarea {
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.65em;
+  letter-spacing: -0.015em;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #e89980;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2,
+.this h3,
+.this h4 {
+  color: #646464;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+}
+.this h1 a,
+.this h2 a,
+.this h3 a,
+.this h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h2 {
+  font-size: 2.25em;
+  line-height: 1.5em;
+  letter-spacing: -0.035em;
+}
+.this header p {
+  color: #999;
+  position: relative;
+  margin: 0 0 1.5em 0;
+  font-style: italic;
+}
+.this header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.5em;
+}
+.this form {
+  margin: 0 0 2em 0;
+}
+.this label {
+  color: #646464;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0 0 1em 0;
+}
+.this input[type="text"],
+.this input[type="password"],
+.this input[type="email"],
+.this select,
+.this textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: solid 1px #e5e5e5;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+.this input[type="text"]:invalid,
+.this input[type="password"]:invalid,
+.this input[type="email"]:invalid,
+.this select:invalid,
+.this textarea:invalid {
+  box-shadow: none;
+}
+.this input[type="text"]:focus,
+.this input[type="password"]:focus,
+.this input[type="email"]:focus,
+.this select:focus,
+.this textarea:focus {
+  border-color: #e89980;
+  box-shadow: 0 0 0 2px #e89980;
+}
+.this input[type="text"],
+.this input[type="password"],
+.this input[type="email"],
+.this select {
+  height: 3em;
+}
+.this input[type="submit"],
+.this input[type="reset"],
+.this input[type="button"],
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #666;
+  border-radius: 6px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.this .button:hover {
+  background-color: #737373;
+}
+.this .button:active {
+  background-color: #595959;
+}
+.this .button.fit {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+.this .button.alt {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+  color: #777;
+}
+.this .button.alt:hover {
+  background-color: #f8f8f8;
+}
+.this .button.alt:active {
+  background-color: #f0f0f0;
+}
+.this .button.alt.icon:before {
+  color: #999;
+}
+.this .button.special {
+  background-color: #e89980;
+  color: #ffffff !important;
+}
+.this .button.special:hover {
+  background-color: #ecaa96;
+}
+.this .button.special:active {
+  background-color: #e4886a;
+}
+.this .button.disabled,
+.this .button:disabled {
+  background-color: #777 !important;
+  box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+  color: #f5f5f5 !important;
+  cursor: default;
+  opacity: 0.25;
+}
+.this ::-webkit-input-placeholder {
+  color: #444 !important;
+  opacity: 1.0;
+}
+.this :-moz-placeholder {
+  color: #444 !important;
+  opacity: 1.0;
+}
+.this ::-moz-placeholder {
+  color: #444 !important;
+  opacity: 1.0;
+}
+.this :-ms-input-placeholder {
+  color: #444 !important;
+  opacity: 1.0;
+}
+.this .formerize-placeholder {
+  color: #444 !important;
+  opacity: 1.0;
+}
+.this .box {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  margin: 0 0 2em 0;
+  padding: 3em;
+}
+.this .box > :last-child {
+  margin-bottom: 0;
+}
+.this .box .image.featured {
+  border-radius: 0;
+  display: block;
+  margin: 3em 0 3em -3em;
+  position: relative;
+  width: calc(100% + 6em);
+}
+.this .box .image.featured img {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+}
+.this .box .image.featured:first-child {
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 3em;
+  margin-top: -3em;
+}
+.this .box .image.featured:first-child img {
+  border-radius: 6px 6px 0 0;
+}
+.this .box .image.featured:last-child {
+  border-radius: 0 0 6px 6px;
+  margin-bottom: -3em;
+  margin-top: 3em;
+}
+.this .box .image.featured:last-child img {
+  border-radius: 0 0 6px 6px;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+.this #main {
+  margin-top: 2em;
+}
+.this #main {
+  padding: 4em 0;
+}
+.this #main.main {
+  margin-top: -10em;
+}
+.this #main > header {
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+.this #main > header h2 {
+  font-size: 2.75em;
+  margin: 0;
+}
+.this #main > header p {
+  border-top: solid 2px #e5e5e5;
+  color: #777;
+  display: inline-block;
+  font-style: normal;
+  margin: 1em 0 0 0;
+  padding: 1em 0 1.25em 0;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 13pt;
+  }
+  .this #main {
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+  .this #main {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+  .this #main {
+    margin-top: 0;
+  }
+  .this .box {
+    padding: 3em 2em;
+  }
+  .this .box.features > section {
+    padding: 3em 2em;
+  }
+  .this .box .image.featured {
+    margin-left: -2em;
+    width: calc(100% + 4em);
+  }
+  .this .box .image.featured:first-child {
+    margin-bottom: 3em;
+    margin-top: -3em;
+  }
+  .this .box .image.featured:last-child {
+    margin-bottom: -3em;
+    margin-top: 3em;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+  .this h2 {
+    font-size: 1.75em;
+    line-height: 1.35em;
+    letter-spacing: -0.025em;
+  }
+  .this #main {
+    padding: 4em 0 0 0;
+  }
+  .this #main > header {
+    margin: 0 2em 1.5em 2em;
+  }
+  .this #main > header h2 {
+    font-size: 2em;
+  }
+  .this #main > header p {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+  .this .box {
+    margin: 1em;
+    overflow-x: hidden;
+    padding: 2em 2em !important;
+  }
+  .this .box .image.featured {
+    margin-left: -2em;
+    width: calc(100% + 4em);
+  }
+  .this .box .image.featured:first-child {
+    margin-bottom: 2em;
+    margin-top: -2em;
+  }
+  .this .box .image.featured:last-child {
+    margin-bottom: -2em;
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+  .this #main > .box:first-child {
+    margin-top: 0;
+  }
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  .this .box {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 1em 0 0 0;
+    padding: 3em 1em !important;
+  }
+  .this .box .image.featured {
+    border-radius: 0;
+    margin-left: -1em;
+    width: calc(100% + 2em);
+  }
+  .this .box .image.featured img {
+    border-radius: 0 !important;
+  }
+  .this .box .image.featured:first-child {
+    margin-bottom: 3em;
+    margin-top: -3em;
+  }
+  .this .box .image.featured:last-child {
+    margin-bottom: -3em;
+    margin-top: 3em;
+  }
+}

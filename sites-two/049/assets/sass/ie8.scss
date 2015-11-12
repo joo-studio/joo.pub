@@ -1,0 +1,134 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Concentric by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	.button {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.alt {
+			position: relative;
+			border-color: #f2f1f1 !important;
+
+			&:hover {
+				position: relative;
+				background: #333131;
+				border-color: #333131 !important;
+				color: #FFF !important;
+			}
+		}
+	}
+
+/* Lists */
+
+	ul {
+		&.social {
+			border-top: 1px solid #444242;
+			border-bottom: 1px solid #444242;
+
+			li a {
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+
+		&.staff {
+			border-top: 1px solid #dcdcdc;
+			border-bottom: 1px solid #dcdcdc;
+
+			li {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+
+				img {
+					position: absolute;
+					-ms-behavior: url('assets/js/ie/PIE.htc');
+				}
+			}
+		}
+	}
+
+/* Forms */
+
+	form {
+		input {
+			&[type=text], &[type=password] {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+				background-color: #f8f8f8;
+			}
+		}
+
+		select, textarea {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+			background-color: #f8f8f8;
+		}
+
+		input {
+			&[type=text]:focus, &[type=password]:focus {
+				background-color: #f5f4f4;
+			}
+		}
+
+		select:focus, textarea:focus {
+			background-color: #f5f4f4;
+		}
+	}
+
+/* FA Icons */
+
+	.pennant {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+		padding: 0.20em;
+		font-size: 1.8em;
+	}
+
+	.icon {
+		width: 1.7em;
+		height: 1.7em;
+		line-height: 1.3em;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Nav */
+
+	#nav {
+		li.current_page_item a {
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+	.dropotron {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		a, span {
+			border-top-color: #444;
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		padding-bottom: 5em;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}
+
+/* Tweets */
+
+	#tweets {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}
+
+/* Footer */
+
+	#footer header {
+		border-bottom: 1px solid #444242;
+	}

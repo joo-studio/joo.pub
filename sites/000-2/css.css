@@ -1,0 +1,182 @@
+.this {
+  background-image: url("../../assets/img/003dark-tl.svg"), url("../../assets/img/003dark-tr.svg");
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 7em 0 0 0;
+  background-color: #f3f6fa;
+}
+.this * {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #dd3c1a;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.this p {
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+.this header.special {
+  margin-bottom: 5em;
+  padding-top: 7em;
+  position: relative;
+  text-align: center;
+}
+.this header.special:before,
+.this header.special:after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 7px;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.75em;
+  width: 43%;
+}
+.this header.special:before {
+  left: 0;
+}
+.this header.special:after {
+  right: 0;
+}
+.this header.special h2 {
+  margin-bottom: 0;
+}
+.this header.special h2 + p {
+  margin-bottom: 0;
+  padding-top: 1.5em;
+}
+.this header.special .icon {
+  cursor: default;
+  height: 7em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 100%;
+}
+.this header.special .icon:before {
+  font-size: 3.5em;
+  opacity: 0.35;
+}
+.this .icon {
+  text-decoration: none;
+  position: relative;
+}
+.this .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this .icon > .label {
+  display: none;
+}
+@media screen and (max-width: 1680px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 14pt;
+  }
+  .this header.special {
+    padding-top: 5.5em;
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.65em;
+  }
+  .this h2 {
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+  }
+  .this {
+    background-size: 15em;
+  }
+  .this header br {
+    display: none;
+  }
+  .this header.special {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .this {
+    padding: 5em 0 0 0;
+  }
+  .this header.special {
+    margin-bottom: 4em;
+    padding-top: 5em;
+  }
+  .this header.special:before,
+  .this header.special:after {
+    width: 40%;
+  }
+  .this header.special h2 + p {
+    padding-top: 1.25em;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    min-width: 320px;
+  }
+  .this {
+    background-size: 10em;
+    padding: 2.5em 0 0 0;
+  }
+  .this h2 {
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+  }
+  .this p {
+    text-align: justify;
+  }
+  .this header {
+    text-align: center;
+  }
+  .this header.special {
+    margin-bottom: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .this header.special:before,
+  .this header.special:after {
+    width: 38%;
+  }
+  .this header.special .icon {
+    font-size: 0.75em;
+    top: 1.5em;
+  }
+  .this header p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,227 @@
+// Basic
+body {
+    background: #fff;
+    color: #4a4a4a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+.this {
+    // Box Model
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h2 {
+        color: #2a2a2a;
+        font-weight: 600;
+        letter-spacing: 0.125em;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    h2 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.75em;
+    }
+    header p {
+        letter-spacing: 0.125em;
+        margin: 0 0 1.5em 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    header h2 + p {
+        font-size: 1em;
+        margin-top: -0.85em;
+        line-height: 1.75em;
+    }
+    // Banner
+    #banner {
+        background-color: #f6f6f6;
+        background-attachment: scroll, fixed;
+        background-image: url("../../assets/img/021overlay.png"), url("../../assets/img/021banner.jpg");
+        background-position: top left, center center;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        color: #fff;
+        padding: 12em 0;
+        position: relative;
+        text-align: center;
+    }
+    #banner:after {
+        transition: opacity 4s ease-in-out;
+        background: #313148;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    #banner:last-child {
+        margin-bottom: 0;
+    }
+    #banner .inner {
+        background: #1d2726;
+        background: rgba(29, 39, 38, 0.9);
+        display: inline-block;
+        padding: 3.5em 5em;
+        position: relative;
+        z-index: 2;
+    }
+    #banner .inner h2 {
+        color: inherit;
+        font-size: 2.5em;
+        line-height: 1.35em;
+        margin: 0;
+        padding: 0;
+    }
+    #banner .inner p {
+        font-size: 1em;
+        letter-spacing: 0.125em;
+        line-height: 2em;
+        margin: 2em 0 0 0;
+        padding: 2em 0 0 0;
+        position: relative;
+        text-transform: uppercase;
+        top: -0.25em;
+    }
+    #banner .inner p:before {
+        background: #888;
+        background: rgba(255, 255, 255, 0.25);
+        content: '';
+        display: block;
+        height: 3px;
+        left: 50%;
+        margin: 0 0 0 -3em;
+        position: absolute;
+        top: 0;
+        width: 6em;
+    }
+    #banner .inner .actions {
+        margin-top: 2em;
+    }
+    #banner .inner .button.alt {
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+        color: #fff !important;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+    .this {
+        // Banner
+        #banner {
+            background-attachment: scroll;
+            padding: 8em 0;
+            .inner {
+                padding: 3em 4em;
+                h2 {
+                    font-size: 2.25em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 {
+            font-size: 1.25em;
+            line-height: 1.75em;
+        }
+        header h2 + p {
+            font-size: 0.9em;
+        }
+        // Banner
+        #banner {
+            padding: 10em 0;
+        }
+        #banner .inner {
+            padding: 3em;
+        }
+        #banner .inner h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        // Banner
+        #banner {
+            padding: 6em 0;
+        }
+        #banner .inner {
+            padding: 2em 2.5em;
+            width: 100%;
+        }
+        #banner .inner h2 {
+            font-size: 1.5em;
+        }
+        #banner .inner p {
+            margin: 1.5em 0 0 0;
+            padding: 1.5em 0 0 0;
+        }
+    }
+}
+
+// Mobile (Portrait)
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 br {
+            display: none;
+        }
+        h2 {
+            font-size: 1.15em;
+            line-height: 1.75em;
+        }
+    }
+}

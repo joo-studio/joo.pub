@@ -130,7 +130,8 @@ body {
   box-sizing: border-box;
 }
 a {
-  transition: all .5s;
+  -webkit-transition: all .5s;
+          transition: all .5s;
   text-decoration: none;
   color: #50b350;
 }
@@ -142,6 +143,7 @@ body {
   font: 18px/25px 'Helvetica Neue', HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, 'Nimbus Sans L', 'Liberation Sans', Arial, sans-serif;
 }
 .liner-bg {
+  background-image: -webkit-linear-gradient(290deg, #65d165 10%, #57d39c 80%);
   background-image: linear-gradient(160deg, #65d165 10%, #57d39c 80%);
 }
 .border-right {
@@ -156,7 +158,8 @@ body {
   position: relative;
   display: inline-block;
   padding: 18px;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   color: #fff;
   border: solid 1px #fff;
@@ -164,7 +167,8 @@ body {
   background-color: transparent;
 }
 .g3-btn:hover {
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
   background-color: rgba(93, 211, 134, 0.8);
 }
 .start-btn:hover {
@@ -181,7 +185,8 @@ body {
 }
 .register-btn:hover .fa-angle-right {
   right: 10px;
-  transition: right 0.3s ease-in-out;
+  -webkit-transition: right 0.3s ease-in-out;
+          transition: right 0.3s ease-in-out;
 }
 .register-btn .fa-angle-right {
   font-size: 20px;
@@ -192,7 +197,8 @@ body {
   display: block;
   width: 15px;
   height: 15px;
-  transition: right 0.3s ease-in-out;
+  -webkit-transition: right 0.3s ease-in-out;
+          transition: right 0.3s ease-in-out;
 }
 .tabs {
   line-height: 50px;
@@ -207,13 +213,15 @@ body {
   display: block;
   float: left;
   margin: 0 30px;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #71767a;
   box-shadow: 0 -3px 0 transparent inset;
 }
 .tabs .item:hover,
 .tabs .item.active {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #52c27d;
   box-shadow: 0 -3px 0 #52c27d inset;
 }
@@ -356,7 +364,8 @@ body {
 }
 .header .logo img {
   height: 100%;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
 .header .logo:hover img {
@@ -379,11 +388,13 @@ body {
   border-radius: 17px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.4);
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }
 .header .search .input-text:focus {
   width: 200px;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }
 .header .search .fa {
   line-height: 35px;
@@ -514,7 +525,8 @@ body {
   display: inline-block;
   padding: 11px 16px 10px;
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -523,7 +535,8 @@ body {
   background: #52c27d;
 }
 .desk .button:hover {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: rgba(82, 194, 125, 0.8);
   background: rgba(255, 255, 255, 0.8);
 }
@@ -575,7 +588,9 @@ body {
   height: 350px;
 }
 .case .cases .list:hover figcaption {
-  transform: translate(0.75rem, 0.75rem);
+  -webkit-transform: translate(0.75rem, 0.75rem);
+      -ms-transform: translate(0.75rem, 0.75rem);
+          transform: translate(0.75rem, 0.75rem);
   opacity: 1;
 }
 .case .cases figcaption {
@@ -585,12 +600,14 @@ body {
   bottom: 0;
   left: .75rem;
   padding: 20px;
-  transition: transform .3s, opacity .3s;
+  -webkit-transition: -webkit-transform .3s, opacity .3s;
+          transition: transform .3s, opacity .3s;
   text-align: center;
   opacity: 0;
   color: #52c27d;
   background: rgba(44, 63, 82, 0.95);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .case .cases figcaption span:before {
   content: 'by ';
@@ -788,36 +805,44 @@ body {
   height: 90px;
   margin-top: -45px;
   margin-left: -45px;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
   border: solid 3px #fff;
   border-radius: 50%;
 }
 .projects .project .bottom .title {
   font-size: 24px;
   padding-top: 60px;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #3e3e3e;
 }
 .projects .project .bottom .subtitle {
   font-size: 14px;
   line-height: 2.2;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #999999;
 }
 .projects .project:hover {
   cursor: pointer;
 }
 .projects .project:hover .bottom .avatar {
-  transition: all 500ms ease-in-out;
-  transform: rotate(360deg);
+  -webkit-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
   opacity: .3;
 }
 .projects .project:hover .bottom .title {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #50b350;
 }
 .projects .project:hover .bottom .subtitle {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #50b350;
 }
 @media (max-width: 767px) {
@@ -1006,8 +1031,12 @@ hr {
   float: left;
   padding: 4px 10px;
   cursor: pointer;
-  user-select: none;
-  transition: all 300ms ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   vertical-align: middle;
   white-space: nowrap;
   color: #333;
@@ -1015,7 +1044,8 @@ hr {
   -webkit-appearance: none;
 }
 .location .social-name:hover {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
   color: #50b350;
 }
 .location .social-count {
@@ -1074,14 +1104,18 @@ hr {
 .apps .carousel-inner .item {
   position: relative;
   display: none;
-  transition: transform 0.6s ease-in-out;
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+          transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 .apps .carousel-inner .item.active {
   left: 0;
   display: block;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .apps .carousel-inner .item > img {
   line-height: 1;
@@ -1153,7 +1187,9 @@ hr {
   margin-top: -30px;
 }
 .apps .carousel-control.left {
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+  background-image: -webkit-linear-gradient(left, rgba(195, 195, 195, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(195, 195, 195, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -1167,7 +1203,9 @@ hr {
 .apps .carousel-control.right {
   right: 0;
   left: auto;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(195, 195, 195, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(195, 195, 195, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);

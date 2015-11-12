@@ -1,0 +1,79 @@
+.this {
+    position: relative;
+    width: 100%;
+    height: 3.25em;
+    background: #ffffff;
+    line-height: 3.25em;
+}
+
+.this .logo {
+    font-size: 18px;
+    font-weight: 700;
+    height: inherit;
+    line-height: 2.3em;
+    float: left;
+    margin-left: 1.5em;
+}
+
+.this .logo a {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.this .menu {
+    float: right;
+    margin-right: 1.5em;
+    font-weight: 200;
+}
+
+.this .menu a {
+    display: inline-block;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.this .menu a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.this .icon {
+    text-decoration: none;
+    cursor: default;
+    display: inline-block;
+    margin: 0 0 1.5em 0;
+    vertical-align: middle;
+}
+
+.this .icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    color: #fff !important;
+    text-shadow: 1px 0 0 #6ec7f5, -1px 0 0 #6ec7f5, 0 1px 0 #6ec7f5, 0 -1px 0 #6ec7f5;
+    font-size: 2em;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .this {
+        height: auto;
+        text-align: center;
+    }
+    .this .logo,
+    .this .menu {
+        float: none;
+        margin: 0;
+    }
+}

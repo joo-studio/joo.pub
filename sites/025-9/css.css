@@ -1,0 +1,415 @@
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+body {
+  background: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.65em;
+  color: #444;
+}
+.this *,
+.this *:after,
+.this *:before {
+  box-sizing: border-box;
+}
+.this input,
+.this select,
+.this textarea {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.65em;
+}
+.this a {
+  -webkit-transition: border-bottom-color 0.2s ease-in-out;
+          transition: border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2,
+.this h3,
+.this h4 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1.5em 0;
+  padding-bottom: 1.25em;
+  position: relative;
+  text-transform: uppercase;
+}
+.this h1:after,
+.this h2:after,
+.this h3:after,
+.this h4:after {
+  border-bottom: solid 1px;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  width: 3rem;
+}
+.this h1 a,
+.this h2 a,
+.this h3 a,
+.this h4 a {
+  border-bottom: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.this h1.alt,
+.this h2.alt,
+.this h3.alt,
+.this h4.alt {
+  margin: 0 0 1em 0;
+  padding-bottom: 0;
+}
+.this h1.alt:after,
+.this h2.alt:after,
+.this h3.alt:after,
+.this h4.alt:after {
+  display: none;
+}
+.this h2 {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+.this h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.this h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.this hr {
+  border: 0;
+  border-bottom: solid 1px;
+  margin: 2em 0;
+}
+.this hr.major {
+  margin: 3em 0;
+}
+.this input,
+.this select,
+.this textarea {
+  color: #444;
+}
+.this a {
+  color: #444;
+}
+.this h1,
+.this h2,
+.this h3,
+.this h4,
+.this h5,
+.this h6 {
+  color: #444;
+}
+.this hr {
+  border-bottom-color: #e6e6e6;
+}
+.this input[type="submit"],
+.this input[type="reset"],
+.this input[type="button"],
+.this button,
+.this .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.this input[type="submit"].disabled,
+.this input[type="submit"]:disabled,
+.this input[type="reset"].disabled,
+.this input[type="reset"]:disabled,
+.this input[type="button"].disabled,
+.this input[type="button"]:disabled,
+.this button.disabled,
+.this button:disabled,
+.this .button.disabled,
+.this .button:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  opacity: 0.25;
+}
+.this input[type="submit"],
+.this input[type="reset"],
+.this input[type="button"],
+.this button,
+.this .button {
+  background-color: transparent;
+  color: #444 !important;
+  box-shadow: inset 0 0 0 1px #444;
+}
+.this input[type="submit"]:hover,
+.this input[type="reset"]:hover,
+.this input[type="button"]:hover,
+.this button:hover,
+.this .button:hover {
+  background-color: #f6f6f6;
+}
+.this input[type="submit"]:active,
+.this input[type="reset"]:active,
+.this input[type="button"]:active,
+.this button:active,
+.this .button:active {
+  background-color: #e2e2e2;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+  .this input,
+  .this select,
+  .this textarea {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this h2 {
+    line-height: 1.5em;
+  }
+}
+.this .image {
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.this .image img {
+  display: block;
+}
+.this .image.left,
+.this .image.right {
+  max-width: 40%;
+}
+.this .image.left img,
+.this .image.right img {
+  width: 100%;
+}
+.this .image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+.this .image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+.this .image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+.this .image.fit img {
+  width: 100%;
+}
+.this .image.main {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+.this .image.main img {
+  width: 100%;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    padding: 1em 0 0 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+}
+.this header.major {
+  margin: 0 0 4em 0;
+}
+.this header.major > :last-child {
+  margin-bottom: 0;
+}
+.this header.major h2 {
+  font-size: 2.25em;
+  font-weight: 800;
+  margin: 0 0 0.7em 0;
+  padding-bottom: 0.75em;
+}
+@media screen and (max-width: 1280px) {
+  .this header.major h2 {
+    font-size: 1.25em;
+  }
+}
+.this .wrapper {
+  padding: 4em 0 2em 0;
+  position: relative;
+}
+.this .wrapper > .inner {
+  margin: 0 auto;
+  max-width: 90em;
+  width: 90%;
+}
+.this .wrapper.sidebar > .inner {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.this .wrapper.sidebar > .inner > header {
+  width: 100%;
+}
+.this .wrapper.sidebar > .inner > .content {
+  width: 75%;
+  padding: 0 4em 0 0;
+}
+.this .wrapper.sidebar > .inner > .sidebar {
+  width: 25%;
+}
+.this .wrapper.sidebar.left > .inner {
+  -moz-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse;
+}
+.this .wrapper.sidebar.left > .inner > .content {
+  padding: 0 0 0 4em;
+}
+@media screen and (max-width: 980px) {
+  .this .wrapper.sidebar > .inner {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+  .this .wrapper.sidebar > .inner > .content {
+    width: 100%;
+    padding: 0;
+  }
+  .this .wrapper.sidebar > .inner > .sidebar {
+    border-top: solid 2px #e6e6e6;
+    margin: 2em 0 0 0;
+    padding: 4em 0 0 0;
+    width: 100%;
+  }
+  .this .wrapper.sidebar.style1 > .inner > .sidebar {
+    border-top-color: rgba(255, 255, 255, 0.25);
+  }
+  .this .wrapper.sidebar.style2 > .inner > .sidebar {
+    border-top-color: #e6e6e6;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .this .wrapper {
+    padding: 3em 0 1em 0;
+  }
+  .this .wrapper > .inner {
+    width: 100%;
+    padding: 0 3em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .this .wrapper > .inner > * {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this .wrapper {
+    padding: 2.5em 0 0.5em 0;
+  }
+  .this .wrapper > .inner {
+    padding: 0 1.5em;
+  }
+}
+.this #main {
+  padding: 6em 0 4em 0;
+}
+.this #main > .inner > header.major:first-child {
+  margin-bottom: 6em;
+}
+@media screen and (max-width: 1280px) {
+  .this #main {
+    padding: 4em 0 2em 0;
+  }
+  .this #main > .inner > header.major:first-child {
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this #main {
+    padding: 2.5em 0 0.5em 0;
+  }
+  .this #main > .inner > header.major:first-child {
+    margin-bottom: 2.5em;
+  }
+}

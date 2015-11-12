@@ -1,0 +1,226 @@
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+body {
+  background: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.65em;
+  color: #444;
+}
+.this *,
+.this *:after,
+.this *:before {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: border-bottom-color 0.2s ease-in-out;
+          transition: border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2,
+.this h3,
+.this h4 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 1.5em 0;
+  padding-bottom: 1.25em;
+  position: relative;
+  text-transform: uppercase;
+}
+.this h1:after,
+.this h2:after,
+.this h3:after,
+.this h4:after {
+  border-bottom: solid 1px;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  width: 3rem;
+}
+.this h2 a {
+  border-bottom: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.this h2.alt {
+  margin: 0 0 1em 0;
+  padding-bottom: 0;
+}
+.this h2.alt:after {
+  display: none;
+}
+.this h2 {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+.this a {
+  color: #444;
+}
+.this h2 {
+  color: #444;
+}
+.this hr {
+  border-bottom-color: #e6e6e6;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this h2 {
+    line-height: 1.5em;
+  }
+}
+.this .image {
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.this .image img {
+  display: block;
+}
+.this .image.left,
+.this .image.right {
+  max-width: 40%;
+}
+.this .image.left img,
+.this .image.right img {
+  width: 100%;
+}
+.this .image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+.this .image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+.this .image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+.this .image.fit img {
+  width: 100%;
+}
+.this .image.main {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+.this .image.main img {
+  width: 100%;
+}
+.this .spotlight {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.this .spotlight .content {
+  width: calc(33.3333333% - 1.25em);
+}
+.this .spotlight h2 {
+  font-size: 1.9em;
+  font-weight: 800;
+  margin: 0 0 0.7em 0;
+  padding-bottom: 0.75em;
+}
+.this .spotlight .image {
+  width: calc(66.6666666% - 2.5em);
+  margin: 0 0 2em 0;
+}
+.this .spotlight .image img {
+  width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .this .spotlight h2 {
+    font-size: 1.5em;
+  }
+  .this .spotlight .image {
+    width: calc(66.6666666% - 1.25em);
+  }
+}
+@media screen and (max-width: 980px) {
+  .this .spotlight {
+    display: block;
+  }
+  .this .spotlight .content {
+    width: 100%;
+  }
+  .this .spotlight .image {
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+}
+.this .wrapper {
+  padding: 4em 0 2em 0;
+  position: relative;
+}
+.this .wrapper > .inner {
+  margin: 0 auto;
+  max-width: 90em;
+  width: 90%;
+}
+.this .wrapper + .wrapper {
+  border-top: solid 1px #e6e6e6;
+}
+.this .wrapper.major-pad {
+  padding: 6em 0 4em 0;
+}
+@media screen and (max-width: 1280px) {
+  .this .wrapper {
+    padding: 3em 0 1em 0;
+  }
+  .this .wrapper > .inner {
+    width: 100%;
+    padding: 0 3em;
+  }
+  .this .wrapper.major-pad {
+    padding: 4em 0 2em 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .this .wrapper > .inner > * {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .this .wrapper {
+    padding: 2.5em 0 0.5em 0;
+  }
+  .this .wrapper > .inner {
+    padding: 0 1.5em;
+  }
+  .this .wrapper.major-pad {
+    padding: 2.5em 0 0.5em 0;
+  }
+}

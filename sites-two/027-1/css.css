@@ -1,0 +1,382 @@
+body {
+  background: #f5f5f5;
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.65em;
+  letter-spacing: -0.015em;
+}
+.this *,
+.this *:before,
+.this *:after {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #e89980;
+  text-decoration: none;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this p {
+  margin: 0 0 2em 0;
+}
+.this h1,
+.this h2 {
+  color: #646464;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+}
+.this h1 a,
+.this h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.this h2 {
+  font-size: 2.25em;
+  line-height: 1.5em;
+  letter-spacing: -0.035em;
+}
+.this ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+.this ul li {
+  padding-left: 0.5em;
+}
+.this input[type="submit"],
+.this .button {
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #666;
+  border-radius: 6px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.this input[type="submit"]:hover,
+.this .button:hover {
+  background-color: #737373;
+}
+.this input[type="submit"]:active,
+.this .button:active {
+  background-color: #595959;
+}
+.this input[type="submit"].alt,
+.this .button.alt {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+  color: #777;
+}
+.this .button.alt:hover {
+  background-color: #f8f8f8;
+}
+.this .button.alt:active {
+  background-color: #f0f0f0;
+}
+.this .button.special {
+  background-color: #e89980;
+  color: #ffffff !important;
+}
+.this .button.special:hover {
+  background-color: #ecaa96;
+}
+.this .button.special:active {
+  background-color: #e4886a;
+}
+.this .button.disabled,
+.this .button:disabled {
+  background-color: #777 !important;
+  box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+  color: #f5f5f5 !important;
+  cursor: default;
+  opacity: 0.25;
+}
+.this ::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: 1.0;
+}
+.this :-moz-placeholder {
+  color: #fff !important;
+  opacity: 1.0;
+}
+.this ::-moz-placeholder {
+  color: #fff !important;
+  opacity: 1.0;
+}
+.this :-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1.0;
+}
+.this .formerize-placeholder {
+  color: #fff !important;
+  opacity: 1.0;
+}
+.this ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+.this ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.this ul.actions li:last-child {
+  padding-right: 0;
+}
+.this #header {
+  background: #444;
+  color: #bbb;
+  cursor: default;
+  height: 3.25em;
+  left: 0;
+  line-height: 3.25em;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.this #header h1 {
+  color: inherit;
+  height: inherit;
+  left: 1.25em;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  font-size: 1.5em;
+}
+.this #header h1 a {
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+}
+.this #header nav {
+  height: inherit;
+  line-height: inherit;
+  position: absolute;
+  right: 0.75em;
+  top: 0;
+  vertical-align: middle;
+}
+.this #header nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.this #header nav > ul > li {
+  display: inline-block;
+  padding-left: 0;
+}
+.this #header nav > ul > li > ul {
+  display: none;
+}
+.this #header nav > ul > li a {
+  display: inline-block;
+  height: 2em;
+  line-height: 1.95em;
+  padding: 0 1em;
+  border-radius: 6px;
+  color: #fff;
+}
+.this #header nav > ul > li:first-child {
+  margin-left: 0;
+}
+.this #header .ct-container {
+  position: relative;
+}
+.this #header .ct-container h1 {
+  left: 0;
+}
+.this #header .ct-container nav {
+  right: 0;
+}
+.this #header.alt {
+  -webkit-animation: none;
+          animation: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+}
+.this #banner {
+  background-attachment: scroll, fixed;
+  background-color: #666;
+  background-image: url("../../assets/img/027overlay.png"), url("../../assets/img/027banner.jpg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #fff;
+  padding: 12em 0 20em 0;
+  text-align: center;
+}
+.this #banner:last-child {
+  margin-bottom: 0;
+}
+.this #banner h2 {
+  font-size: 3.5em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  color: #fff;
+}
+.this #banner p {
+  font-size: 1.25em;
+  margin-bottom: 1.75em;
+}
+.this #banner .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  min-width: 12em;
+}
+.this #banner .button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.this #banner .button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.this #banner .button.special {
+  background: #fff;
+  color: #666 !important;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 13pt;
+  }
+  .this input {
+    font-size: 13pt;
+  }
+  .this #banner {
+    padding: 10em 0 18em 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11pt;
+  }
+  .this input {
+    font-size: 11pt;
+  }
+  .this #banner {
+    background-attachment: scroll;
+  }
+  .this #banner h2 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .this input {
+    font-size: 11pt;
+  }
+  .this h2 br,
+  .this h3 br {
+    display: none;
+  }
+  .this #main.main {
+    margin-top: 0;
+  }
+  .this #header.alt {
+    text-align: center;
+    height: auto;
+    position: relative;
+    background-color: #444;
+  }
+  .this #header.alt h1,
+  .this #header.alt nav {
+    position: static;
+  }
+  .this #header {
+    text-align: center;
+    height: auto;
+    position: relative;
+  }
+  .this #header h1,
+  .this #header nav {
+    position: static;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 11pt;
+  }
+  .this h2 {
+    font-size: 1.75em;
+    line-height: 1.35em;
+    letter-spacing: -0.025em;
+  }
+  .this h3 {
+    font-size: 1.5em;
+  }
+  .this #banner {
+    padding: 4em 0;
+  }
+  .this #banner h2 {
+    font-size: 2.25em;
+  }
+  .this #banner p {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .this #banner {
+    padding: 5em 1em 4em 1em;
+  }
+  .this #main > .box:first-child {
+    margin-top: 0;
+  }
+  .this ul.actions {
+    margin: 0 0 2em 0;
+  }
+  .this ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .this ul.actions li:first-child {
+    padding-top: 0;
+  }
+  .this ul.actions li > * {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .this ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+}

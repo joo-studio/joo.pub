@@ -1,0 +1,18 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Rewind by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Wrappers */
+
+	#main-wrapper {
+		.homepage & {
+			margin-bottom: 0;
+		}
+	}

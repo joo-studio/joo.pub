@@ -1,0 +1,237 @@
+// Basic
+body {
+    background: #fff;
+    color: #646464;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+.this {
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    a {
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        color: #47cdd9;
+        text-decoration: none;
+        border-bottom: dotted 1px;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #47cdd9 !important;
+        border-bottom-color: transparent;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h1,
+    h2,
+    h3 {
+        color: #545454;
+        font-weight: 700;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        letter-spacing: -0.01em;
+    }
+    h1 a,
+    h2 a,
+    h3 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 1.75em;
+        line-height: 1.5em;
+    }
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+    hr {
+        border: 0;
+        border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+        margin: 2em 0;
+    }
+    hr.major {
+        margin: 3em 0;
+    }
+    header p {
+        color: #949494;
+        position: relative;
+        margin: 0 0 1.5em 0;
+    }
+    header h2 + p {
+        font-size: 1.25em;
+        margin-top: -1em;
+        line-height: 1.75em;
+    }
+    header h3 + p {
+        font-size: 1.1em;
+        margin-top: -0.85em;
+        line-height: 1.5em;
+    }
+    header.major {
+        text-align: center;
+    }
+    header.major h2 {
+        font-size: 2.35em;
+    }
+    header.major p {
+        margin: -1em 0 3.5em 0;
+    }
+    // Icon
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon > .label {
+        display: none;
+    }
+    // Feature
+    .feature {
+        text-decoration: none;
+        padding-left: 6.5em;
+        position: relative;
+        text-align: left;
+    }
+    .feature:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .feature:before {
+        border-radius: 0.5em;
+        border: solid 1px rgba(144, 144, 144, 0.25);
+        color: #47cdd9;
+        display: inline-block;
+        font-size: 2.25em;
+        height: 2em;
+        left: 0;
+        line-height: 2em;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 2em;
+    }
+    .feature h3 {
+        margin: 0 0 0.7em 0;
+    }
+    // Wrapper
+    .wrapper {
+        padding: 5em 0 3em 0;
+    }
+    .wrapper.style2 {
+        background: #ffffff;
+    }
+}
+
+// XLarge
+@media screen and (max-width: 1680px) {
+    body {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 br,
+        h3 br {
+            display: none;
+        }
+        // Section/Article
+        header br {
+            display: none;
+        }
+        // Feature
+        .feature {
+            padding-left: 0;
+            text-align: center;
+        }
+        .feature:before {
+            margin: 0 0 0.7em 0;
+            position: relative;
+        }
+        .feature p {
+            padding: 0 2em;
+        }
+    }
+}
+
+// Small
+@media screen and (max-width: 736px) {
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 {
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+        h3 {
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        header h2 + p {
+            font-size: 1em;
+            margin-top: -0.85em;
+            line-height: 1.5em;
+        }
+        header h3 + p {
+            font-size: 1em;
+            margin-top: -0.85em;
+            line-height: 1.5em;
+        }
+        header.major h2 {
+            font-size: 1.5em;
+        }
+        header.major p {
+            margin: -1em 0 2.5em 0;
+        }
+        // Wrapper
+        .wrapper {
+            padding: 3em 0 1em 0;
+        }
+    }
+}
+
+// XSmall
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+}

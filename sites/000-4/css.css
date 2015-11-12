@@ -1,0 +1,149 @@
+.this {
+  background-color: #f3f6fa;
+}
+.this * {
+  box-sizing: border-box;
+}
+.this a {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #dd3c1a;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+.this a:hover {
+  border-bottom-color: transparent;
+}
+.this h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.this h3 {
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.this p {
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+.this ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.this .wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+.this .wrapper.style1 {
+  padding: 0;
+}
+.this .icon {
+  text-decoration: none;
+  position: relative;
+}
+.this .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.this .icon.featured {
+  cursor: default;
+  display: block;
+  margin: 0 0 1.5em 0;
+  opacity: 0.35;
+  text-align: center;
+}
+.this .icon.featured:before {
+  font-size: 5em;
+  line-height: 1em;
+}
+.this .icon > .label {
+  display: none;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.65em;
+  }
+  .this h1,
+  .this h2,
+  .this h3,
+  .this h4,
+  .this h5,
+  .this h6 {
+    line-height: 1.5em;
+  }
+  .this .wrapper {
+    margin-bottom: 4em;
+    padding: 4em 3em;
+  }
+}
+@media screen and (max-width: 980px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 13pt;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+  }
+  .this .wrapper {
+    margin-bottom: 3em;
+    padding: 3em 2.5em;
+  }
+  .this .wrapper.special br {
+    display: none;
+  }
+  .this .wrapper.style1 {
+    padding: 0 2.5em;
+  }
+}
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .this section {
+    margin: 1em auto;
+  }
+  .this section:first-child {
+    margin-top: 0;
+  }
+  .this .wrapper.special-alt {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 736px) {
+  body {
+    min-width: 320px;
+  }
+  .this h3 {
+    font-size: 1.2em;
+    letter-spacing: 0.025em;
+  }
+  .this p {
+    text-align: justify;
+  }
+  .this .wrapper {
+    margin-bottom: 2.5em;
+    padding: 2.25em 1.5em;
+  }
+  .this .wrapper.special br {
+    display: none;
+  }
+  .this .wrapper.style1 {
+    padding: 0 1.5em;
+  }
+}

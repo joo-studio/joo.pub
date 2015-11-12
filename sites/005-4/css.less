@@ -1,0 +1,199 @@
+body {
+    background-color: #183026;
+    background-image: url("../../assets/img/000overlay.png"), url("../../assets/img/000bg.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: top left, center 0;
+    background-attachment: fixed, fixed;
+}
+
+.public-one {
+    font-size: 16pt;
+    // Box 
+    .box {
+        position: relative;
+        margin-top: 9em;
+        margin-bottom: 0;
+    }
+    .box:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -9em;
+        left: 50%;
+        height: 9em;
+        border-left: solid 1px #fff;
+    }
+    .box:before {
+        content: '';
+        display: block;
+        width: 90px;
+        height: 66px;
+        position: absolute;
+        left: 50%;
+        top: -4.5em;
+        margin-left: -45px;
+        margin-top: -33px;
+        background: url("../../assets/img/000arrow.svg") no-repeat;
+    }
+    .box:last-child {
+        margin-bottom: 0;
+    }
+    .box.style2 {
+        text-align: center;
+    }
+    .box.style2 header {
+        display: inline-block;
+        background: #fff;
+        padding: 2em 3em 2em 3em;
+        margin: 0;
+    }
+    .box.style2 header p {
+        padding: 0;
+    }
+    .box.style2 .inner {
+        position: relative;
+        padding: 40px 0 0px 0;
+    }
+    .box.style2 .inner:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        border-left: solid 1px #fff;
+    }
+    .box.style2 .inner .row {
+        position: relative;
+    }
+    .box.style2 .inner .row:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        width: ~"calc(100% - 80px)";
+        border-bottom: solid 1px #fff;
+    }
+    .box.style2 .inner .image {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+    }
+    // Image
+    .image {
+        display: inline-block;
+        border: 0;
+    }
+    .image img {
+        display: block;
+        width: 100%;
+    }
+    .image.featured {
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+    .image.fit {
+        display: block;
+        width: 100%;
+    }
+    .image.left {
+        float: left;
+        margin: 0 2em 2em 0;
+    }
+    .image.centered {
+        display: block;
+        margin: 0 0 2em 0;
+    }
+    .image.centered img {
+        margin: 0 auto;
+        width: auto;
+    }
+    h2 {
+        font-size: 1.25em;
+        letter-spacing: 8px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.75em;
+    }
+    p {
+        line-height: 1.5em;
+    }
+}
+
+// Wide 
+@media screen and (max-width: 1680px) {
+    .public-one {
+        font-size: 16pt;
+    }
+}
+
+// Narrow 
+@media screen and (max-width: 840px) {
+    .public-one {
+        font-size: 14pt;
+        h2 {
+            line-height: 1.5em;
+        }
+        header p {
+            margin: 0.25em 0 0 0;
+            padding: 0 0 0.5em 0;
+        }
+        // Box 
+        .box {
+            position: relative;
+        }
+        .box section {
+            margin: 0 0 2em 0;
+        }
+        .box.style2 header {
+            padding: 2em;
+        }
+        .box.style2 .inner {
+            position: relative;
+            padding: 30px 0 0 0;
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 736px) {
+    .public-one {
+        line-height: 1.5em;
+        font-size: 12pt;
+        letter-spacing: 0;
+        * {
+            text-shadow: none !important;
+        }
+        h2 {
+            font-size: 1.25em;
+            letter-spacing: 4px;
+        }
+        // Box 
+        .box {
+            margin-top: 4.5em;
+        }
+        .box:after {
+            top: -4.5em;
+            height: 4.5em;
+        }
+        .box:before {
+            width: 45px;
+            height: 33px;
+            top: -2.25em;
+            margin-left: -22.5px;
+            margin-top: -16.5px;
+            background-size: 45px 33px;
+        }
+        .box.style2 .inner .row:before {
+            display: none;
+        }
+        .box.style2 .inner .image {
+            padding: 0;
+            max-width: 250px;
+            margin: 0 auto 20px auto;
+        }
+    }
+}

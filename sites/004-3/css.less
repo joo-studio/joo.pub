@@ -1,0 +1,265 @@
+.this {
+    // Featured
+    .featured h2 {
+        margin: 0 0 0.25em 0;
+        line-height: 1.3em;
+    }
+    .subtitle {
+        font-weight: 300;
+        color: #a0a0a0;
+        text-align: left !important;
+    }
+    ul.style1 {
+        list-style: none;
+        margin: 0;
+        color: #666;
+        padding: 0;
+    }
+    ul.style1 a {
+        color: #666;
+    }
+    ul.style1 li {
+        padding: 0.575em 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    ul.style1 a:hover {
+        text-decoration: none;
+    }
+    ul.style1 .first {
+        padding-top: 0em;
+        border-top: none;
+    }
+    // Image
+    .image {
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+    .image.left {
+        float: left;
+        width: 25%;
+        margin: 0 2em 1em 0;
+    }
+    /* Button */
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        -moz-transition: background-color 0.25s ease-in-out;
+        -webkit-transition: background-color 0.25s ease-in-out;
+        -ms-transition: background-color 0.25s ease-in-out;
+        transition: background-color 0.25s ease-in-out;
+        display: inline-block;
+        padding: 1.1em 1.25em;
+        background: #2A9648 url("images/bg01.png") no-repeat right top;
+        background-size: 100% 100%;
+        text-decoration: none;
+        font-size: 1.10em;
+        color: #FFFFFF;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    button:hover,
+    .button:hover {
+        background-color: #1AA658;
+    }
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    button:active,
+    .button:active {
+        background-color: #1A8638;
+    }
+    input[type="submit"].icon,
+    input[type="reset"].icon,
+    input[type="button"].icon,
+    button.icon,
+    .button.icon {
+        position: relative;
+    }
+    input[type="submit"].icon:before,
+    input[type="reset"].icon:before,
+    input[type="button"].icon:before,
+    button.icon:before,
+    .button.icon:before {
+        margin-right: 0.5em;
+        position: relative;
+        top: 0.1em;
+    }
+    input[type="submit"].alt,
+    input[type="reset"].alt,
+    input[type="button"].alt,
+    button.alt,
+    .button.alt {
+        background-color: #D63333;
+    }
+    input[type="submit"].alt:hover,
+    input[type="reset"].alt:hover,
+    input[type="button"].alt:hover,
+    button.alt:hover,
+    .button.alt:hover {
+        background-color: #E64343;
+    }
+    input[type="submit"].alt:active,
+    input[type="reset"].alt:active,
+    input[type="button"].alt:active,
+    button.alt:active,
+    .button.alt:active {
+        background-color: #C62323;
+    }
+    input[type="submit"].alt2,
+    input[type="reset"].alt2,
+    input[type="button"].alt2,
+    button.alt2,
+    .button.alt2 {
+        background-color: #414141;
+    }
+    input[type="submit"].alt2:hover,
+    input[type="reset"].alt2:hover,
+    input[type="button"].alt2:hover,
+    button.alt2:hover,
+    .button.alt2:hover {
+        background-color: #575757;
+    }
+    input[type="submit"].alt2:active,
+    input[type="reset"].alt2:active,
+    input[type="button"].alt2:active,
+    button.alt2:active,
+    .button.alt2:active {
+        background-color: #363636;
+    }
+    input[type="submit"].big,
+    input[type="reset"].big,
+    input[type="button"].big,
+    button.big,
+    .button.big {
+        width: 100%;
+        font-size: 2em;
+        padding: 1.30em 0em 1.30em 0;
+        font-weight: 300;
+        text-align: center;
+    }
+    // Button
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        display: inline-block;
+        font-size: 1.25em !important;
+        letter-spacing: 0px !important;
+    }
+    // Icons
+    .icon {
+        text-decoration: none;
+    }
+    .icon:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 1.25em;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .icon > .label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        overflow-x: hidden;
+        font-size: 8pt;
+        input,
+        select,
+        textarea {
+            font-size: 9.5pt;
+            letter-spacing: 0;
+            line-height: 1.75em;
+        }
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 1.25em !important;
+            font-size: 1.5em !important;
+            letter-spacing: 0px !important;
+            margin: 0 0 1.25em 0;
+        }
+    }
+    .this {
+        .featured-wrapper {
+            padding: 4em 0;
+        }
+        .featured h2 {
+            margin: 0 0 0.25em 0;
+        }
+        .ct-md-3 {
+        	margin-bottom: 1em;
+        }
+        .button {
+        	display: block !important;
+        }
+        .ct-responsive {
+        	width: 100%;
+        }
+    }
+}
+
+// Tablet
+@media screen and (min-width: 737px) {
+    // Basic
+    body {
+        font-size: 9.5pt;
+        line-height: 1.75em;
+        input,
+        select,
+        textarea {
+            font-size: 9.5pt;
+            line-height: 1.75em;
+        }
+        h2 {
+            font-size: 1.85em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+    }
+    .this {
+        .featured-wrapper {
+            padding: 8em 0 8em 0;
+        }
+        .subtitle {
+            font-size: 1.75em;
+            letter-spacing: -0.5px !important;
+        }
+        // Featured
+        .featured h2 {
+            font-size: 2.50em;
+            margin: 0 0 0.25em 0;
+        }
+        .featured h3 {
+            font-size: 1.70em;
+        }
+        .featured .subtitle {
+            font-size: 1.50em;
+        }
+        .featured .image {
+            margin-bottom: 3em;
+        }
+    }
+}

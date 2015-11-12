@@ -1,0 +1,202 @@
+.this {
+    background-image: url("../../assets/img/003dark-tl.svg"), url("../../assets/img/003dark-tr.svg");
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: 25em;
+    padding: 7em 0 0 0;
+    background-color: #f3f6fa;
+    * {
+        box-sizing: border-box;
+    }
+    a {
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        color: #dd3c1a;
+        text-decoration: none;
+        border-bottom: dotted 1px;
+    }
+    a:hover {
+        border-bottom-color: transparent;
+    }
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+    }
+    p {
+        letter-spacing: 0.025em;
+        line-height: 1.5em;
+    }
+    header.special {
+        margin-bottom: 5em;
+        padding-top: 7em;
+        position: relative;
+        text-align: center;
+    }
+    header.special:before,
+    header.special:after {
+        border-bottom: solid 1.5px;
+        border-top: solid 1.5px;
+        content: '';
+        height: 7px;
+        opacity: 0.1;
+        position: absolute;
+        top: 1.75em;
+        width: 43%;
+    }
+    header.special:before {
+        left: 0;
+    }
+    header.special:after {
+        right: 0;
+    }
+    header.special h2 {
+        margin-bottom: 0;
+    }
+    header.special h2 + p {
+        margin-bottom: 0;
+        padding-top: 1.5em;
+    }
+    header.special .icon {
+        cursor: default;
+        height: 7em;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 1em;
+        width: 100%;
+    }
+    header.special .icon:before {
+        font-size: 3.5em;
+        opacity: 0.35;
+    }
+    // Icon
+    .icon {
+        text-decoration: none;
+        position: relative;
+    }
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    .icon > .label {
+        display: none;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 14pt;
+    }
+    .this {
+        // Section/Article
+        header.special {
+            padding-top: 5.5em;
+            margin-bottom: 4em;
+        }
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 13pt;
+        letter-spacing: 0.025em;
+        line-height: 1.65em;
+    }
+    .this {
+        h2 {
+            line-height: 1.5em;
+        }
+    }
+}
+
+// Narrow
+@media screen and (max-width: 980px) {
+    // Basic
+    body {
+        font-size: 13pt;
+        letter-spacing: 0.025em;
+        line-height: 1.5em;
+    }
+    .this {
+        background-size: 15em;
+        header br {
+            display: none;
+        }
+        header.special {
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .this {
+        padding: 5em 0 0 0;
+        header.special {
+            margin-bottom: 4em;
+            padding-top: 5em;
+        }
+        header.special:before,
+        header.special:after {
+            width: 40%;
+        }
+        header.special h2 + p {
+            padding-top: 1.25em;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        min-width: 320px;
+    }
+    .this {
+        background-size: 10em;
+        padding: 2.5em 0 0 0;
+        h2 {
+            font-size: 1.25em;
+            letter-spacing: 0.1em;
+        }
+        p {
+            text-align: justify;
+        }
+        // Section/Article
+        header {
+            text-align: center;
+        }
+        header.special {
+            margin-bottom: 3em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+        header.special:before,
+        header.special:after {
+            width: 38%;
+        }
+        header.special .icon {
+            font-size: 0.75em;
+            top: 1.5em;
+        }
+        header p {
+            text-align: center;
+        }
+    }
+}

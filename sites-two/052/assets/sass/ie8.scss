@@ -1,0 +1,46 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Axiom by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* FA Icons */
+
+	.pennant {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Nav */
+
+	.dropotron.level-0 {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+		margin-top: -0.40em;
+
+		&:before {
+			border-left: solid 0.8em #445058;
+			border-right: solid 0.8em #445058;
+		}
+	}
+
+/* Featured */
+
+	#featured .image img, ul.icons li a {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Slidertron */
+
+	#slider {
+		.previous-button, .next-button {
+			background: #FFF;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}

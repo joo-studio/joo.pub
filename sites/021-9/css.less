@@ -1,0 +1,308 @@
+// Basic
+body {
+    background: #fff;
+    color: #4a4a4a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+.this {
+    // Box Model
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    a {
+        color: #5ecb96;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    p {
+        margin: 0 0 2em 0;
+    }
+    h2,
+    h3 {
+        color: #2a2a2a;
+        font-weight: 600;
+        letter-spacing: 0.125em;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    h2 a,
+    h3 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.75em;
+    }
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+    header.major {
+        position: relative;
+    }
+    header.major:after {
+        background: #eee;
+        content: '';
+        display: inline-block;
+        height: 3px;
+        margin: 0 0 2em 0;
+        width: 6em;
+    }
+    header.major.alt {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    header p {
+        letter-spacing: 0.125em;
+        margin: 0 0 1.5em 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    header h2 + p {
+        font-size: 1em;
+        margin-top: -0.85em;
+        line-height: 1.75em;
+    }
+    header h3 + p {
+        font-size: 0.9em;
+        margin-top: -0.75em;
+        line-height: 1.75em;
+    }
+    // Image
+    .image {
+        border: 0;
+        display: inline-block;
+        position: relative;
+    }
+    .image:before {
+        background: url("../../assets/img/021overlay.png");
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .image img {
+        display: block;
+    }
+    .image.fit {
+        display: block;
+        margin: 0 0 3em 0;
+        width: 100%;
+    }
+    .image.fit img {
+        display: block;
+        width: 100%;
+    }
+    // List
+    ul {
+        list-style: disc;
+        margin: 0 0 2em 0;
+        padding-left: 1em;
+    }
+    ul li {
+        padding-left: 0.5em;
+    }
+    ul.actions {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+    }
+    ul.actions li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+        vertical-align: middle;
+    }
+    ul.actions li:last-child {
+        padding-right: 0;
+    }
+    // Button
+  
+    .button {
+        appearance: none;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        background-color: #1d2726;
+        border-radius: 0;
+        border: 0;
+        color: #ffffff !important;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0.9em;
+        font-weight: 600;
+        height: 4em;
+        letter-spacing: 0.125em;
+        line-height: 4em;
+        overflow: hidden;
+        padding: 0 2.75em;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+ 
+    .button:hover {
+        background-color: #283634;
+    }
+   
+    .button:active {
+        background-color: #121818;
+    }
+ 
+    .button.disabled,
+    .button:disabled {
+        background-color: #4a4a4a !important;
+        box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+        color: #fff !important;
+        cursor: default;
+        opacity: 0.25;
+    }
+    // Wrapper
+    .wrapper {
+        padding: 6em 0 4em 0;
+    }
+    .wrapper.style2 {
+        background: #ffffff;
+    }
+    // Main
+    #main > header.major {
+        margin: 0 0 2em 0;
+        text-align: center;
+    }
+}
+
+// Wide
+@media screen and (max-width: 1680px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+}
+
+// Normal
+@media screen and (max-width: 1280px) {
+    // Basic
+    body {
+        font-size: 11pt;
+    }
+    .this {
+        // Wrapper
+        .wrapper {
+            padding: 4em 0 2em 0;
+        }
+        // Main
+        #main {
+            padding: 2em 0;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    // Basic
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 {
+            font-size: 1.25em;
+            line-height: 1.75em;
+        }
+        h3 {
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        header h2 + p {
+            font-size: 0.9em;
+        }
+        header h3 + p {
+            font-size: 0.8em;
+        }
+        // Main
+        #main > header.major {
+            margin: 0;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 736px) {
+    // Basic
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        // Wrapper
+        .wrapper {
+            padding: 2.5em 1.25em 0.5em 1.25em;
+        }
+    }
+}
+
+// Mobile (Portrait)
+@media screen and (max-width: 480px) {
+    // Basic
+    html,
+    body {
+        min-width: 320px;
+    }
+    body {
+        font-size: 12pt;
+    }
+    .this {
+        h2 br,
+        h3 br {
+            display: none;
+        }
+        h2 {
+            font-size: 1.15em;
+            line-height: 1.75em;
+        }
+        h3 {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        // List
+        ul.actions {
+            margin: 0 0 2em 0;
+        }
+        ul.actions li {
+            display: block;
+            padding: 1em 0 0 0;
+            text-align: center;
+            width: 100%;
+        }
+        ul.actions li:first-child {
+            padding-top: 0;
+        }
+        ul.actions li > * {
+            margin: 0 !important;
+            width: 100%;
+        }
+        ul.actions li > *.icon:before {
+            margin-left: -2em;
+        }
+        // Button
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        .button {
+            padding: 0;
+        }
+    }
+}

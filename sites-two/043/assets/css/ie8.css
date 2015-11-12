@@ -1,0 +1,49 @@
+/*
+	Beyond by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	ul.style2 {
+		margin-bottom: 0;
+	}
+
+	.button {
+		border: solid 1px #666;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+	.bigbutton {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+	.box section, .box article {
+		border: 0;
+		padding: 0;
+		margin: 0 0 2.5em 0;
+	}
+
+	.box.features .button {
+		margin-top: 0;
+	}
+
+	.box.cta {
+		padding-bottom: 0;
+	}
+
+		.box.cta section {
+			padding-bottom: 2em;
+			margin-bottom: 2em;
+		}
+
+/* Wrappers */
+
+	#header-wrapper {
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+	#main-wrapper {
+		padding: 0 0 0.5em 0;
+	}

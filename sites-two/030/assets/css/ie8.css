@@ -1,0 +1,28 @@
+/*
+	Latitude by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Banner */
+
+	#banner {
+		background-image: url("../../images/banner.jpg");
+		background-position: auto;
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+/* Header */
+
+	#header {
+		border-bottom: solid 1px #e8eaeb;
+	}
+
+	.dropotron.level-0 {
+		margin-top: -1px;
+	}
+
+		.dropotron.level-0:before {
+			display: none;
+		}
