@@ -7,33 +7,23 @@
   outline: none;
 }
 .icon-file-directory::before {
-  font-family: 'octicons';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  text-decoration: none;
-  font-size: 16px;
-  width: 16px;
-  height: 16px;
   content: "\f016";
 }
 .icon-file-text::before {
-  font-family: 'octicons';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  text-decoration: none;
-  font-size: 16px;
-  width: 16px;
-  height: 16px;
   content: "\f011";
 }
 .icon::before {
   margin-right: 5px;
+  font-family: 'octicons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
 }
 .tree-view-scroller {
   -webkit-box-flex: 1;
@@ -55,14 +45,6 @@
   position: relative;
   font-size: 11px;
   background: #eeeeee;
-}
-.tree-view:focus::before {
-  opacity: 1;
-  -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1);
-  -webkit-transition: opacity 0.16s, -webkit-transform 0.32s cubic-bezier(0, 0.6, 0.2, 1);
-          transition: opacity 0.16s, transform 0.32s cubic-bezier(0, 0.6, 0.2, 1);
 }
 .tree-view::before {
   content: "";
@@ -166,7 +148,6 @@
   width: 12px;
   height: 12px;
   content: "\f078";
-  margin-right: 2px;
 }
 .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
   text-align: center;
