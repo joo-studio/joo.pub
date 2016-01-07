@@ -1,0 +1,53 @@
+{
+    "res": {
+        "css/app.min.css": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/css/app.min.css",
+            "type": "css"
+        },
+        "css/style.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/css/style.css",
+            "type": "css"
+        },
+        "js/fastclick.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/fastclick.js",
+            "type": "js"
+        },
+        "js/flippage.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/flippage.js",
+            "type": "js"
+        },
+        "js/iscroll.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/iscroll.js",
+            "type": "js"
+        },
+        "js/loader.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/loader.js",
+            "type": "js"
+        },
+        "js/parallax.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/parallax.js",
+            "type": "js"
+        },
+        "js/platform.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/platform.js",
+            "type": "js"
+        },
+        "js/script.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/script.js",
+            "type": "js"
+        },
+        "js/share.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/share.js",
+            "type": "js"
+        },
+        "js/viewport.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/viewport.js",
+            "type": "js"
+        },
+        "js/zepto.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/zepto.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

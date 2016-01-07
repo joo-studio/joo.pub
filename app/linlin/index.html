@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Document</title>
+    <script type="text/javascript">if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+        var phoneScale = parseInt(window.screen.width)/640;
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+}else{
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}</script>
+    <script type="text/javascript">(function(navigator) {
+    var userAgent = navigator.userAgent;
+        documentElement = document.documentElement;
+    if ( userAgent.match( /micromessenger\/5/gi ) ) {
+        documentElement.className += " mobile wx_mobile wx_mobile_5";
+    } else if ( userAgent.match( /micromessenger/gi ) ) {
+        documentElement.className += " mobile wx_mobile";
+    } else if ( userAgent.match( /ucbrowser/gi ) ) {
+        documentElement.className += " mobile uc_mobile";
+    } else if ( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( userAgent.toLowerCase() ) ) {
+        documentElement.className += " mobile";
+    } else if ( userAgent.toLowerCase().match( /msie/gi ) && ( parseFloat( userAgent.toLowerCase().match( /msie ([0-9]{1,}[\.0-9]{0,})/i )[1] || 999 ) < 9 ) ) {
+        documentElement.className += " pc pc-ie pc-ie8";
+    } else if ( userAgent.toLowerCase().match( /msie/gi ) || navigator.msPointerEnabled || navigator.pointerEnabled ) {
+         documentElement.className += " pc pc-ie";
+    } else {
+        documentElement.className += " pc";
+    }
+})(navigator);</script>
+    <script>
+        // var StaticPath = "";
+        var StaticPath = "http://static.idaiyan.cn/special/h5_20150515_haochanpin_show";
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://test.idaiyan.cn/weixin/jssdk"></script>
+    <script id='_youkujs_' type="text/javascript"></script>
+
+    <link rel="stylesheet" href="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/css/app.min.css">
+    <link rel="stylesheet" href="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/css/style.css">
+    <!--分享信息start-->
+    <!--分享给朋友数据-->
+    <meta name="share_msg"
+        data-title="创业家&amp;i代言 中国好产品大赛招募 Start！"
+        data-desc="知名投资家、创业家为产品加冕，京东金融、百度未来商店、Dell、硬蛋、通路快建等行业巨头共同孵化，让天下没有被埋没的好产品。"
+        data-imgUrl="http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share.jpg"
+        data-link="http://www.idaiyan.cn/goodproduct/gindex"
+    >
+    <!--分享到朋友圈数据-->
+    <meta name="share_line"
+        data-title="创业家&amp;i代言 中国好产品大赛招募 Start！亮出新奇特硬货，有货你就来！"
+        data-imgUrl="http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share.jpg"
+        data-link="http://www.idaiyan.cn/goodproduct/gindex"
+    >
+    <!--分享成功回调跳转链接-->
+    <meta name="share_callback" data-callback="">
+    <!--分享信息end-->
+</head>
+<body class="app">
+    <div id="app-loading" class="app-loading">
+        <div class="loading-main middle-center"><span class="loading-text"></span><span id="loading-progress">
+        </span><span class="percent" ></span></div>
+    </div>
+    <!-- <div class="ui-guideWrap"></div> -->
+    <section class="app-content">
+        <section id="cover" class="page">
+        <div class="right-scroll animate-scroll" id="pg1-scroll"></div>
+            <section class="page-content middle-center a-fadein">
+                <div class="activity-logo-wrap layer" data-depth="0.3">
+                    <div class="activity-logo middle-center"></div>
+                </div>
+                <div class="rotate-wrap">
+                    <div>
+                        <div class="rotate1 rotate-f"></div>
+                        <div class="rotate2 rotate-b"></div>
+                        <div class="rotate3 rotate-f"></div>
+                        <div class="rotate4"></div>
+                    </div>
+                    <div class="user-avadar middle-center"></div>
+                </div>
+                <div id="float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="btn-wrap">
+                     <div class="btn-next a-fadeinB btn-bgscroll cf"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="intro" class="page">
+            <div id="pg2-scroll" class="left-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-content-wrap-wrap">
+                <div class="ui-content-wrap">
+                    <div class="ui-content opacity2" id="iscroll_intro">
+                    <div>
+                        <p>中国好产品大赛是中国规模最大的创新实物产品（智能硬件产品优先）选拔大赛。
+                        </p>
+                        <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长，为创新产品提供彰显实力的平台。
+                        </p>
+                        <p>大赛评委由知名创业家、投资人等行业领袖级人物担当；选拔出的优秀产品，组委会将提供全方位的孵化支持，包括供应链、包装推广、媒体宣传、渠道以及股权众筹的机会。</p>
+                    </div>
+                    </div>
+                    <div class="banner-wrap opacity cf"> 
+                        <div class="animate-ele">
+                        <div class="left-banner"></div>
+                        <div class="banner-content stretching"></div>
+                        <div class="right-banner"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="pg2-float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="ui-buttons cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="statement" class="page">
+        <div id="pg3-scroll" class="right-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="avadar-wrap">
+                   <div class="avadar middle-center">
+                       <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg3-avadar.png" alt="">
+                   </div>
+                </div>
+                <div class="ui-content-wrap">
+                <div class="ui-content  opacity2" id="iscroll_state">
+                    <div>
+                    <p>我是首代宇宙超级霹雳无敌智能马桶的创始人史珍香，我带着它参加了中国好产品大赛！</p>
+                    <p>此处为自述的内容，此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的内容此处为自述的
+                    </p>
+                    </div>
+                </div>
+                    <div class="banner-wrap opacity cf"> 
+                        <div class="animate-ele">
+                        <div class="left-banner"></div>
+                        <div class="banner-content stretching"></div>
+                        <div class="right-banner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pg3-float">
+                     <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="video" class="page">
+        <div id="pg4-scroll" class="left-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="ui-content-wrap">
+                    <div class="ui-content opacity2" id="iscroll_video">
+                        <div>
+                            <p>我们是个36人的小团队，首代宇宙超级霹雳无敌智能马桶的研发工作一共花费了我们241天的时间。</p>
+                            <p>我们励志为60岁以上的老年男性群体研发出最好的智能家居产品。</p>
+                        </div>
+                    </div>
+                    <div class="banner-wrap opacity cf"> 
+                        <div class="animate-ele">
+                            <div class="left-banner"></div>
+                            <div class="banner-content stretching"></div>
+                            <div class="right-banner"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="video-wrap">
+                <div class="video-content">
+                     <div class="ui-center-man" id="video-wrap" style="position:relative;">
+                     <div id="youku-playerBox" style="width:530px;height:330px;"></div>
+                     <input type="hidden" id="video_url" value="XMTI1MjQ0OTI2MA">
+                    </div>
+                </div>
+                <div class="video-on"></div>
+                <div class="picbg1"></div>
+                <div class="picbg2"></div>
+            </div>
+            <div id="pg4-float">
+                <div class="float-ele layer" data-depth="0.3"></div>
+            </div>
+                <div class="ui-buttons cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="picture" class="page">
+        <div id="pg5-scroll" class="right-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="pic-wrap">
+                    <div id="viewpoint">
+                        <div id="wrapper">
+                            <ul id="scroll" class="pic-content">
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg5-img.png" alt="">
+                                    <div class="ui-content-wrap">
+                                        <div class="ui-title">
+                                            此处是标题大人的位置。。
+                                        </div>
+                                        <div class="ui-content" id="iscroll_picture">
+                                            <div>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。中选拔大赛。</p>
+                                                <p>大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                大赛由创业家&i代言主办，百度未来商店联合主办，携手京东金融、硬蛋、Dell直销、通路快建等行业巨头，共同扶持小而美的小微智能硬件企业成长。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </li>
+                            </ul>
+                            <div class="txt-bg"></div>
+                            <div id="dot-wrap" class="cf">
+                                <div id="dotty">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pre-btn toleft"></div>
+                    <div class="next-btn toright"></div>
+                    <div class="picbg1"></div>
+                    <div class="picbg2"></div>
+                </div>
+           
+                <div id="pg5-float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                 <div class="ui-buttons cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="tel-validcode" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-form">
+                     <form id="form1" action="">
+                        <div class="js-form-phone formitem-wrap item-tel">
+                            <div class="form-item form-item1 a-fadeinB">
+                                <input type="tel" id="mobile" placeholder="请输入您的手机号">
+                            </div>
+                            <div class="tips">
+                                请输入您在i代言官网或在往期的活动中所使用的注册手机号，新用户亦可在此直接输入并且提交注册。
+                            </div>
+                        </div>
+                    </form>
+                    <form id="form2" action="">
+                        <div class="js-form-valid formitem-wrap item-password-validcode  hide">
+                            <div class="validcode-wrap cf">
+                                <div class="form-item form-item2 fl ui-validcode-wrap">
+                                    <input type="password" id="password" placeholder="请输入您的密码">
+                                </div>
+                                <div class="form-item form-item4 fl ui-validbtn-wrap">
+                                    <button class="ui-validbtn send-code abtain" type="button"></button>
+                                </div>
+                            </div>
+                            <div class="change-wrap cf">
+                                <div class="change-tip fl">或使用短信验证码登录</div>
+                                <div class="change-btn-wrap ui-swich fr">
+                                    <div class="ui-swich-anim fl">
+                                        <div class="scroll-ball ui-swich-ball fr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tips">
+                                请输入您在i代言官网或在往期的活动中所使用的密码，如忘记密码可以直接使用短信验证码方式登录，新用户亦可以使用此方式注册并登陆。
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="ui-buttons cf">
+                    <div class="js-prev-btn ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="js-submit-btn ui-button btn-next btn-bgscroll"><div class="btn-text tel-btn"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="success" class="page">
+        <div id="pg7-scroll" class="left-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="ui-title bounceInDown "></div>
+                <div class="ui-content-wrap">
+                <div class="ui-content">
+                    <p>恭喜您已经成功为首代宇宙超级霹雳无敌智能马桶投得一票，立即扫描下方二维码关注i代言官方服务号即可领取万元红包，若已关注则进入服务号界面亦可领取。
+                    先到先得，发完为止</p>
+                </div>
+                </div>
+                <div class="ui-qrcode a-bk m9ouncein cf   a-bouncein">
+                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg7-qcode.png" alt="" class="fl">
+                    <div class="finger-press fl">
+                        <div class="press-title"></div>
+                        <div class="press">
+                            <div class="press-light"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pg7-float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="ui-buttons cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="rank" class="page">
+        <div id="pg8-scroll" class="right-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+            <div class="txt-pix-wrap">
+                <div class="prod-pic"><img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/img/pg8-pic.png" alt=""></div>
+                <div class="prod-intro">
+                    <div class="prod-title">首代宇宙超级霹雳无敌智能马桶</div>
+                    <div class="num-wrap"><span class="num">749377</span>票</div>
+                </div>
+                <div class="pic-bkg"></div>
+            </div>
+            <div class="arrow-wrap">
+                <div class="up-arrow toup"></div>
+                <div class="down-arrow todown"></div>
+            </div>
+                <div class="ui-flow-list  a-fadeinR">
+                <div class="left-side"></div>
+                <div class="scroll8-wrap"  id="iscroll_list">
+                     <ul>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">1</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">2</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">3</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">4</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">5</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">6</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">7</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">8</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">9</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                         <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">10</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">11</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">12</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                        <li class="li1 a-flipinX2 cf">
+                            <span class="serial fl">13</span>
+                            <span class="item-content fl">首代宇宙超级霹雳无敌智能马桶</span>
+                            <span class="num fl">25282</span>票
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div id="pg8-float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="join" class="page">
+        <div id="pg9-scroll" class="left-scroll animate-scroll"></div>
+            <section class="page-content middle-center">
+                <div class="ui-content-wrap">
+                    <div class="ui-content">
+                    <div class="title a-zoomin"> 
+                        参与中国好产品大赛,你可能会
+                    </div>
+                        <p class="a-fadeinTLess p1">
+                        成为百家主流媒体报道<br/>
+                            千万创粉关注的对象
+                        </p>
+                        <p class="a-fadeinTLess  p2">
+                            成为另一个千万众筹爆款<br/>
+                            打通全国分销资源的国民产品
+                        </p>
+                        <p class="a-fadeinTLess  p3">
+                            成为国内一线基金10亿元投资项目
+                        </p>
+                    </div>
+                    <div class="banner-wrap cf opacity">
+                        <div class="left-banner"></div>
+                        <div class="banner-content stretching"></div>
+                        <div class="right-banner"></div>
+                    </div>
+                </div>
+                <div class="join-now rotate">
+                    <div class="toleft-arrow toleft"></div>
+                </div>
+                <div id="pg9-float">
+                    <div class="float-ele layer" data-depth="0.3"></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+          <section id="product" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-content-wrap-wrap">
+                <div class="ui-content-wrap">
+                    <div class="ui-content opacity2" id="iscroll1">
+                    <div>
+                        <p>您的产品尚未参与本次大赛，或者您还没有发布过代言，点击按钮立即前去报名即可获得万元红包基金。
+                        </p>
+                        <p>如果还没有准备好参与大赛，那么就支持一下本产品吧！</p>
+                    </div>
+                    </div>
+                    <div class="banner-wrap cf opacity">
+                        <div class="left-banner"></div>
+                        <div class="banner-content stretching"></div>
+                        <div class="right-banner"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="ui-buttons cf">
+                    <div class="ui-button btn-prev btn-bgscroll"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next btn-bgscroll"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+    </section> 
+    <div id="share-mask" class="a-fadein"><div class="share-mask-tip"></div></div>
+    <div id="ajax-mask" class="z-hide">
+        <div id="floatingCirclesG">
+            <div class="f_circleG" id="frotateG_01"></div><div class="f_circleG" id="frotateG_02"></div><div class="f_circleG" id="frotateG_03"></div><div class="f_circleG" id="frotateG_04"></div><div class="f_circleG" id="frotateG_05"></div><div class="f_circleG" id="frotateG_06"></div><div class="f_circleG" id="frotateG_07"></div><div class="f_circleG" id="frotateG_08"></div>
+        </div>
+    </div>
+    <div id="alert-mask" class="a-fadein">
+        <div class="middle-center">
+            <div class="alert-text"></div>
+            <div class="alert-btn"></div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="u-globalAudio">
+        <audio id="bgmidim" src="" autoplay loop data-src="/audio/demonstration.mp3"></audio>
+    </a>
+    <audio preload="load" id="buttonm" class="audio-lazyload" data-src="/audio/button.mp3"></audio>
+    <audio preload="load" id="expansion" class="audio-lazyload" data-src="/audio/expansion.mp3"></audio>
+    <audio preload="load" id="citym" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="tumblingm1" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm2" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm3" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm4" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm5" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm6" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm7" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm8" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm9" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="logom" class="audio-lazyload" data-src="/audio/logo.mp3"></audio>
+    <audio preload="load" id="synopsis" class="audio-lazyload" data-src="/audio/synopsis.mp3"></audio>
+    <audio preload="load" id="textbox1" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox2" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox3" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox4" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox5" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="warningm" class="audio-lazyload" data-src="/audio/warning.mp3"></audio>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/zepto.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/fastclick.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/flippage.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/share.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/loader.js?5"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/parallax.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/iscroll.js"></script>
+    <script>
+    // var myiScroll_intro,
+    //     myiScroll_state,
+    //     myiScroll_video,
+    //     myiScroll_picture,
+    //     myiScroll_list;
+    // // var myiScrollState;
+    // $(function(){
+        
+    //     // myiScroll_intro = new IScroll('#iscroll_intro',{
+    //     //     mouseWheel: true,
+    //     //     click: true
+    //     // });
+    //     // myiScroll_state = new IScroll('#iscroll_state',{
+    //     //     mouseWheel: true,
+    //     //     click: true
+    //     // });
+    //     // myiScroll_video = new IScroll('#iscroll_video',{
+    //     //     mouseWheel: true,
+    //     //     click: true
+    //     // });
+    //     myiScroll_list = new IScroll('#iscroll_list',{
+    //         mouseWheel: true,
+    //         click: true
+    //     });
+    // });
+    </script>
+    <script type="text/javascript">
+        
+    </script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin_show/js/script.js?5"></script>
+</body>
+</html>
