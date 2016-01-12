@@ -1,0 +1,219 @@
+// Box Model
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// Var color
+@green: #3c9fda;
+// Global Styles
+a {
+    transition: all .5s;
+    text-decoration: none;
+    color: @green;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+body {
+    font: 18px/25px 'Helvetica Neue', HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, 'Nimbus Sans L', 'Liberation Sans', Arial, sans-serif;
+}
+
+// Header Styles
+.header {
+    background: #3c9fda;
+    height: auto;
+    .world {
+        background: url(../images/world.png) center center no-repeat;
+        background-size: 100% auto;
+        height: inherit;
+        position: relative;
+        min-height: 500px;
+    }
+    .logo {
+        margin: 80px 0 30px 0;
+        img {
+            max-width: 180px;
+        }
+    }
+    .summary {
+        display: block;
+        line-height: 1.5em;
+        font-size: 30px;
+        color: #b4e3ff;
+        font-weight: 200;
+    }
+    .down-btn {
+        display: none;
+        text-align: center;
+    }
+    .ct-btn {
+        height: 50px;
+        line-height: 50px;
+        margin: 10px 0 5px 0;
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #005a8f;
+        background-color: #b4e3ff;
+        text-transform: uppercase;
+        font-weight: 200;
+        i {
+            font-size: 24px;
+            color: #fff;
+            margin-right: 10px;
+        }
+        &:hover {
+            background-color: #b4e3ff - 11;
+        }
+    }
+    span.download {
+        display: block;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 200;
+        a {
+            font-size: 16px;
+            color: #b4e3ff;
+            font-size: 13px;
+            &:hover {
+                color: #fff -11;
+            }
+        }
+    }
+    .desktop {
+        margin-top: 60px;
+        text-align: center;
+        img {
+            max-width: 100%;
+            display: inline-block;
+            margin-bottom: -7px;
+        }
+    }
+}
+
+.sections {
+    padding-top: 60px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        display: inline-block;
+        box-shadow: 0px 0px 10px 0px #ccc;
+    }
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .hr {
+        display: block;
+        margin: 50px;
+        height: 1px;
+        background-color: #f1f1f1;
+    }
+    .pl {
+        padding-left: 60px;
+    }
+    .pr {
+        padding-right: 60px;
+    }
+    .shadow-line {
+        margin-top: 50px;
+        padding-bottom: 60px;
+        box-shadow: inset 0px 0px 7px 0px #ccc;
+    }
+}
+
+.bot-down {
+    padding: 60px 0;
+}
+
+@media (max-width:768px) {
+    .sections {
+        .left,
+        .right {
+            text-align: center;
+        }
+        .pl,
+        .pr {
+            padding: 0 15px;
+        }
+    }
+}
+
+.banner {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+
+    .icons {
+        .item {
+            margin: 30px 30px 0 30px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            color: #666;
+            font-size: 14px;
+        }
+        .icon {
+            display: block;
+            width: 70px;
+            margin: 0 auto;
+            height: 70px;
+            line-height: 70px;
+            font-size: 30px;
+            border: solid 1px #dedede;
+            border-radius: 50%;
+            color: @green;
+
+            &:hover {
+                border: solid 1px @green;
+                background-color: @green;
+                color: #fff;
+            }
+        }
+    }
+}
+// Footer Styles
+.footer {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    overflow: hidden;
+    padding: 50px 0;
+    color: #666;
+    background: rgba(255, 255, 255, .8);
+    .footer-logo {
+        img {
+            height: 40px;
+        }
+    }
+    a {
+        display: block;
+        margin: 7px 0;
+        color: @green;
+    }
+    .footer-title {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 25px;
+        margin: 6px 0 15px;
+        text-transform: uppercase;
+        color: #666;
+    }
+    .footer-legal {
+        .legal-nav {
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 50px;
+            a {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}
