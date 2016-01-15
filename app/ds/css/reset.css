@@ -103,6 +103,7 @@ section {
 
 body {
     line-height: 1;
+    -webkit-text-size-adjust: none;
 }
 
 ol,
@@ -110,24 +111,7 @@ ul {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
 table {
     border-spacing: 0;
     border-collapse: collapse;
-}
-
-body {
-    -webkit-text-size-adjust: none;
 }

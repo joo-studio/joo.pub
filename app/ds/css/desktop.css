@@ -114,6 +114,9 @@ body {
 .sections .pr {
   padding-right: 60px;
 }
+.sections .pa {
+  padding: 0 100px;
+}
 .sections .shadow-line {
   margin-top: 50px;
   padding-bottom: 60px;
@@ -128,7 +131,8 @@ body {
     text-align: center;
   }
   .sections .pl,
-  .sections .pr {
+  .sections .pr,
+  .sections .pa {
     padding: 0 15px;
   }
 }
@@ -137,7 +141,7 @@ body {
   background-color: #f7f7f7;
 }
 .banner .icons .item {
-  margin: 30px 30px 0 30px;
+  margin: 30px 20px 0 20px;
   text-align: center;
   display: inline-block;
   line-height: 35px;
