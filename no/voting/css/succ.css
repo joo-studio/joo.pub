@@ -1,0 +1,51 @@
+.wrap_share {
+    padding: 0 0.46875rem;
+}
+
+.wrap_share .succ {
+    width: 2.8472222222222223rem;
+    height: 3.0555555555555554rem;
+    margin-top: 1.3888888888888888rem;
+}
+
+.wrap_share .text {
+    font-size: 0.625rem;
+    color: #ac957c;
+    margin-top: 0.9444444444444444rem;
+    margin-bottom: 0.8333333333333334rem;
+}
+
+.text img {
+    width: 2.7083333333333335rem;
+    height: 0.7638888888888888rem;
+}
+
+.wrap_share .content {
+    text-align: center;
+    font-size: 0.4375rem;
+    color: #755e44;
+    line-height: 0.53125rem;
+    padding: 0 0.46875rem!important;
+    width: 100%!important;
+}
+
+.wrap_share .btn_wrap {
+    padding-top: 5.305555555555555rem;
+}
+
+.wrap_share .btn_wrap .coarsebtn {
+    font-size: 0.5rem;
+    color: #fff;
+    width: 100%;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    display: inline-block;
+    border-radius: 8px;
+    background-image: -moz-linear-gradient( 45deg, rgb(188, 76, 61) 0%, rgb(232, 157, 146) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgb(188, 76, 61) 0%, rgb(232, 157, 146) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgb(188, 76, 61) 0%, rgb(232, 157, 146) 100%);
+}
+
+.wrap_share .banner {
+    padding-bottom: 0.9375rem;
+}
