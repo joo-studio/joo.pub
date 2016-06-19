@@ -45,9 +45,10 @@
   vertical-align: top;
 }
 .content-slide .two {
-  height: 6.25rem;
+  height: 5.9375rem;
   overflow-y: scroll;
   margin-bottom: 0.3125rem;
+  margin-top: 0.3125rem;
 }
 .content-slide .three .title {
   font-size: 0.46875rem;
@@ -348,7 +349,7 @@
   margin-top: 0.390625rem;
 }
 .two {
-  padding: 0.3125rem;
+  padding: 0 0.3125rem;
 }
 .pro-list {
   position: relative;
