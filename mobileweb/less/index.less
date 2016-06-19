@@ -1,0 +1,126 @@
+.wrap {
+    padding: 30/64rem 20/64rem;
+    .logo {
+        width: 100%;
+        height: 105/64rem;
+        text-align: center;
+        border-bottom: groove 1px #001626;
+        margin-bottom: 8/64rem;
+        .logo-img {
+            width: 517/64rem;
+            height: 87/64rem;
+        }
+    }
+    .banner {
+        text-align: center;
+        .banner-img {
+            width: 100%;
+            height: 287/64rem;
+        }
+    }
+}
+
+.content-slide {
+    .text {
+        margin-top: 30/64rem;
+        height: 440/64rem;
+        overflow-y: scroll;
+        p {
+            text-align: justify;
+            font-size: 20/64rem;
+            line-height: 30/64rem;
+            margin-bottom: 30/64rem;
+        }
+    }
+    .arrow-top {
+        width: 20/64rem;
+        height: 10/64rem;
+        vertical-align: top;
+    }
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0 2px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6600;
+}
+
+#tabs-container {
+    height: 400px;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tabs a {
+    text-align: center;
+    float: left;
+    color: #00afff;
+    &.left {
+        background: #00325a url(../images/huiyi.jpg) no-repeat;
+    }
+    &.middle {
+        background: #00325a url(../images/project.jpg) no-repeat;
+    }
+    &.right {
+        background: #00325a url(../images/money.jpg) no-repeat;
+    }
+    &.left,
+    &.middle {
+        margin-right: 2/64rem;
+    }
+    &.left,
+    &.middle,
+    &.right {
+        width: 99%/3;
+        height: 105/64rem;
+        background-size: contain;
+    }
+}
+
+.tabs a.active {
+    &.left {
+        background: url(../images/huiyi-hover.png) no-repeat;
+    }
+    &.middle {
+        background: url(../images/project-hover.png) no-repeat;
+    }
+    &.right {
+        background: url(../images/money-hover.png) no-repeat;
+    }
+    &.left,
+    &.middle {
+       margin-right: 2/64rem;
+    }
+    &.left,
+    &.middle,
+    &.right {
+        width: 99%/3;
+        height: 110/64rem;
+        background-size: contain;
+    }
+}
+
+.news-list {
+    padding: 0 10px;
+}
+
+.news-list li {
+    overflow: hidden;
+    border-bottom: 1px solid #eceef0;
+    box-shadow: 0 1px 1px #fff;
+    font-weight: normal;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.125em;
+}

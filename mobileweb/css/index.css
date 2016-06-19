@@ -1,0 +1,113 @@
+.wrap {
+  padding: 0.46875rem 0.3125rem;
+}
+.wrap .logo {
+  width: 100%;
+  height: 1.640625rem;
+  text-align: center;
+  border-bottom: groove 1px #001626;
+  margin-bottom: 0.125rem;
+}
+.wrap .logo .logo-img {
+  width: 8.078125rem;
+  height: 1.359375rem;
+}
+.wrap .banner {
+  text-align: center;
+}
+.wrap .banner .banner-img {
+  width: 100%;
+  height: 4.484375rem;
+}
+.content-slide .text {
+  margin-top: 0.46875rem;
+  height: 6.875rem;
+  overflow-y: scroll;
+}
+.content-slide .text p {
+  text-align: justify;
+  font-size: 0.3125rem;
+  line-height: 0.46875rem;
+  margin-bottom: 0.46875rem;
+}
+.content-slide .arrow-top {
+  width: 0.3125rem;
+  height: 0.15625rem;
+  vertical-align: top;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 2px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background: #ff6600;
+}
+#tabs-container {
+  height: 400px;
+}
+.tabs {
+  width: 100%;
+}
+.tabs a {
+  text-align: center;
+  float: left;
+  color: #00afff;
+}
+.tabs a.left {
+  background: #00325a url(../images/huiyi.jpg) no-repeat;
+}
+.tabs a.middle {
+  background: #00325a url(../images/project.jpg) no-repeat;
+}
+.tabs a.right {
+  background: #00325a url(../images/money.jpg) no-repeat;
+}
+.tabs a.left,
+.tabs a.middle {
+  margin-right: 0.03125rem;
+}
+.tabs a.left,
+.tabs a.middle,
+.tabs a.right {
+  width: 33%;
+  height: 1.640625rem;
+  background-size: contain;
+}
+.tabs a.active.left {
+  background: url(../images/huiyi-hover.png) no-repeat;
+}
+.tabs a.active.middle {
+  background: url(../images/project-hover.png) no-repeat;
+}
+.tabs a.active.right {
+  background: url(../images/money-hover.png) no-repeat;
+}
+.tabs a.active.left,
+.tabs a.active.middle {
+  margin-right: 0.03125rem;
+}
+.tabs a.active.left,
+.tabs a.active.middle,
+.tabs a.active.right {
+  width: 33%;
+  height: 1.71875rem;
+  background-size: contain;
+}
+.news-list {
+  padding: 0 10px;
+}
+.news-list li {
+  overflow: hidden;
+  border-bottom: 1px solid #eceef0;
+  box-shadow: 0 1px 1px #fff;
+  font-weight: normal;
+  height: 35px;
+  line-height: 35px;
+  font-size: 1.125em;
+}
