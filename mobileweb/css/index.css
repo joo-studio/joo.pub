@@ -161,9 +161,9 @@
   width: 100%;
   height: 7.8125rem;
   overflow-y: scroll;
-  font-size: 0.28125rem;
+  font-size: 0.3125rem;
   color: #fff;
-  padding: 0.3125rem;
+  padding: 0.390625rem;
   background: rgba(255, 255, 255, 0.05);
   border: solid 1px #001728;
 }
@@ -374,7 +374,7 @@
 }
 .pro-list .left {
   text-align: center;
-  width: 62.8%;
+  width: 62%;
 }
 .pro-list .left .title,
 .pro-list .left .title a {
@@ -387,7 +387,7 @@
   font-size: 0.28125rem;
 }
 .pro-list .right {
-  width: 27.2%;
+  width: 37.2%;
   text-align: center;
 }
 .pro-list .right .title {
@@ -401,4 +401,10 @@
 .pro-list .right .subtitle.active .heart {
   background: url(../images/heartbg-hover.png) no-repeat;
   background-size: 100% 100%;
+}
+.s-line {
+  border-left: inset 0.015625px #002746;
+  border-right: inset 0.015625rem #005393;
+  width: 0.03125rem;
+  height: 0.9375rem;
 }
