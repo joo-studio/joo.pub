@@ -29,7 +29,7 @@
                 </div>
             </div>
             <!--加上active类是点赞支持后的效果-->
-            <div class="text-center zan active">
+            <div class="text-center zan">
                 <span>为项目点赞支持<span class="heart"></span></span>
             </div>
             <div class="return text-center">
@@ -40,6 +40,10 @@
 </body>
 <script type="text/javascript">
 $(function() {
+
+    $(".zan").on("click", function() {
+        $(this).addClass('active');
+    });
     var num = $("#project-num").html();
     $.ajax({
         url: '',
