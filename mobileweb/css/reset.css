@@ -1,3 +1,9 @@
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html {
     overflow-y: scroll;
     height: 100%;
@@ -11,16 +17,10 @@ body {
     -webkit-user-select: none;
     user-select: none;
     background: #000616 url(../images/bgimg.jpg) no-repeat;
-    background-size:contain;
+    background-size: cover;
     font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "STHeiti", "微软雅黑", "Microsoft YaHei", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling:touch;
-}
-
-html * {
-    outline: 0;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
 }
 
 .cf:before,
@@ -92,8 +92,8 @@ img {
     border: 0;
 }
 
-abbr,img
-acronym {
+abbr,
+img acronym {
     font-variant: normal;
     border: 0;
 }
@@ -197,11 +197,10 @@ input[type=url],
 input[type=tel],
 input[type=color] {
     font-weight: normal;
-    padding-left: 0.4rem;
+    padding-left: 0.234375rem;
     -webkit-user-select: text;
     user-select: text;
     vertical-align: middle;
-    border-radius: 5px;
     outline-style: none;
     background: #fff;
     -webkit-font-smoothing: antialiased;
@@ -216,8 +215,10 @@ textarea {
 input,
 textarea,
 select {
-    background: #fff;
-    border: 1px solid #e2e2e2;
+    border-width: 1px;
+    border-color: rgb(0, 64, 121);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
 }
 
 input:focus,
@@ -232,10 +233,7 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-input.noline-input{
-    border:none;
-    background: #f5f5f5;
-}
+
 .text-center {
     text-align: center;
 }
@@ -267,25 +265,25 @@ input.noline-input{
 
 ::-webkit-input-placeholder {
     /* WebKit browsers */
-    color: #e2e2e2;
+    color: #b9b9b9;
 }
 
 ::-moz-input-placeholder {
     /* WebKit browsers */
-    color: #e2e2e2;
+    color: #b9b9b9;
 }
 
 :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #e2e2e2;
+    color: #b9b9b9;
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #e2e2e2;
+    color: #b9b9b9;
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    color: #e2e2e2;
+    color: #b9b9b9;
 }
