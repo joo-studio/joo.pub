@@ -375,11 +375,13 @@
   text-align: center;
   width: 62.8%;
 }
-.pro-list .left .title {
+.pro-list .left .title,
+.pro-list .left .title a {
   color: #00deff;
   font-size: 0.375rem;
 }
-.pro-list .left .subtitle {
+.pro-list .left .subtitle,
+.pro-list .left .subtitle a {
   color: #9cd4ff;
   font-size: 0.28125rem;
 }
