@@ -184,7 +184,8 @@
 }
 .about-content .zan:active .heart,
 .about-content .zan.active .heart {
-  background-position: 0 -0.609375rem;
+  background: url(../images/heartbg-hover.png) no-repeat;
+  background-size: 100% 100%;
 }
 .about-content .btn {
   color: #fff;
@@ -210,10 +211,9 @@
 .heart {
   width: 0.34375rem;
   height: 0.328125rem;
-  background: url(../images/heart.png) no-repeat;
+  background: url(../images/heartbg.png) no-repeat;
   display: inline-block;
-  background-size: cover;
-  background-position: 0 0rem;
+  background-size: 100% 100%;
   margin-left: 0.15625rem;
 }
 .mask-bg {
@@ -396,5 +396,6 @@
   color: #00deff;
 }
 .pro-list .right .subtitle.active .heart {
-  background-position: 0 -0.546875rem;
+  background: url(../images/heartbg-hover.png) no-repeat;
+  background-size: 100% 100%;
 }
