@@ -32,6 +32,7 @@
   height: 6.875rem;
   overflow-y: scroll;
   padding: 0 0.3125rem;
+  text-indent: 0.625rem;
 }
 .content-slide .text p {
   text-align: justify;
