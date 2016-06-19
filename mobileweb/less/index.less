@@ -425,11 +425,13 @@
         .title {
             font-size: 20/64rem;
             color: #00afff;
+            display: inline-block;
         }
         .subtitle {
             font-size: 26/64rem;
             color: #00deff;
-            &.active {
+            display: inline-block;
+            &.active,&:active {
                 .heart {
                     background: url(../images/heartbg-hover.png) no-repeat;
                     background-size: 100% 100%;
