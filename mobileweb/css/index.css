@@ -346,7 +346,7 @@
   font-size: 0.40625rem;
   color: #56cdff;
   display: none;
-  z-index: 1000;
+  z-index: 10001;
   left: 50%;
   top: 50%;
 }
