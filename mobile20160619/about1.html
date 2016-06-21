@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>项目简介</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap aboutpd">
+        <div class="logo"><img src="images/logo.png" class="logo-img"></div>
+        <div class="line"></div>
+        <div class="about-content">
+            <div class="text-center jsw-wrap"><img src="images/jsw-logo.png" class="jsw-logo"></div>
+            <div class="sub-title">
+                <span>项目领域</span>
+                <span class="area">智能硬件 /智能家居</span>
+                <span class="suppose">项目支持数<span class="num" id="project-num">1000</span></span>
+            </div>
+            <div class="project-wrap">
+                <div class="project">
+                    <div class="title">项目简介</div>
+                    <p>极思维是一家全球领先专注于智能云机器人的高科技公司，基于极思维团队多年的机器人工艺革新经验及互联网公司基因，在2015年即成功研发推出全球首款极思维S+智能云守护清洁机器人。并在6.27日完成众筹，成为家用机器人系列首个突破百万的项目，刷新了国内家用机器人系列项目的众筹记录。海外众筹项目将于9月份在Kickstarter、indiegogo等平台上线。2015年公司进入快速发展期，拥有跨域控制清洁机器人全球知识产权，并且迅速布局了台湾、日本、美国、德国等全球渠道，国内线下更是与中舜、3C4U、顺电等建立合作关系。</p>
+                </div>
+            </div>
+            <!--加上active类是点赞支持后的效果-->
+            <div class="text-center zan">
+                <span>为项目点赞支持<span class="heart"></span></span>
+            </div>
+            <div class="return text-center">
+                <a href="index.html"><img src="images/return-img.png" class="return-img"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function() {
+
+    $(".zan").on("click", function() {
+        $(this).addClass('active');
+    });
+    var num = $("#project-num").html();
+    $.ajax({
+        url: '',
+        type: 'POST',
+        dataType: "json",
+        data: {
+            'total': num
+        },
+        cache: false,
+        timeout: 10000,
+        error: function() {},
+        success: function(data) {
+            $("#project-num").html(date.count);
+        }
+    });
+})
+</script>
+
+</html>

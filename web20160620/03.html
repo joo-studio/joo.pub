@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>03</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <div class="content-wrap">
+            <div class="content cf">
+                <div class="numbers">
+                    <div class="number-warp">
+                        <div class="count">
+                            <div class="inner" style="height: 100%;"></div>
+                        </div>
+                        <div class="total"><i class="heart-icon" id="num-text"></i></div>
+                        <div class="project">
+                            <div class="p-n">stylesheet Names</div>
+                        </div>
+                        <div class="hand"></div>
+                        <div class="name">当前项目支持次数</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/libs/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var personnum = 3500;
+    $("#num-text").html(personnum);
+    var height = $(".inner").height();
+    var percent = height / 3000 / height;
+    var trueheight = (percent * personnum);
+    var result = height - trueheight * height; 
+    $(".inner").animate({
+        "height": result
+    },3000);
+});
+</script>
+
+</html>

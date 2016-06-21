@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>04</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrap one">
+        <div class="logo01">
+            <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <div class="content-wrap cf">
+            <div class="theme item1">
+                <div class="theme-title">会议主题：</div>
+                <div class="theme-img"><img src="images/subject.png" /></div>
+            </div>
+            <div class="theme">
+                <div class="theme-title">会议介绍：</div>
+                <div class="theme-content">
+                    <div id="marquee">
+                        <p>为推进实践创新、协调、绿色、开放、共享的发展新理念，全方位、深层次、多角度展示全球创新创业新趋势和新成果，进一步推进中国“大众创业、万众创新”持续深化，本次中国•成都全球创新创业交易会将于2016年6月24-26日在成都市新会展中心举办。</p>
+                        <p>
+                            作为本次交易大会的重要组成部分——“股权投资论坛暨股权投资交易活动”将于6月24-26日在成都市新会展中心1号展馆进行为期三天的项目展览，并于6月26日在成都市新会展中心的天府厅举办高端论坛和项目路演。本次论坛及活动由成都市政府金融办主办，成都市科技局、成都市外事侨务办、成都市博览局共同协办，投中信息承办，成都金融城、每日经济新闻、中关村产业技术联盟促进会等机构作为支持单位。 </p>
+                        <p>
+                            此次论坛以“共享 全球资本 • 双创机遇”为主题，届时将有成都市政府领导成都市市长唐良智出席并致辞，多位投资大咖将围绕“全球视野下的股权投资”与 “创新和资本与企业成长关系”热门话题展开2场巅峰对话。论坛期间，将发布成都市产业引导基金并举办子基金签约落地仪式。本次活动还将有包括中国、美国、韩国、芬兰等国家在内的20余个海内外项目参展和参与路演，行业领域覆盖VR、高端制造、清洁能源和移动设备等，多位投资人现场参与互动，实时项目签约。</p>
+                        <p>
+                            本次论坛及活动将广泛邀请国内外创业企业家、以及著名投资机构、顶级孵化器等创新创业全链条全要素代表参与，为其搭建项目交流和资本对接平台，推动资本、成果</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/libs/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+(function() {
+    var marquee = document.getElementById('marquee');
+    var offset = 0;
+    var scrollheight = marquee.offsetHeight;
+    var firstNode = marquee.cloneNode(true);
+
+    marquee.appendChild(firstNode);
+    setInterval(function() {
+        if (offset == scrollheight) {
+            offset = 0;
+        }
+        marquee.style.marginTop = "-" + offset + "px";
+        offset += 1;
+    }, 50);
+})();
+</script>
+
+</html>
