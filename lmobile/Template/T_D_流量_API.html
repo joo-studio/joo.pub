@@ -27,10 +27,10 @@
             <stl:include file="@/include/api-left.html" />
             <!-- code begin -->
             <div class="m2apiCon">
-        <div class="m2apiMnm" id="cd-placeholder-1">接口说明</div>
+        <div class="m2apiMnm" id="cd-placeholder-1"><stl:channel type="Title" upLevel="1"></stl:channel>接口说明</div>
         <div class="m2apiEditor autoMaxImg">
-          
-            <div class="m2api_t1" id="cd-placeholder-1_1">接口地址</div>
+          <div class="m2api_t1" id="cd-placeholder-1">接口说明</div>
+            <div class="m2api_t2" id="cd-placeholder-1_1"><i class="fa fa-caret-right"></i> 接口地址</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -48,13 +48,13 @@
                 </table>
             </div>
           <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_2">Web服务CallByXML方法</div>
+            <div class="m2api_t2" id="cd-placeholder-1_2"><i class="fa fa-caret-right"></i> Web服务CallByXML方法</div>
             <p>常规WSDL调用方法。<br />
             传入参数：XmlInput<br />
             如C#中，添加WEB服务，并按普通类方法进行操作<br />
             </p>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_3">Web服务JSONInput方法</div>
+            <div class="m2api_t2" id="cd-placeholder-1_3"><i class="fa fa-caret-right"></i> Web服务JSONInput方法</div>
             <p>
                 以Http的请求方式， Content-Type必须设置为：application/json，以Post方式提交，并传入参数JsonInput（Json格式）<br />
             </p>
@@ -82,7 +82,7 @@ $.ajax({
 </pre>
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_4">InputXML参数说明</div>
+            <div class="m2api_t2" id="cd-placeholder-1_4"><i class="fa fa-caret-right"></i> InputXML参数说明</div>
             <div class="m2api_t2">参数举例</div>
             <div class="m2apiCoder">
                 <pre>
@@ -154,7 +154,7 @@ $.ajax({
                 </p>
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_5">JSONInput参数说明</div>
+            <div class="m2api_t2" id="cd-placeholder-1_5"><i class="fa fa-caret-right"></i> JSONInput参数说明</div>
             <div class="m2api_t2">参数举例</div>
             <div class="m2apiCoder">
                 <pre>
@@ -214,7 +214,7 @@ $.ajax({
 </pre>
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_6">Http单号码充流量</div>
+            <div class="m2api_t2" id="cd-placeholder-1_6"><i class="fa fa-caret-right"></i> Http单号码充流量</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -279,7 +279,7 @@ $.ajax({
                 例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=charge&account=帐号&mobile=手机号&package=100&sign=MD5 
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_7">Http批量充流量</div>
+            <div class="m2api_t2" id="cd-placeholder-1_7"><i class="fa fa-caret-right"></i> Http批量充流量</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -354,7 +354,7 @@ $.ajax({
                 例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=chargeBat&account=帐号&mobile=手机号逗号分割&cmPackage=100&cuPackage=100&ctPackage=100&sign=MD5
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_8">Http卡密充流量</div>
+            <div class="m2api_t2" id="cd-placeholder-1_8"><i class="fa fa-caret-right"></i> Http卡密充流量</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -419,7 +419,7 @@ $.ajax({
                 例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=chargeCard&account=帐号&mobile=手机号&cardNo=卡号&pssword=密码&sign=MD5
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_9">Http获取流量包定义</div>
+            <div class="m2api_t2" id="cd-placeholder-1_9"><i class="fa fa-caret-right"></i> Http获取流量包定义</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -489,7 +489,7 @@ $.ajax({
                 例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=getPackage&account=帐号&sign=MD5
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_10">Http查询余额</div>
+            <div class="m2api_t2" id="cd-placeholder-1_10"><i class="fa fa-caret-right"></i> Http查询余额</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -539,7 +539,7 @@ $.ajax({
                 例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=getBalance&account=帐号&sign=MD5
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_11">Http查询状态</div>
+            <div class="m2api_t2" id="cd-placeholder-1_11"><i class="fa fa-caret-right"></i> Http查询状态</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -620,7 +620,7 @@ $.ajax({
                 状态被获取后服务器删除该状态 建议获取到状态后先记录一个日志
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_12">Http错误定义</div>
+            <div class="m2api_t2" id="cd-placeholder-1_12"><i class="fa fa-caret-right"></i> Http错误定义</div>
             <div class="m2apiTab">
                 <table width="100%" border="0">
                     <tr class="m2api_th">
@@ -674,7 +674,7 @@ $.ajax({
                 </table>
             </div>
             <div class="m2apiLine"></div>
-            <div class="m2api_t1" id="cd-placeholder-1_13">Http签名算法</div>
+            <div class="m2api_t2" id="cd-placeholder-1_13"><i class="fa fa-caret-right"></i> Http签名算法</div>
             <p>
                 按照asc排序键值对参数名排序，拼接键值对字符串(参数名小写) ，需要把api key放到要签名的键值对最后。<br />
                 例如sign=MD5(aaaa=aaaa&bbbb=bbbb&cccc=cccc&dddd=dddd&key=api密钥)，用32位MD5加密，生成的MD5小写

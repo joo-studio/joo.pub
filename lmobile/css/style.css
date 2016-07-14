@@ -72,7 +72,7 @@ nav.navbar.no-background .userFun{color:#fff;}
 .hmc2Box p { font-size: 14px; line-height: 28px; color: #666; }
 .hmc3Slider { position: relative; border-top: 1px dashed #e1e2e6; border-left: 1px dashed #e1e2e6; }
 .hmCon3 { padding-bottom: 126px; }
-.hmc3_lgBox { border-right: 1px dashed #E1E2E6; border-bottom: 1px dashed #E1E2E6; height: 100px; position: relative; background: #FFF; }
+.hmc3_lgBox { border-right: 1px dashed #E1E2E6; border-bottom: 1px dashed #E1E2E6; height: 100px; position: relative; background: #FFF; overflow: hidden;}
 .hmc3_lgBox img{max-width:90%; height:auto; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);}
 .hmc3Slider .swiper-pagination { bottom: -48px; width: 100%; left: 0px; }
 .hmc3Slider .swiper-pagination-bullet{ margin: 0px 5px; height: 12px; width: 12px; }
@@ -308,7 +308,7 @@ nav.navbar.no-background .userFun{color:#fff;}
 .m2apiEditor { font-size: 14px; line-height: 34px; padding: 30px 0px 0px; }
 .m2api_btn1 { height: 30px; width: 100px; border: 1px solid #0C98F9; line-height: 28px; padding: 0px 20px; margin-left: 12px; font-size: 14px; color: #0d98f9; border-radius: 0.3em; display: inline-block; }
 .m2apiEditor .cor_red{ color: #FF8B84; }
-.m2api_t1 { line-height: 34px; background: url(../images/m2api_sicon1.jpg) no-repeat left 16px; margin-bottom: 10px; padding-left: 18px; font-size: 16px; font-weight: bold; }
+.m2api_t1 { line-height: 34px; margin-bottom: 10px; font-size: 16px; font-weight: bold; }
 .m2apiTab td { line-height: 26px; padding: 12px 15px; border: 1px solid #F0F3F5; font-size: 12px; }
 .m2apiTab .m2api_th td { font-size: 14px; background: #F5F8FA; }
 .m2apiLine { line-height: 30px; height: 30px; border-bottom: 1px dashed #F0F3F5; margin-bottom: 24px; }
@@ -493,7 +493,7 @@ nav.navbar.bootsnav .navbar-nav > li.userFun{ height:130px; padding-top:15px;}
 .m2apiTab td{word-break: break-all;}
 .mmApiMenuBtn{ width: 40px; height: 40px; position: fixed; z-index: 6; background: #fff; border-radius: 50%; line-height: 36px; text-align: center; left: 10px; top: 20%; color: #0d98f9; border: 2px solid #0d98f9; font-size: 18px; font-weight: normal; cursor: pointer; }
 .mmApiBg{background:rgba(0,0,0,0.6); position:fixed; width:100%; height:100%; left:0; right:0; top:0; bottom:0; z-index:7;}
-.mmApiMenu{position:fixed; height:100%; width:215px; background:#fff; left:0; top:55px; z-index:8; transition:all 0.3s ease-in;}
+.mmApiMenu{position:fixed; height:100%; width:215px; background:#fff; left:0; top:55px; z-index:8; transition:all 0.3s ease-in; overflow-y:auto;}
 .mmApiMenuHide{transform:translateX(-215px); transition:all 0.3s ease-out;}
 .privacEmpty{height:90px;}
 .PrivacyClause{margin-bottom:45px;}

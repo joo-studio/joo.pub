@@ -25,7 +25,7 @@
                     <ul class="m2newsList">
                     <stl:contents isRelatedContents="true" totalNum="3" order="AddDate">
                         <li class="col-xs-12 col-sm-6 col-md-4">
-                            <a href="#" class="m2new_aBox">
+                            <stl:a title="{Content.Title}" class="m2new_aBox">
                                 <div class="m2newImg" style="background-image:url({Content.ImageUrl})"></div>
                                 <div class="m2newDes">
                                     <strong><stl:content type="Title" isClearTags="true" wordNum="20" ellipsis="..." /></strong>
@@ -34,7 +34,7 @@
                                         <span class="fl cor_blue"><stl:channel type="Title" /></span><span class="fr cor_666"><stl:content type="AddDate" formatString="yyyy-MM-dd" /></span>
                                     </div>
                                 </div>
-                            </a>
+                            </stl:a>
                         </li>
                         </stl:contents>
                     </ul>

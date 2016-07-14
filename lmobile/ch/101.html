@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>代码示例-乐猫通信 | 提供更极致的即时通讯服务 </title>
+<meta name="keywords" content="短信验证码,验证码短信,短信验证码平台,手机短信验证码,手机短信验证码平台,106短信平台,语音验证码,国际短信验证码,语音验证,流量营销,流量产品,营销短信,短信营销 | 乐猫通信" />
+<meta name="description" content="乐猫通信短信验证码平台拥有独立的短信验证码通道,三网合一端口号,致力于为客户提供优质的106短信平台,App短信验证码等行业短信服务.为每一条短信验证码负责,乐猫通信短信验证码广泛应用于用户注册、密码找回、登陆保护等验证码短信应用场景.  | 乐猫通信" />
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/lmobile/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/lmobile/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/lmobile/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/lmobile/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="/lmobile/assets/ico/favicon.ico">
+<link rel="shortcut icon" href="/lmobile/assets/ico/favicon.png">
+
+    <link href="/lmobile/css/bootstrap.min.css" rel="stylesheet">
+<link href="/lmobile/css/swiper-3.3.1.min.css" rel="stylesheet">
+<link href="/lmobile/fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+<link href="/lmobile/css/animate.css" rel="stylesheet">
+<link href="/lmobile/css/bootsnav.css" rel="stylesheet">
+<link href="/lmobile/css/style.css" rel="stylesheet">
+<link href="/lmobile/css/content.css" rel="stylesheet">
+
+<script>var $pageInfo = { publishmentSystemID : 2, channelID : 101, contentID : 0, siteUrl : "/lmobile", homeUrl : "/lmobile/center", currentUrl : "/lmobile/ch/101.html", rootUrl : "", apiUrl : "/api" }</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed no-background white bootsnav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a href="/lmobile" class="navbar-brand">
+                <img src="/lmobile/images/logo.png" class="logo logo-display" alt="乐猫通信">
+                <img src="/lmobile/images/logo2.png" class="logo logo-scrolled" alt="乐猫通信">
+            </img></img></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                
+                        <li>
+                            <a href="/lmobile">首页</a>
+                        </li>
+                    
+                
+                    
+                            <li class="dropdown">
+                                <a href="/lmobile/ch/sms.html" class="dropdown-toggle" data-toggle="dropdown">产品</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/sms.html">行业短信</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/yxsms.html">营销短信</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/voice.html">语音验证</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/mms.html">彩信产品</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/flow.html">流量产品</a>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                
+                    
+                            <li class="dropdown">
+                                <a href="/lmobile/ch/help.html" class="dropdown-toggle" data-toggle="dropdown">帮助</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/help.html">短信服务</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/44.html">彩信服务</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/45.html">语音验证服务</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/46.html">流量产品服务</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/lmobile/ch/qa.html">常见问题</a>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                
+                    
+                            <li>
+                                <a href="/lmobile/ch/api.html">API接口</a>
+                            </li>
+                        
+                
+                <li class="userFun">
+                    <a href="http://web.lmobile.cn">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="m2ban" style="background-image:url(/lmobile/images/api.jpg)">
+ <div class="m2banTxt">
+  <div class="m2ban_p2">API接口</div>
+  <div class="m2ban_p1"></div>
+ </div>
+</section>
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    语音接口
+                </li>
+                <li>
+                    代码示例
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <div class="m2apiMenu">
+    <div class="m2apiNm1"><i class="fa fa-file-code-o"></i> API接口</div>
+    <dl class="m2apiDl">
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/api.html" class="m2apiMenu_a1" title="短信接口">
+                            短信接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/api.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/95.html" title="代码示例" class="m2apiMenu_a2">代码示例</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/97.html" class="m2apiMenu_a1" title="彩信接口">
+                            彩信接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/97.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/98.html" title="代码示例" class="m2apiMenu_a2">代码示例</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+            
+                    <dt class="on">
+                        <a href="/lmobile/ch/100.html" class="m2apiMenu_a1" title="语音接口">
+                            语音接口</a>
+                    </dt>
+                    <dd>
+                        <ul class="m2apiUl">
+                            
+                                
+                                        <li>
+                                            <a href="/lmobile/ch/100.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                        </li>
+                                    
+                                
+                                        <li>
+                                            <a href="/lmobile/ch/101.html" title="代码示例" class="m2apiMenu_a2 on">代码示例</a>
+                                        </li>
+                                    
+                        </ul>
+                    </dd>
+                
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/103.html" class="m2apiMenu_a1" title="流量接口">
+                            流量接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/103.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/105.html" class="m2apiMenu_a1" title="状态报告查询接口">
+                            状态报告查询接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/105.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/106.html" title="代码示例" class="m2apiMenu_a2">代码示例</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/108.html" class="m2apiMenu_a1" title="个性化短信接口">
+                            个性化短信接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/108.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/109.html" title="代码示例" class="m2apiMenu_a2">代码示例</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+            
+                    <dt>
+                        <a href="/lmobile/ch/111.html" class="m2apiMenu_a1" title="用户上行查询接口">
+                            用户上行查询接口</a>
+                    </dt>
+                    <dd class="dsNone">
+                        
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/111.html" title="接口说明" class="m2apiMenu_a2">接口说明</a>
+                                    </li>
+                                
+                            
+                                    <li>
+                                        <a href="/lmobile/ch/112.html" title="代码示例" class="m2apiMenu_a2">代码示例</a>
+                                    </li>
+                                
+                    </dd>
+                
+        
+    </dl>
+</div>
+
+            <!-- code begin -->
+            <div class="m2apiCon">
+        <div class="m2apiMnm">代码示例</div>
+        <div class="m2apiEditor autoMaxImg">
+           <div class="m2api_t1" id="cd-placeholder-1">语音接口代码示例</div>
+          <div class="m2api_t2" id="cd-placeholder-1_1"><i class="fa fa-caret-right"></i> ASP</div>
+            <div class="m2apiCoder">
+<pre>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%
+Function Post(url,data)
+    dim Https 
+    set Https=server.createobject("MSXML2.XMLHTTP")
+    Https.open "POST",url,false
+    Https.setRequestHeader "Content-Type","application/x-www-form-urlencoded"
+    Https.send data
+    if Https.readystate=4 then
+        dim objstream 
+        set objstream = Server.CreateObject("adodb.stream")
+        objstream.Type = 1
+        objstream.Mode =3
+        objstream.Open
+        objstream.Write Https.responseBody
+        objstream.Position = 0
+        objstream.Type = 2
+        objstream.Charset = "utf-8"
+        Post = objstream.ReadText
+        objstream.Close
+        set objstream = nothing
+        set https=nothing
+    end if
+End Function
+dim target,post_data
+target = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit"
+post_data = "sname=&spwd=&scorpid=&sprdid=&sdst=&smsg="&Server.URLEncode("短信内容【签名】")
+response.Write(Post(target,post_data))
+''//请自己解析Post(target,post_data)返回的字符串并实现自己的逻辑
+''<State>0</State>表示成功,其它的参考文档
+%>
+                </pre>
+            </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_2">Delphi</div>
+            <div class="m2apiCoder">
+                <pre>
+首先需要引用WebService服务
+
+ts:=service.GetService1Soap(false,'http://cf.51welink.com/submitdata/service.asmx').g_Submit('','','','','1381025xxxx','短信内容【签名】');
+ShowMessage(inttostr(ts.State));
+                </pre>
+            </div>
+          <div class="m2apiLine"></div>
+          <div class="m2api_t2" id="cd-placeholder-1_3">JAVA</div>
+          <div class="m2apiCoder">
+            <pre>
+package cn.umob.sms;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+/**
+ *
+ * @author Administrator
+ */
+public class Send {
+    public static String SMS(String postData, String postUrl) {
+        try {
+            //发送POST请求
+            URL url = new URL(postUrl);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            conn.setRequestProperty("Connection", "Keep-Alive");
+            conn.setUseCaches(false);
+            conn.setDoOutput(true);
+            conn.setRequestProperty("Content-Length", "" + postData.length());
+            OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream(), "UTF-8");
+            out.write(postData);
+            out.flush();
+            out.close();
+            //获取响应状态
+            if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                System.out.println("connect failed!");
+                return "";
+            }
+            //获取响应内容体
+            String line, result = "";
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "utf-8"));
+            while ((line = in.readLine()) != null) {
+                result += line + "\n";
+            }
+            in.close();
+            return result;
+        } catch (IOException e) {
+            e.printStackTrace(System.out);
+        }
+        return "";
+    }
+}
+
+前台调用
+<%
+    String PostData = "sname=kwsm&spwd=kwsm&scorpid=&sprdid=1012818&sdst=13910862579&smsg="+java.net.URLEncoder.encode("短信内容【签名】","utf-8");
+    //out.println(PostData);
+    String ret = cn.umob.sms.Send.SMS(PostData, "http://cf.51welink.com/submitdata/Service.asmx/g_Submit");
+    out.println(ret);
+    //请自己反序列化返回的字符串并实现自己的逻辑
+%>
+
+            </pre>
+          </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_4">Asp.Net</div>
+            <div class="m2apiCoder">
+                <pre>
+HTTP调用方式
+
+string sname = this.TxtSname.Text.Trim();
+string spwd = this.TxtSpwd.Text.Trim();
+string scorpid = this.TxtScorpid.Text.Trim();
+string sprdid = this.TxtSprdid.Text.Trim();
+string sdst = this.TxtSdst.Text.Trim();
+string smsg = this.TxtSmsg.Text.Trim();
+string postStrTpl = "sname={0}&spwd={1}&scorpid={2}&sprdid={3}&sdst={4}&smsg={5}";
+UTF8Encoding encoding = new UTF8Encoding();
+byte[] postData = encoding.GetBytes(string.Format(postStrTpl, sname, spwd, scorpid, sprdid, sdst, smsg));
+HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(PostUrl);
+myRequest.Method = "POST";
+myRequest.ContentType = "application/x-www-form-urlencoded";
+myRequest.ContentLength = postData.Length;
+Stream newStream = myRequest.GetRequestStream();
+// Send the data.
+newStream.Write(postData, 0, postData.Length);
+newStream.Flush();
+newStream.Close();
+HttpWebResponse myResponse = (HttpWebResponse)myRequest.GetResponse();
+if (myResponse.StatusCode == HttpStatusCode.OK)
+{
+    StreamReader reader = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8);
+    LabelRetMsg.Text = reader.ReadToEnd();
+    //反序列化upfileMmsMsg.Text
+    //实现自己的逻辑
+}
+else
+{
+    //访问失败
+}
+
+
+Web服务调用方式（需要先引用Web服务）
+
+string sname = this.TxtSname.Text.Trim();
+string spwd = this.TxtSpwd.Text.Trim();
+string scorpid = this.TxtScorpid.Text.Trim();
+string sprdid = this.TxtSprdid.Text.Trim();
+string sdst = this.TxtSdst.Text.Trim();
+string smsg = this.TxtSmsg.Text.Trim();
+WebReference.CSubmitState state =  service.g_Submit(sname, spwd, scorpid, sprdid, sdst, smsg);
+//您的逻辑
+this.LabelRetMsg.Text = state.MsgID + ":" + state.MsgState;
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_5">PHP</div>
+            <div class="m2apiCoder">
+                <pre>
+&lt;?php
+function Post($data, $target) {
+    $url_info = parse_url($target);
+    $httpheader = "POST " . $url_info['path'] . " HTTP/1.0\r\n";
+    $httpheader .= "Host:" . $url_info['host'] . "\r\n";
+    $httpheader .= "Content-Type:application/x-www-form-urlencoded\r\n";
+    $httpheader .= "Content-Length:" . strlen($data) . "\r\n";
+    $httpheader .= "Connection:close\r\n\r\n";
+    //$httpheader .= "Connection:Keep-Alive\r\n\r\n";
+    $httpheader .= $data;
+    $fd = fsockopen($url_info['host'], 80);
+    fwrite($fd, $httpheader);
+    $gets = "";
+    while(!feof($fd)) {
+        $gets .= fread($fd, 128);
+    }
+    fclose($fd);
+    if($gets != ''){
+        $start = strpos($gets, '&lt;?xml ');
+        if($start> 0) {
+            $gets = substr($gets, $start);
+        }        
+    }
+    return $gets;
+}
+?&gt;
+&lt;?php
+include_once('sms.php');
+$target = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit";
+//替换成自己的测试账号,参数顺序和wenservice对应
+$post_data = "sname=kwsm&spwd=kwsm&scorpid=&sprdid=1012818&sdst=13910862579&smsg=".rawurlencode("短信内容【签名】");
+//$binarydata = pack("A", $post_data);
+echo $gets = Post($post_data, $target);
+//请自己解析$gets字符串并实现自己的逻辑
+//&lt;State&gt;0&lt;/State&gt;表示成功,其它的参考文档
+?&gt;
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_6">Python</div>
+            <div class="m2apiCoder">
+                <pre>
+#python3.4环境短信提交demo
+import urllib.request
+import urllib.error
+import xml.dom.minidom
+url = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit"
+#定义需要进行发送的数据
+param = {'sname':'kwsm',        #账号
+        'spwd':'kwsm',          #密码  
+        'scorpid':'',           #企业代码
+        'sprdid':'1011618',     #产品编号
+        'sdst':'18810013110',   #手机号码
+        'smsg':'短信内容'}       #短信内容
+data = urllib.parse.urlencode(param).encode(encoding='UTF8')
+#定义头
+headers = {"Content-Type":"application/x-www-form-urlencoded"}
+#开始提交数据
+req = urllib.request.Request(url, data, headers)   
+response = urllib.request.urlopen(req)
+#获取返回数据
+result = response.read().decode('utf8')
+#自行解析返回结果xml，对应结果参考文档
+dom = xml.dom.minidom.parseString(result)
+root = dom.documentElement
+State = root.getElementsByTagName("State")
+MsgID = root.getElementsByTagName("MsgID")
+MsgState = root.getElementsByTagName("MsgState")
+Reserve = root.getElementsByTagName("Reserve")
+print(State[0].firstChild.data)  #State值为0表示提交成功
+print(MsgID[0].firstChild.data)
+print(MsgState[0].firstChild.data)
+print(Reserve[0].firstChild.data)
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+        </div>
+ 
+      </div>
+      <div class="m2aipKmenu">
+        <div class="m2apiKnm">快速导航</div>
+        <dl>
+          <dt><a class="m2herf_a1" href="#cd-placeholder-1">代码示例</a></dt>
+          <dd>
+            <ul>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_1">ASP</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_2">Delphi</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_3">JAVA</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_4">Asp.Net</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_5">PHP</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_6">Python</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <section class="hmBom">
+    <div class="container clearfix">
+        
+            <dl>
+                <dt>产品</dt>
+                
+                    <dd>
+                        <a href="/lmobile/ch/sms.html" title="产品概览">产品概览</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/81.html" title="下载">下载</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/help.html" title="帮助">帮助</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/79.html" title="隐私条款">隐私条款</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/qa.html" title="常见问题">常见问题</a>
+                    </dd>
+                
+            </dl>
+        
+            <dl>
+                <dt>公司</dt>
+                
+                    <dd>
+                        <a href="/lmobile/ch/65.html" title="关于我们">关于我们</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/66.html" title="公司动态">公司动态</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/67.html" title="行业动态">行业动态</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/69.html" title="荣誉资质">荣誉资质</a>
+                    </dd>
+                
+                    <dd>
+                        <a href="/lmobile/ch/68.html" title="联系我们">联系我们</a>
+                    </dd>
+                
+            </dl>
+        
+            <dl>
+                <dt>文档</dt>
+                
+                    <dd>
+                        <a href="/lmobile/ch/api.html" title="API接口">API接口</a>
+                    </dd>
+                
+            </dl>
+        
+        <dl>
+            <dt>友情链接</dt>
+            
+                <dd>
+                    <a href="http://www.91welink.com/" title="聚WE">
+                        聚WE
+                    </a>
+                </dd>
+            
+                <dd>
+                    <a href="http://www.51welink.com" title="微网通联">
+                        微网通联
+                    </a>
+                </dd>
+            
+        </dl>
+        <dl>
+            <dt>联系我们</dt>
+            <dd class="hmBomLx">
+                <a href="tel:00864000102966">+86 400-010-2966</a>
+                <br> 7*24小时全天候服务
+                <br> <a href="mailto:support@lmobile.cn">support@lmobile.cn</a>
+            </dd>
+        </dl>
+    </div>
+</section>
+<footer class="footer clearfix">
+    <div class="container">
+        <span class="fl">
+        <span>Copyright © 2000-2016 京ICP备09002148号  京公海网安备110108001566</span>
+        <!-- <span>京ICP备09002148号</span>
+        <span>京公海网安备110108001566</span> -->
+        </span>
+        <span class="fr">
+<span class="foot_links"><i class="fa fa-weixin"></i><div class="footerLayer footerLayer2"><strong>微信客服</strong><p>扫描二维码</p>
+  <img src="/lmobile/upload/images/2016/7/hmLg_img8.jpg" /></div></span>
+        <!-- <span class="foot_links"><i class="fa fa-qq"></i><div class="footerLayer"><strong>官方QQ群</strong><p>QQ群：265995666</p></div></span> -->
+        <a class="foot_links" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3424963039&site=qq&menu=yes"><i class="fa fa-qq"></i></a>
+        <a href="#" class="foot_links"><i class="fa fa-weibo"></i></a>
+        </span>
+    </div>
+</footer>
+
+<div style="display: block;" class="fa fa-arrow-up" id="gotop"></div>
+
+    <script src="/lmobile/js/prefixfree.min.js"></script>
+<script src="/lmobile/js/jquery-1.11.0.min.js"></script>
+<script src="/lmobile/js/bootstrap.min.js"></script>
+<script src="/lmobile/js/bootsnav.js"></script>
+<script src="/lmobile/js/swiper-3.3.1.jquery.min.js"></script>
+<script src="/lmobile/js/public.js"></script>
+
+        <!-- 移动端分类菜单 -->
+    <div class="mmApiMenuBtn dsNone"><i class="fa fa-bars"></i></div>
+    <div class="mmApiBg dsNone"></div>
+    <div class="mmApiMenu mmApiMenuHide dsPhone">
+        <dl class="m2apiDl"></dl>
+    </div>
+<script language="javascript">
+    var m2kMenuTop = $(".m2aipKmenu").offset().top;
+    $(window).scroll(function() {
+
+        $(".m2api_t2").each(function(i) {
+            if ($(document).scrollTop() + 125 >= $(".m2api_t2").eq(i).offset().top) {
+                $(".m2herf_a2").removeClass("on");
+                $(".m2herf_a2").eq(i).addClass("on");
+            }
+        });
+
+        $(".m2api_t1").each(function(i) {
+            if ($(document).scrollTop() + 125 >= $(".m2api_t1").eq(i).offset().top) {
+                $(".m2herf_a1").removeClass("on");
+                $(".m2herf_a1").eq(i).addClass("on");
+                $(".m2herf_a1").eq(i).parents("li").prev("li").find(".m2herf_a2").removeClass("on");
+            }
+        });
+
+        if ($(document).scrollTop() + 125 < $(".m2api_t1").eq(0).offset().top) {
+            $(".m2herf_a1").removeClass("on");
+            $(".m2herf_a2").removeClass("on");
+        }
+        if ($(document).scrollTop() + 125 < $(".m2api_t2").eq(0).offset().top) {
+            $(".m2herf_a2").removeClass("on");
+        }
+
+        if ($(document).scrollTop() >= m2kMenuTop) {
+            $(".m2aipKmenu").addClass("m2aipKmenuFixed");
+            $(".m2aipKmenu").css("right", ($(document).width() - $(".container").width()) / 2);
+        } else {
+            $(".m2aipKmenu").removeClass("m2aipKmenuFixed");
+            $(".m2aipKmenu").css("right", "0");
+        }
+
+        if ($(".hmBom").offset().top - $(document).scrollTop() <= $(".m2aipKmenu").height() + 320) {
+            $(".m2aipKmenu").fadeOut(200);
+        } else {
+            $(".m2aipKmenu").fadeIn(200);
+        }
+
+    });
+
+    jQuery.fn.anchorGoWhere = function(e) {
+        var t = jQuery(this),
+            n = {
+                target: 0,
+                timer: 300
+            },
+            r = jQuery.extend(n, e);
+        t.each(function(e) {
+            jQuery(t[e]).click(function() {
+                var e = jQuery(this).attr("href").substr(1);
+                switch (r.target) {
+                    case 1:
+                        var t = jQuery("#" + e).offset().top - 125;
+                        jQuery("html,body").animate({
+                            scrollTop: t
+                        }, r.timer);
+                        break;
+                    case 2:
+                        var n = jQuery("#" + e).offset().left;
+                        jQuery("html,body").animate({
+                            scrollLeft: n
+                        }, r.timer)
+                }
+                return !1
+            })
+        })
+    }, $(document).ready(function() {
+        $(".m2aipKmenu a").
+        anchorGoWhere({
+            target: 1
+        })
+    })
+
+    $(".mmApiMenu .m2apiDl").html($(".m2apiMenu .m2apiDl").html());
+
+    var btnTop = $(".m2posBox").offset().top - 150;
+    var btnBom = $(".hmBom").offset().top - 200;
+    $(window).scroll(function() {
+        if ($(window).width() < 768) {
+            if ($(document).scrollTop() > btnTop && $(document).scrollTop() < btnBom) {
+                $(".mmApiMenuBtn").fadeIn(200);
+            } else {
+                $(".mmApiMenuBtn").fadeOut(200);
+            }
+            $(".mmApiMenuBtn").click(function() {
+                $(".mmApiBg").fadeIn(500);
+                $(".mmApiMenu").removeClass("mmApiMenuHide");
+            });
+
+            $(".mmApiBg").click(function() {
+                $(".mmApiMenu").addClass("mmApiMenuHide");
+                $(this).fadeOut(500);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>
+<script type="text/javascript" language="javascript">document.ondblclick=function(x){location.href = '/sitefiles/services/cms/utils.aspx?type=StlTrigger&publishmentSystemID=2&channelID=101&isRedirect=true';}</script>
+
