@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/sub-banner.html" />
+    <div class="container m2newsBox">
+        <ul class="m2newsList2 clearfix">
+            <stl:pageContents pageNum="10" order="AddDate">
+                <li>
+                    <stl:a title="{Content.Title}" class="m2new_aBox2 clearfix">
+                        <div class="m2newImg2" style="background-image:url({Content.ImageUrl})"></div>
+                        <div class="m2newDes2">
+                            <strong class="ellipsis"><stl:content type="Title" isClearTags="true" wordNum="30"></stl:content></strong>
+                            <p class="m2news_p">
+                                <stl:content type="Content" isClearTags="true" wordNum="100" ellipsis="..."></stl:content>
+                            </p>
+                            <p class="m2newInfo">
+                                <stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>
+                            </p>
+                        </div>
+                    </stl:a>
+                </li>
+            </stl:pageContents>
+        </ul>
+    </div>
+    <div class="text-center" style="margin-bottom:50px;">
+        <stl:pageItems>
+            <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                <stl:pageItem type="PreviousPage">
+                    <stl:successTemplate>
+                        <a type="button" class="btn btn-primary" href="{Current.Url}">上一页</a>
+                    </stl:successTemplate>
+                    <stl:failureTemplate>
+                        <a type="button" class="btn btn-default" href="javascript:;">上一页</a>
+                    </stl:failureTemplate>
+                </stl:pageItem>
+                <a type="button" href="javascript:;" class="btn btn-default">{PageItem.CurrentPageIndex} / {PageItem.TotalPageNum}</a>
+                <stl:pageItem type="NextPage">
+                    <stl:successTemplate>
+                        <a type="button" class="btn btn-primary" href="{Current.Url}">下一页</a>
+                    </stl:successTemplate>
+                    <stl:failureTemplate>
+                        <a type="button" class="btn btn-default" href="{Current.Url}">下一页</a>
+                    </stl:failureTemplate>
+                </stl:pageItem>
+            </div>
+        </stl:pageItems>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+</body>
+
+</html>

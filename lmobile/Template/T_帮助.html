@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <section class="m2ban" style="background-image:url({Stl.SiteUrl}/images/help.jpg)">
+        <div class="m2banTxt">
+        	<div class="m2ban_p2">帮助中心</div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：
+                    <stl:location separator="  /  "></stl:location>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <div class="m2apiMenu">
+                <div class="m2apiNm1"><i class="fa fa-pencil"></i>
+                    <stl:channel type="Title" topLevel="1"></stl:channel>
+                </div>
+                <dl class="m2apiDl">
+                    <stl:channels channelIndex="帮助">
+                        <stl:if testType="UpChannelOrSelf">
+                            <stl:successTemplate>
+                                <dt class="on">
+                                    <stl:a class="m2apiMenu_a1">
+                                        <stl:channel type="Title" /></stl:a>
+                                </dt>
+                            </stl:successTemplate>
+                            <stl:failureTemplate>
+                                <dt>
+                                    <stl:a class="m2apiMenu_a1">
+                                        <stl:channel type="Title" /></stl:a>
+                                </dt>
+                            </stl:failureTemplate>
+                    </stl:channels>
+                </dl>
+            </div>
+            <div class="m2apiCon2">
+                <stl:contents order="AddDateBack">
+                    <div class="m2apiMnm"><i class="fa fa-question-circle"></i>
+                        <stl:content type="Title"></stl:content>
+                    </div>
+                    <div class="m2apiEditor autoMaxImg">
+                        <stl:content type="Content"></stl:content>
+                    </div>
+                </stl:contents>
+            </div>
+            <div class="h80"></div>
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <!-- 移动端分类菜单 -->
+    <div class="mmApiMenuBtn dsNone"><i class="fa fa-bars"></i></div>
+    <div class="mmApiBg dsNone"></div>
+    <div class="mmApiMenu mmApiMenuHide dsPhone">
+        <dl class="m2apiDl"></dl>
+    </div>
+    <stl:include file="@/include/js.html" />
+    <script language="javascript">
+    $(".mmApiMenu .m2apiDl").html($(".m2apiMenu .m2apiDl").html());
+    var btnTop = $(".m2posBox").offset().top - 150;
+    var btnBom = $(".hmBom").offset().top - 200;
+    $(window).scroll(function() {
+        if ($(window).width() < 768) {
+            if ($(document).scrollTop() > btnTop && $(document).scrollTop() < btnBom) {
+                $(".mmApiMenuBtn").fadeIn(200);
+            } else {
+                $(".mmApiMenuBtn").fadeOut(200);
+            }
+            $(".mmApiMenuBtn").click(function() {
+                $(".mmApiBg").fadeIn(500);
+                $(".mmApiMenu").removeClass("mmApiMenuHide");
+            });
+
+            $(".mmApiBg").click(function() {
+                $(".mmApiMenu").addClass("mmApiMenuHide");
+                $(this).fadeOut(500);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

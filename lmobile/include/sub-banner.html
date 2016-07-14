@@ -1,0 +1,19 @@
+<section class="m2ban" style="background-image:url({Channel.ImageUrl})">
+
+    <div class="m2banTxt">
+        <div class="m2ban_p2">{channel.description}</div>
+  		<div class="m2ban_p1">{channel.keywords}</div>
+    </div>
+    <div class="m2nav">
+        <stl:channels channelIndex="公司">
+            <stl:if testType="UpChannelOrSelf" testOperate="Equals">
+                <stl:successTemplate>
+                    <stl:a title="{Channel.Title}" class="m2nav_a on">{Channel.Title}</stl:a>
+                </stl:successTemplate>
+                <stl:failureTemplate>
+                    <stl:a title="{Channel.Title}" class="m2nav_a">{Channel.Title}</stl:a>
+                </stl:failureTemplate>
+            </stl:if>
+        </stl:channels>
+    </div>
+</section>

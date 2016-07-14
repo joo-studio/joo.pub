@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/code-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    <stl:channel type="Title" upLevel="1"></stl:channel>
+                </li>
+                <li>
+                    <stl:channel type="Title"></stl:channel>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <stl:include file="@/include/api-left.html" />
+            <!-- code begin -->
+            <div class="m2apiCon">
+        <div class="m2apiMnm" id="cd-placeholder-1">接口说明</div>
+        <div class="m2apiEditor autoMaxImg">
+          <div class="m2api_t1" id="cd-placeholder-1_1">接口地址</div>
+          <div class="m2apiTab">
+            <table width="100%" border="0">
+              <tr class="m2api_th">
+                <td>地址</td>
+                <td>描述</td>
+              </tr>
+              <tr>
+                <td>http://cf.51welink.com/submitdata/service.asmx</td>
+                <td>发送语音短信</td>
+              </tr>
+            </table>
+          </div>
+          <div class="m2apiLine"></div>
+          <div class="m2api_t1" id="cd-placeholder-1_2">编码</div>
+          <p>统一使用
+            <span class="cor_blue">UTF－8</span> 编码，请确保您的文件编码及传入参数的格式</p>
+          <div class="m2apiLine"></div>
+          <div class="m2api_t1" id="cd-placeholder-1_3">提交短信调用g_Submit方法</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <colgroup>
+                        <col style="width:15%" />
+                        <col style="width:40%" />
+                        <col style="width:45%" />
+                    </colgroup>
+                    <tr class="m2api_th">
+                        <td>类型</td>
+                        <td>命名</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>接口定义</td>
+                        <td>g_Submit(string sname,string spwd,string scorpid,string sprdid,string sdst,string smsg)</td>
+                        <td>提交短信</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sname</td>
+                        <td>提交账户</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>spwd</td>
+                        <td>提交账户的密码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>scorpid</td>
+                        <td>企业代码（扩展号，不确定请赋值空）</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sprdid</td>
+                        <td>产品编号</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sdst</td>
+                        <td>接收号码间用英文半角逗号“,”隔开，触发产品一次只能提交一个,其他产品一次不能超过10万个号码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>smsg</td>
+                        <td>信息内容, UTF-8编码，通常为70汉字以内，具体由平台内部决定</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_4">提交短信调用g_SubmitWithKey方法</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <colgroup>
+                        <col style="width:15%" />
+                        <col style="width:40%" />
+                        <col style="width:45%" />
+                    </colgroup>
+                    <tr class="m2api_th">
+                        <td>类型</td>
+                        <td>命名</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>接口定义</td>
+                        <td>g_SubmitWithKey(string sname,string spwd,string scorpid,string sprdid,string sdststring smsg,string key)</td>
+                        <td>提交短信</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sname</td>
+                        <td>提交账户</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>spwd</td>
+                        <td>提交账户的密码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>scorpid</td>
+                        <td>企业代码（扩展号，不确定请赋值空）</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sprdid</td>
+                        <td>产品编号</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sdst</td>
+                        <td>接收号码间用英文半角逗号“,”隔开，触发产品一次只能提交一个,其他产品一次不能超过10万个号码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>smsg</td>
+                        <td>信息内容, UTF-8编码，通常为70汉字以内，具体由平台内部决定</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>key</td>
+                        <td>用户自定义参数,Len<=16</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_5">使用g_SchedulerSubmit方法</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <colgroup>
+                        <col style="width:15%" />
+                        <col style="width:40%" />
+                        <col style="width:45%" />
+                    </colgroup>
+                    <tr class="m2api_th">
+                        <td>类型</td>
+                        <td>命名</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>接口定义</td>
+                        <td>g_SchedulerSubmit(string sname,string spwd,string scorpid,string sprdid,string sbegindate,string sdst,string smsg)</td>
+                        <td>提交短信</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sname</td>
+                        <td>提交账户</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>spwd</td>
+                        <td>提交账户的密码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>scorpid</td>
+                        <td>企业代码（扩展号，不确定请赋值空）</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sprdid</td>
+                        <td>产品编号</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sbegindate</td>
+                        <td>起始发送时间,格式为"yyyy-MM-ddHH:mm:ss”，要求大于当前时间并且小于当前时间+31天</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sdst</td>
+                        <td>接收号码间用英文半角逗号“,”隔开，触发产品一次只能提交一个,其他产品一次不能超过10万个号码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>smsg</td>
+                        <td>信息内容, UTF-8编码，通常为70汉字以内，具体由平台内部决定</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_6">使用g_SchedulerSubmitWithKey方法</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <colgroup>
+                        <col style="width:15%" />
+                        <col style="width:40%" />
+                        <col style="width:45%" />
+                    </colgroup>
+                    <tr class="m2api_th">
+                        <td>类型</td>
+                        <td>命名</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>接口定义</td>
+                        <td>g_SchedulerSubmitWithKey(string sname,string spwd,string scorpid,string sprdid,string sbegindate,string sdst,string smsg,string key)</td>
+                        <td>提交短信</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sname</td>
+                        <td>提交账户</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>spwd</td>
+                        <td>提交账户的密码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>scorpid</td>
+                        <td>企业代码（扩展号，不确定请赋值空）</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sprdid</td>
+                        <td>产品编号</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sbegindate</td>
+                        <td>起始发送时间,格式为"yyyy-MM-ddHH:mm:ss”，要求大于当前时间并且小于当前时间+31天</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>sdst</td>
+                        <td>接收号码间用英文半角逗号“,”隔开，触发产品一次只能提交一个,其他产品一次不能超过10万个号码</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>smsg</td>
+                        <td>信息内容, UTF-8编码，通常为70汉字以内，具体由平台内部决定</td>
+                    </tr>
+                    <tr>
+                        <td>参数</td>
+                        <td>key</td>
+                        <td>用户自定义参数,Len<=16</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="m2apiLine"></div>
+          <div class="m2api_t1" id="cd-placeholder-1_7">返回结果</div>
+          <div class="m2api_t2">返回值CSubmitState结构说明</div>
+          <div class="m2apiTab">
+            <table width="100%" border="0">
+                <colgroup>
+                    <col style="width:15%" />
+                    <col style="width:40%" />
+                    <col style="width:45%" />
+                </colgroup>
+                <tr class="m2api_th">
+                    <td>名称</td>
+                    <td>类型</td>
+                    <td>描述</td>
+                </tr>
+              <tr>
+                <td>State </td>
+                <td>int</td>
+                <td>提交结果值,返回值为0时，表示提交成功</td>
+              </tr>
+              <tr>
+                <td>MsgID</td>
+                <td>string</td>
+                <td>短信批次号</td>
+              </tr>
+              <tr>
+                <td>MsgState</td>
+                <td>int</td>
+                <td>保留，扩展用</td>
+              </tr>
+              <tr>
+                <td>Reserve</td>
+                <td>String</td>
+                <td>是</td>
+              </tr>
+            </table>
+          </div>
+          <div class="m2apiLine"></div>
+        </div>
+      </div>
+      <div class="m2aipKmenu">
+        <div class="m2apiKnm">快速导航</div>
+        <dl>
+          <dt><a class="m2herf_a1" href="#cd-placeholder-1">接口说明</a></dt>
+          <dd>
+            <ul>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_1">接口地址</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_2">编码</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_3">g_Submit</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_4">g_SubmitWithKey</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_5">g_SchedulerSubmit</a></li>
+              <!-- <li><a class="m2herf_a2" href="#cd-placeholder-1_6">g_SchedulerSubmitWithKey</a></li> -->
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_7">返回结果</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/api-js.html" />
+</body>
+
+</html>

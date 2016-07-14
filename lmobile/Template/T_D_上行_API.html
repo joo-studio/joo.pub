@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/code-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    <stl:channel type="Title" upLevel="1"></stl:channel>
+                </li>
+                <li>
+                    <stl:channel type="Title"></stl:channel>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <stl:include file="@/include/api-left.html" />
+            <!-- code begin -->
+            <div class="m2apiCon">
+                <div class="m2apiMnm" id="cd-placeholder-2">接口说明</div>
+                <div class="m2apiEditor autoMaxImg">
+                    <div class="m2api_t1" id="cd-placeholder-2_1">上行收取</div>
+                    <p>
+                        如果客户需要接收用户上行，在相关的申请成功后，可以按照下面的说明进行编程接收,短信接口用户，需要自己做好上行接收数据的接口
+                        <br /> 提供上行URL（例如：http://XXX.XXX.XXX.XXX/Up.asp ）以便我们给予绑定。
+                        <br />
+                    </p>
+                    <div class="m2apiLine"></div>
+                    <div class="m2api_t1" id="cd-placeholder-2_2">页面推送参数</div>
+                    <div class="m2apiTab">
+                        <table width="100%" border="0">
+                            <colgroup>
+                                <col style="width:15%" />
+                                <col style="width:40%" />
+                                <col style="width:45%" />
+                            </colgroup>
+                            <tr class="m2api_th">
+                                <td>类型</td>
+                                <td>命名</td>
+                                <td>描述</td>
+                            </tr>
+                            <tr>
+                                <td>参数</td>
+                                <td>MsgId</td>
+                                <td>消息ID</td>
+                            </tr>
+                            <tr>
+                                <td>参数</td>
+                                <td>MsgID</td>
+                                <td>MessageID(短信提交成功后会生成MsgID)</td>
+                            </tr>
+                            <tr>
+                                <td>参数</td>
+                                <td>Up_YourNum</td>
+                                <td>自己的特服号号码接口</td>
+                            </tr>
+                            <tr>
+                                <td>参数</td>
+                                <td>Up_UserTel</td>
+                                <td>客户上行的手机号码接口</td>
+                            </tr>
+                            <tr>
+                                <td>参数</td>
+                                <td>Up_UserMsg</td>
+                                <td>客户上行的短信内容接口</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>说明：
+                        <br /> 用户自行写进自己的数据库，以便接收数据。数据接收后请先缓存数据，否则将导致状态报告接收被降权
+                    </p>
+                    <div class="m2apiLine"></div>
+                </div>
+            </div>
+            <div class="m2aipKmenu">
+                <div class="m2apiKnm">快速导航</div>
+                <dl>
+                    <dt><a class="m2herf_a1" href="#cd-placeholder-2">接口说明</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-2_1">上行收取</a></li>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-2_2">页面推送参数</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/api-js.html" />
+</body>
+
+</html>

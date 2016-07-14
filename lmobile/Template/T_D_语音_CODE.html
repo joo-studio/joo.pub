@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/code-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    <stl:channel type="Title" upLevel="1"></stl:channel>
+                </li>
+                <li>
+                    <stl:channel type="Title"></stl:channel>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <stl:include file="@/include/api-left.html" />
+            <!-- code begin -->
+            <div class="m2apiCon">
+        <div class="m2apiMnm" id="cd-placeholder-1">代码示例</div>
+        <div class="m2apiEditor autoMaxImg">
+           
+          <div class="m2api_t1" id="cd-placeholder-1_1">ASP</div>
+            <div class="m2apiCoder">
+<pre>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%
+Function Post(url,data)
+    dim Https 
+    set Https=server.createobject("MSXML2.XMLHTTP")
+    Https.open "POST",url,false
+    Https.setRequestHeader "Content-Type","application/x-www-form-urlencoded"
+    Https.send data
+    if Https.readystate=4 then
+        dim objstream 
+        set objstream = Server.CreateObject("adodb.stream")
+        objstream.Type = 1
+        objstream.Mode =3
+        objstream.Open
+        objstream.Write Https.responseBody
+        objstream.Position = 0
+        objstream.Type = 2
+        objstream.Charset = "utf-8"
+        Post = objstream.ReadText
+        objstream.Close
+        set objstream = nothing
+        set https=nothing
+    end if
+End Function
+dim target,post_data
+target = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit"
+post_data = "sname=&spwd=&scorpid=&sprdid=&sdst=&smsg="&Server.URLEncode("短信内容【签名】")
+response.Write(Post(target,post_data))
+''//请自己解析Post(target,post_data)返回的字符串并实现自己的逻辑
+''<State>0</State>表示成功,其它的参考文档
+%>
+                </pre>
+            </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_2">Delphi</div>
+            <div class="m2apiCoder">
+                <pre>
+首先需要引用WebService服务
+
+ts:=service.GetService1Soap(false,'http://cf.51welink.com/submitdata/service.asmx').g_Submit('','','','','1381025xxxx','短信内容【签名】');
+ShowMessage(inttostr(ts.State));
+                </pre>
+            </div>
+          <div class="m2apiLine"></div>
+          <div class="m2api_t2" id="cd-placeholder-1_3">JAVA</div>
+          <div class="m2apiCoder">
+            <pre>
+package cn.umob.sms;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+/**
+ *
+ * @author Administrator
+ */
+public class Send {
+    public static String SMS(String postData, String postUrl) {
+        try {
+            //发送POST请求
+            URL url = new URL(postUrl);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            conn.setRequestProperty("Connection", "Keep-Alive");
+            conn.setUseCaches(false);
+            conn.setDoOutput(true);
+            conn.setRequestProperty("Content-Length", "" + postData.length());
+            OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream(), "UTF-8");
+            out.write(postData);
+            out.flush();
+            out.close();
+            //获取响应状态
+            if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                System.out.println("connect failed!");
+                return "";
+            }
+            //获取响应内容体
+            String line, result = "";
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "utf-8"));
+            while ((line = in.readLine()) != null) {
+                result += line + "\n";
+            }
+            in.close();
+            return result;
+        } catch (IOException e) {
+            e.printStackTrace(System.out);
+        }
+        return "";
+    }
+}
+
+前台调用
+<%
+    String PostData = "sname=kwsm&spwd=kwsm&scorpid=&sprdid=1012818&sdst=13910862579&smsg="+java.net.URLEncoder.encode("短信内容【签名】","utf-8");
+    //out.println(PostData);
+    String ret = cn.umob.sms.Send.SMS(PostData, "http://cf.51welink.com/submitdata/Service.asmx/g_Submit");
+    out.println(ret);
+    //请自己反序列化返回的字符串并实现自己的逻辑
+%>
+
+            </pre>
+          </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_4">Asp.Net</div>
+            <div class="m2apiCoder">
+                <pre>
+HTTP调用方式
+
+string sname = this.TxtSname.Text.Trim();
+string spwd = this.TxtSpwd.Text.Trim();
+string scorpid = this.TxtScorpid.Text.Trim();
+string sprdid = this.TxtSprdid.Text.Trim();
+string sdst = this.TxtSdst.Text.Trim();
+string smsg = this.TxtSmsg.Text.Trim();
+string postStrTpl = "sname={0}&spwd={1}&scorpid={2}&sprdid={3}&sdst={4}&smsg={5}";
+UTF8Encoding encoding = new UTF8Encoding();
+byte[] postData = encoding.GetBytes(string.Format(postStrTpl, sname, spwd, scorpid, sprdid, sdst, smsg));
+HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(PostUrl);
+myRequest.Method = "POST";
+myRequest.ContentType = "application/x-www-form-urlencoded";
+myRequest.ContentLength = postData.Length;
+Stream newStream = myRequest.GetRequestStream();
+// Send the data.
+newStream.Write(postData, 0, postData.Length);
+newStream.Flush();
+newStream.Close();
+HttpWebResponse myResponse = (HttpWebResponse)myRequest.GetResponse();
+if (myResponse.StatusCode == HttpStatusCode.OK)
+{
+    StreamReader reader = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8);
+    LabelRetMsg.Text = reader.ReadToEnd();
+    //反序列化upfileMmsMsg.Text
+    //实现自己的逻辑
+}
+else
+{
+    //访问失败
+}
+
+
+Web服务调用方式（需要先引用Web服务）
+
+string sname = this.TxtSname.Text.Trim();
+string spwd = this.TxtSpwd.Text.Trim();
+string scorpid = this.TxtScorpid.Text.Trim();
+string sprdid = this.TxtSprdid.Text.Trim();
+string sdst = this.TxtSdst.Text.Trim();
+string smsg = this.TxtSmsg.Text.Trim();
+WebReference.CSubmitState state =  service.g_Submit(sname, spwd, scorpid, sprdid, sdst, smsg);
+//您的逻辑
+this.LabelRetMsg.Text = state.MsgID + ":" + state.MsgState;
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_5">PHP</div>
+            <div class="m2apiCoder">
+                <pre>
+&lt;?php
+function Post($data, $target) {
+    $url_info = parse_url($target);
+    $httpheader = "POST " . $url_info['path'] . " HTTP/1.0\r\n";
+    $httpheader .= "Host:" . $url_info['host'] . "\r\n";
+    $httpheader .= "Content-Type:application/x-www-form-urlencoded\r\n";
+    $httpheader .= "Content-Length:" . strlen($data) . "\r\n";
+    $httpheader .= "Connection:close\r\n\r\n";
+    //$httpheader .= "Connection:Keep-Alive\r\n\r\n";
+    $httpheader .= $data;
+    $fd = fsockopen($url_info['host'], 80);
+    fwrite($fd, $httpheader);
+    $gets = "";
+    while(!feof($fd)) {
+        $gets .= fread($fd, 128);
+    }
+    fclose($fd);
+    if($gets != ''){
+        $start = strpos($gets, '&lt;?xml ');
+        if($start> 0) {
+            $gets = substr($gets, $start);
+        }        
+    }
+    return $gets;
+}
+?&gt;
+&lt;?php
+include_once('sms.php');
+$target = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit";
+//替换成自己的测试账号,参数顺序和wenservice对应
+$post_data = "sname=kwsm&spwd=kwsm&scorpid=&sprdid=1012818&sdst=13910862579&smsg=".rawurlencode("短信内容【签名】");
+//$binarydata = pack("A", $post_data);
+echo $gets = Post($post_data, $target);
+//请自己解析$gets字符串并实现自己的逻辑
+//&lt;State&gt;0&lt;/State&gt;表示成功,其它的参考文档
+?&gt;
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_6">Python</div>
+            <div class="m2apiCoder">
+                <pre>
+#python3.4环境短信提交demo
+import urllib.request
+import urllib.error
+import xml.dom.minidom
+url = "http://cf.51welink.com/submitdata/Service.asmx/g_Submit"
+#定义需要进行发送的数据
+param = {'sname':'kwsm',        #账号
+        'spwd':'kwsm',          #密码  
+        'scorpid':'',           #企业代码
+        'sprdid':'1011618',     #产品编号
+        'sdst':'18810013110',   #手机号码
+        'smsg':'短信内容'}       #短信内容
+data = urllib.parse.urlencode(param).encode(encoding='UTF8')
+#定义头
+headers = {"Content-Type":"application/x-www-form-urlencoded"}
+#开始提交数据
+req = urllib.request.Request(url, data, headers)   
+response = urllib.request.urlopen(req)
+#获取返回数据
+result = response.read().decode('utf8')
+#自行解析返回结果xml，对应结果参考文档
+dom = xml.dom.minidom.parseString(result)
+root = dom.documentElement
+State = root.getElementsByTagName("State")
+MsgID = root.getElementsByTagName("MsgID")
+MsgState = root.getElementsByTagName("MsgState")
+Reserve = root.getElementsByTagName("Reserve")
+print(State[0].firstChild.data)  #State值为0表示提交成功
+print(MsgID[0].firstChild.data)
+print(MsgState[0].firstChild.data)
+print(Reserve[0].firstChild.data)
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+        </div>
+ 
+      </div>
+      <div class="m2aipKmenu">
+        <div class="m2apiKnm">快速导航</div>
+        <dl>
+          <dt><a class="m2herf_a1" href="#cd-placeholder-1">代码示例</a></dt>
+          <dd>
+            <ul>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_1">ASP</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_2">Delphi</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_3">JAVA</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_4">Asp.Net</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_5">PHP</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_6">Python</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/api-js.html" />
+</body>
+
+</html>

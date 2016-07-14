@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/code-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    <stl:channel type="Title" upLevel="1"></stl:channel>
+                </li>
+                <li>
+                    <stl:channel type="Title"></stl:channel>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <stl:include file="@/include/api-left.html" />
+            <!-- code begin -->
+            <div class="m2apiCon">
+        <div class="m2apiMnm" id="cd-placeholder-1">接口说明</div>
+        <div class="m2apiEditor autoMaxImg">
+          
+            <div class="m2api_t1" id="cd-placeholder-1_1">接口地址</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>地址</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>http://bcp.51welink.com:9001/WSRR.asmx</td>
+                        <td>WebService流量接口</td>
+                    </tr>
+                    <tr>
+                        <td>http://bcp.51welink.com/api/CallApi/Index</td>
+                        <td>Http流量接口</td>
+                    </tr>
+                </table>
+            </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_2">Web服务CallByXML方法</div>
+            <p>常规WSDL调用方法。<br />
+            传入参数：XmlInput<br />
+            如C#中，添加WEB服务，并按普通类方法进行操作<br />
+            </p>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_3">Web服务JSONInput方法</div>
+            <p>
+                以Http的请求方式， Content-Type必须设置为：application/json，以Post方式提交，并传入参数JsonInput（Json格式）<br />
+            </p>
+            <div class="m2apiCoder">
+                <pre>
+使用Jquery的Ajax代码：
+var objData ={
+"ServicePath":"/ZPS/WSRR/YFOW/API/QuerySeq",
+"app":"aaa",
+"userid":"XXX",
+"t":"1446220569",
+"sign":"b90f49fbdb7f9469b0d9c414d28eca58",
+"seqNo":"22"    
+};            
+$.ajax({
+    type: "POST",
+    contentType: "application/json",
+    url: "http://120.26.72.15:9001/WSRR.asmx/CallByJson",
+    data: "{ 'JsonInput': '" + JSON.stringify(objData) + "' }",
+    dataType: 'json',
+    success: function (result) {
+        var result = eval("["+result.d+"]");
+    }
+});
+</pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_4">InputXML参数说明</div>
+            <div class="m2api_t2">参数举例</div>
+            <div class="m2apiCoder">
+                <pre>
+&lt;Interface ServicePath="="/ZPS/WSRR/WebService/Platform " &gt;
+  &lt;userid&gt;XXX&lt;/userid&gt; 
+     &lt;mobile&gt; XXXXXXXXXXXX&lt;/mobile&gt;  
+&lt;/Interface&gt;
+</pre>
+            </div>
+            <div class="m2api_t2">具体说明</div>
+            基本信息
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>Interface</td>
+                        <td>为必须节点，固定格式</td>
+                    </tr>
+                    <tr>
+                        <td>WSID</td>
+                        <td>为必须节点，固定格式</td>
+                    </tr>
+                    <tr>
+                        <td>APP</td>
+                        <td>为必须节点，固定格式</td>
+                    </tr>
+                    <tr>
+                        <td>DeviceID</td>
+                        <td>必须节点可以为空，固定格式</td>
+                    </tr>
+                    <tr>
+                        <td>SessionID</td>
+                        <td>必须节点可以为空</td>
+                    </tr>
+                    <tr>
+                        <td>User</td>
+                        <td>必须节点可以为空</td>
+                    </tr>
+                    <tr>
+                        <td>Pwd</td>
+                        <td>必须节点可以为空，以DES加密得出</td>
+                    </tr>
+                </table>
+            </div>
+            XML参数信息
+            <p>
+                Root 为必须节点，固定格式<br />
+                List：为必须节点，固定格式。<br />
+                Rows及以下：Rows以下的内容为列名。Rows可以出现多次，也就是多行记录，可以有多个Rows。 如果是多行记录，每一个Rows里面的列必须全部相同。列的内容请参考接口表结构。
+            </p>
+            <div class="m2api_t2">返回结果（XML）</div>
+            案例
+            <div class="m2apiCoder">
+<pre>
+&lt;ROOT&gt;
+    &lt;Result&gt;0&lt;/Result&gt;
+    &lt;Message&gt;成功！&lt;/Message&gt;
+    &lt;LIST TBName="Result"&gt;
+        &lt;Rows&gt;
+        &lt;/Rows&gt;
+    &lt;/LIST&gt;
+&lt;/ROOT&gt;
+</pre>
+                <p>
+                    说明：Result指示结果是否成功。0表示成功，1表示失败。如果失败，会在Message告知失败原因，本次的所有数据将不会更新，请重新调用。
+                </p>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_5">JSONInput参数说明</div>
+            <div class="m2api_t2">参数举例</div>
+            <div class="m2apiCoder">
+                <pre>
+{
+"ServicePath":"/ZPS/WSRR/WebService/Platform ",
+"app":"evmandroid",
+"optype":"GetData",
+"tbname":"Value",
+}
+</pre>
+            </div>
+            <div class="m2api_t2">具体说明</div>
+            <p>
+                整体：所有关键字全部小写<br />
+                ServicePath：为必须节点，固定格式。<br />
+                app：为必须节点，固定值（evmandroid）<br />
+                sessionid：可以为空，固定格式<br />
+                data:可以为空，固定格式。如果有值，里面为JSON数组<br />
+
+                data对象说明：<br />
+                1、	整体为JSON数组<br />
+                2、	包含的每一个对象可以不一样，但是必须包含rows节点，不然会被认为无效<br />
+                3、	单个对象说明：<br />
+                a)	optype：是指操作说明，后台会根据这个字段来进行判断所需要的操作<br />
+                b)	tbname:指示这个对象的名称，所有对象名称不可以重复<br />
+                c)	rows:数组对象，里面的内容对象可以为多个，可以理解为一个表的多行数据，但是每一行数据结构必须相同：如<br />
+                "rows":[ { "VIP_ID":"112AB3EE-C1C8-41F3-B056-1C743608F251"},{ "VIP_ID":"112AB3EE-C1C8-41F3-B056-1C743608F251"}]<br />
+                不允许：<br />
+                "rows":[ { "VIP_ID":"112AB3EE-C1C8-41F3-B056-1C743608F251"},{ "CODE":"212AB3EE-C1C8-41F3-B056-1C743608F263"}]<br />
+                4、	当data里面没有任何列或者没有数据时可以允许以下格式：<br />
+                "data":[{ "total": 0, "rows": [] }]<br />
+            </p>
+            <div class="m2api_t2">返回结果（JSON）</div>
+            <div class="m2apiCoder">
+                <pre>
+{
+    "result": 0,
+    "message": "操作成功",
+    "data": [
+        {
+            "rows": [
+                {
+                    "ID": "S0001",
+                     
+                    "Message": "测试1"
+                }，{
+                    "ID": "S0002",
+                 
+                    "Message": "测试1"
+                }
+            ],
+            "total": 2,
+            "tbname": "Table"
+        },
+    ]
+}
+</pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_6">Http单号码充流量</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>流量类型</td>
+                        <td>0 全国流量 1省内流量，不带改参数时默认为0</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>号码 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Package</td>
+                        <td>套餐 (签名)</td>
+                        <td>流量包大小(必须在返回流量包选择内)</td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>TaskID</td>
+                        <td>任务编码</td>
+                        <td>失败为0</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=charge&account=帐号&mobile=手机号&package=100&sign=MD5 
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_7">Http批量充流量</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>流量类型</td>
+                        <td>0 全国流量 1省内流量，不带改参数时默认为0</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>CMPackage</td>
+                        <td>移动套餐(签名)</td>
+                        <td>如有移动号码则必传 传值参考getPackage返回参数</td>
+                    </tr>
+                    <tr>
+                        <td>CUPackage</td>
+                        <td>联通套餐(签名)</td>
+                        <td>如有联通号码则必传 传值参考getPackage返回参数</td>
+                    </tr>
+                    <tr>
+                        <td>CTPackage</td>
+                        <td>电信套餐(签名)</td>
+                        <td>如有电信号码则必传 传值参考getPackage返回参数</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>号码 (签名)</td>
+                        <td>半角逗号(,)分割</td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>TaskID</td>
+                        <td>任务编码</td>
+                        <td>失败为0</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=chargeBat&account=帐号&mobile=手机号逗号分割&cmPackage=100&cuPackage=100&ctPackage=100&sign=MD5
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_8">Http卡密充流量</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>号码 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>CardNo</td>
+                        <td>卡号(签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>卡密(签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>TaskID</td>
+                        <td>任务编码</td>
+                        <td>失败为0</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=chargeCard&account=帐号&mobile=手机号&cardNo=卡号&pssword=密码&sign=MD5
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_9">Http获取流量包定义</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>类型(签名)</td>
+                        <td>0:不指定, 1:移动, 2:联通, 3:电信</td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Packages</td>
+                        <td>返回流量包</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;Package</td>
+                        <td>流量包</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;Name</td>
+                        <td>名称</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;Price</td>
+                        <td>价格</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=getPackage&account=帐号&sign=MD5
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_10">Http查询余额</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Balance</td>
+                        <td>余额</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=getBalance&account=帐号&sign=MD5
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_11">Http查询状态</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>名称</td>
+                        <td>描述</td>
+                        <td>例</td>
+                    </tr>
+                    <tr>
+                        <td>Action</td>
+                        <td>命令</td>
+                        <td>charge</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>版本号</td>
+                        <td>1.1 固定值</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>帐号 (签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Count</td>
+                        <td>一次取数量(签名)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sign</td>
+                        <td>签名</td>
+                        <td>参见签名算法</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">响应</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>代码</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>消息</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Reports</td>
+                        <td>返回记录</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;TaskID</td>
+                        <td>任务</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;Mobile</td>
+                        <td>手机</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;Status</td>
+                        <td>4.状态成功, 5.状态失败</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;ReportTime</td>
+                        <td>时间</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;ReportCode</td>
+                        <td>代码说明</td>
+                        <td></td>
+                    </tr>
+                </table>
+                例:http://bcp.51welink.com/api/CallApi/Index?v=1.1&action=getReports&account=帐号&sign=MD5 <br />
+                状态被获取后服务器删除该状态 建议获取到状态后先记录一个日志
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_12">Http错误定义</div>
+            <div class="m2apiTab">
+                <table width="100%" border="0">
+                    <tr class="m2api_th">
+                        <td>错误编号</td>
+                        <td>描述</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>参数错误</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>充值号码不合法</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>帐号密码错误</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>余额不足</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>不存在指定流量包</td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>不支持该地区</td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>卡号或者密码错误</td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <td>该卡已使用过</td>
+                    </tr>
+                    <tr>
+                        <td>009</td>
+                        <td>该卡不支持(移动/电信/联通)号码</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>签名验证错误</td>
+                    </tr>
+                    <tr>
+                        <td>999</td>
+                        <td>其他错误</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t1" id="cd-placeholder-1_13">Http签名算法</div>
+            <p>
+                按照asc排序键值对参数名排序，拼接键值对字符串(参数名小写) ，需要把api key放到要签名的键值对最后。<br />
+                例如sign=MD5(aaaa=aaaa&bbbb=bbbb&cccc=cccc&dddd=dddd&key=api密钥)，用32位MD5加密，生成的MD5小写
+            </p>
+            <div class="m2apiCoder">
+                <pre>
+  var account = "";
+  var mobile = "";
+  var package = "";
+  var key = "";
+  //基本参数
+  var action = "charge";
+  var ver = "1.1";
+  var host = " http://bcp.51welink.com ";
+  var page = "{0}//api/CallApi/Index?action={1}&v={2}&{3}&sign={4}";
+  //协议参数
+  var reqParams = new Dictionary<string, object>();
+  reqParams.Add("account", account);
+  reqParams.Add("mobile", mobile);
+  reqParams.Add("package", package);
+  //参数排序
+  var orderedParams = reqParams.OrderBy(p => p.Key).ToDictionary(p => p.Key, p => p.Value);
+  //参数拼接
+  var strParam = "";
+  foreach (var item in orderedParams)
+    strParam += item.Key.ToLower() + "=" + item.Value.ToString() + "&";
+  strParam = strParam.Trim('&');
+  //构造URL
+  var url = string.Format(page, host, action, ver, strParam, GetMD5(strParam + "&key=" + key));
+  //请求
+  var client = new WebClient();
+  client.Encoding = Encoding.UTF8;
+  var result = client.DownloadString(url);
+
+
+  //与C#兼容的MD5加密算法
+  public static string GetMD5(string s)
+  {
+    MD5 md5 = new MD5CryptoServiceProvider();
+    byte[] t = md5.ComputeHash(Encoding.GetEncoding("utf-8").GetBytes(s));
+    StringBuilder sb = new StringBuilder(32);
+    for (int i = 0; i < t.Length; i++)
+    {
+      sb.Append(t[i].ToString("x").PadLeft(2, '0'));
+    }
+    return sb.ToString();
+  }
+</pre>
+            </div>
+            <div class="m2apiLine"></div>
+            </div>
+      </div>
+      <div class="m2aipKmenu">
+        <div class="m2apiKnm">快速导航</div>
+        <dl>
+          <dt><a class="m2herf_a1" href="#cd-placeholder-1">接口说明</a></dt>
+          <dd>
+            <ul>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_1">接口地址</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_2">Web服务CallByXML</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_3">Web服务JSONInput</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_4">InputXML参数说明</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_5">JSONInput参数说明</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_6">Http单号码充流量</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_7">Http批量充流量</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_8">Http卡密充流量</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_9">Http获取流量包定义</a></li>
+<!--                 <li><a class="m2herf_a2" href="#cd-placeholder-1_10">Http查询余额</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_11">Http查询状态</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_12">Http错误定义</a></li>
+                <li><a class="m2herf_a2" href="#cd-placeholder-1_13">Http签名算法</a></li> -->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/api-js.html" />
+</body>
+
+</html>
+
