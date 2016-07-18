@@ -1,0 +1,115 @@
+.article-content {
+    background-image: url(../assets/img/blog-bg@2x.png);
+    background-repeat: no-repeat;
+    // background-position: center -140px!important;
+    background-size: 100% auto;
+    padding-top: 125px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.article-content p {
+    font-size: 16px;
+    color: #383838;
+    line-height: 26px;
+    margin: 0 0 10px;
+    margin-bottom: 30px;
+}
+
+.article-title {
+    font-size: 38px;
+    color: #383838;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article-meta {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bg-grey {
+    background-color: #F7F8F8 !important;
+}
+
+.h80 {
+    height: 80px;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.m2apiCon2 {
+    margin: 0px 0 0px 255px;
+}
+
+@media (max-width: 992px) {
+    .m2apiCon2 {
+        margin-right: 0;
+        margin-left: 235px;
+    }
+}
+
+@media (max-width: 767px) {
+    .m2apiCon2 {
+        margin-left: 0;
+    }
+    .content {
+        width: 100%;
+        padding: 30px;
+    }
+    .content img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+#gotop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    top: auto;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: center;
+    color: #3d4450;
+    background: #DEDEDE;
+    transition: font-size 1s, background 1s;
+    cursor: pointer;
+    z-index: 77;
+    opacity: 0.5;
+}
+#gotop:hover {
+    color: #fff;
+    font-size: 20px;
+    background: #068EEA;
+    opacity: 0.9;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out
+}
+
+*html #gotop {
+    position: absolute;
+    bottom: auto;
+    top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+}
+
+.btn-group-lg .btn-primary {
+    background-color: #0d98f9;
+}
+
+.line {
+    border-bottom: #dedede;
+}

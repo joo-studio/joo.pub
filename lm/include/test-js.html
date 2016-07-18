@@ -1,0 +1,87 @@
+<link href="{Stl.SiteUrl}/css/reveal.css" rel="stylesheet">
+<script src="http://static.geetest.com/static/tools/gt.js"></script>
+<script src="{Stl.SiteUrl}/script/jquery.reveal.js"></script>
+<script>
+		var handler = function (captchaObj) {
+			window.captchaObj = captchaObj;
+			
+			// 将验证码加到id为captcha的元素里
+			captchaObj.appendTo("#captcha");
+		};
+	    var getcaptcha = function(){
+			$.ajax({
+				// 获取id，challenge，success（是否启用failback）
+				url: "/code/getcaptcha.aspx?t=" + (new Date()).getTime(),
+				type: "get",
+				dataType: "json", // 使用jsonp格式
+				success: function (data) {
+					// 使用initGeetest接口
+					// 参数1：配置参数，与创建Geetest实例时接受的参数一致
+					// 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+					initGeetest({
+						gt: data.gt,
+						challenge: data.challenge,
+						product: "float", // 产品形式
+						offline: !data.success
+					}, handler);
+				}
+			}); 
+	    };
+		
+		$(function(){
+			getcaptcha();
+			
+			$('.m2nFmSubmit').click(function(){
+				if($('#mobile').val() === ''){
+					$('#myModal > p').html('请输入手机号码！');
+					$('#myModal').reveal({animation:"fade",revealId:"myModal"});
+					//alert('请输入手机号码');
+					return;
+				}
+				if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test($('#mobile').val()))
+				{
+					$('#myModal > p').html('请输入正确的手机号码！');
+					$('#myModal').reveal({animation:"fade",revealId:"myModal"});
+					//alert('请输入手机号码');
+					return;
+				}
+				var validate = captchaObj.getValidate();
+				if (!validate) {
+					//alert('请先完成验证！');
+					$('#myModal > p').html('请先完成验证！');
+					$('#myModal').reveal({animation:"fade",revealId:"myModal"});
+					return;
+				}
+				var param = {
+					mobile: $('#mobile').val(), 
+					id: $(this).attr('id'),
+					geetest_challenge: $('.geetest_challenge').val(),
+					geetest_validate: $('.geetest_validate').val(),
+					geetest_seccode: $('.geetest_seccode').val()
+				};
+				$.ajax({
+					type: 'post',
+					url: '/code/TestHandler.ashx',
+					data: param,
+					dataType: 'text',
+					success : function(data){
+						var jsonData = $.parseJSON(data);
+						if(jsonData.bSuccess){
+							$('#mobile').val('');
+						}
+						//alert(data);
+						$('#myModal > p').html(jsonData.message);
+						$('#myModal').reveal({animation:"fade",revealId:"myModal"});
+						$('#captcha').empty();
+						//captchaObj.refresh();
+						getcaptcha();
+					}
+				});
+			});
+		});
+</script>
+<div id="myModal" class="reveal-modal">
+	<h3>提示</h3>
+	<p></p>
+	<a class="close-reveal-modal">&#215;</a>
+</div>

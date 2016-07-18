@@ -1,0 +1,20 @@
+<script language="javascript">
+    var swiper = new Swiper('.hmc3Slider .swiper-container', {
+        pagination: '.hmc3Slider .swiper-pagination',
+        slidesPerView: 6,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 0,
+        slidesPerGroup: 2,
+        breakpoints: {
+            //当宽度小于等于320
+            767: {
+                slidesPerView: 2,
+            },
+            //当宽度小于等于480
+            991: {
+                slidesPerView: 4
+            }
+        }
+    });
+    </script>

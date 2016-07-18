@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <section class="m2ban" style="background-image:url({Channel.ImageUrl})">
+        <div class="m2banTxt">
+            <div class="m2ban_p3">语音验证是短信验证码的补充产品为您的业务</div>
+            <div class="m2ban_p4">提供更加稳定的验证服务</div>
+            <a href="#test-voice" class="m2ban_link1">立即免费测试</a>
+        </div>
+    </section>
+    <section class="m2yyCon1">
+        <div class="m2yyC1_t1">为什么要用语音验证</div>
+        <div class="m2yyC1_p1">语音验证是将验证码通过语音直接呼到用户手机，从而实现电话语音播报验证码的一种新型验证方式 。
+            <br> 语音验证的出现，解决了用户可能因各种主客观问题，无法接收短信验证码的问题，使用户验证过程更为轻松、高效，从而达到用户体验最优化的效果，为网站及软件带来更多的用户，更给企业管理者带来更持久稳定的运营。
+        </div>
+        <div class="container">
+            <ul class="m2yyc1_ul clearfix">
+                <li class="col-xs-12 col-sm-4 col-md-4">
+                    <p>活动界面将短信验证换成语音验证</p>
+                    <img src="{Stl.SiteUrl}/images/m2yimg1.jpg">
+                </li>
+                <li class="col-xs-12 col-sm-4 col-md-4">
+                    <p>用户点击验证，与短信操作习惯一样</p>
+                    <img src="{Stl.SiteUrl}/images/m2yimg2.jpg">
+                </li>
+                <li class="col-xs-12 col-sm-4 col-md-4">
+                    <p>极速接听来电，获取验证码</p>
+                    <img src="{Stl.SiteUrl}/images/m2yimg3.jpg">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="m2yyCon2">
+        <div class="container">
+            <div class="m2yyC1_t1">产品优势</div>
+            <ul class="m2yyc2_ul row">
+                <li class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="{Stl.SiteUrl}/images/m2y_icon1.png" width="118" height="118">
+                    <strong>防刷单</strong>
+                    <p>语音验证码不仅可以下发验证码，还可用于防刷单，有效阻止虚假身份及短信接收机带来的损失</p>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="{Stl.SiteUrl}/images/m2y_icon2.png" width="118" height="118">
+                    <strong>100%到达</strong>
+                    <p>使用短信、语音验证码呼出、语音验证码呼入组合解决方案，让验证码实现100%的到达率</p>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="{Stl.SiteUrl}/images/m2y_icon3.png" width="118" height="118">
+                    <strong>高并发</strong>
+                    <p>10万线并发支持，满足超规模业务量使用需求，持续稳定、零堵塞</p>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="{Stl.SiteUrl}/images/m2y_icon4.png" width="118" height="118">
+                    <strong>平台稳定</strong>
+                    <p>十六年通讯积累、运营商支撑经验、经过一线企业验证，保证平台高并发无故障运行达1000天以上</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="m2yyCon3">
+        <div class="m2yyC1_t1">接入流程</div>
+        <div class="m2lcBox autoMaxImg">
+            <div class="dsPcPad"><img src="{Stl.SiteUrl}/images/m2lc_img1.jpg"></div>
+            <div class="dsPhone"><img src="{Stl.SiteUrl}/images/m2lc_img1a.jpg"></div>
+        </div>
+        <stl:a channelName="语音接口" class="m2yyBtn">查看语音验证接口文档</stl:a>
+        <div class="h80"></div>
+    </section>
+    <stl:include file="@/include/test-voice.html" />
+    <stl:include file="@/include/other-case.html" />
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/sub-js.html" />
+    <stl:include file="@/include/test-js.html" />
+</body>
+
+</html>

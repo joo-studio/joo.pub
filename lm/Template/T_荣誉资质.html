@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/sub-banner.html" />
+    <div class="container m2main">
+        <ul class="row m2ryList">
+        <stl:contents isImage="true">
+            <li class="col-xs-12 col-sm-6 col-md-3">
+                <div class="m2ryBox">
+                    <div class="autoImg"><stl:image alt="{Content.Title}" /></div>
+                    <p><stl:content type="Title" wordNum="22" ellipsis="..." /></p>
+                </div>
+            </li>
+            </stl:contents>
+        </ul>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+</body>
+
+</html>

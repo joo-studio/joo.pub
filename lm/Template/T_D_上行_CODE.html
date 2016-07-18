@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/code-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>
+                    <stl:channel type="Title" upLevel="1"></stl:channel>
+                </li>
+                <li>
+                    <stl:channel type="Title"></stl:channel>
+                </li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <stl:include file="@/include/api-left.html" />
+            <!-- code begin -->
+                  <div class="m2apiCon">
+        <div class="m2apiMnm">代码示例</div>
+        <div class="m2apiEditor autoMaxImg">
+        <div class="m2api_t1" id="cd-placeholder-1"><stl:channel type="Title" upLevel="1"></stl:channel>代码示例</div>
+          <div class="m2api_t2" id="cd-placeholder-1_1"><i class="fa fa-caret-right"></i> ASP</div>
+            <div class="m2apiCoder">
+<pre>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%
+'请将文件另存为UT-8
+dim YourNum,UserTel,UserMsg,UserTime 
+dim temp 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' 
+MsgId=Request("MsgId")
+YourNum=Request("Up_YourNum")
+UserTel=Request("Up_UserTel")
+UserMsg=Request("Up_UserMsg")
+temp=MsgId+" "+YourNum+" "+UserTel+" "+UserMsg
+'您的业务逻辑
+'........
+'下面演示的是记录文件的DEMO
+WriteData(temp)
+Response.Write("OK"+temp)
+Response.End
+Sub WriteData(Desc)
+  On Error Resume Next
+  Dim oFs,OutFile
+  set oFs = server.CreateObject("Scripting.FileSystemObject")
+  set OutFile = oFs.OpenTextFile("C:/Inetpub/wwwroot/upData.txt", 8, true)
+  call OutFile.writeLine(Desc)
+  OutFile.close 
+end Sub
+%>
+                </pre>
+            </div>
+          <div class="m2apiLine"></div>
+          <div class="m2api_t2" id="cd-placeholder-1_2"><i class="fa fa-caret-right"></i> JAVA</div>
+          <div class="m2apiCoder">
+            <pre>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page import="java.io.*"%>
+<%@ page import="java.io.FileNotFoundException"%>
+<%@ page import="java.io.FileOutputStream"%>
+<%@ page import="java.io.IOException"%>
+<%@ page import="java.io.OutputStreamWriter"%>
+<%@ page import="java.io.UnsupportedEncodingException"%>
+<%
+            String msgid = request.getParameter("MsgId");
+      String upServerNum = request.getParameter("Up_YourNum");
+            String upTel = request.getParameter("Up_UserTel");
+            String upMsg = request.getParameter("Up_UserMsg");
+            //您的业务逻辑
+            //.......
+            //demo
+            //记LOG的例子,主要是为了upMsg编码的处理
+            //请保存该文件的时候 编码方式:utf-8 和pageEncoding="utf-8"
+            String upTotalMsg ="MsgId=" + msgid+ "&Up_YourNum=" + upServerNum + "&Up_UserTel=" + upTel + "&Up_UserMsg=" + upMsg;
+            try {
+                OutputStreamWriter osw = new OutputStreamWriter(
+                        new FileOutputStream("D:/javalog.txt"), "UTF-8");
+                osw.write(upTotalMsg);
+                osw.flush();
+                osw.close();
+            } catch (IOException e) {
+                out.println(e.getMessage());
+            }
+%>
+<%="ok"%>
+            </pre>
+          </div>
+          <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_3"><i class="fa fa-caret-right"></i> Asp.Net</div>
+            <div class="m2apiCoder">
+                <pre>
+string MsgID = Request["MsgId"] ?? string.Empty;
+string Up_YourNum = Request["Up_YourNum"] ?? string.Empty;
+string Up_UserTel = Request["Up_UserTel"] ?? string.Empty;
+string Up_UserMsg = Request["Up_UserMsg"] ?? string.Empty;
+string result = string.Format("MsgId ={0}|Up_YourNum={1}|Up_UserTel={2}|Up_UserMsg ={3}", MsgID, Up_YourNum, Up_UserTel, Up_UserMsg);
+Response.Write(result);
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+            <div class="m2api_t2" id="cd-placeholder-1_4"><i class="fa fa-caret-right"></i> PHP</div>
+            <div class="m2apiCoder">
+                <pre>
+&lt;?php
+$msgid = $_REQUEST['MsgId'];
+$up_num = $_REQUEST['Up_YourNum'];
+$up_servnum = $_REQUEST['Up_UserTel'];
+$up_msg = $_REQUEST['Up_UserMsg'];
+//您的业务逻辑
+//.......
+//demo
+//记LOG的例子,主要是为了$up_msg编码的处理
+//请保存该文件的时候 编码方式:utf-8
+$old_log = '';
+if(file_exists("php-utf8-debug.log")){
+  $old_log = file_get_contents("php-utf8-debug.log");
+}
+$up_msg = "MsgId=".$msgid."&Up_YourNum=".$up_num."&Up_UserTel=".$up_servnum."&Up_UserMsg=".$up_msg."\r\n";
+$new_log = $old_log.$up_msg;
+file_put_contents("php-utf8-debug.log",$new_log);
+echo 'ok';
+?&gt;
+                </pre>
+            </div>
+            <div class="m2apiLine"></div>
+        </div>
+ 
+      </div>
+      <div class="m2aipKmenu">
+        <div class="m2apiKnm">快速导航</div>
+        <dl>
+          <dt><a class="m2herf_a1" href="#cd-placeholder-1">代码示例</a></dt>
+          <dd>
+            <ul>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_1">ASP</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_2">JAVA</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_3">Asp.Net</a></li>
+              <li><a class="m2herf_a2" href="#cd-placeholder-1_4">PHP</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+            <!-- code end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <stl:include file="@/include/js.html" />
+    <stl:include file="@/include/api-js.html" />
+</body>
+
+</html>
+

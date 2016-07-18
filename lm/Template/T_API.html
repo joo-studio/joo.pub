@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <stl:include file="@/include/meta.html" />
+    <stl:include file="@/include/css.html" />
+</head>
+
+<body>
+    <stl:include file="@/include/header.html" />
+    <stl:include file="@/include/img-banner.html" />
+    <div class="container">
+        <div class="m2posBox">
+            <ol class="breadcrumb">
+                <li>当前位置：首页</li>
+                <li>API接口</li>
+                <li>{</li>
+            </ol>
+        </div>
+        <div class="m2apiBox clearfix">
+            <div class="m2apiMenu">
+                <div class="m2apiNm1"><i class="fa fa-doc"></i>接口文档</div>
+                <dl class="m2apiDl">
+                    <dt class="on"><a class="m2apiMenu_a1" href="javascript:;">短信接口文档</a></dt>
+                    <dt><a class="m2apiMenu_a1" href="javascript:;">短信接口文档</a></dt>
+                    <dt><a class="m2apiMenu_a1" href="javascript:;">短信接口文档</a></dt>
+                </dl>
+            </div>
+            <div class="m2apiCon">
+                <div class="m2apiMnm">流量产品接口文档</div>
+                <div class="m2apiEditor autoMaxImg">
+                    <p>测试时，请使用正式内容进行测试，请勿给同一手机号连续发送相同内容，运营商已进行规则调整以应对短信炸弹问题。</p>
+                    <p class="cor_red">所有短信均有监控，请勿发送以下内容：营销广告、不合法、要挟、虚假、私人信息、滥发、邀请类。</p>
+                    <p class="cor_red">网页应用于手机验证，请务必增加图形验证（以防止被他人利用，被用于短信轰炸用途），否则不予以接入。</p>
+                    <p>&nbsp;</p>
+                    <p>发送之前请务必仔细阅读内容审核的相关规则<a href="#" class="m2api_btn1">点此查看</a></p>
+                    <p>&nbsp;</p>
+                    <div class="m2api_t1" id="cd-placeholder-1">接口列表</div>
+                    <div class="m2apiTab">
+                        <table width="100%" border="0">
+                            <tr class="m2api_th">
+                                <td>地址</td>
+                                <td>描述</td>
+                            </tr>
+                            <tr>
+                                <td>http://sms-api.luosimao.com/v1/send.[json|xml]</td>
+                                <td>发送单条短信（验证码、触发类）</td>
+                            </tr>
+                            <tr>
+                                <td>http://sms-api.luosimao.com/v1/send.[json|xml]</td>
+                                <td>发送单条短信（验证码、触发类）</td>
+                            </tr>
+                            <tr>
+                                <td>http://sms-api.luosimao.com/v1/send.[json|xml]</td>
+                                <td>发送单条短信（验证码、触发类）</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="m2apiLine"></div>
+                    <div class="m2api_t1" id="cd-placeholder-2">编码</div>
+                    <p>统一使用 <span class="cor_blue">UTF－8</span> 编码，请确保您的文件编码及传入参数的格式</p>
+                    <div class="m2apiLine"></div>
+                    <div class="m2api_t1" id="cd-placeholder-3">接口通用信息</div>
+                    <div class="m2api_t2" id="cd-placeholder-3_1">验证方式</div>
+                    <p>Luosimao使用HTTP Basic Auth方式进行身份验证，使用api作为验证用户名，API key是验证码，在 <span class="cor_blue">管理中心>短信服务>触发发送</span> 查看.</p>
+                    <p class="cor_red">（请注意验证密码需在后台提取的API key之前加上key－ 请仔细查看下列示例）</p>
+                    <p>&nbsp;</p>
+                    <div class="m2api_t2" id="cd-placeholder-3_2">验证示例</div>
+                    <div class="m2apiCoder">
+                        <pre>
+curl --user api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0
+</pre>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="m2api_t2" id="cd-placeholder-3_3">返回结果</div>
+                    <div class="m2apiTab">
+                        <table width="100%" border="0">
+                            <tr class="m2api_th">
+                                <td>名称</td>
+                                <td>类型</td>
+                                <td>是否必须</td>
+                                <td>示例值</td>
+                                <td>描述</td>
+                            </tr>
+                            <tr>
+                                <td>mobile</td>
+                                <td>String</td>
+                                <td>是</td>
+                                <td>13761428268</td>
+                                <td>目标手机号码</td>
+                            </tr>
+                            <tr>
+                                <td>mobile</td>
+                                <td>String</td>
+                                <td>是</td>
+                                <td>13761428268</td>
+                                <td>目标手机号码</td>
+                            </tr>
+                            <tr>
+                                <td>mobile</td>
+                                <td>String</td>
+                                <td>是</td>
+                                <td>13761428268</td>
+                                <td>目标手机号码</td>
+                            </tr>
+                            <tr>
+                                <td>mobile</td>
+                                <td>String</td>
+                                <td>是</td>
+                                <td>13761428268</td>
+                                <td>目标手机号码</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="m2apiLine"></div>
+                    <div class="m2api_t2" id="cd-placeholder-3_4">返回结果</div>
+                    <div class="m2apiCoder">
+                        <pre>
+json格式：
+<span class="sh_cbracket">{</span><span class="sh_string">"error"</span><span class="sh_symbol">:</span><span class="sh_number">0</span><span class="sh_symbol">,</span><span class="sh_string">"msg"</span><span class="sh_symbol">:</span><span class="sh_string">"ok"</span><span class="sh_cbracket">}</span>
+
+xml格式<span class="sh_symbol">:</span>
+
+<span class="sh_symbol">&lt;</span>response<span class="sh_symbol">&gt;</span>
+<span class="sh_symbol">&lt;</span>error<span class="sh_symbol">&gt;-</span><span class="sh_number">10</span><span class="sh_symbol">&lt;/</span>error<span class="sh_symbol">&gt;</span>
+<span class="sh_symbol">&lt;</span>msg<span class="sh_symbol">&gt;</span>Auth failed<span class="sh_symbol">.&lt;/</span>msg<span class="sh_symbol">&gt;</span>
+<span class="sh_symbol">&lt;/</span>response<span class="sh_symbol">&gt;</span>
+</pre>
+                    </div>
+                    <div class="m2apiLine"></div>
+                </div>
+                <div class="m2api_ft">FAQ</div>
+                <ul class="m2apiFaq clearfix">
+                    <li><span class="ellipsis"><a href="#">如何注册成为批发会员及查看批发价格？</a></span><span class="m2apiTime">2016-06-01</span></li>
+                    <li><span class="ellipsis"><a href="#">包包批发有什么要求？</a></span><span class="m2apiTime">2016-06-01</span></li>
+                    <li><span class="ellipsis"><a href="#">批发价格能不能再优惠？</a></span><span class="m2apiTime">2016-06-01</span></li>
+                    <li><span class="ellipsis"><a href="#">能不能单件购买网站上的商品？</a></span><span class="m2apiTime">2016-06-01</span></li>
+                    <li><span class="ellipsis"><a href="#">联想的底牌：靠什么在这个时代翻身？</a></span><span class="m2apiTime">2016-06-01</span></li>
+                </ul>
+            </div>
+            <div class="m2aipKmenu">
+                <div class="m2apiKnm">快速导航</div>
+                <dl>
+                    <dt><a class="m2herf_a1" href="#cd-placeholder-1">接口列表</a></dt>
+                    <dt><a class="m2herf_a1" href="#cd-placeholder-2">编码</a></dt>
+                    <dt><a class="m2herf_a1" href="#cd-placeholder-3">接口通用信息</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-3_1">验证方式</a></li>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-3_2">验证示例</a></li>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-3_3">返回结果</a></li>
+                            <li><a class="m2herf_a2" href="#cd-placeholder-3_4">返回示例</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html" />
+    <!-- 移动端分类菜单 -->
+    <div class="mmApiMenuBtn dsNone"><i class="fa fa-bars"></i></div>
+    <div class="mmApiBg dsNone"></div>
+    <div class="mmApiMenu mmApiMenuHide dsPhone">
+        <dl class="m2apiDl"></dl>
+    </div>
+    <stl:include file="@/include/js.html" />
+    <script language="javascript">
+    var m2kMenuTop = $(".m2aipKmenu").offset().top;
+    $(window).scroll(function() {
+
+        $(".m2api_t2").each(function(i) {
+            if ($(document).scrollTop() + 125 >= $(".m2api_t2").eq(i).offset().top) {
+                $(".m2herf_a2").removeClass("on");
+                $(".m2herf_a2").eq(i).addClass("on");
+            }
+        });
+
+        $(".m2api_t1").each(function(i) {
+            if ($(document).scrollTop() + 125 >= $(".m2api_t1").eq(i).offset().top) {
+                $(".m2herf_a1").removeClass("on");
+                $(".m2herf_a1").eq(i).addClass("on");
+                $(".m2herf_a1").eq(i).parents("li").prev("li").find(".m2herf_a2").removeClass("on");
+            }
+        });
+
+        if ($(document).scrollTop() + 125 < $(".m2api_t1").eq(0).offset().top) {
+            $(".m2herf_a1").removeClass("on");
+            $(".m2herf_a2").removeClass("on");
+        }
+        if ($(document).scrollTop() + 125 < $(".m2api_t2").eq(0).offset().top) {
+            $(".m2herf_a2").removeClass("on");
+        }
+
+        if ($(document).scrollTop() >= m2kMenuTop) {
+            $(".m2aipKmenu").addClass("m2aipKmenuFixed");
+            $(".m2aipKmenu").css("right", ($(document).width() - $(".container").width()) / 2);
+        } else {
+            $(".m2aipKmenu").removeClass("m2aipKmenuFixed");
+            $(".m2aipKmenu").css("right", "0");
+        }
+
+        if ($(".hmBom").offset().top - $(document).scrollTop() <= $(".m2aipKmenu").height() + 320) {
+            $(".m2aipKmenu").fadeOut(200);
+        } else {
+            $(".m2aipKmenu").fadeIn(200);
+        }
+
+    });
+
+    jQuery.fn.anchorGoWhere = function(e) {
+        var t = jQuery(this),
+            n = {
+                target: 0,
+                timer: 300
+            },
+            r = jQuery.extend(n, e);
+        t.each(function(e) {
+            jQuery(t[e]).click(function() {
+                var e = jQuery(this).attr("href").substr(1);
+                switch (r.target) {
+                    case 1:
+                        var t = jQuery("#" + e).offset().top - 125;
+                        jQuery("html,body").animate({
+                            scrollTop: t
+                        }, r.timer);
+                        break;
+                    case 2:
+                        var n = jQuery("#" + e).offset().left;
+                        jQuery("html,body").animate({
+                            scrollLeft: n
+                        }, r.timer)
+                }
+                return !1
+            })
+        })
+    }, $(document).ready(function() {
+        $(".m2aipKmenu a").
+        anchorGoWhere({
+            target: 1
+        })
+    })
+
+    $(".mmApiMenu .m2apiDl").html($(".m2apiMenu .m2apiDl").html());
+
+    var btnTop = $(".m2posBox").offset().top - 150;
+    var btnBom = $(".hmBom").offset().top - 200;
+    $(window).scroll(function() {
+        if ($(window).width() < 768) {
+            if ($(document).scrollTop() > btnTop && $(document).scrollTop() < btnBom) {
+                $(".mmApiMenuBtn").fadeIn(200);
+            } else {
+                $(".mmApiMenuBtn").fadeOut(200);
+            }
+            $(".mmApiMenuBtn").click(function() {
+                $(".mmApiBg").fadeIn(500);
+                $(".mmApiMenu").removeClass("mmApiMenuHide");
+            });
+
+            $(".mmApiBg").click(function() {
+                $(".mmApiMenu").addClass("mmApiMenuHide");
+                $(this).fadeOut(500);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default navbar-fixed <stl:if testType="TemplateName" testValue="系统内容模板,隐私条款" testOperate="In"><stl:failureTemplate>no-background</stl:failureTemplate></stl:if> white bootsnav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <stl:a channelIndex="首页" class="navbar-brand">
+                <img src="{Stl.SiteUrl}/images/logo.png" class="logo logo-display" alt="{Stl.SiteName}">
+                <img src="{Stl.SiteUrl}/images/logo2.png" class="logo logo-scrolled" alt="{Stl.SiteName}">
+            </stl:a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                <stl:if testType="TemplateName" testValue="系统首页模板" testOperate="In">
+                    <stl:successTemplate>
+                        <li class="current">
+                            <stl:a channelIndex="首页">首页</stl:a>
+                        </li>
+                    </stl:successTemplate>
+                    <stl:failureTemplate>
+                        <li>
+                            <stl:a channelIndex="首页">首页</stl:a>
+                        </li>
+                    </stl:failureTemplate>
+                </stl:if>
+                <stl:channels channelIndex="首页" groupChannel="主导航">
+                    <stl:if testType="CountOfChannels" testOperate="GreatThan" testValue="0">
+                        <stl:successTemplate>
+                            <li class="dropdown">
+                                <stl:a class="dropdown-toggle" data-toggle="dropdown">{Channel.Title}</stl:a>
+                                <ul class="dropdown-menu">
+                                    <stl:channels>
+                                        <li>
+                                            <stl:a>{Channel.Title}</stl:a>
+                                        </li>
+                                    </stl:channels>
+                                </ul>
+                            </li>
+                        </stl:successTemplate>
+                        <stl:failureTemplate>
+                            <li>
+                                <stl:a channelIndex="{Channel.Title}">{Channel.Title}</stl:a>
+                            </li>
+                        </stl:failureTemplate>
+                    </stl:if>
+                </stl:channels>
+                <li class="userFun">
+                    <stl:a channelIndex="登录">登录</stl:a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
