@@ -77,8 +77,12 @@
   color: #d83e3e;
   text-decoration: underline;
 }
+html,
 body {
   background: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 html,
 body,
