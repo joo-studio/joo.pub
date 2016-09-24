@@ -84,6 +84,9 @@
   color: #d83e3e;
   text-decoration: underline;
 }
+body {
+  background: none;
+}
 html,
 body,
 .swiper-wrapper {
@@ -97,7 +100,7 @@ body,
   -webkit-perspective: 1000;
 }
 .mg-b145 {
-  margin-bottom: 1.93333333rem;
+  margin-bottom: 1.33333333rem;
 }
 .price {
   color: #fa3e39;
