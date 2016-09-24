@@ -17,20 +17,19 @@
 </head>
 
 <body>
-    <div class="one swiper-container">
-        <div class="swiper-wrapper" style="-webkit-overflow-scrolling: touch;">
-            <div class="swiper-slide">
+    <div class="page-wrap">
+            <div class="page">
                 <div class="slide_one">
                     <img src="images/arrow.png" class="center arrow array">
                 </div>
             </div>
-            <div class="swiper-slide" style="-webkit-overflow-scrolling: touch;">
-                <div class="slide_two" style="position: relative; height:auto;">
+            <div class="page" style="-webkit-overflow-scrolling: touch;">
+                <div class="slide_two" style="position: relative; height: auto;">
                     <img src="images/bgindex2.jpg" class="bgindex2">
                     <img src="images/arrow.png" class="center arrow array">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="page">
                 <div class="slide_three">
                     <div class="pos-btn">
                         <div class="text-center mg-b145">
@@ -44,14 +43,16 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>
 <script src="js/flexible.js"></script>
 <script src='js/zepto_modify.js'></script>
 <script src='js/PageSlider.js'></script>
 <script type="text/javascript">
-var PageSlider = new PageSlider({
-    pages: $('.swiper-wrapper .swiper-slide')
+// var PageSlider = new PageSlider({
+//     pages: $('.swiper-wrapper .swiper-slide')
+// });
+new PageSlider({
+    pages: $('.page-wrap .page')
 });
 </script>
 
