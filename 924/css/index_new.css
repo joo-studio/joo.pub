@@ -77,7 +77,7 @@
   bottom: 1.2rem;
 }
 .slide_three .footerbtn {
-  padding: 0.8rem 0.85333333rem 0.32rem;
+  padding: 0 0.85333333rem 0;
 }
 .slide_three .rules {
   font-size: 0.32rem;
@@ -100,7 +100,7 @@ body,
   -webkit-perspective: 1000;
 }
 .mg-b145 {
-  margin-bottom: 1.33333333rem;
+  margin-bottom: 1.93333333rem;
 }
 .price {
   color: #fa3e39;
