@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>
+     黑马营14期•寻找同行人
+    </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/confirm.css">
+</head>
+
+<body>
+    <div class="confirm">
+        <form action="" id="confirm">
+            <div class="formitem cf">
+                <div class="fl label">姓名</div>
+                <div class="fr text-wrap">
+                    <input type="text" placeholder="请填写手机号" class="width100">
+                </div>
+            </div>
+            <div class="formitem cf">
+                <div class="fl label">公司</div>
+                <div class="fr text-wrap">
+                    <input type="text" placeholder="请填写公司名称" class="width100">
+                </div>
+            </div>
+            <div class="formitem cf">
+                <div class="fl label">职位</div>
+                <div class="fr text-wrap">
+                    <input type="text" placeholder="请填写职位" class="width100">
+                </div>
+            </div>
+            <div class="formitem cf">
+                <div class="fl label big-label">融资阶段</div>
+                <div class="fr text-wrap bigtext">
+                    <select placeholder="请填写融资阶段" class="width100">
+                        <option>请填写融资阶段</option>
+                        <option>天使轮</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="cyj-btn --red --radius">下一步</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("select").on("change", function() {
+        $(this).css("color", "#252525");
+    });
+});
+</script>
+
+</html>

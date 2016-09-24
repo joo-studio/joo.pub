@@ -1,0 +1,125 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.issue-index * {
+  -webkit-animation-fill-mode: both !important;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.issue-index {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.array {
+  position: absolute;
+  z-index: 999;
+  -webkit-animation: start 1.5s infinite ease-in-out;
+}
+.arrow {
+  bottom: 0.66666667rem;
+  width: 0.85333333rem;
+  height: 0.37333333rem;
+}
+@-webkit-keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -8px);
+  }
+}
+@-moz-keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    -moz-transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translate(0, -8px);
+  }
+}
+@keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+}
+.slide_one {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: url(../images/index.jpg) no-repeat;
+  background-size: cover;
+}
+.slide_three {
+  color: #1e1e1e;
+  font-size: 0.42666667rem;
+  padding: 1.25333333rem 0.85333333rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+.slide_three .block {
+  line-height: 0.66666667rem;
+  margin-bottom: 0.93333333rem;
+  text-align: justify;
+}
+.slide_three .ul-list li {
+  padding-left: 0.4rem;
+  position: relative;
+}
+.slide_three .ul-list li:before {
+  border-radius: 50%;
+  border: solid 0.13333333rem #eb3434;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.22666667rem;
+}
+.slide_three .end {
+  font-family: hy;
+  font-size: 0.52rem;
+}
+.threewrap {
+  overflow: hidden;
+  height: 80%;
+}
+#iscroll {
+  position: relative;
+}

@@ -1,0 +1,196 @@
+.cyj-btn {
+  display: block;
+  color: #fff;
+  font-size: 0.42666667rem;
+  border: 0 none;
+  cursor: pointer;
+  height: 1.14666667rem;
+  line-height: 1.14666667rem;
+  text-decoration: none;
+  text-align: center;
+}
+.cyj-btn.--small {
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  font-size: 0.32rem;
+}
+.cyj-btn.\--xssmall {
+  height: 0.58666667rem;
+  line-height: 0.58666667rem;
+  font-size: 0.29333333rem;
+  width: 1.73333333rem;
+}
+.cyj-btn.\--radius {
+  border-radius: 0.66666667rem;
+}
+.cyj-btn.\--red {
+  background: #e93c3c;
+}
+.cyj-btn.\--shadow {
+  box-shadow: 0 0.21333333rem 0.48rem rgba(238, 65, 76, 0.4);
+}
+.alert-box {
+  border-radius: 0.26666667rem;
+  background-color: #ffffff;
+  position: fixed;
+  width: 8.66666667rem;
+  color: #28292b;
+  top: 30%;
+  left: 50%;
+  margin-left: -4.33333333rem;
+  display: none;
+}
+.alert-box .alert-content {
+  text-align: center;
+  padding: 1.06666667rem 0;
+  font-size: 0.42666667rem;
+}
+.alert-box .alert-button {
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  border-top: solid 1px #cacbcd;
+}
+.alert-box .alert-button a {
+  float: left;
+  width: 50%;
+  color: #8b8b8c;
+  font-size: 0.37333333rem;
+  text-align: center;
+}
+.alert-box .alert-button a:first-child {
+  border-right: solid 1px #cacbcd;
+}
+.alert-box .alert-button a:hover {
+  color: #ee414c;
+}
+.bg {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.pd-t100 {
+  padding-top: 1.33333333rem;
+}
+.width100 {
+  width: 100%;
+}
+.pd-t15 {
+  padding-top: 0.2rem;
+}
+.com-title {
+  font-weight: bold;
+  font-size: 0.45333333rem;
+  color: #222222;
+  margin-bottom: 0.53333333rem;
+}
+.red-text {
+  color: #eb3434;
+}
+.fs30 {
+  font-size: 0.4rem;
+}
+.fs36 {
+  font-size: 0.48rem;
+}
+.fs40 {
+  font-size: 0.53333333rem;
+}
+.fs44 {
+  font-size: 0.58666667rem;
+}
+.fs50 {
+  font-size: 0.66666667rem;
+}
+.fs75 {
+  font-size: 1rem;
+}
+.fs32 {
+  font-size: 0.42666667rem;
+}
+.fs48 {
+  font-size: 0.64rem;
+}
+.fs60 {
+  font-size: 0.8rem;
+}
+.fs70 {
+  font-size: 0.93333333rem;
+}
+.fs46 {
+  font-size: 0.61333333rem;
+}
+.fs55 {
+  font-size: 0.73333333rem;
+}
+.fs42 {
+  font-size: 0.56rem;
+}
+.fs32 {
+  font-size: 0.42666667rem;
+}
+.fs38 {
+  font-size: 0.50666667rem;
+}
+.fs80 {
+  font-size: 1.06666667rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+.mg-b80 {
+  margin-bottom: 1.06666667rem;
+}
+.mg-b24 {
+  margin-bottom: 0.32rem;
+}
+.mg-b45 {
+  margin-bottom: 0.6rem;
+}
+.mg-b54 {
+  margin-bottom: 0.72rem;
+}
+.mg-b20 {
+  margin-bottom: 0.26666667rem;
+}
+.pd-t47 {
+  padding-top: 0.62666667rem;
+}
+.mg-b40 {
+  margin-bottom: 0.53333333rem;
+}
+.mg-b60 {
+  margin-bottom: 0.8rem;
+}
+.mg-b75 {
+  margin-bottom: 1rem;
+}
+.mg-b25 {
+  margin-bottom: 0.33333333rem;
+}
+.mg-b30 {
+  margin-bottom: 0.4rem;
+}
+.mg-b55 {
+  margin-bottom: 0.73333333rem;
+}
+.mg-b23 {
+  margin-bottom: 0.30666667rem;
+}
+.mg-b24 {
+  margin-bottom: 0.32rem;
+}
+.mg-b28 {
+  margin-bottom: 0.37333333rem;
+}
+.imglist {
+  background: #fff;
+  text-align: center;
+}
+.rule-img {
+  width: 9.54666667rem;
+  height: 13.48rem;
+}

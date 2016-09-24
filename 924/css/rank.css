@@ -1,0 +1,323 @@
+.wrap {
+  padding: 1.2rem 0.8rem;
+}
+.wrap .title-info {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.wrap .title-info .title {
+  margin-bottom: 0.26666667rem;
+}
+.wrap .title-info .title .rank {
+  width: 5.78666667rem;
+  height: 0.62666667rem;
+}
+.wrap .title-info .subtitle {
+  font-size: 0.32rem;
+  color: #3b3939;
+}
+.invitation {
+  padding: 0 0.8rem 1.2rem;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.personal {
+  padding: 0 0.8rem 1.2rem;
+}
+.top {
+  text-align: center;
+  height: 13.37333333rem;
+  color: #fff;
+  font-size: 0.4rem;
+  background: url(../images/detailbg.jpg) no-repeat;
+  background-size: cover;
+}
+.top .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.72rem;
+  padding: 1.2rem 0 0.8rem 0;
+}
+.top .top-texts {
+  padding-top: 7.6rem;
+}
+.tip-text {
+  padding-top: 0.61333333rem;
+  margin-bottom: 0.53333333rem;
+  font-size: 0.32rem;
+  color: #686767;
+}
+.tip-text .title {
+  font-size: 0.34666667rem;
+  margin-bottom: 0.10666667rem;
+}
+.tip-text p {
+  line-height: 0.48rem;
+}
+.rank-list .item {
+  border-radius: 0.78666667rem;
+  background-color: rgba(39, 39, 39, 0.561);
+  height: 1.50666667rem;
+  display: table;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.4rem;
+  color: #fff;
+  font-size: 0.26666667rem;
+}
+.rank-list .advator {
+  width: 22%;
+}
+.rank-list .advator .advatorimg {
+  width: 1.46666667rem;
+  height: 1.46666667rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: solid 0.05333333rem #858585;
+}
+.rank-list .info .name {
+  font-size: 0.45333333rem;
+  margin-bottom: 0.26666667rem;
+}
+.rank-list .info .name.up {
+  margin-bottom: 0.10666667rem;
+}
+.rank-list .info .name .one {
+  width: 0.6rem;
+  height: 0.74666667rem;
+  vertical-align: middle;
+}
+.rank-list .info .name .two {
+  width: 0.56rem;
+  height: 0.69333333rem;
+  vertical-align: middle;
+}
+.rank-list .info .name .three {
+  width: 0.56rem;
+  height: 0.70666667rem;
+  vertical-align: middle;
+}
+.rank-list .info .name .classroom {
+  font-size: 0.32rem;
+  padding-left: 0.2rem;
+}
+.rank-list .info .company {
+  font-size: 0.32rem;
+  width: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rank-list .support {
+  width: 27%;
+  text-align: center;
+}
+.rank-list .support .person-num {
+  margin-bottom: 0.17333333rem;
+}
+.rank-list .support .person-num .hot {
+  width: 0.38666667rem;
+  height: 0.44rem;
+}
+.rank-list .support .support-wrap {
+  color: #fff;
+  font-size: 0.26666667rem;
+}
+.rank-list .light-status {
+  padding-right: 0.26666667rem;
+}
+.rank-list .light-status .light-wrap {
+  text-align: center;
+  margin-bottom: 0.13333333rem;
+}
+.rank-list .light-status .light-wrap .smile {
+  width: 0.44rem;
+  height: 0.62666667rem;
+}
+.rank-list .light-status .text {
+  text-align: center;
+  font-size: 0.29333333rem;
+}
+.bg-box {
+  background: #ffffff url(../images/person.jpg) no-repeat;
+  background-size: contain;
+}
+.top-text {
+  padding: 1.2rem 0.8rem 1.73333333rem;
+  text-align: center;
+}
+.top-text .arrow-right {
+  width: 0.17333333rem;
+  height: 0.22666667rem;
+  margin-right: 0.06666667rem;
+  vertical-align: 0.13333333rem;
+}
+.person-list {
+  padding-bottom: 0.93333333rem;
+}
+.person-list .small-advator {
+  border-radius: 50%;
+  width: 0.96rem;
+  height: 0.96rem;
+  float: left;
+  margin-right: 0.22666667rem;
+}
+.tyrant {
+  padding-bottom: 0.86666667rem;
+}
+.tyrant li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #707070;
+  list-style: none;
+}
+.tyrant li .advator {
+  margin-bottom: 0.26666667rem;
+}
+.tyrant li .advator .advator-img {
+  border-style: solid;
+  border-width: 0.04rem;
+  border-color: #fa7373;
+  border-radius: 50%;
+  background-color: #414141;
+  width: 2.17333333rem;
+  height: 2.17333333rem;
+}
+.tyrant li .advator .default {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.tyrant li .name {
+  font-size: 0.53333333rem;
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: 0.13333333rem;
+}
+.tyrant li .class {
+  margin-bottom: 0.13333333rem;
+}
+.zanwrap {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+.zanwrap .zan-btn {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #e93c3c;
+  width: 2.18666667rem;
+  height: 2.18666667rem;
+  line-height: 2.18666667rem;
+  box-shadow: 0 0.26666667rem 0.4rem rgba(233, 60, 60, 0.4);
+}
+.zanwrap .text {
+  display: block;
+  font-size: 0.8rem;
+}
+.zanwrap .zan-num {
+  display: block;
+  font-size: 0.29333333rem;
+  color: #feb0b0;
+}
+.list-wrap {
+  padding-bottom: 2rem;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.list-wrap .title {
+  text-align: center;
+  padding: 0.96rem 0 0.97222222rem 0;
+}
+.list-wrap .title .xb {
+  width: 5.52rem;
+  height: 1.17333333rem;
+}
+.list-wrap .classroom {
+  text-align: center;
+  font-size: 0.48rem;
+  margin-bottom: 0.18666667rem;
+  color: #3b3939;
+}
+.list-wrap .arrow-bottom {
+  text-align: center;
+  margin-bottom: 0.33333333rem;
+}
+.list-wrap .teacherlist {
+  padding: 0 0.4rem;
+}
+.list-wrap .teacher-item {
+  width: 33%;
+  float: left;
+}
+.list-wrap .item {
+  text-align: center;
+  margin-bottom: 0.66666667rem;
+}
+.list-wrap .item .teacher-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.26666667rem;
+}
+.list-wrap .item .teacher {
+  width: 2.24rem;
+  height: 2.24rem;
+  border-radius: 50%;
+  border: solid 0.06666667rem #d0d0d0;
+}
+.list-wrap .item .default-advator {
+  width: 2.25333333rem;
+  height: 2.24rem;
+  border-radius: 50%;
+}
+.list-wrap .item .texts .name {
+  font-size: 0.53333333rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+.list-wrap .item .texts .company {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 0.32rem;
+  color: #707070;
+}
+.triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.13333333rem solid transparent;
+  border-right: 0.13333333rem solid transparent;
+  border-top: 0.24rem solid #e2e2e2;
+}
+.rank-btn {
+  position: absolute;
+  right: 0.46666667rem;
+  top: 0.46666667rem;
+  color: #d92626;
+  font-size: 0.32rem;
+  border: solid 1px #d92626;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  padding: 0 0.32rem;
+  border-radius: 0.06666667rem;
+}
+.footerbtn {
+  position: fixed;
+  padding: 0 0.66666667rem;
+  width: 100%;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  height: 2rem;
+  left: 0;
+  bottom: 0;
+}
+.rank100 {
+  width: 5.52rem;
+  height: 0.62666667rem;
+}

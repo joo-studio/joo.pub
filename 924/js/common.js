@@ -1,0 +1,2 @@
+document.addEventListener('touchstart', function () { });
+
