@@ -154,7 +154,9 @@
   vertical-align: 0.13333333rem;
 }
 .person-list {
-  padding-bottom: 0.93333333rem;
+  margin-bottom: 0.93333333rem;
+  height: 0.96rem;
+  overflow: hidden;
 }
 .person-list .small-advator {
   border-radius: 50%;
